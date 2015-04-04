@@ -1,0 +1,6 @@
+[submodule "Framework"]
+	path = Framework
+	url = https://github.com/JimmyLord/MyFramework.git
+[submodule "Engine"]
+	path = Engine
+	url = https://github.com/JimmyLord/ProjectEntityComponentTest.git

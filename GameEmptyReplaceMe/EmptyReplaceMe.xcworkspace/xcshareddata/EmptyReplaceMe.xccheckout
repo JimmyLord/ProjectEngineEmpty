@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AE9169AF-9052-471C-ABAB-5A15AC3F9C62</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EmptyReplaceMe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>40072E56385CD7EC6867555132063FDB0F54E7B3</key>
+		<string>https://github.com/JimmyLord/MyFramework.git</string>
+		<key>9CA58DB4C2349F9CE00E6DA768D4A1F74B1A6D78</key>
+		<string>https://github.com/JimmyLord/SharedGameCode.git</string>
+		<key>B0D342C3ADC308FE2F3A40934720993B04EB0255</key>
+		<string>https://github.com/JimmyLord/ProjectEmpty.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GameEmptyReplaceMe/EmptyReplaceMe.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>40072E56385CD7EC6867555132063FDB0F54E7B3</key>
+		<string>../..Framework</string>
+		<key>9CA58DB4C2349F9CE00E6DA768D4A1F74B1A6D78</key>
+		<string>../..SharedGameCode</string>
+		<key>B0D342C3ADC308FE2F3A40934720993B04EB0255</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JimmyLord/ProjectEmpty.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B0D342C3ADC308FE2F3A40934720993B04EB0255</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B0D342C3ADC308FE2F3A40934720993B04EB0255</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ProjectEmpty</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>40072E56385CD7EC6867555132063FDB0F54E7B3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ProjectEmptyFramework</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9CA58DB4C2349F9CE00E6DA768D4A1F74B1A6D78</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ProjectEmptySharedGameCode</string>
+		</dict>
+	</array>
+</dict>
+</plist>

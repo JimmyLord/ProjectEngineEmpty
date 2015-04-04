@@ -1,0 +1,6 @@
+{
+  "program": {
+    "x86-64": {"url": "EmptyReplaceMe_64_Debug.nexe"},
+    "x86-32": {"url": "EmptyReplaceMe_x86_Debug.nexe"}
+  }
+}
