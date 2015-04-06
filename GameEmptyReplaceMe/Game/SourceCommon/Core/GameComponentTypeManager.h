@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2015 Jimmy Lord http://www.flatheadgames.com
+// Copyright (c) 2014-2015 Jimmy Lord http://www.flatheadgames.com
 //
 // This software is provided 'as-is', without any express or implied warranty.  In no event will the authors be held liable for any damages arising from the use of this software.
 // Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
@@ -7,26 +7,29 @@
 // 2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
 // 3. This notice may not be removed or altered from any source distribution.
 
-#ifndef __GameEmptyReplaceMe_H__
-#define __GameEmptyReplaceMe_H__
+#ifndef __GameComponentTypeManager_H__
+#define __GameComponentTypeManager_H__
 
-class GameEmptyReplaceMe : public EngineCore
+class ComponentBase;
+
+enum GameComponentTypes // search for ADDING_NEW_ComponentType
 {
-public:
-    Vector3 m_Position;
-
-public:
-    GameEmptyReplaceMe();
-    virtual ~GameEmptyReplaceMe();
-
-    virtual ComponentTypeManager* CreateComponentTypeManager() { return MyNew GameComponentTypeManager; }
-
-    virtual void OneTimeInit();
-    virtual double Tick(double TimePassed);
-    virtual void OnDrawFrame();
-
-    virtual void OnTouch(int action, int id, float x, float y, float pressure, float size);
-    virtual void OnButtons(GameCoreButtonActions action, GameCoreButtonIDs id);
+    ComponentType_InputTrackMousePos = Component_NumEngineComponentTypes,
+    ComponentType_AIChasePlayer,
+    Component_NumComponentTypes,
+    Component_NumGameComponentTypes = Component_NumComponentTypes - Component_NumEngineComponentTypes,
 };
 
-#endif //__GameEmptyReplaceMe_H__
+class GameComponentTypeManager : public EngineComponentTypeManager
+{
+public:
+    virtual ComponentBase* CreateComponent(int type);
+    virtual unsigned int GetNumberOfComponentTypes();
+
+    virtual const char* GetTypeCategory(int type);
+    virtual const char* GetTypeName(int type);
+
+    virtual int GetTypeByName(const char* name);
+};
+
+#endif //__ComponentList_H__

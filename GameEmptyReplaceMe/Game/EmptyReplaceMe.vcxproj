@@ -1548,6 +1548,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WxRelease|NaCl32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WxRelease|Emscripten'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="SourceCommon\Core\GameComponentTypeManager.cpp" />
     <ClCompile Include="SourceCommon\Core\GameEmptyReplaceMe.cpp" />
     <ClCompile Include="SourceCommon\GameCommonHeader.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -1575,6 +1576,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|NaCl32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SourceCommon\GameComponents\ComponentAIChasePlayer.cpp" />
+    <ClCompile Include="SourceCommon\GameComponents\ComponentInputTrackMousePos.cpp" />
     <ClCompile Include="SourceEmscripten\emMain.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_64|Android'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">true</ExcludedFromBuild>
@@ -1857,8 +1860,11 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|NaCl'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WxRelease|NaCl'">true</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="SourceCommon\Core\GameComponentTypeManager.h" />
     <ClInclude Include="SourceCommon\Core\GameEmptyReplaceMe.h" />
     <ClInclude Include="SourceCommon\GameCommonHeader.h" />
+    <ClInclude Include="SourceCommon\GameComponents\ComponentAIChasePlayer.h" />
+    <ClInclude Include="SourceCommon\GameComponents\ComponentInputTrackMousePos.h" />
     <ClInclude Include="SourceEmscripten\esUtil.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_64|Android'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">true</ExcludedFromBuild>

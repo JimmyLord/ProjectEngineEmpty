@@ -20,25 +20,25 @@ GameEmptyReplaceMe::~GameEmptyReplaceMe()
 
 void GameEmptyReplaceMe::OneTimeInit()
 {
-    GameEntityComponentTest::OneTimeInit();
+    EngineCore::OneTimeInit();
 }
 
 double GameEmptyReplaceMe::Tick(double TimePassed)
 {
-    return GameEntityComponentTest::Tick( TimePassed );
+    return EngineCore::Tick( TimePassed );
 }
 
 void GameEmptyReplaceMe::OnDrawFrame()
 {
-    GameEntityComponentTest::OnDrawFrame();
+    EngineCore::OnDrawFrame();
 }
 
 void GameEmptyReplaceMe::OnTouch(int action, int id, float x, float y, float pressure, float size)
 {
-    GameEntityComponentTest::OnTouch( action, id, x, y, pressure, size );
+    EngineCore::OnTouch( action, id, x, y, pressure, size );
 }
 
 void GameEmptyReplaceMe::OnButtons(GameCoreButtonActions action, GameCoreButtonIDs id)
 {
-    GameEntityComponentTest::OnButtons( action, id );
+    EngineCore::OnButtons( action, id );
 }

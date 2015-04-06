@@ -58,6 +58,9 @@
     <Filter Include="Source - Platform\Source - WP8">
       <UniqueIdentifier>{e5550a78-55dc-4dfe-be19-a1ec884306de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Game Components">
+      <UniqueIdentifier>{35e427fe-23d4-4189-aa37-1be939bd2e0e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceWindows\WinMain.cpp">
@@ -96,6 +99,15 @@
     <ClCompile Include="SourceWP8\WP8Main.cpp">
       <Filter>Source - Platform\Source - WP8</Filter>
     </ClCompile>
+    <ClCompile Include="SourceCommon\Core\GameComponentTypeManager.cpp">
+      <Filter>Source\Core Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCommon\GameComponents\ComponentAIChasePlayer.cpp">
+      <Filter>Source\Game Components</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCommon\GameComponents\ComponentInputTrackMousePos.cpp">
+      <Filter>Source\Game Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SourceWindows\WinMain.h">
@@ -133,6 +145,15 @@
     </ClInclude>
     <ClInclude Include="SourceWP8\WP8Main.h">
       <Filter>Source - Platform\Source - WP8</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCommon\Core\GameComponentTypeManager.h">
+      <Filter>Source\Core Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCommon\GameComponents\ComponentAIChasePlayer.h">
+      <Filter>Source\Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCommon\GameComponents\ComponentInputTrackMousePos.h">
+      <Filter>Source\Game Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

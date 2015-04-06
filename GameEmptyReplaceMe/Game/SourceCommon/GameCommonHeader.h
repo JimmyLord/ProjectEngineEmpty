@@ -13,6 +13,10 @@
 #include "../../Framework/MyFramework/SourceCommon/CommonHeader.h"
 #include "../../Engine/MyEngine/SourceCommon/EngineCommonHeader.h"
 
+#include "GameComponents/ComponentInputTrackMousePos.h"
+#include "GameComponents/ComponentAIChasePlayer.h"
+
+#include "Core/GameComponentTypeManager.h"
 #include "Core/GameEmptyReplaceMe.h"
 
 #endif //__GameCommonHeader_H__
