@@ -21,7 +21,7 @@ void WinMain_CreateGameCore()
 
 MainFrame* WinMain_CreateMainFrame()
 {
-    return MyNew GameMainFrame;
+    return MyNew EngineMainFrame;
 }
 
 void WinMain_GetClientSize(int* width, int* height, GLViewTypes* viewtype)

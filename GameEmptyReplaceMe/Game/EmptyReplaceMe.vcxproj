@@ -2147,6 +2147,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\todo.todo" />
     <None Include="Data\Layouts\allscreens.layout" />
     <None Include="Data\Shaders\Shader_Font.glsl" />
     <None Include="Data\Shaders\Shader_PointSprite.glsl" />

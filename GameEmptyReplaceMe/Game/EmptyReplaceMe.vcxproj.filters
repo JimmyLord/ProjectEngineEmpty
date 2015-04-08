@@ -244,5 +244,6 @@
     <None Include="SourceEmscripten\httpd_Release.py">
       <Filter>Source - Platform\Source - Emscripten</Filter>
     </None>
+    <None Include="..\..\todo.todo" />
   </ItemGroup>
 </Project>
