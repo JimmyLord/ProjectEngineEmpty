@@ -61,6 +61,12 @@
     <Filter Include="Source\Game Components">
       <UniqueIdentifier>{35e427fe-23d4-4189-aa37-1be939bd2e0e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data\Scenes">
+      <UniqueIdentifier>{e1a38ebc-d2f2-4687-bada-29e2dfd14882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Scripts">
+      <UniqueIdentifier>{39de41de-6fdc-4997-b708-63a4d1d8fb7f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceWindows\WinMain.cpp">
@@ -245,5 +251,53 @@
       <Filter>Source - Platform\Source - Emscripten</Filter>
     </None>
     <None Include="..\..\todo.todo" />
+    <None Include="Data\Scenes\AnimationTest.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\LightTest.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\Multi-enemy.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\ParentingTest.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\PhysicsTest.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\test.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestShadow.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\World.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestPhysicsCharacter.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scripts\Enemy.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scripts\GGJEnemy.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scripts\GGJPlayer.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scripts\GGJTube.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scripts\Player.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scripts\SimpleCharacterController.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scripts\CharacterController_Physics.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
   </ItemGroup>
 </Project>

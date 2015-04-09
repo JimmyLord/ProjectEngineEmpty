@@ -2149,6 +2149,22 @@
   <ItemGroup>
     <None Include="..\..\todo.todo" />
     <None Include="Data\Layouts\allscreens.layout" />
+    <None Include="Data\Scenes\AnimationTest.scene" />
+    <None Include="Data\Scenes\LightTest.scene" />
+    <None Include="Data\Scenes\Multi-enemy.scene" />
+    <None Include="Data\Scenes\ParentingTest.scene" />
+    <None Include="Data\Scenes\PhysicsTest.scene" />
+    <None Include="Data\Scenes\test.scene" />
+    <None Include="Data\Scenes\TestPhysicsCharacter.scene" />
+    <None Include="Data\Scenes\TestShadow.scene" />
+    <None Include="Data\Scenes\World.scene" />
+    <None Include="Data\Scripts\CharacterController_Physics.lua" />
+    <None Include="Data\Scripts\Enemy.lua" />
+    <None Include="Data\Scripts\GGJEnemy.lua" />
+    <None Include="Data\Scripts\GGJPlayer.lua" />
+    <None Include="Data\Scripts\GGJTube.lua" />
+    <None Include="Data\Scripts\Player.lua" />
+    <None Include="Data\Scripts\SimpleCharacterController.lua" />
     <None Include="Data\Shaders\Shader_Font.glsl" />
     <None Include="Data\Shaders\Shader_PointSprite.glsl" />
     <None Include="Data\Shaders\Shader_Simple.glsl" />
