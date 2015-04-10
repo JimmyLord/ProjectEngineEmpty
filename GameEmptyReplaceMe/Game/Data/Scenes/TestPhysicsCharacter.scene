@@ -1,5 +1,5 @@
 {
-	"Files":	["Data/OBJs/cube.obj", "Data/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Meshes/test.myaniminfo", "Data/Scripts/SimpleCharacterController.lua", "Data/Scripts/CharacterController_Physics.lua", "Data/Shaders/Shader_TintColor.glsl", "Data/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Shaders/Include/Light_Uniforms.glsl", "Data/Shaders/Include/Light_Functions.glsl", "Data/Shaders/Include/Bone_AttribsAndUniforms.glsl", "Data/Shaders/Include/Bone_Functions.glsl", "Data/Shaders/Include/LSVaryings.glsl", "Data/Shaders/Include/LSVaryings_Functions.glsl", "Data/Shaders/Include/WSVaryings.glsl", "Data/Shaders/Include/WSVaryings_Functions.glsl"],
+	"Files":	["Data/Shaders/Shader_TintColor.glsl", "Data/Shaders/Shader_ClipSpaceTexture.glsl", "Data/OBJs/cube.obj", "Data/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Meshes/test.myaniminfo", "Data/Scripts/SimpleCharacterController.lua", "Data/Scripts/CharacterController_Physics.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Shaders/Include/Light_Uniforms.glsl", "Data/Shaders/Include/Light_Functions.glsl", "Data/Shaders/Include/Bone_AttribsAndUniforms.glsl", "Data/Shaders/Include/Bone_Functions.glsl", "Data/Shaders/Include/LSVaryings.glsl", "Data/Shaders/Include/LSVaryings_Functions.glsl", "Data/Shaders/Include/WSVaryings.glsl", "Data/Shaders/Include/WSVaryings_Functions.glsl"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -162,7 +162,8 @@
 			"Type":	"Collision Object",
 			"GOID":	11,
 			"ID":	16,
-			"Mass":	0
+			"Mass":	0,
+			"Primitive":	"Cube"
 		}, {
 			"Type":	"Animation Player",
 			"GOID":	10,
@@ -191,27 +192,32 @@
 			"Type":	"Collision Object",
 			"GOID":	17,
 			"ID":	53,
-			"Mass":	0
+			"Mass":	0,
+			"Primitive":	"Cube"
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	19,
 			"ID":	75,
-			"Mass":	0
+			"Mass":	0,
+			"Primitive":	"Cube"
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	20,
 			"ID":	77,
-			"Mass":	0
+			"Mass":	0,
+			"Primitive":	"Cube"
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	21,
 			"ID":	79,
-			"Mass":	0
+			"Mass":	0,
+			"Primitive":	"Cube"
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	10,
 			"ID":	91,
-			"Mass":	1
+			"Mass":	1,
+			"Primitive":	"Sphere"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
