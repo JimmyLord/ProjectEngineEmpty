@@ -67,6 +67,9 @@
     <Filter Include="Data\Scripts">
       <UniqueIdentifier>{39de41de-6fdc-4997-b708-63a4d1d8fb7f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data\Shaders\Include">
+      <UniqueIdentifier>{0d383fad-86c4-4917-a4bb-71ab4a2ff62f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceWindows\WinMain.cpp">
@@ -193,15 +196,6 @@
     <None Include="SourceNaCL\Web\game.html">
       <Filter>Source - Platform\Source - NaCL\Web Files</Filter>
     </None>
-    <None Include="Data\Shaders\Shader_Font.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_Simple.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_Texture.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
     <None Include="SourceIOS\en.lproj\InfoPlist.strings">
       <Filter>Source - Platform\Source - IOS\en.lproj</Filter>
     </None>
@@ -231,15 +225,6 @@
     </None>
     <None Include="Data\Layouts\allscreens.layout">
       <Filter>Data</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_PointSprite.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_TextureVertexColor.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_TextureVertexColorAdd.glsl">
-      <Filter>Data\Shaders</Filter>
     </None>
     <None Include="SourceAndroid\AndroidApk\src\com\flathead\EmptyReplaceMePackage\EmptyReplaceMeActivity.java">
       <Filter>Source - Platform\Source - Android\Java</Filter>
@@ -298,6 +283,60 @@
     </None>
     <None Include="Data\Scripts\CharacterController_Physics.lua">
       <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_BoneAnim.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_Breathe.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_ClipSpaceTexture.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_TestNormals.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_Texture.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_TextureLights.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_TextureVertexColor.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_TintColor.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_VertSinY.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_Water.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Include\Bone_AttribsAndUniforms.glsl">
+      <Filter>Data\Shaders\Include</Filter>
+    </None>
+    <None Include="Data\Shaders\Include\Bone_Functions.glsl">
+      <Filter>Data\Shaders\Include</Filter>
+    </None>
+    <None Include="Data\Shaders\Include\Light_Functions.glsl">
+      <Filter>Data\Shaders\Include</Filter>
+    </None>
+    <None Include="Data\Shaders\Include\Light_Uniforms.glsl">
+      <Filter>Data\Shaders\Include</Filter>
+    </None>
+    <None Include="Data\Shaders\Include\LSVaryings.glsl">
+      <Filter>Data\Shaders\Include</Filter>
+    </None>
+    <None Include="Data\Shaders\Include\LSVaryings_Functions.glsl">
+      <Filter>Data\Shaders\Include</Filter>
+    </None>
+    <None Include="Data\Shaders\Include\WSVaryings.glsl">
+      <Filter>Data\Shaders\Include</Filter>
+    </None>
+    <None Include="Data\Shaders\Include\WSVaryings_Functions.glsl">
+      <Filter>Data\Shaders\Include</Filter>
     </None>
   </ItemGroup>
 </Project>

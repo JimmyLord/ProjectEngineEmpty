@@ -2165,12 +2165,24 @@
     <None Include="Data\Scripts\GGJTube.lua" />
     <None Include="Data\Scripts\Player.lua" />
     <None Include="Data\Scripts\SimpleCharacterController.lua" />
-    <None Include="Data\Shaders\Shader_Font.glsl" />
-    <None Include="Data\Shaders\Shader_PointSprite.glsl" />
-    <None Include="Data\Shaders\Shader_Simple.glsl" />
+    <None Include="Data\Shaders\Include\Bone_AttribsAndUniforms.glsl" />
+    <None Include="Data\Shaders\Include\Bone_Functions.glsl" />
+    <None Include="Data\Shaders\Include\Light_Functions.glsl" />
+    <None Include="Data\Shaders\Include\Light_Uniforms.glsl" />
+    <None Include="Data\Shaders\Include\LSVaryings.glsl" />
+    <None Include="Data\Shaders\Include\LSVaryings_Functions.glsl" />
+    <None Include="Data\Shaders\Include\WSVaryings.glsl" />
+    <None Include="Data\Shaders\Include\WSVaryings_Functions.glsl" />
+    <None Include="Data\Shaders\Shader_BoneAnim.glsl" />
+    <None Include="Data\Shaders\Shader_Breathe.glsl" />
+    <None Include="Data\Shaders\Shader_ClipSpaceTexture.glsl" />
+    <None Include="Data\Shaders\Shader_TestNormals.glsl" />
     <None Include="Data\Shaders\Shader_Texture.glsl" />
+    <None Include="Data\Shaders\Shader_TextureLights.glsl" />
     <None Include="Data\Shaders\Shader_TextureVertexColor.glsl" />
-    <None Include="Data\Shaders\Shader_TextureVertexColorAdd.glsl" />
+    <None Include="Data\Shaders\Shader_TintColor.glsl" />
+    <None Include="Data\Shaders\Shader_VertSinY.glsl" />
+    <None Include="Data\Shaders\Shader_Water.glsl" />
     <None Include="SourceAndroid\AndroidApk\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </None>
