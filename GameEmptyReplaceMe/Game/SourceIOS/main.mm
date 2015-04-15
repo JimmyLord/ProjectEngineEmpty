@@ -18,12 +18,15 @@ int main(int argc, char *argv[])
     g_pGameCore = MyNew GameEmptyReplaceMe;
     g_pGameCore->OnSurfaceCreated();
     
+    int returnvalue;
     @autoreleasepool
     {
-        return UIApplicationMain( argc, argv, nil, NSStringFromClass([AppDelegate class]) );
+        returnvalue = UIApplicationMain( argc, argv, nil, NSStringFromClass([AppDelegate class]) );
     }
-    
+
     delete( g_pGameCore );
+
+    return returnvalue;
 }
 
 bool IOSFUNC_shouldAutorotateToInterfaceOrientation(UIInterfaceOrientation interfaceOrientation)
