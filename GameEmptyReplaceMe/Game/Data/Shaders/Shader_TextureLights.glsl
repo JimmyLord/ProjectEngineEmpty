@@ -1,5 +1,5 @@
 #ifdef WIN32
-#version 120
+//#version 120
 #define lowp
 #define mediump
 #else
