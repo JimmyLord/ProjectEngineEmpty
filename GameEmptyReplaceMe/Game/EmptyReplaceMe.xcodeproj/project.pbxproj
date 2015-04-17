@@ -294,7 +294,7 @@
 			dependencies = (
 			);
 			name = "EmptyReplaceMe-wx";
-			productName = "EmptyReplaceMe-Wx";
+			productName = "EmptyReplaceMe-wx";
 			productReference = 044C63AF1ADED17300BABD53 /* EmptyReplaceMe-wx.app */;
 			productType = "com.apple.product-type.application";
 		};
