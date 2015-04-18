@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0423ABDC1AE2FDAD00C1AE29 /* GameCommonHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62A81ADDEB0900BABD53 /* GameCommonHeader.cpp */; };
+		0423ABDD1AE2FDAD00C1AE29 /* ComponentInputTrackMousePos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62AD1ADDEB0900BABD53 /* ComponentInputTrackMousePos.cpp */; };
+		0423ABDE1AE2FDAD00C1AE29 /* GameEmptyReplaceMe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62A61ADDEB0900BABD53 /* GameEmptyReplaceMe.cpp */; };
+		0423ABDF1AE2FDAD00C1AE29 /* GameComponentTypeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62A41ADDEB0900BABD53 /* GameComponentTypeManager.cpp */; };
+		0423ABE01AE2FDAD00C1AE29 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 044C65121ADF072900BABD53 /* AppDelegate.mm */; };
+		0423ABE11AE2FDAD00C1AE29 /* MyOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 044C651D1ADF072A00BABD53 /* MyOpenGLView.mm */; };
+		0423ABE21AE2FDAD00C1AE29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C651B1ADF072A00BABD53 /* main.m */; };
+		0423ABE31AE2FDAD00C1AE29 /* ComponentAIChasePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62AB1ADDEB0900BABD53 /* ComponentAIChasePlayer.cpp */; };
+		0423ABE51AE2FDAD00C1AE29 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C652A1ADF119C00BABD53 /* AppKit.framework */; };
+		0423ABE61AE2FDAD00C1AE29 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C652B1ADF119C00BABD53 /* Cocoa.framework */; };
+		0423ABE71AE2FDAD00C1AE29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C652C1ADF119C00BABD53 /* CoreData.framework */; };
+		0423ABE81AE2FDAD00C1AE29 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C652D1ADF119C00BABD53 /* CoreVideo.framework */; };
+		0423ABE91AE2FDAD00C1AE29 /* libBulletDynamics_xcode4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64FE1ADEF64700BABD53 /* libBulletDynamics_xcode4.a */; };
+		0423ABEA1AE2FDAD00C1AE29 /* libLinearMath_xcode4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C65001ADEF64700BABD53 /* libLinearMath_xcode4.a */; };
+		0423ABEB1AE2FDAD00C1AE29 /* libBulletCollision_xcode4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64F71ADEF5E500BABD53 /* libBulletCollision_xcode4.a */; };
+		0423ABEC1AE2FDAD00C1AE29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64F51ADEE62F00BABD53 /* Foundation.framework */; };
+		0423ABED1AE2FDAD00C1AE29 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64ED1ADEE2C800BABD53 /* OpenAL.framework */; };
+		0423ABEE1AE2FDAD00C1AE29 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64EE1ADEE2C800BABD53 /* OpenGL.framework */; };
+		0423ABF01AE2FDAD00C1AE29 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 044C62A01ADDEAEE00BABD53 /* Data */; };
+		0423ABF11AE2FDAD00C1AE29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044C65321ADF128600BABD53 /* MainMenu.xib */; };
+		0423ABF81AE2FEBD00C1AE29 /* Info-wx.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0423ABF71AE2FEBD00C1AE29 /* Info-wx.plist */; };
+		0423ABFB1AE2FEF100C1AE29 /* libMyEngine-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0423ABF91AE2FEF100C1AE29 /* libMyEngine-OSX.a */; };
+		0423ABFC1AE2FEF100C1AE29 /* libMyFramework-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0423ABFA1AE2FEF100C1AE29 /* libMyFramework-OSX.a */; };
+		0423ABFF1AE2FEFB00C1AE29 /* libMyEngine-wx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0423ABFD1AE2FEFB00C1AE29 /* libMyEngine-wx.a */; };
+		0423AC001AE2FEFB00C1AE29 /* libMyFramework-wx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0423ABFE1AE2FEFB00C1AE29 /* libMyFramework-wx.a */; };
 		044C62A11ADDEAEE00BABD53 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 044C62A01ADDEAEE00BABD53 /* Data */; };
 		044C62BA1ADDEB0900BABD53 /* GameComponentTypeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62A41ADDEB0900BABD53 /* GameComponentTypeManager.cpp */; };
 		044C62BB1ADDEB0900BABD53 /* GameEmptyReplaceMe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62A61ADDEB0900BABD53 /* GameEmptyReplaceMe.cpp */; };
@@ -26,8 +51,6 @@
 		044C63D11ADED2B300BABD53 /* GameEmptyReplaceMe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62A61ADDEB0900BABD53 /* GameEmptyReplaceMe.cpp */; };
 		044C63D21ADED2BA00BABD53 /* ComponentAIChasePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62AB1ADDEB0900BABD53 /* ComponentAIChasePlayer.cpp */; };
 		044C63D31ADED2BA00BABD53 /* ComponentInputTrackMousePos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62AD1ADDEB0900BABD53 /* ComponentInputTrackMousePos.cpp */; };
-		044C64EB1ADED9E900BABD53 /* libMyEngine-wx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64E91ADED9E900BABD53 /* libMyEngine-wx.a */; };
-		044C64EC1ADED9E900BABD53 /* libMyFramework-wx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64EA1ADED9E900BABD53 /* libMyFramework-wx.a */; };
 		044C64EF1ADEE2C800BABD53 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64ED1ADEE2C800BABD53 /* OpenAL.framework */; };
 		044C64F01ADEE2C800BABD53 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64EE1ADEE2C800BABD53 /* OpenGL.framework */; };
 		044C64F61ADEE62F00BABD53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64F51ADEE62F00BABD53 /* Foundation.framework */; };
@@ -39,7 +62,6 @@
 		044C65251ADF073100BABD53 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 044C65121ADF072900BABD53 /* AppDelegate.mm */; };
 		044C65261ADF073C00BABD53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044C651B1ADF072A00BABD53 /* main.m */; };
 		044C65271ADF075B00BABD53 /* MyOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 044C651D1ADF072A00BABD53 /* MyOpenGLView.mm */; };
-		044C65291ADF095600BABD53 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 044C65281ADF095600BABD53 /* Info.plist */; };
 		044C652E1ADF119C00BABD53 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C652A1ADF119C00BABD53 /* AppKit.framework */; };
 		044C652F1ADF119C00BABD53 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C652B1ADF119C00BABD53 /* Cocoa.framework */; };
 		044C65301ADF119C00BABD53 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C652C1ADF119C00BABD53 /* CoreData.framework */; };
@@ -59,6 +81,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0423ABF51AE2FDAD00C1AE29 /* EmptyReplaceMe-wx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EmptyReplaceMe-wx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0423ABF71AE2FEBD00C1AE29 /* Info-wx.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-wx.plist"; sourceTree = "<group>"; };
+		0423ABF91AE2FEF100C1AE29 /* libMyEngine-OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMyEngine-OSX.a"; path = "../../Engine/MyEngine/build/Debug/libMyEngine-OSX.a"; sourceTree = "<group>"; };
+		0423ABFA1AE2FEF100C1AE29 /* libMyFramework-OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMyFramework-OSX.a"; path = "../../Framework/MyFramework/build/Debug/libMyFramework-OSX.a"; sourceTree = "<group>"; };
+		0423ABFD1AE2FEFB00C1AE29 /* libMyEngine-wx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMyEngine-wx.a"; path = "../../Engine/MyEngine/build/Debug/libMyEngine-wx.a"; sourceTree = "<group>"; };
+		0423ABFE1AE2FEFB00C1AE29 /* libMyFramework-wx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMyFramework-wx.a"; path = "../../Framework/MyFramework/build/Debug/libMyFramework-wx.a"; sourceTree = "<group>"; };
 		044C62A01ADDEAEE00BABD53 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		044C62A41ADDEB0900BABD53 /* GameComponentTypeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameComponentTypeManager.cpp; sourceTree = "<group>"; };
 		044C62A51ADDEB0900BABD53 /* GameComponentTypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameComponentTypeManager.h; sourceTree = "<group>"; };
@@ -81,7 +109,7 @@
 		044C62CE1ADE800E00BABD53 /* libBulletCollision_xcode4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletCollision_xcode4.a; path = /Users/jameslord/Projects/ProjectEngineEmpty/bullet/build/xcode4ios/../../lib/libBulletCollision_xcode4.a; sourceTree = "<absolute>"; };
 		044C62CF1ADE800E00BABD53 /* libBulletDynamics_xcode4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBulletDynamics_xcode4.a; path = /Users/jameslord/Projects/ProjectEngineEmpty/bullet/build/xcode4ios/../../lib/libBulletDynamics_xcode4.a; sourceTree = "<absolute>"; };
 		044C62D01ADE800E00BABD53 /* libLinearMath_xcode4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLinearMath_xcode4.a; path = /Users/jameslord/Projects/ProjectEngineEmpty/bullet/build/xcode4ios/../../lib/libLinearMath_xcode4.a; sourceTree = "<absolute>"; };
-		044C63AF1ADED17300BABD53 /* EmptyReplaceMe-wx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EmptyReplaceMe-wx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		044C63AF1ADED17300BABD53 /* EmptyReplaceMe-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EmptyReplaceMe-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C64E91ADED9E900BABD53 /* libMyEngine-wx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMyEngine-wx.a"; path = "../../Engine/MyEngine/build/Debug/libMyEngine-wx.a"; sourceTree = "<group>"; };
 		044C64EA1ADED9E900BABD53 /* libMyFramework-wx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMyFramework-wx.a"; path = "../../Framework/MyFramework/build/Debug/libMyFramework-wx.a"; sourceTree = "<group>"; };
 		044C64ED1ADEE2C800BABD53 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
@@ -117,22 +145,41 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0423ABE41AE2FDAD00C1AE29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0423ABFF1AE2FEFB00C1AE29 /* libMyEngine-wx.a in Frameworks */,
+				0423AC001AE2FEFB00C1AE29 /* libMyFramework-wx.a in Frameworks */,
+				0423ABEB1AE2FDAD00C1AE29 /* libBulletCollision_xcode4.a in Frameworks */,
+				0423ABE91AE2FDAD00C1AE29 /* libBulletDynamics_xcode4.a in Frameworks */,
+				0423ABEA1AE2FDAD00C1AE29 /* libLinearMath_xcode4.a in Frameworks */,
+				0423ABE51AE2FDAD00C1AE29 /* AppKit.framework in Frameworks */,
+				0423ABE61AE2FDAD00C1AE29 /* Cocoa.framework in Frameworks */,
+				0423ABE71AE2FDAD00C1AE29 /* CoreData.framework in Frameworks */,
+				0423ABE81AE2FDAD00C1AE29 /* CoreVideo.framework in Frameworks */,
+				0423ABEC1AE2FDAD00C1AE29 /* Foundation.framework in Frameworks */,
+				0423ABED1AE2FDAD00C1AE29 /* OpenAL.framework in Frameworks */,
+				0423ABEE1AE2FDAD00C1AE29 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		044C63AC1ADED17300BABD53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0423ABFB1AE2FEF100C1AE29 /* libMyEngine-OSX.a in Frameworks */,
+				0423ABFC1AE2FEF100C1AE29 /* libMyFramework-OSX.a in Frameworks */,
+				044C64FA1ADEF5E500BABD53 /* libBulletCollision_xcode4.a in Frameworks */,
+				044C65021ADEF64700BABD53 /* libBulletDynamics_xcode4.a in Frameworks */,
+				044C65041ADEF64700BABD53 /* libLinearMath_xcode4.a in Frameworks */,
 				044C652E1ADF119C00BABD53 /* AppKit.framework in Frameworks */,
 				044C652F1ADF119C00BABD53 /* Cocoa.framework in Frameworks */,
 				044C65301ADF119C00BABD53 /* CoreData.framework in Frameworks */,
 				044C65311ADF119C00BABD53 /* CoreVideo.framework in Frameworks */,
-				044C65021ADEF64700BABD53 /* libBulletDynamics_xcode4.a in Frameworks */,
-				044C65041ADEF64700BABD53 /* libLinearMath_xcode4.a in Frameworks */,
-				044C64FA1ADEF5E500BABD53 /* libBulletCollision_xcode4.a in Frameworks */,
 				044C64F61ADEE62F00BABD53 /* Foundation.framework in Frameworks */,
 				044C64EF1ADEE2C800BABD53 /* OpenAL.framework in Frameworks */,
 				044C64F01ADEE2C800BABD53 /* OpenGL.framework in Frameworks */,
-				044C64EB1ADED9E900BABD53 /* libMyEngine-wx.a in Frameworks */,
-				044C64EC1ADED9E900BABD53 /* libMyFramework-wx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +187,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044C62D11ADE800E00BABD53 /* libBulletCollision_xcode4.a in Frameworks */,
+				044C650A1ADEF8FE00BABD53 /* libMyEngine-iOS.a in Frameworks */,
 				044C650B1ADEF8FE00BABD53 /* libMyFramework-iOS.a in Frameworks */,
+				044C62D11ADE800E00BABD53 /* libBulletCollision_xcode4.a in Frameworks */,
 				044C62D21ADE800E00BABD53 /* libBulletDynamics_xcode4.a in Frameworks */,
 				044C62D31ADE800E00BABD53 /* libLinearMath_xcode4.a in Frameworks */,
 				BF27F4BA1529E957000F8A5F /* OpenAL.framework in Frameworks */,
@@ -150,7 +198,6 @@
 				BF267D07151B68C6009458AE /* CoreGraphics.framework in Frameworks */,
 				BF267D09151B68C6009458AE /* GLKit.framework in Frameworks */,
 				BF267D0B151B68C6009458AE /* OpenGLES.framework in Frameworks */,
-				044C650A1ADEF8FE00BABD53 /* libMyEngine-iOS.a in Frameworks */,
 				A11DC47B160D2EC1006C837D /* AudioToolbox.framework in Frameworks */,
 				A11DC47C160D2EC1006C837D /* AVFoundation.framework in Frameworks */,
 				A11DC47D160D2EC1006C837D /* GameKit.framework in Frameworks */,
@@ -213,6 +260,7 @@
 			children = (
 				044C65321ADF128600BABD53 /* MainMenu.xib */,
 				044C65281ADF095600BABD53 /* Info.plist */,
+				0423ABF71AE2FEBD00C1AE29 /* Info-wx.plist */,
 				044C65111ADF072900BABD53 /* AppDelegate.h */,
 				044C65121ADF072900BABD53 /* AppDelegate.mm */,
 				044C651B1ADF072A00BABD53 /* main.m */,
@@ -225,11 +273,11 @@
 		BF267CF3151B68C6009458AE = {
 			isa = PBXGroup;
 			children = (
-				044C65101ADF072900BABD53 /* SourceOSX */,
 				044C62CC1ADDEFD400BABD53 /* Default-568h@2x.png */,
+				044C62A01ADDEAEE00BABD53 /* Data */,
 				044C62A21ADDEB0900BABD53 /* SourceCommon */,
 				044C62AF1ADDEB0900BABD53 /* SourceIOS */,
-				044C62A01ADDEAEE00BABD53 /* Data */,
+				044C65101ADF072900BABD53 /* SourceOSX */,
 				BF267D01151B68C6009458AE /* Frameworks */,
 				BF267CFF151B68C6009458AE /* Products */,
 			);
@@ -239,7 +287,8 @@
 			isa = PBXGroup;
 			children = (
 				BF267CFE151B68C6009458AE /* EmptyReplaceMe.app */,
-				044C63AF1ADED17300BABD53 /* EmptyReplaceMe-wx.app */,
+				044C63AF1ADED17300BABD53 /* EmptyReplaceMe-OSX.app */,
+				0423ABF51AE2FDAD00C1AE29 /* EmptyReplaceMe-wx.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,6 +296,10 @@
 		BF267D01151B68C6009458AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0423ABFD1AE2FEFB00C1AE29 /* libMyEngine-wx.a */,
+				0423ABFE1AE2FEFB00C1AE29 /* libMyFramework-wx.a */,
+				0423ABF91AE2FEF100C1AE29 /* libMyEngine-OSX.a */,
+				0423ABFA1AE2FEF100C1AE29 /* libMyFramework-OSX.a */,
 				044C652A1ADF119C00BABD53 /* AppKit.framework */,
 				044C652B1ADF119C00BABD53 /* Cocoa.framework */,
 				044C652C1ADF119C00BABD53 /* CoreData.framework */,
@@ -281,9 +334,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		044C63AE1ADED17300BABD53 /* EmptyReplaceMe-wx */ = {
+		0423ABDA1AE2FDAD00C1AE29 /* EmptyReplaceMe-wx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 044C63C91ADED17400BABD53 /* Build configuration list for PBXNativeTarget "EmptyReplaceMe-wx" */;
+			buildConfigurationList = 0423ABF21AE2FDAD00C1AE29 /* Build configuration list for PBXNativeTarget "EmptyReplaceMe-wx" */;
+			buildPhases = (
+				0423ABDB1AE2FDAD00C1AE29 /* Sources */,
+				0423ABE41AE2FDAD00C1AE29 /* Frameworks */,
+				0423ABEF1AE2FDAD00C1AE29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EmptyReplaceMe-wx";
+			productName = "EmptyReplaceMe-wx";
+			productReference = 0423ABF51AE2FDAD00C1AE29 /* EmptyReplaceMe-wx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		044C63AE1ADED17300BABD53 /* EmptyReplaceMe-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044C63C91ADED17400BABD53 /* Build configuration list for PBXNativeTarget "EmptyReplaceMe-OSX" */;
 			buildPhases = (
 				044C63AB1ADED17300BABD53 /* Sources */,
 				044C63AC1ADED17300BABD53 /* Frameworks */,
@@ -293,9 +363,9 @@
 			);
 			dependencies = (
 			);
-			name = "EmptyReplaceMe-wx";
+			name = "EmptyReplaceMe-OSX";
 			productName = "EmptyReplaceMe-wx";
-			productReference = 044C63AF1ADED17300BABD53 /* EmptyReplaceMe-wx.app */;
+			productReference = 044C63AF1ADED17300BABD53 /* EmptyReplaceMe-OSX.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BF267CFD151B68C6009458AE /* EmptyReplaceMe-iOS */ = {
@@ -343,12 +413,22 @@
 			projectRoot = "";
 			targets = (
 				BF267CFD151B68C6009458AE /* EmptyReplaceMe-iOS */,
-				044C63AE1ADED17300BABD53 /* EmptyReplaceMe-wx */,
+				044C63AE1ADED17300BABD53 /* EmptyReplaceMe-OSX */,
+				0423ABDA1AE2FDAD00C1AE29 /* EmptyReplaceMe-wx */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0423ABEF1AE2FDAD00C1AE29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0423ABF01AE2FDAD00C1AE29 /* Data in Resources */,
+				0423ABF11AE2FDAD00C1AE29 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		044C63AD1ADED17300BABD53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,8 +443,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				044C62C11ADDEB0900BABD53 /* ViewController_iPad.xib in Resources */,
+				0423ABF81AE2FEBD00C1AE29 /* Info-wx.plist in Resources */,
 				044C62A11ADDEAEE00BABD53 /* Data in Resources */,
-				044C65291ADF095600BABD53 /* Info.plist in Resources */,
 				044C62C01ADDEB0900BABD53 /* InfoPlist.strings in Resources */,
 				044C62CD1ADDEFD400BABD53 /* Default-568h@2x.png in Resources */,
 				044C62C21ADDEB0900BABD53 /* ViewController_iPhone.xib in Resources */,
@@ -390,6 +470,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0423ABDB1AE2FDAD00C1AE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0423ABDC1AE2FDAD00C1AE29 /* GameCommonHeader.cpp in Sources */,
+				0423ABDD1AE2FDAD00C1AE29 /* ComponentInputTrackMousePos.cpp in Sources */,
+				0423ABDE1AE2FDAD00C1AE29 /* GameEmptyReplaceMe.cpp in Sources */,
+				0423ABDF1AE2FDAD00C1AE29 /* GameComponentTypeManager.cpp in Sources */,
+				0423ABE01AE2FDAD00C1AE29 /* AppDelegate.mm in Sources */,
+				0423ABE11AE2FDAD00C1AE29 /* MyOpenGLView.mm in Sources */,
+				0423ABE21AE2FDAD00C1AE29 /* main.m in Sources */,
+				0423ABE31AE2FDAD00C1AE29 /* ComponentAIChasePlayer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		044C63AB1ADED17300BABD53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +543,83 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0423ABF31AE2FDAD00C1AE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MYFW_OSX=1",
+					"MYFW_USING_WX=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SourceOSX/Info-wx.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jameslord/Projects/ProjectEngineEmpty/Engine/MyEngine/build/Debug,
+					/Users/jameslord/Projects/ProjectEngineEmpty/Framework/MyFramework/build/Debug,
+					/Users/jameslord/Projects/ProjectEngineEmpty/bullet/build/xcode4/../../lib,
+					/Users/jameslord/Projects/ProjectEngineEmpty/bullet/build/xcode4ios/../../lib,
+					"/Users/jameslord/Projects/ProjectEngineEmpty/Engine/MyEngine/build/Debug-iphoneos",
+					"/Users/jameslord/Projects/ProjectEngineEmpty/Framework/MyFramework/build/Debug-iphoneos",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "EmptyReplaceMe-wx";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		0423ABF41AE2FDAD00C1AE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MYFW_OSX=1",
+					"MYFW_USING_WX=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SourceOSX/Info-wx.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jameslord/Projects/ProjectEngineEmpty/Engine/MyEngine/build/Debug,
+					/Users/jameslord/Projects/ProjectEngineEmpty/Framework/MyFramework/build/Debug,
+					/Users/jameslord/Projects/ProjectEngineEmpty/bullet/build/xcode4/../../lib,
+					/Users/jameslord/Projects/ProjectEngineEmpty/bullet/build/xcode4ios/../../lib,
+					"/Users/jameslord/Projects/ProjectEngineEmpty/Engine/MyEngine/build/Debug-iphoneos",
+					"/Users/jameslord/Projects/ProjectEngineEmpty/Framework/MyFramework/build/Debug-iphoneos",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "EmptyReplaceMe-wx";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
+			};
+			name = Release;
+		};
 		044C63CA1ADED17400BABD53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -655,13 +827,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		044C63C91ADED17400BABD53 /* Build configuration list for PBXNativeTarget "EmptyReplaceMe-wx" */ = {
+		0423ABF21AE2FDAD00C1AE29 /* Build configuration list for PBXNativeTarget "EmptyReplaceMe-wx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0423ABF31AE2FDAD00C1AE29 /* Debug */,
+				0423ABF41AE2FDAD00C1AE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044C63C91ADED17400BABD53 /* Build configuration list for PBXNativeTarget "EmptyReplaceMe-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				044C63CA1ADED17400BABD53 /* Debug */,
 				044C63CB1ADED17400BABD53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF267CF8151B68C6009458AE /* Build configuration list for PBXProject "EmptyReplaceMe" */ = {
 			isa = XCConfigurationList;
