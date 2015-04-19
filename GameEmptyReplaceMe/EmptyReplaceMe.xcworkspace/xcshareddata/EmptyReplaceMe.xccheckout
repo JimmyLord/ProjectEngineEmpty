@@ -14,6 +14,8 @@
 		<string>http://bullet.googlecode.com/svn/trunk</string>
 		<key>40072E56385CD7EC6867555132063FDB0F54E7B3</key>
 		<string>https://github.com/JimmyLord/MyFramework.git</string>
+		<key>5C285CC5BBC4D979C3C77133623A240199AFF358</key>
+		<string>https://github.com/wxWidgets/wxWidgets.git</string>
 		<key>6856D848D53FD50FD3E1CF5171FEC01FBB46C01E</key>
 		<string>https://github.com/JimmyLord/ProjectEngineEmpty.git</string>
 		<key>9CA58DB4C2349F9CE00E6DA768D4A1F74B1A6D78</key>
@@ -31,6 +33,8 @@
 		<string>../../../ProjectEntityComponentTest/bullet</string>
 		<key>40072E56385CD7EC6867555132063FDB0F54E7B3</key>
 		<string>../../../ProjectEmptyFramework</string>
+		<key>5C285CC5BBC4D979C3C77133623A240199AFF358</key>
+		<string>../../wxWidgets/</string>
 		<key>6856D848D53FD50FD3E1CF5171FEC01FBB46C01E</key>
 		<string>../..</string>
 		<key>9CA58DB4C2349F9CE00E6DA768D4A1F74B1A6D78</key>
@@ -100,6 +104,14 @@
 			<string>AE66AA562AF81441A17D0F55E98B1F5E9285C362</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ProjectEngineEmptyEngine</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5C285CC5BBC4D979C3C77133623A240199AFF358</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wxWidgets</string>
 		</dict>
 	</array>
 </dict>

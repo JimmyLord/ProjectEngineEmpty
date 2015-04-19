@@ -29,7 +29,8 @@ ComponentAIChasePlayer::~ComponentAIChasePlayer()
 #if MYFW_USING_WX
 void ComponentAIChasePlayer::AddToObjectsPanel(wxTreeItemId gameobjectid)
 {
-    wxTreeItemId id = g_pPanelObjectList->AddObject( this, ComponentAIChasePlayer::StaticOnLeftClick, ComponentBase::StaticOnRightClick, gameobjectid, "AIChasePlayer" );
+    //wxTreeItemId id =
+    g_pPanelObjectList->AddObject( this, ComponentAIChasePlayer::StaticOnLeftClick, ComponentBase::StaticOnRightClick, gameobjectid, "AIChasePlayer" );
 }
 
 void ComponentAIChasePlayer::OnLeftClick(bool clear)
