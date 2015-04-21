@@ -11,7 +11,7 @@
 #include "../../Framework/MyFramework/SourceWindows/Screenshot.h"
 #include "../../Framework/MyFramework/SourceWindows/MYFWWinMainWx.h"
 
-#define SCREEN_WIDTH    1324
+#define SCREEN_WIDTH    1200
 #define SCREEN_HEIGHT   576
 
 void WinMain_CreateGameCore()
