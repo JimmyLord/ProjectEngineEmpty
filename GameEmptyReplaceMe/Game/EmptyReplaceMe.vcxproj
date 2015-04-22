@@ -2149,13 +2149,14 @@
   <ItemGroup>
     <None Include="..\..\todo.todo" />
     <None Include="Data\Layouts\allscreens.layout" />
-    <None Include="Data\Scenes\AnimationTest.scene" />
-    <None Include="Data\Scenes\LightTest.scene" />
     <None Include="Data\Scenes\Multi-enemy.scene" />
-    <None Include="Data\Scenes\ParentingTest.scene" />
-    <None Include="Data\Scenes\PhysicsTest.scene" />
     <None Include="Data\Scenes\test.scene" />
+    <None Include="Data\Scenes\TestAnimation.scene" />
+    <None Include="Data\Scenes\TestLights.scene" />
+    <None Include="Data\Scenes\TestParenting.scene" />
+    <None Include="Data\Scenes\TestPhysics.scene" />
     <None Include="Data\Scenes\TestPhysicsCharacter.scene" />
+    <None Include="Data\Scenes\TestPostEffects.scene" />
     <None Include="Data\Scenes\TestShadow.scene" />
     <None Include="Data\Scenes\World.scene" />
     <None Include="Data\Scripts\CharacterController_Physics.lua" />
@@ -2173,6 +2174,7 @@
     <None Include="Data\Shaders\Include\LSVaryings_Functions.glsl" />
     <None Include="Data\Shaders\Include\WSVaryings.glsl" />
     <None Include="Data\Shaders\Include\WSVaryings_Functions.glsl" />
+    <None Include="Data\Shaders\PostEffects\HorizontalBlur.glsl" />
     <None Include="Data\Shaders\Shader_BoneAnim.glsl" />
     <None Include="Data\Shaders\Shader_Breathe.glsl" />
     <None Include="Data\Shaders\Shader_ClipSpaceTexture.glsl" />

@@ -10,7 +10,7 @@
 #include "GameCommonHeader.h"
 
 // sort by category, otherwise right-click menu will have duplicates.
-ComponentTypeInfo g_GameComponentTypeInfo[Component_NumGameComponentTypes] = // ADDING_NEW_ComponentType
+ComponentTypeInfo g_GameComponentTypeInfo[Component_NumGameComponentTypes] = // ADDING_NEW_ComponentTypeGame
 {
     { "Input handlers", "Track Mouse",      },
     { "AI",             "AI Chase Player",  },
@@ -25,7 +25,7 @@ ComponentBase* GameComponentTypeManager::CreateComponent(int type)
 
     assert( type != -1 );
 
-    switch( type ) // ADDING_NEW_ComponentType
+    switch( type ) // ADDING_NEW_ComponentTypeGame
     {
     case ComponentType_InputTrackMousePos:  pComponent = MyNew ComponentInputTrackMousePos; break;
     case ComponentType_AIChasePlayer:       pComponent = MyNew ComponentAIChasePlayer;      break;

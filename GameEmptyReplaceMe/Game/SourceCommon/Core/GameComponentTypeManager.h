@@ -12,7 +12,7 @@
 
 class ComponentBase;
 
-enum GameComponentTypes // search for ADDING_NEW_ComponentType
+enum GameComponentTypes // search for ADDING_NEW_ComponentTypeGame
 {
     ComponentType_InputTrackMousePos = Component_NumEngineComponentTypes,
     ComponentType_AIChasePlayer,

@@ -70,6 +70,9 @@
     <Filter Include="Data\Shaders\Include">
       <UniqueIdentifier>{0d383fad-86c4-4917-a4bb-71ab4a2ff62f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data\Shaders\PostEffects">
+      <UniqueIdentifier>{ef761345-1787-4dd4-b934-b34ea5eae445}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceWindows\WinMain.cpp">
@@ -236,33 +239,6 @@
       <Filter>Source - Platform\Source - Emscripten</Filter>
     </None>
     <None Include="..\..\todo.todo" />
-    <None Include="Data\Scenes\AnimationTest.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\LightTest.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\Multi-enemy.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\ParentingTest.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\PhysicsTest.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\test.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\TestShadow.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\World.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\TestPhysicsCharacter.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
     <None Include="Data\Scripts\Enemy.lua">
       <Filter>Data\Scripts</Filter>
     </None>
@@ -337,6 +313,39 @@
     </None>
     <None Include="Data\Shaders\Include\WSVaryings_Functions.glsl">
       <Filter>Data\Shaders\Include</Filter>
+    </None>
+    <None Include="Data\Scenes\Multi-enemy.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\test.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestAnimation.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestLights.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestParenting.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestPhysics.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestPhysicsCharacter.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestPostEffects.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestShadow.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\World.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffects\HorizontalBlur.glsl">
+      <Filter>Data\Shaders\PostEffects</Filter>
     </None>
   </ItemGroup>
 </Project>
