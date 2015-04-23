@@ -344,7 +344,10 @@
     <None Include="Data\Scenes\World.scene">
       <Filter>Data\Scenes</Filter>
     </None>
-    <None Include="Data\Shaders\PostEffects\HorizontalBlur.glsl">
+    <None Include="Data\Shaders\PostEffects\BlurHorizontal.glsl">
+      <Filter>Data\Shaders\PostEffects</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffects\BlurVertical.glsl">
       <Filter>Data\Shaders\PostEffects</Filter>
     </None>
   </ItemGroup>
