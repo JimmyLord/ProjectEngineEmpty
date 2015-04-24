@@ -226,9 +226,6 @@
     <None Include="SourceBlackBerry\bar-descriptor.xml">
       <Filter>Source - Platform\Source - BlackBerry</Filter>
     </None>
-    <None Include="Data\Layouts\allscreens.layout">
-      <Filter>Data</Filter>
-    </None>
     <None Include="SourceAndroid\AndroidApk\src\com\flathead\EmptyReplaceMePackage\EmptyReplaceMeActivity.java">
       <Filter>Source - Platform\Source - Android\Java</Filter>
     </None>
@@ -348,6 +345,12 @@
       <Filter>Data\Shaders\PostEffects</Filter>
     </None>
     <None Include="Data\Shaders\PostEffects\BlurVertical.glsl">
+      <Filter>Data\Shaders\PostEffects</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffects\DoFHorizontal.glsl">
+      <Filter>Data\Shaders\PostEffects</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffects\DoFVertical.glsl">
       <Filter>Data\Shaders\PostEffects</Filter>
     </None>
   </ItemGroup>
