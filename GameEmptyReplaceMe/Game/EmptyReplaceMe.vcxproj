@@ -2148,6 +2148,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\todo.todo" />
+    <None Include="Data\Materials\Bones.mymaterial" />
+    <None Include="Data\Materials\Lights.mymaterial" />
     <None Include="Data\Scenes\Multi-enemy.scene" />
     <None Include="Data\Scenes\test.scene" />
     <None Include="Data\Scenes\TestAnimation.scene" />
@@ -2175,6 +2177,7 @@
     <None Include="Data\Shaders\Include\WSVaryings_Functions.glsl" />
     <None Include="Data\Shaders\PostEffects\BlurHorizontal.glsl" />
     <None Include="Data\Shaders\PostEffects\BlurVertical.glsl" />
+    <None Include="Data\Shaders\PostEffects\DoFBokeh.glsl" />
     <None Include="Data\Shaders\PostEffects\DoFHorizontal.glsl" />
     <None Include="Data\Shaders\PostEffects\DoFVertical.glsl" />
     <None Include="Data\Shaders\Shader_BoneAnim.glsl" />
