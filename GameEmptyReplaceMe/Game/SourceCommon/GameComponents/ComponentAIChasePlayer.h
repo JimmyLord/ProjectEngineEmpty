@@ -37,8 +37,8 @@ public:
     static void StaticOnLeftClick(void* pObjectPtr) { ((ComponentAIChasePlayer*)pObjectPtr)->OnLeftClick( true ); }
     void OnLeftClick(bool clear);
     virtual void FillPropertiesWindow(bool clear);
-    static void StaticOnNewParentTransformDrop(void* pObjectPtr) { ((ComponentAIChasePlayer*)pObjectPtr)->OnNewParentTransformDrop(); }
-    void OnNewParentTransformDrop();
+    static void StaticOnNewParentTransformDrop(void* pObjectPtr, wxCoord x, wxCoord y) { ((ComponentAIChasePlayer*)pObjectPtr)->OnNewParentTransformDrop(x, y); }
+    void OnNewParentTransformDrop(wxCoord x, wxCoord y);
 #endif //MYFW_USING_WX
 };
 

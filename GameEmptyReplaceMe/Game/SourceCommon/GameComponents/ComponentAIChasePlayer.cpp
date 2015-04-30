@@ -53,7 +53,7 @@ void ComponentAIChasePlayer::FillPropertiesWindow(bool clear)
     }
 }
 
-void ComponentAIChasePlayer::OnNewParentTransformDrop()
+void ComponentAIChasePlayer::OnNewParentTransformDrop(wxCoord x, wxCoord y)
 {
     if( g_DragAndDropStruct.m_Type == DragAndDropType_ComponentPointer )
     {

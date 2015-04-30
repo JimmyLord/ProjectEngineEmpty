@@ -1,0 +1,10 @@
+{
+	"Material":	{
+		"Name":	"TestTexture",
+		"Shader":	"Shader_TextureLights",
+		"TexColor":	"Data/Textures/test1.png",
+		"Tint":	[255, 255, 255, 255],
+		"SpecColor":	[255, 255, 255, 255],
+		"Shininess":	200
+	}
+}
