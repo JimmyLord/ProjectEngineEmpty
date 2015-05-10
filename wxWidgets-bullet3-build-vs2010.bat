@@ -4,4 +4,10 @@ nmake /f makefile.vc BUILD=debug
 nmake /f makefile.vc BUILD=release
 cd ../../lib
 rename vc_lib vc100_lib
+cd ../..
+
+cd bullet3\build3
+call vs2010
+cd ..\..
+
 pause
