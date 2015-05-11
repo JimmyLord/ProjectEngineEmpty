@@ -3,8 +3,9 @@
 		"Name":	"Lights",
 		"Shader":	"Shader_TextureLights",
 		"TexColor":	"Data/Textures/WhiteSquare.png",
-		"Tint":	[255, 255, 255, 255],
-		"SpecColor":	[255, 255, 255, 255],
+		"ColorAmbient":	[1, 1, 1, 1],
+		"ColorDiffuse":	[1, 1, 1, 1],
+		"ColorSpecular":	[1, 1, 1, 1],
 		"Shininess":	200
 	}
 }

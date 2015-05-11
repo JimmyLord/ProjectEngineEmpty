@@ -1,5 +1,5 @@
 {
-	"Files":	["Data/OBJs/cube.obj"],
+	"Files":	["DataSource/OBJs/cube.obj"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -38,6 +38,6 @@
 			"Layers":	1,
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/OBJs/cube.obj"
+			"OBJ":	"Data/OBJs/cube.obj.mymesh"
 		}]
 }
