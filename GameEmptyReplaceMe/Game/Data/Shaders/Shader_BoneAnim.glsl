@@ -7,7 +7,7 @@ precision mediump float;
 
 #ifdef PassMain
 
-    #include "Include/WSVaryings.glsl"
+    #include <Include/WSVaryings.glsl>
 
 #if ReceiveShadows
     varying lowp vec4 v_ShadowPos;
@@ -24,9 +24,9 @@ precision mediump float;
     uniform mat4 u_World;
     uniform mat4 u_WorldViewProj;
 
-    #include "Include/Bone_AttribsAndUniforms.glsl"
-    #include "Include/Bone_Functions.glsl"
-    #include "Include/WSVaryings_Functions.glsl"
+    #include <Include/Bone_AttribsAndUniforms.glsl>
+    #include <Include/Bone_Functions.glsl>
+    #include <Include/WSVaryings_Functions.glsl>
 
     void main()
     {
@@ -49,8 +49,8 @@ precision mediump float;
     uniform vec3 u_WSCameraPos;
     uniform float u_Shininess;
 
-    #include "Include/Light_Uniforms.glsl"
-    #include "Include/Light_Functions.glsl"
+    #include <Include/Light_Uniforms.glsl>
+    #include <Include/Light_Functions.glsl>
 
     void main()
     {
@@ -89,7 +89,7 @@ precision mediump float;
 
 #ifdef PassShadowCastRGB
 
-    #include "Include/WSVaryings.glsl"
+    #include <Include/WSVaryings.glsl>
 
 #ifdef VertexShader
 
@@ -99,9 +99,9 @@ precision mediump float;
     uniform mat4 u_World;
     uniform mat4 u_WorldViewProj;
 
-    #include "Include/Bone_AttribsAndUniforms.glsl"
-    #include "Include/Bone_Functions.glsl"
-    #include "Include/WSVaryings_Functions.glsl"
+    #include <Include/Bone_AttribsAndUniforms.glsl>
+    #include <Include/Bone_Functions.glsl>
+    #include <Include/WSVaryings_Functions.glsl>
 
     void main()
     {

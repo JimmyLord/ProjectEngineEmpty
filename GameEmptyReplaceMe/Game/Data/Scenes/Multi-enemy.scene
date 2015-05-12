@@ -1,5 +1,5 @@
 {
-	"Files":	["Data/OBJs/cube.obj", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Shaders/Shader_TintColor.glsl", "Data/Shaders/Shader_TestNormals.glsl"],
+	"Files":	["Data/OBJs/cube.obj", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "DataEngine/Shaders/Shader_TintColor.glsl", "Data/Shaders/Shader_TestNormals.glsl"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"

@@ -1,8 +1,7 @@
 {
 	"Material":	{
-		"Name":	"Lights",
+		"Name":	"TextureLights",
 		"Shader":	"Shader_TextureLights",
-		"TexColor":	"DataEngine/Textures/WhiteSquare.png",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],
 		"ColorSpecular":	[1, 1, 1, 1],

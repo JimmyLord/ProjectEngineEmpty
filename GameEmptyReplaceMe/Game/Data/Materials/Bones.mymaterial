@@ -2,7 +2,7 @@
 	"Material":	{
 		"Name":	"Bones",
 		"Shader":	"Shader_BoneAnim",
-		"TexColor":	"Data/Textures/WhiteSquare.png",
+		"TexColor":	"DataEngine/Textures/WhiteSquare.png",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[0.294118, 1, 0.294118, 1],
 		"ColorSpecular":	[1, 1, 1, 1],

@@ -1,5 +1,5 @@
 {
-	"Files":	["Data/OBJs/cube.obj", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Shaders/Shader_TintColor.glsl", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Textures/WhiteSquare.png"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "DataEngine/Textures/WhiteSquare.png", "Data/Materials/DefaultMaterial.mymaterial", "Data/Materials/Normals.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -118,12 +118,16 @@
 			"Type":	"Collision Object",
 			"GOID":	10,
 			"ID":	14,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	11,
 			"ID":	16,
-			"Mass":	0
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Sprite",
 			"GOID":	8,
@@ -132,7 +136,7 @@
 			"Layers":	2,
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Shader":	"Shader_TintColor"
+			"Material":	"Data/Materials/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	9,
@@ -141,30 +145,26 @@
 			"Layers":	2,
 			"Tint":	[0, 255, 0, 255],
 			"Size":	[50, 50],
-			"Shader":	"Shader_TintColor"
+			"Material":	"Data/Materials/Color-Red.mymaterial"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TextureLights",
-			"Texture":	"Data/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/Normals.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	200,
-			"OBJ":	"Data/OBJs/cube.obj"
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TextureLights",
-			"Texture":	"Data/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/TextureLights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	40,
 			"MPType":	0,
 			"PlaneSizex":	20,
 			"PlaneSizey":	20,
@@ -173,7 +173,8 @@
 			"PlaneUVStartx":	0,
 			"PlaneUVStarty":	0,
 			"PlaneUVRangex":	1,
-			"PlaneUVRangey":	1
+			"PlaneUVRangey":	1,
+			"SphereRadius":	1
 		}, {
 			"Type":	"Light",
 			"GOID":	12,

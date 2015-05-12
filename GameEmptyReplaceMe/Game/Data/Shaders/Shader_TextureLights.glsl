@@ -8,7 +8,7 @@ precision mediump float;
 
 #ifdef PassMain
 
-    #include "Include/WSVaryings.glsl"
+    #include <Include/WSVaryings.glsl>
 
     varying lowp vec2 v_UVCoord;
     varying lowp vec4 v_Color;
@@ -31,7 +31,7 @@ precision mediump float;
 
     uniform vec3 u_WSCameraPos;
 
-    #include "Include/Light_Uniforms.glsl"
+    #include <Include/Light_Uniforms.glsl>
 
 #ifdef VertexShader
 
@@ -40,7 +40,7 @@ precision mediump float;
     attribute vec3 a_Normal;
     //attribute vec4 a_VertexColor;
 
-    #include "Include/WSVaryings_Functions.glsl"
+    #include <Include/WSVaryings_Functions.glsl>
 
     void main()
     {
@@ -58,7 +58,7 @@ precision mediump float;
 
 #ifdef FragmentShader
 
-    #include "Include/Light_Functions.glsl"
+    #include <Include/Light_Functions.glsl>
 
     void main()
     {

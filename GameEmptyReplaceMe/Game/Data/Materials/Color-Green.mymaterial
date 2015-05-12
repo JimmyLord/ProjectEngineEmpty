@@ -1,0 +1,10 @@
+{
+	"Material":	{
+		"Name":	"Color-Green",
+		"Shader":	"Shader_TintColor",
+		"ColorAmbient":	[1, 1, 1, 1],
+		"ColorDiffuse":	[0.090196, 0.019608, 0.980392, 0],
+		"ColorSpecular":	[1, 1, 1, 1],
+		"Shininess":	200
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"Files":	["Data/Shaders/Shader_TintColor.glsl", "Data/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Shaders/PostEffects/BlurHorizontal.glsl", "Data/OBJs/cube.obj", "Data/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Meshes/test.myaniminfo", "Data/Scripts/SimpleCharacterController.lua", "Data/Scripts/CharacterController_Physics.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Shaders/Include/Light_Uniforms.glsl", "Data/Shaders/Include/Light_Functions.glsl", "Data/Shaders/Include/Bone_AttribsAndUniforms.glsl", "Data/Shaders/Include/Bone_Functions.glsl", "Data/Shaders/Include/LSVaryings.glsl", "Data/Shaders/Include/LSVaryings_Functions.glsl", "Data/Shaders/Include/WSVaryings.glsl", "Data/Shaders/Include/WSVaryings_Functions.glsl", "Data/OBJs/sphere.obj", "Data/Textures/test1.png", "Data/Shaders/PostEffects/BlurVertical.glsl"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Shaders/PostEffects/BlurHorizontal.glsl", "Data/OBJs/cube.obj", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Meshes/test.myaniminfo", "Data/Scripts/SimpleCharacterController.lua", "Data/Scripts/CharacterController_Physics.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Shaders/Include/Light_Uniforms.glsl", "Data/Shaders/Include/Light_Functions.glsl", "Data/Shaders/Include/Bone_AttribsAndUniforms.glsl", "Data/Shaders/Include/Bone_Functions.glsl", "Data/Shaders/Include/LSVaryings.glsl", "Data/Shaders/Include/LSVaryings_Functions.glsl", "Data/Shaders/Include/WSVaryings.glsl", "Data/Shaders/Include/WSVaryings_Functions.glsl", "Data/OBJs/sphere.obj", "Data/Textures/test1.png", "Data/Shaders/PostEffects/BlurVertical.glsl", "Data/Shaders/PostEffects/DoFHorizontal.glsl", "Data/Shaders/PostEffects/DoFVertical.glsl"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -157,7 +157,7 @@
 			"Visible":	1,
 			"Layers":	1,
 			"Shader":	"Shader_BoneAnim",
-			"Texture":	"Data/Textures/WhiteSquare.png",
+			"Texture":	"DataEngine/Textures/WhiteSquare.png",
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"Shininess":	200,
@@ -169,7 +169,7 @@
 			"Visible":	1,
 			"Layers":	1,
 			"Shader":	"Shader_TextureLights",
-			"Texture":	"Data/Textures/WhiteSquare.png",
+			"Texture":	"DataEngine/Textures/WhiteSquare.png",
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"Shininess":	40,
@@ -190,7 +190,7 @@
 			"Visible":	1,
 			"Layers":	1,
 			"Shader":	"Shader_TextureLights",
-			"Texture":	"Data/Textures/WhiteSquare.png",
+			"Texture":	"DataEngine/Textures/WhiteSquare.png",
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"Shininess":	40,
@@ -238,11 +238,11 @@
 			"Type":	"Post Effect Quad",
 			"GOID":	1,
 			"ID":	62,
-			"Shader":	"BlurHorizontal"
+			"Shader":	"DoFHorizontal"
 		}, {
 			"Type":	"Post Effect Quad",
 			"GOID":	1,
 			"ID":	63,
-			"Shader":	"BlurVertical"
+			"Shader":	"DoFVertical"
 		}]
 }
