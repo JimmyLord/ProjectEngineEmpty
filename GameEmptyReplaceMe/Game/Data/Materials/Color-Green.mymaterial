@@ -1,9 +1,9 @@
 {
 	"Material":	{
 		"Name":	"Color-Green",
-		"Shader":	"Shader_TintColor",
+		"Shader":	"DataEngine/Shaders/Shader_TintColor.glsl",
 		"ColorAmbient":	[1, 1, 1, 1],
-		"ColorDiffuse":	[0.090196, 0.019608, 0.980392, 0],
+		"ColorDiffuse":	[0, 1, 0, 0],
 		"ColorSpecular":	[1, 1, 1, 1],
 		"Shininess":	200
 	}

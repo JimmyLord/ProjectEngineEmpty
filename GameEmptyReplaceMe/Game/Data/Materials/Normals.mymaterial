@@ -1,7 +1,7 @@
 {
 	"Material":	{
 		"Name":	"Normals",
-		"Shader":	"Shader_TestNormals",
+		"Shader":	"Data/Shaders/Shader_TestNormals.glsl",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],
 		"ColorSpecular":	[1, 1, 1, 1],

@@ -1,7 +1,7 @@
 {
 	"Material":	{
 		"Name":	"TestTexture",
-		"Shader":	"Shader_TextureLights",
+		"Shader":	"Data/Shaders/Shader_TextureLights.glsl",
 		"TexColor":	"Data/Textures/test1.png",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],

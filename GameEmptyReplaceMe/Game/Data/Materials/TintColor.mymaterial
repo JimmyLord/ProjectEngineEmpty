@@ -1,7 +1,7 @@
 {
 	"Material":	{
 		"Name":	"TintColor",
-		"Shader":	"Shader_TintColor",
+		"Shader":	"DataEngine/Shaders/Shader_TintColor.glsl",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],
 		"ColorSpecular":	[1, 1, 1, 1],

@@ -1,7 +1,7 @@
 {
 	"Material":	{
 		"Name":	"TextureLights",
-		"Shader":	"Shader_TextureLights",
+		"Shader":	"Data/Shaders/Shader_TextureLights.glsl",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],
 		"ColorSpecular":	[1, 1, 1, 1],
