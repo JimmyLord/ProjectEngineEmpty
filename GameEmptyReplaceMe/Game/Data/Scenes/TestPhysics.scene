@@ -1,5 +1,5 @@
 {
-	"Files":	["Data/OBJs/cube.obj", "DataEngine/Shaders/Shader_TintColor.glsl", "Data/Shaders/Shader_TestNormals.glsl", "Data/OBJs/teapot2.obj", "Data/OBJs/Teapot.obj", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Shaders/Shader_VertSinY.glsl"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "Data/Shaders/Shader_TestNormals.glsl", "Data/Meshes/teapot2.obj.mymesh", "Data/Meshes/Teapot.obj.mymesh", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Shaders/Shader_VertSinY.glsl", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial", "Data/Materials/Normals.mymaterial", "Data/Materials/TintColor.mymaterial"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -352,153 +352,213 @@
 			"Type":	"Collision Object",
 			"GOID":	10,
 			"ID":	14,
+			"Primitive":	"Convex Hull",
 			"Mass":	1,
-			"OBJ":	"Data/OBJs/teapot2.obj"
+			"Scale":	[1, 1, 1],
+			"OBJ":	"Data/Meshes/teapot2.obj.mymesh"
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	11,
 			"ID":	16,
-			"Mass":	0
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	12,
 			"ID":	21,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	13,
 			"ID":	23,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	14,
 			"ID":	25,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	15,
 			"ID":	27,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	16,
 			"ID":	29,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	17,
 			"ID":	31,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	18,
 			"ID":	33,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	19,
 			"ID":	35,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	20,
 			"ID":	37,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	21,
 			"ID":	39,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	22,
 			"ID":	41,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	23,
 			"ID":	43,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	24,
 			"ID":	45,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	25,
 			"ID":	47,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	26,
 			"ID":	49,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	27,
 			"ID":	51,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	28,
 			"ID":	53,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	29,
 			"ID":	55,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	30,
 			"ID":	57,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	31,
 			"ID":	59,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	32,
 			"ID":	61,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	33,
 			"ID":	63,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	34,
 			"ID":	65,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	35,
 			"ID":	67,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	36,
 			"ID":	69,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	37,
 			"ID":	71,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	38,
 			"ID":	73,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	39,
 			"ID":	75,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Sprite",
 			"GOID":	8,
@@ -507,7 +567,7 @@
 			"Layers":	2,
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Shader":	"Shader_TintColor"
+			"Material":	"Data/Materials/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	9,
@@ -516,246 +576,306 @@
 			"Layers":	2,
 			"Tint":	[0, 255, 0, 255],
 			"Size":	[50, 50],
-			"Shader":	"Shader_TintColor"
+			"Material":	"Data/Materials/Color-Red.mymaterial"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/teapot2.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/teapot2.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	11,
 			"ID":	15,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_VertSinY",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/TintColor.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	12,
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	13,
 			"ID":	24,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	14,
 			"ID":	26,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	15,
 			"ID":	28,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	16,
 			"ID":	30,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	17,
 			"ID":	32,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	18,
 			"ID":	34,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	19,
 			"ID":	36,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	20,
 			"ID":	38,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	21,
 			"ID":	40,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	22,
 			"ID":	42,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	23,
 			"ID":	44,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	24,
 			"ID":	46,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	25,
 			"ID":	48,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	26,
 			"ID":	50,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	27,
 			"ID":	52,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	28,
 			"ID":	54,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	29,
 			"ID":	56,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	30,
 			"ID":	58,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	31,
 			"ID":	60,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	32,
 			"ID":	62,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	33,
 			"ID":	64,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	34,
 			"ID":	66,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	35,
 			"ID":	68,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	36,
 			"ID":	70,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	37,
 			"ID":	72,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	38,
 			"ID":	74,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	39,
 			"ID":	76,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}]
 }

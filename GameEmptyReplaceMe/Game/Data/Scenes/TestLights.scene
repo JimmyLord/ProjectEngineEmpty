@@ -1,5 +1,5 @@
 {
-	"Files":	["Data/OBJs/cube.obj", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Meshes/test.myaniminfo", "Data/Scripts/SimpleCharacterController.lua", "DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Shaders/Include/Light_Uniforms.glsl", "Data/Shaders/Include/Light_Functions.glsl", "Data/Shaders/Include/Bone_AttribsAndUniforms.glsl", "Data/Shaders/Include/Bone_Functions.glsl"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Scripts/SimpleCharacterController.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Materials/Lights.mymaterial", "Data/Materials/Normals.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TintColor.mymaterial", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -61,9 +61,9 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[4.768372e-007, -3, 0],
-			"Scale":	[0.030000, 0.030000, 0.030000],
-			"Rot":	[-90, 0, 0]
+			"Pos":	[0, -2, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	11,
 			"ID":	0,
@@ -145,12 +145,16 @@
 			"Type":	"Collision Object",
 			"GOID":	10,
 			"ID":	14,
-			"Mass":	1
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	11,
 			"ID":	16,
-			"Mass":	0
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Animation Player",
 			"GOID":	10,
@@ -170,6 +174,10 @@
 					"Name":	"Animation",
 					"Type":	1,
 					"Value":	1
+				}, {
+					"Name":	"SpeedRotation",
+					"Type":	1,
+					"Value":	10
 				}]
 		}, {
 			"Type":	"Sprite",
@@ -179,7 +187,7 @@
 			"Layers":	2,
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Shader":	"Shader_TintColor"
+			"Material":	"Data/Materials/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	9,
@@ -188,30 +196,26 @@
 			"Layers":	2,
 			"Tint":	[0, 255, 0, 255],
 			"Size":	[50, 50],
-			"Shader":	"Shader_TintColor"
+			"Material":	"Data/Materials/Color-Red.mymaterial"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_BoneAnim",
-			"Texture":	"DataEngine/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/Lights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	200,
-			"OBJ":	"Data/Meshes/test.mymesh"
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TextureLights",
-			"Texture":	"DataEngine/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/Lights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	40,
 			"MPType":	0,
 			"PlaneSizex":	20,
 			"PlaneSizey":	20,
@@ -235,9 +239,7 @@
 			"dirvar":	[0.500000, 0.500000, 0.500000],
 			"coloroption":	1,
 			"color1":	[1, 1, 1, 1],
-			"color2":	[0, 0, 0, 1],
-			"Shader":	"Shader_TextureVertexColor",
-			"Texture":	"DataEngine/Textures/WhiteSquare.png"
+			"color2":	[0, 0, 0, 1]
 		}, {
 			"Type":	"Light",
 			"GOID":	12,
