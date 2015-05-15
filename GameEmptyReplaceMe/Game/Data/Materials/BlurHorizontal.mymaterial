@@ -1,0 +1,11 @@
+{
+	"Material":	{
+		"Name":	"BlurHorizontal",
+		"Shader":	"Data/Shaders/PostEffects/BlurHorizontal.glsl",
+		"TexColor":	"",
+		"ColorAmbient":	[1, 1, 1, 1],
+		"ColorDiffuse":	[1, 1, 1, 1],
+		"ColorSpecular":	[1, 1, 1, 1],
+		"Shininess":	200
+	}
+}

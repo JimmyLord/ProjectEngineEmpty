@@ -1,5 +1,5 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/OBJs/cube.obj", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Meshes/test.myaniminfo", "Data/Scripts/SimpleCharacterController.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Shaders/Include/Light_Uniforms.glsl", "Data/Shaders/Include/Light_Functions.glsl", "Data/Shaders/Include/Bone_AttribsAndUniforms.glsl", "Data/Shaders/Include/Bone_Functions.glsl", "Data/Shaders/Include/LSVaryings.glsl", "Data/Shaders/Include/LSVaryings_Functions.glsl", "Data/Shaders/Include/WSVaryings.glsl", "Data/Shaders/Include/WSVaryings_Functions.glsl"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Scripts/SimpleCharacterController.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Meshes/test.fbx.mymesh", "Data/Meshes/test.fbx.myaniminfo", "Data/Materials/Bones.mymaterial", "Data/Materials/Lights.mymaterial"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -162,7 +162,9 @@
 			"Type":	"Collision Object",
 			"GOID":	11,
 			"ID":	16,
-			"Mass":	0
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Animation Player",
 			"GOID":	10,
@@ -191,45 +193,49 @@
 			"Type":	"Collision Object",
 			"GOID":	17,
 			"ID":	53,
-			"Mass":	0
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	19,
 			"ID":	75,
-			"Mass":	0
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	20,
 			"ID":	77,
-			"Mass":	0
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	21,
 			"ID":	79,
-			"Mass":	0
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_BoneAnim",
-			"Texture":	"DataEngine/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/Bones.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	200,
-			"OBJ":	"Data/Meshes/test.mymesh"
+			"OBJ":	"Data/Meshes/test.fbx.mymesh"
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TextureLights",
-			"Texture":	"DataEngine/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/Lights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	40,
 			"MPType":	0,
 			"PlaneSizex":	20,
 			"PlaneSizey":	20,
@@ -246,11 +252,9 @@
 			"ID":	54,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TextureLights",
-			"Texture":	"DataEngine/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/Lights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	40,
 			"MPType":	0,
 			"PlaneSizex":	20,
 			"PlaneSizey":	20,
@@ -267,11 +271,9 @@
 			"ID":	76,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TextureLights",
-			"Texture":	"DataEngine/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/Lights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	40,
 			"MPType":	0,
 			"PlaneSizex":	20,
 			"PlaneSizey":	20,
@@ -288,11 +290,9 @@
 			"ID":	78,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TextureLights",
-			"Texture":	"DataEngine/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/Lights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	40,
 			"MPType":	0,
 			"PlaneSizex":	20,
 			"PlaneSizey":	20,
@@ -309,11 +309,9 @@
 			"ID":	80,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TextureLights",
-			"Texture":	"DataEngine/Textures/WhiteSquare.png",
+			"Material":	"Data/Materials/Lights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Shininess":	40,
 			"MPType":	0,
 			"PlaneSizex":	20,
 			"PlaneSizey":	20,

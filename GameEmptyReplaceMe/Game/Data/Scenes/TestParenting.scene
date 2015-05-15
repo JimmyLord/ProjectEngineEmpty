@@ -1,5 +1,5 @@
 {
-	"Files":	["Data/OBJs/cube.obj", "DataEngine/Shaders/Shader_TintColor.glsl", "Data/Shaders/Shader_TestNormals.glsl", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "Data/Shaders/Shader_TestNormals.glsl", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial", "Data/Materials/Normals.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Shaders/Shader_TextureLights.glsl"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -61,7 +61,7 @@
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[-2, 2, 0],
+			"Pos":	[-3, 2, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
@@ -113,7 +113,7 @@
 			"Layers":	2,
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Shader":	"Shader_TintColor"
+			"Material":	"Data/Materials/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	9,
@@ -122,30 +122,36 @@
 			"Layers":	2,
 			"Tint":	[0, 255, 0, 255],
 			"Size":	[50, 50],
-			"Shader":	"Shader_TintColor"
+			"Material":	"Data/Materials/Color-Red.mymaterial"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	11,
 			"ID":	15,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TintColor",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	12,
 			"ID":	17,
 			"Visible":	1,
 			"Layers":	1,
-			"Shader":	"Shader_TestNormals",
-			"OBJ":	"Data/OBJs/cube.obj"
+			"Material":	"Data/Materials/Normals.mymaterial",
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
 		}]
 }
