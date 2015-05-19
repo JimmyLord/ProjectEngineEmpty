@@ -214,22 +214,19 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <AndroidAPILevel>android-14</AndroidAPILevel>
+    <ConfigurationType>Application</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|Android'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <AndroidAPILevel>android-14</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_64|Android'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <AndroidAPILevel>android-14</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NaCl'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -323,25 +320,22 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <AndroidAPILevel>android-14</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|Android'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <AndroidAPILevel>android-14</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_64|Android'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <AndroidAPILevel>android-14</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NaCl'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -562,18 +556,20 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)Output\$(PlatformName)\$(TargetName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Output\Intermediate\$(PlatformName)\$(TargetName)\$(Configuration)\</IntDir>
-    <LibraryPath>$(AndroidLibDir);$(AndroidStlLibPath);</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|Android'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)Output\$(PlatformName)\$(TargetName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Output\Intermediate\$(PlatformName)\$(TargetName)\$(Configuration)\</IntDir>
     <LibraryPath>$(AndroidLibDir);$(AndroidStlLibPath);</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_64|Android'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)Output\$(PlatformName)\$(TargetName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Output\Intermediate\$(PlatformName)\$(TargetName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NaCl'">
     <LinkIncremental>true</LinkIncremental>
@@ -678,16 +674,19 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Output\$(PlatformName)\$(TargetName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Output\Intermediate\$(PlatformName)\$(TargetName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|Android'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Output\$(PlatformName)\$(TargetName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Output\Intermediate\$(PlatformName)\$(TargetName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_64|Android'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Output\$(PlatformName)\$(TargetName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Output\Intermediate\$(PlatformName)\$(TargetName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NaCl'">
     <LinkIncremental>false</LinkIncremental>
@@ -923,13 +922,15 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>MYFW_ANDROID;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MYFW_ANDROID;MYFW_OPENGLES2;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../bullet3/src;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <GccExceptionHandling>true</GccExceptionHandling>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
       <AdditionalOptions>-lGLESv2 -lEGL </AdditionalOptions>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
@@ -941,6 +942,8 @@
       <Command>
       </Command>
     </PreBuildEvent>
+    <ProjectReference />
+    <ProjectReference />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|Android'">
     <ClCompile>
@@ -949,12 +952,14 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_ANDROID;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../bullet3/src;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
       <AdditionalOptions>-lGLESv2 -lEGL %(AdditionalOptions)</AdditionalOptions>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
@@ -973,13 +978,15 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>MYFW_ANDROID;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MYFW_ANDROID;MYFW_OPENGLES2;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../bullet3/src;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <GccExceptionHandling>true</GccExceptionHandling>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
       <AdditionalOptions>-lGLESv2 -lEGL </AdditionalOptions>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
@@ -1317,15 +1324,17 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>MYFW_ANDROID;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MYFW_ANDROID;MYFW_OPENGLES2;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../bullet3/src;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <GccExceptionHandling>true</GccExceptionHandling>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
       <AdditionalOptions>-lGLESv2 -lEGL </AdditionalOptions>
     </Link>
     <AntBuild>
@@ -1341,14 +1350,16 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_ANDROID;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../bullet3/src;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
       <AdditionalOptions>-lGLESv2 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <AntBuild>
@@ -1363,15 +1374,17 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>MYFW_ANDROID;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MYFW_ANDROID;MYFW_OPENGLES2;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../bullet3/src;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <GccExceptionHandling>true</GccExceptionHandling>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
       <AdditionalOptions>-lGLESv2 -lEGL </AdditionalOptions>
     </Link>
     <AntBuild>
