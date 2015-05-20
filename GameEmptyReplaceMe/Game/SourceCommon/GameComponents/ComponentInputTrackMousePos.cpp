@@ -71,7 +71,7 @@ void ComponentInputTrackMousePos::Reset()
 
 ComponentInputTrackMousePos& ComponentInputTrackMousePos::operator=(const ComponentInputTrackMousePos& other)
 {
-    assert( &other != this );
+    MyAssert( &other != this );
 
     ComponentInputHandler::operator=( other );
 

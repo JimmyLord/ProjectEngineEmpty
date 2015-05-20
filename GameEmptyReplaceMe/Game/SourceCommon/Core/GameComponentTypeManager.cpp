@@ -23,7 +23,7 @@ ComponentBase* GameComponentTypeManager::CreateComponent(int type)
     if( type < Component_NumEngineComponentTypes )
         return EngineComponentTypeManager::CreateComponent( type );
 
-    assert( type != -1 );
+    MyAssert( type != -1 );
 
     switch( type ) // ADDING_NEW_ComponentTypeGame
     {
@@ -31,7 +31,7 @@ ComponentBase* GameComponentTypeManager::CreateComponent(int type)
     case ComponentType_AIChasePlayer:       pComponent = MyNew ComponentAIChasePlayer;      break;
     }
 
-    assert( pComponent != 0 );
+    MyAssert( pComponent != 0 );
 
     pComponent->m_Type = type;
     return pComponent;

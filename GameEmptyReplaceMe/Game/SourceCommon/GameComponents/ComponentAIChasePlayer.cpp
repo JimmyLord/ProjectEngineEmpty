@@ -58,7 +58,7 @@ void ComponentAIChasePlayer::OnNewParentTransformDrop(int controlid, wxCoord x, 
     if( g_DragAndDropStruct.m_Type == DragAndDropType_ComponentPointer )
     {
         ComponentTransform* pComponent = (ComponentTransform*)g_DragAndDropStruct.m_Value;
-        assert( pComponent );
+        MyAssert( pComponent );
 
         if( pComponent->m_BaseType == BaseComponentType_Transform )
         {
@@ -87,7 +87,7 @@ void ComponentAIChasePlayer::ImportFromJSONObject(cJSON* jsonobj, unsigned int s
     if( chasingid != 0 )
     {
         GameObject* pGameObject = g_pComponentSystemManager->FindGameObjectByID( chasingid );
-        assert( pGameObject );
+        MyAssert( pGameObject );
 
         if( pGameObject )
             m_pPlayerComponentTransform = pGameObject->m_pComponentTransform;
@@ -107,7 +107,7 @@ void ComponentAIChasePlayer::Reset()
 
 ComponentAIChasePlayer& ComponentAIChasePlayer::operator=(const ComponentAIChasePlayer& other)
 {
-    assert( &other != this );
+    MyAssert( &other != this );
 
     ComponentUpdateable::operator=( other );
 
