@@ -5,22 +5,22 @@
       location = "container:"
       name = "Bullet Projects">
       <FileRef
-         location = "group:../bullet/build/xcode4/BulletCollision.xcodeproj">
+         location = "group:../bullet3/build3/xcode4ios/BulletCollision.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../bullet/build/xcode4/BulletDynamics.xcodeproj">
+         location = "group:../bullet3/build3/xcode4ios/BulletDynamics.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../bullet/build/xcode4/LinearMath.xcodeproj">
+         location = "group:../bullet3/build3/xcode4ios/LinearMath.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../bullet/build/xcode4ios/BulletCollision.xcodeproj">
+         location = "group:../bullet3/build3/xcode4/BulletCollision.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../bullet/build/xcode4ios/BulletDynamics.xcodeproj">
+         location = "group:../bullet3/build3/xcode4/BulletDynamics.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../bullet/build/xcode4ios/LinearMath.xcodeproj">
+         location = "group:../bullet3/build3/xcode4/LinearMath.xcodeproj">
       </FileRef>
    </Group>
    <FileRef

@@ -71,6 +71,9 @@
 		04936D3A1AE3E8FC00344903 /* libwx_osx_cocoau_gl-3.1.0.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04936D371AE3E8FC00344903 /* libwx_osx_cocoau_gl-3.1.0.0.0.dylib */; };
 		04936EF91AE3F20A00344903 /* libwx_osx_cocoau_aui-3.1.0.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04936EF81AE3F20A00344903 /* libwx_osx_cocoau_aui-3.1.0.0.0.dylib */; };
 		04936F001AE3F24B00344903 /* WinMainWx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04936EFD1AE3F24B00344903 /* WinMainWx.cpp */; };
+		04B5E8201B0EB2E000A58A64 /* DataEngine in Resources */ = {isa = PBXBuildFile; fileRef = 04B5E81F1B0EB2E000A58A64 /* DataEngine */; };
+		04B5E8211B0EB2E000A58A64 /* DataEngine in Resources */ = {isa = PBXBuildFile; fileRef = 04B5E81F1B0EB2E000A58A64 /* DataEngine */; };
+		04B5E8221B0EB2E000A58A64 /* DataEngine in Resources */ = {isa = PBXBuildFile; fileRef = 04B5E81F1B0EB2E000A58A64 /* DataEngine */; };
 		A11DC47B160D2EC1006C837D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11DC478160D2EC1006C837D /* AudioToolbox.framework */; };
 		A11DC47C160D2EC1006C837D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11DC479160D2EC1006C837D /* AVFoundation.framework */; };
 		A11DC47D160D2EC1006C837D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11DC47A160D2EC1006C837D /* GameKit.framework */; };
@@ -142,6 +145,7 @@
 		04936EFC1AE3F24B00344903 /* WinMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinMain.h; sourceTree = "<group>"; };
 		04936EFD1AE3F24B00344903 /* WinMainWx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WinMainWx.cpp; sourceTree = "<group>"; };
 		04936EFE1AE3F24B00344903 /* WinMainWx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinMainWx.h; sourceTree = "<group>"; };
+		04B5E81F1B0EB2E000A58A64 /* DataEngine */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataEngine; path = ../../Engine/DataEngine; sourceTree = "<group>"; };
 		A11DC478160D2EC1006C837D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A11DC479160D2EC1006C837D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A11DC47A160D2EC1006C837D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -298,6 +302,7 @@
 		BF267CF3151B68C6009458AE = {
 			isa = PBXGroup;
 			children = (
+				04B5E81F1B0EB2E000A58A64 /* DataEngine */,
 				044C62CC1ADDEFD400BABD53 /* Default-568h@2x.png */,
 				044C62A01ADDEAEE00BABD53 /* Data */,
 				044C62A21ADDEB0900BABD53 /* SourceCommon */,
@@ -454,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B5E8221B0EB2E000A58A64 /* DataEngine in Resources */,
 				0423ABF01AE2FDAD00C1AE29 /* Data in Resources */,
 				0423ABF11AE2FDAD00C1AE29 /* MainMenu.xib in Resources */,
 			);
@@ -463,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B5E8211B0EB2E000A58A64 /* DataEngine in Resources */,
 				044C65351ADF130700BABD53 /* Data in Resources */,
 				044C65341ADF129A00BABD53 /* MainMenu.xib in Resources */,
 			);
@@ -478,6 +485,7 @@
 				044C62C01ADDEB0900BABD53 /* InfoPlist.strings in Resources */,
 				044C62CD1ADDEFD400BABD53 /* Default-568h@2x.png in Resources */,
 				044C62C21ADDEB0900BABD53 /* ViewController_iPhone.xib in Resources */,
+				04B5E8201B0EB2E000A58A64 /* DataEngine in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

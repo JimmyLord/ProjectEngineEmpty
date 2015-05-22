@@ -24,6 +24,8 @@
 		<string>https://github.com/JimmyLord/MyEngine.git</string>
 		<key>B0D342C3ADC308FE2F3A40934720993B04EB0255</key>
 		<string>https://github.com/JimmyLord/ProjectEmpty.git</string>
+		<key>CD02AD23789515AF5D416F876100FE38242DE7E4</key>
+		<string>https://github.com/bulletphysics/bullet3.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>GameEmptyReplaceMe/EmptyReplaceMe.xcworkspace</string>
@@ -43,6 +45,8 @@
 		<string>../..Engine</string>
 		<key>B0D342C3ADC308FE2F3A40934720993B04EB0255</key>
 		<string>../../../ProjectEmpty</string>
+		<key>CD02AD23789515AF5D416F876100FE38242DE7E4</key>
+		<string>../../bullet3</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
@@ -64,6 +68,14 @@
 			<string>08e121b0-ae19-0410-a57b-3be3395fd4fd++505</string>
 			<key>IDESourceControlWCCName</key>
 			<string>bullet</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD02AD23789515AF5D416F876100FE38242DE7E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>bullet3</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
