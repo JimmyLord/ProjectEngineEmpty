@@ -60,7 +60,7 @@ Tick = function(timepassed)
 
 	-- play the correct animation and figure out facing direction based on input.
 	if( this.dir.x ~= 0 or this.dir.z ~= 0 ) then
-		this.targetangle = math.atan2( this.dir.z, this.dir.x ) / math.pi * 180 - 90;
+		this.targetangle = math.atan( this.dir.z, this.dir.x ) / math.pi * 180 - 90;
 		this.Animation = 2;
 	else
 		this.Animation = 1;

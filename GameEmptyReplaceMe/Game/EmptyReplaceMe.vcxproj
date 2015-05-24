@@ -785,6 +785,8 @@
       <PreprocessorDefinitions>MYFW_WINDOWS;WIN32;MYFW_USING_WX;wxMSVC_VERSION_AUTO;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../wxWidgets/include/msvc;$(SolutionDir)../wxWidgets/include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -792,6 +794,7 @@
       <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;SDL_mixer.lib;SDL.lib;Box2D.lib;opengl32.lib;glu32.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;wxbase31ud.lib;wxmsw31ud_core.lib;wxmsw31ud_gl.lib;BulletCollision_vs2010_debug.lib;BulletDynamics_vs2010_debug.lib;LinearMath_vs2010_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)../bullet3/bin/;$(SolutionDir)../Framework/MyFramework/SourceWindows/SDL-1.2.15/lib/x86;$(SolutionDir)../Framework/MyFramework/SourceWindows/SDL_mixer-1.2.12/lib/x86;$(SolutionDir)../Framework/MyFramework/SourceWindows/pthreads-w32-2-9-1/lib/x86;$(SolutionDir)../Framework/Box2D_v2.2.1/Build/vs2010/bin/Debug;$(SolutionDir)../wxWidgets/lib/vc100_lib</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|NaCl64'">
@@ -933,7 +936,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
-      <AdditionalOptions>-lGLESv2 -lEGL </AdditionalOptions>
+      <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
     </Link>
@@ -962,7 +965,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
-      <AdditionalOptions>-lGLESv2 -lEGL %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
     </Link>
@@ -989,7 +992,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
-      <AdditionalOptions>-lGLESv2 -lEGL </AdditionalOptions>
+      <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
     </Link>
@@ -1339,7 +1342,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
-      <AdditionalOptions>-lGLESv2 -lEGL </AdditionalOptions>
+      <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
     </Link>
     <AntBuild>
       <AntBuildPath>$(ProjectDir)\SourceAndroid\AndroidApk\</AntBuildPath>
@@ -1364,7 +1367,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
-      <AdditionalOptions>-lGLESv2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
     </Link>
     <AntBuild>
       <AntBuildPath>$(ProjectDir)\SourceAndroid\AndroidApk\</AntBuildPath>
@@ -1389,7 +1392,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>$(SolutionDir)Output\Android\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\Android\MyFramework\$(Configuration)\MyFramework.a;..\..\bullet3\bin\android\BulletDynamics_vs2010_debug.a;..\..\bullet3\bin\android\BulletCollision_vs2010_debug.a;..\..\bullet3\bin\android\LinearMath_vs2010_debug.a</AdditionalDependencies>
-      <AdditionalOptions>-lGLESv2 -lEGL </AdditionalOptions>
+      <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
     </Link>
     <AntBuild>
       <AntBuildPath>$(ProjectDir)\SourceAndroid\AndroidApk\</AntBuildPath>
