@@ -32,9 +32,9 @@ void ComponentInputTrackMousePos::AddToObjectsPanel(wxTreeItemId gameobjectid)
     g_pPanelObjectList->AddObject( this, ComponentInputTrackMousePos::StaticOnLeftClick, ComponentBase::StaticOnRightClick, gameobjectid, "InputTrackMousePos" );
 }
 
-void ComponentInputTrackMousePos::OnLeftClick(bool clear)
+void ComponentInputTrackMousePos::OnLeftClick(unsigned int count, bool clear)
 {
-    ComponentBase::OnLeftClick( clear );
+    ComponentBase::OnLeftClick( count, clear );
 }
 
 void ComponentInputTrackMousePos::FillPropertiesWindow(bool clear)

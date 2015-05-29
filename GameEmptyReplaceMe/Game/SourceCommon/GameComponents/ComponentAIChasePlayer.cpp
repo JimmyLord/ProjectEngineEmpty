@@ -33,9 +33,9 @@ void ComponentAIChasePlayer::AddToObjectsPanel(wxTreeItemId gameobjectid)
     g_pPanelObjectList->AddObject( this, ComponentAIChasePlayer::StaticOnLeftClick, ComponentBase::StaticOnRightClick, gameobjectid, "AIChasePlayer" );
 }
 
-void ComponentAIChasePlayer::OnLeftClick(bool clear)
+void ComponentAIChasePlayer::OnLeftClick(unsigned int count, bool clear)
 {
-    ComponentBase::OnLeftClick( clear );
+    ComponentBase::OnLeftClick( count, clear );
 }
 
 void ComponentAIChasePlayer::FillPropertiesWindow(bool clear)
