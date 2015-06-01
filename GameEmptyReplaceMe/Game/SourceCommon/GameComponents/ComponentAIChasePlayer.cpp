@@ -60,7 +60,7 @@ void ComponentAIChasePlayer::OnNewParentTransformDrop(int controlid, wxCoord x, 
         ComponentTransform* pComponent = (ComponentTransform*)g_DragAndDropStruct.m_Value;
         MyAssert( pComponent );
 
-        if( pComponent->m_BaseType == BaseComponentType_Transform )
+        if( pComponent->IsA( "TransformComponent" ) )
         {
             this->m_pPlayerComponentTransform = pComponent;
         }
