@@ -1,5 +1,5 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Scripts/Player.lua", "Data/Fonts/System24.fnt", "Data/Shaders/Shader_Texture.glsl", "Data/Fonts/System24_0.png"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Scripts/Player.lua", "Data/Fonts/System24.fnt", "Data/Shaders/Shader_Texture.glsl", "Data/Fonts/System24_0.png", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial", "Data/Menus/Test.menu"],
 	"GameObjects":	[{
 			"ID":	5,
 			"Name":	"Main Camera"
@@ -75,6 +75,7 @@
 		}, {
 			"Type":	"Menu Page",
 			"GOID":	8,
-			"ID":	10
+			"ID":	10,
+			"MenuFile":	"Data/Menus/Test.menu"
 		}]
 }

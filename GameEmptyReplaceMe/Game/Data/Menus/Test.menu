@@ -1,0 +1,21 @@
+[{
+		"MIT":	3,
+		"Name":	"",
+		"X":	23.400000,
+		"Y":	63.799999,
+		"Scale":	1,
+		"SX":	0,
+		"SY":	0,
+		"OffX":	0,
+		"OffY":	0,
+		"W":	117.400002,
+		"H":	56.200001,
+		"IW":	50,
+		"IH":	50,
+		"FontHeight":	30,
+		"BGShadowX":	0,
+		"BGShadowY":	0,
+		"TextShadowX":	0,
+		"TextShadowY":	0,
+		"MatBG":	"Data/Materials/Color-Green.mymaterial"
+	}]
