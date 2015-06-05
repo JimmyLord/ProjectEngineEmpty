@@ -1,5 +1,5 @@
 {
-	"Files":	["Data/Scripts/Player.lua", "Data/Fonts/System24.fnt", "Data/Fonts/System24_0.png", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial", "Data/Menus/Test.menu", "DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Shaders/Shader_Texture.glsl"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Scripts/Player.lua", "Data/Fonts/System24.fnt", "Data/Fonts/System24_0.png", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial", "Data/Menus/Test.menu", "Data/Shaders/Shader_Texture.glsl", "Data/Menus/TestMenuActions.lua"],
 	"GameObjects":	[{
 			"ID":	5,
 			"Name":	"Main Camera"
@@ -63,6 +63,12 @@
 			"GOID":	7,
 			"ID":	9,
 			"Script":	"Data/Scripts/Player.lua",
+			"ExposedVars":	[]
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	8,
+			"ID":	12,
+			"Script":	"Data/Menus/TestMenuActions.lua",
 			"ExposedVars":	[]
 		}, {
 			"Type":	"Sprite",

@@ -19,5 +19,6 @@
 		"MatBGDisabled":	"Data/Materials/Color-Red.mymaterial",
 		"MatBGPressed":	"Data/Materials/Color-Red.mymaterial",
 		"Font":	"Data/Fonts/System24.fnt",
-		"String1":	"Just some text"
+		"String1":	"Just some text",
+		"Action":	"PressedMenuButton"
 	}]
