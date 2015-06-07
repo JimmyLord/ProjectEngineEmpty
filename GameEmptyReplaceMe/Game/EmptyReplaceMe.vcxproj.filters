@@ -314,36 +314,6 @@
     <None Include="Data\Shaders\Include\WSVaryings_Functions.glsl">
       <Filter>Data\Shaders\Include</Filter>
     </None>
-    <None Include="Data\Scenes\Multi-enemy.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\test.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\TestAnimation.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\TestLights.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\TestParenting.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\TestPhysics.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\TestPhysicsCharacter.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\TestPostEffects.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\TestShadow.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
-    <None Include="Data\Scenes\World.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
     <None Include="Data\Shaders\PostEffects\BlurHorizontal.glsl">
       <Filter>Data\Shaders\PostEffects</Filter>
     </None>
@@ -364,6 +334,36 @@
     </None>
     <None Include="Data\Materials\Lights.mymaterial">
       <Filter>Data\Materials</Filter>
+    </None>
+    <None Include="Data\Scenes\TestAnimation.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestBasicScene.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestLights.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestMenuPages.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestParenting.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestPhysics.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestPhysicsCharacter.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestPostEffects.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestPostEffectsBokeh.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\TestShadow.scene">
+      <Filter>Data\Scenes</Filter>
     </None>
   </ItemGroup>
 </Project>
