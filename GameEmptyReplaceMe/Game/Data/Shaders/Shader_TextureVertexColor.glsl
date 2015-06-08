@@ -1,4 +1,5 @@
 // Shader_TextureVertexColor.glsl
+#define BLENDING On
 
 #ifdef WIN32
 #define lowp

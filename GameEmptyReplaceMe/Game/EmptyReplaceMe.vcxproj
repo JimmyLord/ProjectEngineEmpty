@@ -1707,6 +1707,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\Bone_AttribsAndUniforms.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\Bone_Functions.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\Light_Functions.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\Light_Uniforms.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\LSVaryings.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\LSVaryings_Functions.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\WSVaryings.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\WSVaryings_Functions.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_ClipSpaceTexture.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_TintColor.glsl" />
     <None Include="..\..\todo.todo" />
     <None Include="Data\Materials\Bones.mymaterial" />
     <None Include="Data\Materials\Lights.mymaterial" />
@@ -1727,14 +1737,6 @@
     <None Include="Data\Scripts\GGJTube.lua" />
     <None Include="Data\Scripts\Player.lua" />
     <None Include="Data\Scripts\SimpleCharacterController.lua" />
-    <None Include="Data\Shaders\Include\Bone_AttribsAndUniforms.glsl" />
-    <None Include="Data\Shaders\Include\Bone_Functions.glsl" />
-    <None Include="Data\Shaders\Include\Light_Functions.glsl" />
-    <None Include="Data\Shaders\Include\Light_Uniforms.glsl" />
-    <None Include="Data\Shaders\Include\LSVaryings.glsl" />
-    <None Include="Data\Shaders\Include\LSVaryings_Functions.glsl" />
-    <None Include="Data\Shaders\Include\WSVaryings.glsl" />
-    <None Include="Data\Shaders\Include\WSVaryings_Functions.glsl" />
     <None Include="Data\Shaders\PostEffects\BlurHorizontal.glsl" />
     <None Include="Data\Shaders\PostEffects\BlurVertical.glsl" />
     <None Include="Data\Shaders\PostEffects\DoFBokeh.glsl" />
@@ -1742,12 +1744,10 @@
     <None Include="Data\Shaders\PostEffects\DoFVertical.glsl" />
     <None Include="Data\Shaders\Shader_BoneAnim.glsl" />
     <None Include="Data\Shaders\Shader_Breathe.glsl" />
-    <None Include="Data\Shaders\Shader_ClipSpaceTexture.glsl" />
     <None Include="Data\Shaders\Shader_TestNormals.glsl" />
     <None Include="Data\Shaders\Shader_Texture.glsl" />
     <None Include="Data\Shaders\Shader_TextureLights.glsl" />
     <None Include="Data\Shaders\Shader_TextureVertexColor.glsl" />
-    <None Include="Data\Shaders\Shader_TintColor.glsl" />
     <None Include="Data\Shaders\Shader_VertSinY.glsl" />
     <None Include="Data\Shaders\Shader_Water.glsl" />
     <None Include="SourceAndroid\AndroidApk\AndroidManifest.xml">

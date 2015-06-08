@@ -3,8 +3,9 @@
 		"Name":	"Color-Green",
 		"Shader":	"DataEngine/Shaders/Shader_TintColor.glsl",
 		"ColorAmbient":	[1, 1, 1, 1],
-		"ColorDiffuse":	[0, 1, 0, 1],
+		"ColorDiffuse":	[0, 1, 0, 0.50],
 		"ColorSpecular":	[1, 1, 1, 1],
-		"Shininess":	200
+		"Shininess":	200,
+		"Blend":	0
 	}
 }

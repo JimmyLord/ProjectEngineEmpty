@@ -67,14 +67,17 @@
     <Filter Include="Data\Scripts">
       <UniqueIdentifier>{39de41de-6fdc-4997-b708-63a4d1d8fb7f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Data\Shaders\Include">
-      <UniqueIdentifier>{0d383fad-86c4-4917-a4bb-71ab4a2ff62f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Data\Shaders\PostEffects">
       <UniqueIdentifier>{ef761345-1787-4dd4-b934-b34ea5eae445}</UniqueIdentifier>
     </Filter>
     <Filter Include="Data\Materials">
       <UniqueIdentifier>{c4074914-63e9-4ce7-8a31-010002f41daa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders\DataEngine">
+      <UniqueIdentifier>{cb10872f-99a1-4126-9826-2b495081685c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Shaders\DataEngine\Include">
+      <UniqueIdentifier>{0d383fad-86c4-4917-a4bb-71ab4a2ff62f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -260,75 +263,6 @@
     <None Include="Data\Scripts\CharacterController_Physics.lua">
       <Filter>Data\Scripts</Filter>
     </None>
-    <None Include="Data\Shaders\Shader_BoneAnim.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_Breathe.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_ClipSpaceTexture.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_TestNormals.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_Texture.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_TextureLights.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_TextureVertexColor.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_TintColor.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_VertSinY.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Shader_Water.glsl">
-      <Filter>Data\Shaders</Filter>
-    </None>
-    <None Include="Data\Shaders\Include\Bone_AttribsAndUniforms.glsl">
-      <Filter>Data\Shaders\Include</Filter>
-    </None>
-    <None Include="Data\Shaders\Include\Bone_Functions.glsl">
-      <Filter>Data\Shaders\Include</Filter>
-    </None>
-    <None Include="Data\Shaders\Include\Light_Functions.glsl">
-      <Filter>Data\Shaders\Include</Filter>
-    </None>
-    <None Include="Data\Shaders\Include\Light_Uniforms.glsl">
-      <Filter>Data\Shaders\Include</Filter>
-    </None>
-    <None Include="Data\Shaders\Include\LSVaryings.glsl">
-      <Filter>Data\Shaders\Include</Filter>
-    </None>
-    <None Include="Data\Shaders\Include\LSVaryings_Functions.glsl">
-      <Filter>Data\Shaders\Include</Filter>
-    </None>
-    <None Include="Data\Shaders\Include\WSVaryings.glsl">
-      <Filter>Data\Shaders\Include</Filter>
-    </None>
-    <None Include="Data\Shaders\Include\WSVaryings_Functions.glsl">
-      <Filter>Data\Shaders\Include</Filter>
-    </None>
-    <None Include="Data\Shaders\PostEffects\BlurHorizontal.glsl">
-      <Filter>Data\Shaders\PostEffects</Filter>
-    </None>
-    <None Include="Data\Shaders\PostEffects\BlurVertical.glsl">
-      <Filter>Data\Shaders\PostEffects</Filter>
-    </None>
-    <None Include="Data\Shaders\PostEffects\DoFHorizontal.glsl">
-      <Filter>Data\Shaders\PostEffects</Filter>
-    </None>
-    <None Include="Data\Shaders\PostEffects\DoFVertical.glsl">
-      <Filter>Data\Shaders\PostEffects</Filter>
-    </None>
-    <None Include="Data\Shaders\PostEffects\DoFBokeh.glsl">
-      <Filter>Data\Shaders\PostEffects</Filter>
-    </None>
     <None Include="Data\Materials\Bones.mymaterial">
       <Filter>Data\Materials</Filter>
     </None>
@@ -364,6 +298,75 @@
     </None>
     <None Include="Data\Scenes\TestShadow.scene">
       <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_BoneAnim.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_Breathe.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_TestNormals.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_Texture.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_TextureLights.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_TextureVertexColor.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_VertSinY.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_Water.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffects\BlurHorizontal.glsl">
+      <Filter>Data\Shaders\PostEffects</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffects\BlurVertical.glsl">
+      <Filter>Data\Shaders\PostEffects</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffects\DoFBokeh.glsl">
+      <Filter>Data\Shaders\PostEffects</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffects\DoFHorizontal.glsl">
+      <Filter>Data\Shaders\PostEffects</Filter>
+    </None>
+    <None Include="Data\Shaders\PostEffects\DoFVertical.glsl">
+      <Filter>Data\Shaders\PostEffects</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\Bone_AttribsAndUniforms.glsl">
+      <Filter>Data\Shaders\DataEngine\Include</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\Bone_Functions.glsl">
+      <Filter>Data\Shaders\DataEngine\Include</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\Light_Functions.glsl">
+      <Filter>Data\Shaders\DataEngine\Include</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\Light_Uniforms.glsl">
+      <Filter>Data\Shaders\DataEngine\Include</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\LSVaryings.glsl">
+      <Filter>Data\Shaders\DataEngine\Include</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\LSVaryings_Functions.glsl">
+      <Filter>Data\Shaders\DataEngine\Include</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\WSVaryings.glsl">
+      <Filter>Data\Shaders\DataEngine\Include</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Include\WSVaryings_Functions.glsl">
+      <Filter>Data\Shaders\DataEngine\Include</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_TintColor.glsl">
+      <Filter>Data\Shaders\DataEngine</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_ClipSpaceTexture.glsl">
+      <Filter>Data\Shaders\DataEngine</Filter>
     </None>
   </ItemGroup>
 </Project>

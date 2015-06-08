@@ -5,6 +5,7 @@
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 0, 0, 1],
 		"ColorSpecular":	[1, 1, 1, 1],
-		"Shininess":	200
+		"Shininess":	200,
+		"Blend":	0
 	}
 }
