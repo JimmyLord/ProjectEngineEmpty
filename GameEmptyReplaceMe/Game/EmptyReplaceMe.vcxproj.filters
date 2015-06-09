@@ -79,6 +79,9 @@
     <Filter Include="Data\Shaders\DataEngine\Include">
       <UniqueIdentifier>{0d383fad-86c4-4917-a4bb-71ab4a2ff62f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data\Menus">
+      <UniqueIdentifier>{5f5768ad-aaf4-445b-b6d2-7af5dd98e814}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceWindows\WinMain.cpp">
@@ -367,6 +370,12 @@
     </None>
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_ClipSpaceTexture.glsl">
       <Filter>Data\Shaders\DataEngine</Filter>
+    </None>
+    <None Include="Data\Menus\Test.menu">
+      <Filter>Data\Menus</Filter>
+    </None>
+    <None Include="Data\Menus\TestMenuActions.lua">
+      <Filter>Data\Menus</Filter>
     </None>
   </ItemGroup>
 </Project>

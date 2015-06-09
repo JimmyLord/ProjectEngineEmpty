@@ -1,5 +1,5 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Scripts/Player.lua", "Data/Fonts/System24.fnt", "Data/Fonts/System24_0.png", "Data/Menus/TestMenuActions.lua", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Pink.mymaterial", "Data/Materials/Color-Red.mymaterial", "Data/Menus/Test.menu", "Data/Shaders/Shader_Texture.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Scripts/Player.lua", "Data/Fonts/System24.fnt", "Data/Fonts/System24_0.png", "Data/Menus/TestMenuActions.lua", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Pink.mymaterial", "Data/Materials/Color-Red.mymaterial", "Data/Menus/Test.menu", "Data/Shaders/Shader_Texture.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Materials/MenuShadow.mymaterial"],
 	"GameObjects":	[{
 			"ID":	5,
 			"Name":	"Main Camera"
