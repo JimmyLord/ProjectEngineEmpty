@@ -68,9 +68,9 @@ void ComponentAIChasePlayer::OnNewParentTransformDrop(int controlid, wxCoord x, 
 }
 #endif //MYFW_USING_WX
 
-cJSON* ComponentAIChasePlayer::ExportAsJSONObject()
+cJSON* ComponentAIChasePlayer::ExportAsJSONObject(bool savesceneid)
 {
-    cJSON* component = ComponentUpdateable::ExportAsJSONObject();
+    cJSON* component = ComponentUpdateable::ExportAsJSONObject( savesceneid );
 
     if( m_pPlayerComponentTransform )
         cJSON_AddNumberToObject( component, "ChasingGOID", m_pPlayerComponentTransform->m_pGameObject->GetID() );
@@ -86,7 +86,7 @@ void ComponentAIChasePlayer::ImportFromJSONObject(cJSON* jsonobj, unsigned int s
     cJSONExt_GetUnsignedInt( jsonobj, "ChasingGOID", &chasingid );
     if( chasingid != 0 )
     {
-        GameObject* pGameObject = g_pComponentSystemManager->FindGameObjectByID( chasingid );
+        GameObject* pGameObject = g_pComponentSystemManager->FindGameObjectByID( sceneid, chasingid );
         MyAssert( pGameObject );
 
         if( pGameObject )
