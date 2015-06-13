@@ -102,6 +102,36 @@
 			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
+			"Type":	"Light",
+			"GOID":	12,
+			"ID":	21,
+			"Color":	[0, 1, 0, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	13,
+			"ID":	24,
+			"Color":	[1, 0, 0, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	14,
+			"ID":	25,
+			"Color":	[0, 0, 1, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	15,
+			"ID":	26,
+			"Color":	[1, 0, 0, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	16,
+			"ID":	27,
+			"Color":	[1, 0, 0, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
@@ -203,7 +233,7 @@
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Lights.mymaterial",
+			"Materials":	["Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh"
@@ -213,7 +243,7 @@
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Lights.mymaterial",
+			"Materials":	["Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
@@ -240,35 +270,5 @@
 			"coloroption":	1,
 			"color1":	[1, 1, 1, 1],
 			"color2":	[0, 0, 0, 1]
-		}, {
-			"Type":	"Light",
-			"GOID":	12,
-			"ID":	21,
-			"Color":	[0, 1, 0, 1],
-			"Atten":	[1, 0, 0.010000]
-		}, {
-			"Type":	"Light",
-			"GOID":	13,
-			"ID":	24,
-			"Color":	[1, 0, 0, 1],
-			"Atten":	[1, 0, 0.010000]
-		}, {
-			"Type":	"Light",
-			"GOID":	14,
-			"ID":	25,
-			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0, 0.010000]
-		}, {
-			"Type":	"Light",
-			"GOID":	15,
-			"ID":	26,
-			"Color":	[1, 0, 0, 1],
-			"Atten":	[1, 0, 0.010000]
-		}, {
-			"Type":	"Light",
-			"GOID":	16,
-			"ID":	27,
-			"Color":	[1, 0, 0, 1],
-			"Atten":	[1, 0, 0.010000]
 		}]
 }

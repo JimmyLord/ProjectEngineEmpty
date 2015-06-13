@@ -1,5 +1,5 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "DataEngine/Textures/WhiteSquare.png", "Data/Materials/DefaultMaterial.mymaterial", "Data/Materials/Normals.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial"],
+	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "DataEngine/Textures/WhiteSquare.png", "Data/Materials/Normals.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial"],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -75,6 +75,18 @@
 			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
+			"Type":	"Light",
+			"GOID":	12,
+			"ID":	21,
+			"Color":	[0, 0, 1, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	13,
+			"ID":	24,
+			"Color":	[1, 0, 0, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
@@ -152,7 +164,7 @@
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Normals.mymaterial",
+			"Materials":	["Data/Materials/Normals.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh"
@@ -162,7 +174,7 @@
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/TextureLights.mymaterial",
+			"Materials":	["Data/Materials/TextureLights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
@@ -175,17 +187,5 @@
 			"PlaneUVRangex":	1,
 			"PlaneUVRangey":	1,
 			"SphereRadius":	1
-		}, {
-			"Type":	"Light",
-			"GOID":	12,
-			"ID":	21,
-			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0, 0.010000]
-		}, {
-			"Type":	"Light",
-			"GOID":	13,
-			"ID":	24,
-			"Color":	[1, 0, 0, 1],
-			"Atten":	[1, 0, 0.010000]
 		}]
 }

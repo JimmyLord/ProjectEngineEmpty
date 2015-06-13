@@ -34,7 +34,7 @@ public:
     static bool m_PanelWatchBlockVisible;
 
     virtual void AddToObjectsPanel(wxTreeItemId gameobjectid);
-    static void StaticOnLeftClick(void* pObjectPtr, unsigned int count) { ((ComponentAIChasePlayer*)pObjectPtr)->OnLeftClick( count, true ); }
+    static void StaticOnLeftClick(void* pObjectPtr, wxTreeItemId id, unsigned int count) { ((ComponentAIChasePlayer*)pObjectPtr)->OnLeftClick( count, true ); }
     void OnLeftClick(unsigned int count, bool clear);
     virtual void FillPropertiesWindow(bool clear);
     static void StaticOnNewParentTransformDrop(void* pObjectPtr, int controlid, wxCoord x, wxCoord y) { ((ComponentAIChasePlayer*)pObjectPtr)->OnNewParentTransformDrop(controlid, x, y); }
