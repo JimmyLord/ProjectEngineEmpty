@@ -377,5 +377,6 @@
     <None Include="Data\Menus\TestMenuActions.lua">
       <Filter>Data\Menus</Filter>
     </None>
+    <None Include="EditorPrefs.ini" />
   </ItemGroup>
 </Project>
