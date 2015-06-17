@@ -169,7 +169,9 @@
 				}, {
 					"Name":	"ObjectChasing",
 					"Type":	2,
-					"Value":	"Player Object"
+					"Value":	{
+						"GOID":	8
+					}
 				}]
 		}, {
 			"Type":	"Collision Object",
