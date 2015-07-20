@@ -11,7 +11,6 @@
 
 GameEmptyReplaceMe::GameEmptyReplaceMe()
 {
-    m_Position.Set( 0, 0, 0 );
 }
 
 GameEmptyReplaceMe::~GameEmptyReplaceMe()
@@ -21,6 +20,27 @@ GameEmptyReplaceMe::~GameEmptyReplaceMe()
 void GameEmptyReplaceMe::OneTimeInit()
 {
     EngineCore::OneTimeInit();
+
+    m_FreeAllMaterialsAndTexturesWhenUnloadingScene = true;
+
+#if !MYFW_USING_WX
+    //m_pSceneFileToLoad = RequestFile( "Data/Scenes/test.scene" );
+    m_pSceneFileToLoad = RequestFile( "Data/Scenes/TestPhysicsCharacter.scene" );
+    m_SceneLoaded = false;
+#endif
+}
+
+void GameEmptyReplaceMe::OnSurfaceChanged(unsigned int startx, unsigned int starty, unsigned int width, unsigned int height)
+{
+    m_GameWidth = 640.0f;
+    m_GameHeight = 960.0f;
+
+    EngineCore::OnSurfaceChanged(startx, starty, width, height);
+
+#if MYFW_USING_WX
+    if( g_GLCanvasIDActive == 1 )
+        return;
+#endif
 }
 
 double GameEmptyReplaceMe::Tick(double TimePassed)
@@ -33,12 +53,17 @@ void GameEmptyReplaceMe::OnDrawFrame()
     EngineCore::OnDrawFrame();
 }
 
-void GameEmptyReplaceMe::OnTouch(int action, int id, float x, float y, float pressure, float size)
+bool GameEmptyReplaceMe::OnTouch(int action, int id, float x, float y, float pressure, float size)
 {
-    EngineCore::OnTouch( action, id, x, y, pressure, size );
+    return EngineCore::OnTouch( action, id, x, y, pressure, size );
 }
 
-void GameEmptyReplaceMe::OnButtons(GameCoreButtonActions action, GameCoreButtonIDs id)
+bool GameEmptyReplaceMe::OnButtons(GameCoreButtonActions action, GameCoreButtonIDs id)
 {
-    EngineCore::OnButtons( action, id );
+    return EngineCore::OnButtons( action, id );
+}
+
+bool GameEmptyReplaceMe::OnKeys(GameCoreButtonActions action, int keycode, int unicodechar)
+{
+    return EngineCore::OnKeys( action, keycode, unicodechar );
 }

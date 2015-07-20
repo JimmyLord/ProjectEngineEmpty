@@ -91,3 +91,8 @@ bool ComponentInputTrackMousePos::OnButtons(GameCoreButtonActions action, GameCo
 {
     return false;
 }
+
+bool ComponentInputTrackMousePos::OnKeys(GameCoreButtonActions action, int keycode, int unicodechar)
+{
+    return false;
+}

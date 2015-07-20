@@ -28,6 +28,7 @@ public:
     // will return true if input is used.
     virtual bool OnTouch(int action, int id, float x, float y, float pressure, float size);
     virtual bool OnButtons(GameCoreButtonActions action, GameCoreButtonIDs id);
+    virtual bool OnKeys(GameCoreButtonActions action, int keycode, int unicodechar);
 
 public:
 #if MYFW_USING_WX

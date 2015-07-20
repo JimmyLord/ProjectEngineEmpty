@@ -67,7 +67,7 @@ int GameComponentTypeManager::GetTypeByName(const char* name)
     for( int i=0; i<Component_NumGameComponentTypes; i++ )
     {
         if( strcmp( g_GameComponentTypeInfo[i].name, name ) == 0 )
-            return i;
+            return Component_NumEngineComponentTypes + i;
     }
 
     return -1;

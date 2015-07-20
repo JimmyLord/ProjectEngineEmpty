@@ -13,7 +13,6 @@
 class GameEmptyReplaceMe : public EngineCore
 {
 public:
-    Vector3 m_Position;
 
 public:
     GameEmptyReplaceMe();
@@ -22,11 +21,14 @@ public:
     virtual ComponentTypeManager* CreateComponentTypeManager() { return MyNew GameComponentTypeManager; }
 
     virtual void OneTimeInit();
+
     virtual double Tick(double TimePassed);
+    virtual void OnSurfaceChanged(unsigned int startx, unsigned int starty, unsigned int width, unsigned int height);
     virtual void OnDrawFrame();
 
-    virtual void OnTouch(int action, int id, float x, float y, float pressure, float size);
-    virtual void OnButtons(GameCoreButtonActions action, GameCoreButtonIDs id);
+    virtual bool OnTouch(int action, int id, float x, float y, float pressure, float size);
+    virtual bool OnButtons(GameCoreButtonActions action, GameCoreButtonIDs id);
+    virtual bool OnKeys(GameCoreButtonActions action, int keycode, int unicodechar);
 };
 
 #endif //__GameEmptyReplaceMe_H__
