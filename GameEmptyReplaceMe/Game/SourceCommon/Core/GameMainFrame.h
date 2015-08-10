@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2014 Jimmy Lord http://www.flatheadgames.com
+// Copyright (c) 2015 Jimmy Lord http://www.flatheadgames.com
 //
 // This software is provided 'as-is', without any express or implied warranty.  In no event will the authors be held liable for any damages arising from the use of this software.
 // Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
@@ -7,20 +7,37 @@
 // 2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
 // 3. This notice may not be removed or altered from any source distribution.
 
-#ifndef __GameCommonHeader_H__
-#define __GameCommonHeader_H__
+#ifndef __GameMainFrame_H__
+#define __GameMainFrame_H__
 
-#include "../../Framework/MyFramework/SourceCommon/CommonHeader.h"
-#include "../../Engine/MyEngine/SourceCommon/EngineCommonHeader.h"
+class GameMainFrame;
 
-#include "GameComponents/ComponentInputTrackMousePos.h"
-#include "GameComponents/ComponentAIChasePlayer.h"
+extern GameMainFrame* g_pGameMainFrame;
 
-#include "Core/GameComponentTypeManager.h"
-#include "Core/GameEmptyReplaceMe.h"
+enum GameMenuIDs
+{
+    myIDGame_DummyID = myIDEngine_LastID,
+    myIDGame_LastID,
+};
 
-#if MYFW_USING_WX
-#include "Core/GameMainFrame.h"
-#endif
+class GameMainFrame : public EngineMainFrame
+{
+public:
 
-#endif //__GameCommonHeader_H__
+public:
+    GameMainFrame();
+    ~GameMainFrame();
+
+    virtual void InitFrame();
+    //virtual void AddPanes();
+    //virtual void OnPostInit();
+    //virtual bool OnClose();
+
+    //virtual void ResizeViewport();
+
+    //virtual void UpdateMenuItemStates();
+
+    void OnMenu_Game(wxCommandEvent& event);
+};
+
+#endif //__GameMainFrame_H__

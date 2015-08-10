@@ -129,6 +129,9 @@
     <ClCompile Include="SourceCommon\GameComponents\ComponentInputTrackMousePos.cpp">
       <Filter>Source\Game Components</Filter>
     </ClCompile>
+    <ClCompile Include="SourceCommon\Core\GameMainFrame.cpp">
+      <Filter>Source\Core Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SourceWindows\WinMain.h">
@@ -175,6 +178,9 @@
     </ClInclude>
     <ClInclude Include="SourceCommon\GameComponents\ComponentInputTrackMousePos.h">
       <Filter>Source\Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCommon\Core\GameMainFrame.h">
+      <Filter>Source\Core Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

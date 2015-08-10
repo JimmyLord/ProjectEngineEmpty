@@ -1226,6 +1226,10 @@
     </ClCompile>
     <ClCompile Include="SourceCommon\Core\GameComponentTypeManager.cpp" />
     <ClCompile Include="SourceCommon\Core\GameEmptyReplaceMe.cpp" />
+    <ClCompile Include="SourceCommon\Core\GameMainFrame.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="SourceCommon\GameCommonHeader.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -1480,6 +1484,10 @@
     </ClInclude>
     <ClInclude Include="SourceCommon\Core\GameComponentTypeManager.h" />
     <ClInclude Include="SourceCommon\Core\GameEmptyReplaceMe.h" />
+    <ClInclude Include="SourceCommon\Core\GameMainFrame.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="SourceCommon\GameCommonHeader.h" />
     <ClInclude Include="SourceCommon\GameComponents\ComponentAIChasePlayer.h" />
     <ClInclude Include="SourceCommon\GameComponents\ComponentInputTrackMousePos.h" />
