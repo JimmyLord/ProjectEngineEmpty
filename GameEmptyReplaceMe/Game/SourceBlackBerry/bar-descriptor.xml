@@ -49,41 +49,42 @@
     <category>core.games</category>
     <asset path="icon.png">icon.png</asset>
     <asset path="../Data">Data</asset>
-    <configuration id="com.qnx.qcc.configuration.exe.debug.1643476189" name="Device-Debug">
+    <asset path="../../../Engine/DataEngine">DataEngine</asset>
+    <configuration name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="Device-Debug/EmptyReplaceMe" entry="true" type="Qnx/Elf">EmptyReplaceMe</asset>
+       <asset path="Device-Debug/EngineEmptyReplaceMe" entry="true" type="Qnx/Elf">EngineEmptyReplaceMe</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.configuration.exe.release.2128013639" name="Device-Release">
+    <configuration name="Device-Release">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="Device-Release/EmptyReplaceMe" entry="true" type="Qnx/Elf">EmptyReplaceMe</asset>
+       <asset path="Device-Release/EngineEmptyReplaceMe" entry="true" type="Qnx/Elf">EngineEmptyReplaceMe</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.configuration.exe.profile.1238212533" name="Device-Profile">
+    <configuration name="Device-Profile">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="Device-Profile/EmptyReplaceMe" entry="true" type="Qnx/Elf">EmptyReplaceMe</asset>
+       <asset path="Device-Profile/EngineEmptyReplaceMe" entry="true" type="Qnx/Elf">EngineEmptyReplaceMe</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.configuration.exe.profile.coverage.193063636" name="Device-Coverage">
+    <configuration name="Device-Coverage">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="Device-Coverage/EmptyReplaceMe" entry="true" type="Qnx/Elf">EmptyReplaceMe</asset>
+       <asset path="Device-Coverage/EngineEmptyReplaceMe" entry="true" type="Qnx/Elf">EngineEmptyReplaceMe</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.configuration.exe.debug.474373924" name="Simulator-Debug">
+    <configuration name="Simulator-Debug">
        <platformArchitecture>x86</platformArchitecture>
-       <asset path="Simulator-Debug/EmptyReplaceMe" entry="true" type="Qnx/Elf">EmptyReplaceMe</asset>
+       <asset path="Simulator-Debug/EngineEmptyReplaceMe" entry="true" type="Qnx/Elf">EngineEmptyReplaceMe</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.configuration.exe.profile.1052958192" name="Simulator-Profile">
+    <configuration name="Simulator-Profile">
        <platformArchitecture>x86</platformArchitecture>
-       <asset path="Simulator-Profile/EmptyReplaceMe" entry="true" type="Qnx/Elf">EmptyReplaceMe</asset>
+       <asset path="Simulator-Profile/EngineEmptyReplaceMe" entry="true" type="Qnx/Elf">EngineEmptyReplaceMe</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.configuration.exe.profile.coverage.1287817332" name="Simulator-Coverage">
+    <configuration name="Simulator-Coverage">
        <platformArchitecture>x86</platformArchitecture>
-       <asset path="Simulator-Coverage/EmptyReplaceMe" entry="true" type="Qnx/Elf">EmptyReplaceMe</asset>
+       <asset path="Simulator-Coverage/EngineEmptyReplaceMe" entry="true" type="Qnx/Elf">EngineEmptyReplaceMe</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.configuration.exe.debug.1643476189.227623268" name="PlayBook-Debug">
+    <configuration name="PlayBook-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="PlayBook-Debug/EmptyReplaceMe" entry="true" type="Qnx/Elf">EmptyReplaceMe</asset>
+       <asset path="PlayBook-Debug/EngineEmptyReplaceMe" entry="true" type="Qnx/Elf">EngineEmptyReplaceMe</asset>
     </configuration>
-    <configuration id="com.qnx.qcc.configuration.exe.release.2128013639.1255616291" name="PlayBook-Release">
+    <configuration name="PlayBook-Release">
        <platformArchitecture>armle-v7</platformArchitecture>
-       <asset path="PlayBook-Release/EmptyReplaceMe" entry="true" type="Qnx/Elf">EmptyReplaceMe</asset>
+       <asset path="PlayBook-Release/EngineEmptyReplaceMe" entry="true" type="Qnx/Elf">EngineEmptyReplaceMe</asset>
     </configuration>
     
     <!--  The icon for the application, which should be 86x86. -->

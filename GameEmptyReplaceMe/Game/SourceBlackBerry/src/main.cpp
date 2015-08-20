@@ -11,7 +11,7 @@
 #include "Core/GameEmptyReplaceMe.h"
 
 #include "../../MyFramework/SourceBlackBerry/BBMain.h"
-#include "../SourceCommon/GameTypes/GameType_EmptyReplaceMe.h"
+//#include "../../SourceCommon/GameTypes/GameType_EmptyReplaceMe.h"
 
 // ScoreLoop simple demo... good for testing lots of scores(but it works, so useless :))
 const char* g_ScoreLoop_GameID = "b0c5ba61-fdf4-4744-a0d2-d3e34bc20cd5";
