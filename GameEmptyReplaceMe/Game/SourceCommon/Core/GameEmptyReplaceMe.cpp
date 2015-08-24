@@ -48,9 +48,9 @@ double GameEmptyReplaceMe::Tick(double TimePassed)
     return EngineCore::Tick( TimePassed );
 }
 
-void GameEmptyReplaceMe::OnDrawFrame()
+void GameEmptyReplaceMe::OnDrawFrame(unsigned int canvasid)
 {
-    EngineCore::OnDrawFrame();
+    EngineCore::OnDrawFrame( canvasid );
 }
 
 bool GameEmptyReplaceMe::OnTouch(int action, int id, float x, float y, float pressure, float size)

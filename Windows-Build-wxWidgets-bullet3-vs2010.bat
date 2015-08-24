@@ -6,8 +6,8 @@ cd ../../lib
 rename vc_lib vc100_lib
 cd ../..
 
-cd bullet3\build3
-call vs2010
-cd ..\..
+rem cd bullet3\build3
+rem call vs2010
+rem cd ..\..
 
 pause

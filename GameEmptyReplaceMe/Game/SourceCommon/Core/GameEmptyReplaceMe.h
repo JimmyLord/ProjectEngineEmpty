@@ -24,7 +24,7 @@ public:
 
     virtual double Tick(double TimePassed);
     virtual void OnSurfaceChanged(unsigned int startx, unsigned int starty, unsigned int width, unsigned int height);
-    virtual void OnDrawFrame();
+    virtual void OnDrawFrame(unsigned int canvasid);
 
     virtual bool OnTouch(int action, int id, float x, float y, float pressure, float size);
     virtual bool OnButtons(GameCoreButtonActions action, GameCoreButtonIDs id);
