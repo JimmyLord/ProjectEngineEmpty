@@ -1760,6 +1760,7 @@
     <None Include="Data\Shaders\Shader_TextureVertexColor.glsl" />
     <None Include="Data\Shaders\Shader_VertSinY.glsl" />
     <None Include="Data\Shaders\Shader_Water.glsl" />
+    <None Include="Data\Shaders\TestFragCoord.glsl" />
     <None Include="EditorPrefs.ini" />
     <None Include="SourceAndroid\AndroidApk\AndroidManifest.xml">
       <SubType>Designer</SubType>

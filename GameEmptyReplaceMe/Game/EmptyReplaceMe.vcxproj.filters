@@ -384,5 +384,8 @@
       <Filter>Data\Menus</Filter>
     </None>
     <None Include="EditorPrefs.ini" />
+    <None Include="Data\Shaders\TestFragCoord.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

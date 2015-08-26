@@ -15,11 +15,12 @@ void main()
 
 #ifdef FragmentShader
 
+uniform vec2 u_FBSize;
+
 void main()
 {
-    gl_FragColor = vec4( gl_FragCoord.x / 754, gl_FragCoord.y / 409, 0, 1 );
-    //gl_FragColor = vec4( gl_FragCoord.x / 251, gl_FragCoord.y / 122, 0, 1 );
-    //gl_FragColor = vec4( gl_FragCoord.x / 754, gl_FragCoord.y, 0, 1 );
+    gl_FragColor = vec4( gl_FragCoord.x / u_FBSize.x, gl_FragCoord.y / u_FBSize.y, 0, 1 );
+    //gl_FragColor = vec4( gl_FragCoord.x / 300, gl_FragCoord.y / 195, 0, 1 );
 }
 
 #endif
