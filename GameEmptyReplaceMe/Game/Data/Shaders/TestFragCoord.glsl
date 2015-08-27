@@ -19,6 +19,7 @@ uniform vec2 u_FBSize;
 
 void main()
 {
+    //gl_FragColor = vec4( 1,1,1,1 );
     gl_FragColor = vec4( gl_FragCoord.x / u_FBSize.x, gl_FragCoord.y / u_FBSize.y, 0, 1 );
     //gl_FragColor = vec4( gl_FragCoord.x / 300, gl_FragCoord.y / 195, 0, 1 );
 }
