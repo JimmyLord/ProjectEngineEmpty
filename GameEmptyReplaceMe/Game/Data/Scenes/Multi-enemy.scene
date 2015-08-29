@@ -1,5 +1,25 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial", "Data/Materials/Normals.mymaterial", "Data/Materials/TintColor.mymaterial"],
+	"Files":	[{
+			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+		}, {
+			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+		}, {
+			"Path":	"Data/Meshes/cube.obj.mymesh"
+		}, {
+			"Path":	"Data/Scripts/Player.lua"
+		}, {
+			"Path":	"Data/Scripts/Enemy.lua"
+		}, {
+			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
+		}, {
+			"Path":	"Data/Materials/Color-Green.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Color-Red.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Normals.mymaterial"
+		}, {
+			"Path":	"Data/Materials/TintColor.mymaterial"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -161,7 +181,7 @@
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Normals.mymaterial",
+			"Materials":	["Data/Materials/Normals.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh"
@@ -171,7 +191,7 @@
 			"ID":	15,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/TintColor.mymaterial",
+			"Materials":	["Data/Materials/TintColor.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh"

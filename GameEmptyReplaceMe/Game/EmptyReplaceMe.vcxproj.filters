@@ -387,5 +387,11 @@
     <None Include="Data\Shaders\TestFragCoord.glsl">
       <Filter>Data\Shaders</Filter>
     </None>
+    <None Include="Data\Scenes\TestFragCoord.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scenes\Multi-enemy.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
   </ItemGroup>
 </Project>

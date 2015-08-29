@@ -1,11 +1,5 @@
 {
 	"Files":	[{
-			"Path":	"DataEngine/Fonts/Nevis60.fnt"
-		}, {
-			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
-		}, {
-			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
-		}, {
 			"Path":	"Data/Materials/TestFragCoord.mymaterial"
 		}, {
 			"Path":	"Data/Shaders/TestFragCoord.glsl"

@@ -1730,8 +1730,10 @@
     <None Include="Data\Materials\Lights.mymaterial" />
     <None Include="Data\Menus\Test.menu" />
     <None Include="Data\Menus\TestMenuActions.lua" />
+    <None Include="Data\Scenes\Multi-enemy.scene" />
     <None Include="Data\Scenes\TestAnimation.scene" />
     <None Include="Data\Scenes\TestBasicScene.scene" />
+    <None Include="Data\Scenes\TestFragCoord.scene" />
     <None Include="Data\Scenes\TestLights.scene" />
     <None Include="Data\Scenes\TestMenuPages.scene" />
     <None Include="Data\Scenes\TestParenting.scene" />
