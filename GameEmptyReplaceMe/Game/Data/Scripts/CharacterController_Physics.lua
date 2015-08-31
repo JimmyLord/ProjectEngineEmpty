@@ -68,8 +68,8 @@ Tick = function(timepassed)
 
 	-- move the player
 	this.dir:Normalize(); -- avoid fast diagonals.
-	--pos.x = pos.x + this.dir.x * timepassed * this.Speed;
-	--pos.z = pos.z + this.dir.z * timepassed * this.Speed;
+	pos.x = pos.x + this.dir.x * timepassed * this.Speed;
+	pos.z = pos.z + this.dir.z * timepassed * this.Speed;
 
 	collisionobject:ApplyForce( this.dir, Vector3(0,0,0) );
 
