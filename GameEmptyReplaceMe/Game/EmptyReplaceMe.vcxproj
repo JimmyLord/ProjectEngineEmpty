@@ -1734,6 +1734,7 @@
     <None Include="Data\Scenes\TestAnimation.scene" />
     <None Include="Data\Scenes\TestBasicScene.scene" />
     <None Include="Data\Scenes\TestFragCoord.scene" />
+    <None Include="Data\Scenes\TestInheritance.scene" />
     <None Include="Data\Scenes\TestLights.scene" />
     <None Include="Data\Scenes\TestMenuPages.scene" />
     <None Include="Data\Scenes\TestParenting.scene" />

@@ -1,5 +1,29 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "DataEngine/Textures/WhiteSquare.png", "Data/Materials/Normals.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial"],
+	"Files":	[{
+			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+		}, {
+			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+		}, {
+			"Path":	"Data/Meshes/cube.obj.mymesh"
+		}, {
+			"Path":	"Data/Scripts/Player.lua"
+		}, {
+			"Path":	"Data/Scripts/Enemy.lua"
+		}, {
+			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
+		}, {
+			"Path":	"DataEngine/Textures/WhiteSquare.png"
+		}, {
+			"Path":	"Data/Materials/Normals.mymaterial"
+		}, {
+			"Path":	"Data/Materials/TextureLights.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Color-Green.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Color-Red.mymaterial"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -49,7 +73,7 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[-0.532053, 0, -10],
+			"Pos":	[0, 0, -5],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
@@ -62,7 +86,7 @@
 			"GOID":	12,
 			"ID":	0,
 			"ParentGOID":	10,
-			"Pos":	[-5, 0, 0],
+			"Pos":	[5, 0, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],

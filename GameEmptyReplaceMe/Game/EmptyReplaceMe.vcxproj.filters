@@ -393,5 +393,8 @@
     <None Include="Data\Scenes\Multi-enemy.scene">
       <Filter>Data\Scenes</Filter>
     </None>
+    <None Include="Data\Scenes\TestInheritance.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
   </ItemGroup>
 </Project>
