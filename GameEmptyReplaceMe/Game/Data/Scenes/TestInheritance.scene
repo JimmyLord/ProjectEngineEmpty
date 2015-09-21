@@ -3,6 +3,10 @@
 			"Path":	"Data/Materials/Normals.mymaterial"
 		}, {
 			"Path":	"Data/Meshes/cube.obj.mymesh"
+		}, {
+			"Path":	"Data/Scripts/Player.lua"
+		}, {
+			"Path":	"Data/Scripts/Enemy.lua"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -19,6 +23,12 @@
 			},
 			"ID":	4,
 			"Name":	"CubeChild"
+		}, {
+			"ParentGO":	{
+				"GOID":	4
+			},
+			"ID":	5,
+			"Name":	"CubeChild - copy"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -35,13 +45,19 @@
 		}, {
 			"GOID":	3,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
+			"Pos":	[-5.332029, 0, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	4,
 			"ID":	0,
-			"Pos":	[0, 0, 4.567167],
+			"Pos":	[-1.827662, 0, 4.405595],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	5,
+			"ID":	0,
+			"Pos":	[1.420963, 0, 10.233938],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
@@ -66,6 +82,45 @@
 			"DepthBit":	0,
 			"Layers":	2
 		}, {
+			"Type":	"Lua Script",
+			"GOID":	4,
+			"ID":	5,
+			"Script":	"Data/Scripts/Enemy.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	1
+				}, {
+					"Name":	"ObjectChasing",
+					"Type":	2
+				}]
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	3,
+			"ID":	8,
+			"Script":	"Data/Scripts/Enemy.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	1
+				}, {
+					"Name":	"ObjectChasing",
+					"Type":	2
+				}]
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	5,
+			"ID":	11,
+			"Script":	"Data/Scripts/Enemy.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	1
+				}, {
+					"Name":	"ObjectChasing",
+					"Type":	2
+				}]
+		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	3,
 			"ID":	3,
@@ -79,6 +134,16 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	4,
 			"ID":	4,
+			"Visible":	1,
+			"Layers":	1,
+			"Materials":	["Data/Materials/Normals.mymaterial"],
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh"
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	5,
+			"ID":	12,
 			"Visible":	1,
 			"Layers":	1,
 			"Materials":	["Data/Materials/Normals.mymaterial"],
