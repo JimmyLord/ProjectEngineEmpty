@@ -28,10 +28,10 @@
 			"Name":	"Hud Camera"
 		}, {
 			"ID":	8,
-			"Name":	"Player Object"
+			"Name":	"Player"
 		}, {
 			"ID":	9,
-			"Name":	"Second Object"
+			"Name":	"Enemy1"
 		}, {
 			"ID":	10,
 			"Name":	"Cube"
@@ -40,7 +40,13 @@
 			"Name":	"Plane"
 		}, {
 			"ID":	12,
-			"Name":	"Duplicated Game Object"
+			"Name":	"Enemy2"
+		}, {
+			"ParentGO":	{
+				"GOID":	12
+			},
+			"ID":	13,
+			"Name":	"Enemy2 - child"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -81,7 +87,13 @@
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
+			"Pos":	[250, 100, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	13,
+			"ID":	0,
+			"Pos":	[350, 100, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
@@ -158,6 +170,22 @@
 					}
 				}]
 		}, {
+			"Type":	"Lua Script",
+			"GOID":	13,
+			"ID":	24,
+			"Script":	"Data/Scripts/Enemy.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	3
+				}, {
+					"Name":	"ObjectChasing",
+					"Type":	2,
+					"Value":	{
+						"GOID":	8
+					}
+				}]
+		}, {
 			"Type":	"Sprite",
 			"GOID":	8,
 			"ID":	9,
@@ -199,6 +227,15 @@
 			"Type":	"Sprite",
 			"GOID":	12,
 			"ID":	17,
+			"Visible":	1,
+			"Layers":	2,
+			"Tint":	[255, 0, 255, 255],
+			"Size":	[50, 50],
+			"Material":	"Data/Materials/Color-Red.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	13,
+			"ID":	25,
 			"Visible":	1,
 			"Layers":	2,
 			"Tint":	[255, 0, 255, 255],
