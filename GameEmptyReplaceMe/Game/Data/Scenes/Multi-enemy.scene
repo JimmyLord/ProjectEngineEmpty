@@ -47,6 +47,12 @@
 			},
 			"ID":	13,
 			"Name":	"Enemy2 - child"
+		}, {
+			"ParentGO":	{
+				"GOID":	13
+			},
+			"ID":	14,
+			"Name":	"Enemy2 - child - child"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -69,7 +75,7 @@
 		}, {
 			"GOID":	9,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
+			"Pos":	[-250, 1.300371e-008, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
@@ -87,15 +93,21 @@
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[250, 100, 0],
+			"Pos":	[250.000015, 100, 0],
 			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 2.980232e-009]
 		}, {
 			"GOID":	13,
 			"ID":	0,
 			"Pos":	[350, 100, 0],
 			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 2.980232e-009]
+		}, {
+			"GOID":	14,
+			"ID":	0,
+			"Pos":	[450, 100, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 2.980232e-009]
 		}],
 	"Components":	[{
 			"Type":	"Camera",
@@ -186,9 +198,30 @@
 					}
 				}]
 		}, {
+			"Type":	"Lua Script",
+			"GOID":	14,
+			"ID":	31,
+			"Script":	"Data/Scripts/Enemy.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	3
+				}, {
+					"Name":	"ObjectChasing",
+					"Type":	2,
+					"Value":	{
+						"GOID":	8
+					}
+				}]
+		}, {
 			"Type":	"Sprite",
 			"GOID":	8,
 			"ID":	9,
+			"Visible":	1,
+			"Layers":	2,
+			"Tint":	[255, 0, 0, 255],
+			"Size":	[50, 50],
+			"Material":	"Data/Materials/Color-Green.mymaterial",
 			"Visible":	1,
 			"Layers":	2,
 			"Tint":	[255, 0, 0, 255],
@@ -198,6 +231,11 @@
 			"Type":	"Sprite",
 			"GOID":	9,
 			"ID":	11,
+			"Visible":	1,
+			"Layers":	2,
+			"Tint":	[0, 255, 0, 255],
+			"Size":	[50, 50],
+			"Material":	"Data/Materials/Color-Red.mymaterial",
 			"Visible":	1,
 			"Layers":	2,
 			"Tint":	[0, 255, 0, 255],
@@ -229,7 +267,12 @@
 			"ID":	17,
 			"Visible":	1,
 			"Layers":	2,
-			"Tint":	[255, 0, 255, 255],
+			"Tint":	[114, 167, 88, 255],
+			"Size":	[50, 50],
+			"Material":	"Data/Materials/Color-Red.mymaterial",
+			"Visible":	1,
+			"Layers":	2,
+			"Tint":	[114, 167, 88, 255],
 			"Size":	[50, 50],
 			"Material":	"Data/Materials/Color-Red.mymaterial"
 		}, {
@@ -238,7 +281,26 @@
 			"ID":	25,
 			"Visible":	1,
 			"Layers":	2,
-			"Tint":	[255, 0, 255, 255],
+			"Tint":	[114, 167, 88, 255],
+			"Size":	[50, 50],
+			"Material":	"Data/Materials/Color-Red.mymaterial",
+			"Visible":	1,
+			"Layers":	2,
+			"Tint":	[114, 167, 88, 255],
+			"Size":	[50, 50],
+			"Material":	"Data/Materials/Color-Red.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	14,
+			"ID":	32,
+			"Visible":	1,
+			"Layers":	2,
+			"Tint":	[114, 167, 88, 255],
+			"Size":	[50, 50],
+			"Material":	"Data/Materials/Color-Red.mymaterial",
+			"Visible":	1,
+			"Layers":	2,
+			"Tint":	[114, 167, 88, 255],
 			"Size":	[50, 50],
 			"Material":	"Data/Materials/Color-Red.mymaterial"
 		}]

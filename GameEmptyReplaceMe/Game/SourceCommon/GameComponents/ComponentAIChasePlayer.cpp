@@ -38,7 +38,7 @@ void ComponentAIChasePlayer::OnLeftClick(unsigned int count, bool clear)
     ComponentBase::OnLeftClick( count, clear );
 }
 
-void ComponentAIChasePlayer::FillPropertiesWindow(bool clear)
+void ComponentAIChasePlayer::FillPropertiesWindow(bool clear, bool addcomponentvariables)
 {
     m_ControlID_ComponentTitleLabel = g_pPanelWatch->AddSpace( "AI Chase Player", this, ComponentBase::StaticOnComponentTitleLabelClicked );
 
