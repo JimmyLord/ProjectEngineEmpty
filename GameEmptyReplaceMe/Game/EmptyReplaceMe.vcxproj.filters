@@ -396,5 +396,11 @@
     <None Include="Data\Scenes\TestInheritance.scene">
       <Filter>Data\Scenes</Filter>
     </None>
+    <None Include="Data\Scenes\TestLua.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scripts\MemoryTest.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
   </ItemGroup>
 </Project>

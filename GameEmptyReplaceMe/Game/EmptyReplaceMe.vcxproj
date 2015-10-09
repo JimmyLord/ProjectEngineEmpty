@@ -1736,6 +1736,7 @@
     <None Include="Data\Scenes\TestFragCoord.scene" />
     <None Include="Data\Scenes\TestInheritance.scene" />
     <None Include="Data\Scenes\TestLights.scene" />
+    <None Include="Data\Scenes\TestLua.scene" />
     <None Include="Data\Scenes\TestMenuPages.scene" />
     <None Include="Data\Scenes\TestParenting.scene" />
     <None Include="Data\Scenes\TestPhysics.scene" />
@@ -1748,6 +1749,7 @@
     <None Include="Data\Scripts\GGJEnemy.lua" />
     <None Include="Data\Scripts\GGJPlayer.lua" />
     <None Include="Data\Scripts\GGJTube.lua" />
+    <None Include="Data\Scripts\MemoryTest.lua" />
     <None Include="Data\Scripts\Player.lua" />
     <None Include="Data\Scripts\SimpleCharacterController.lua" />
     <None Include="Data\Shaders\PostEffects\BlurHorizontal.glsl" />
