@@ -40,10 +40,10 @@ OnButtons = function(action, id)
 			this.dir.x = 1;
 		end
 		if( id == 3 ) then -- up
-			this.dir.z = -1;
+			this.dir.z = 1;
 		end
 		if( id == 4 ) then -- down
-			this.dir.z = 1;
+			this.dir.z = -1;
 		end
 	end
 end,

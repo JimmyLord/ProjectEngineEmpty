@@ -1,5 +1,28 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Scripts/SimpleCharacterController.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Materials/TextureLights.mymaterial", "Data/Materials/Bones.mymaterial", "Data/Meshes/test.fbx.mymesh", "Data/Meshes/test.fbx.myaniminfo"],
+	"Files":	[{
+			"Path":	"Data/Scripts/SimpleCharacterController.lua"
+		}, {
+			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureVertexColor.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_BoneAnim.glsl"
+		}, {
+			"Path":	"Data/Materials/TextureLights.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
+		}, {
+			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh",
+			"SourcePath":	"E:\\AndroidDev\\ProjectEngineEmpty\\GameEmptyReplaceMe\\Game\\DataSource\\FBXs\\AnimGuy.fbx"
+		}, {
+			"Path":	"Data/Meshes/TestSpinUpAxis.fbx.mymesh",
+			"SourcePath":	"E:\\AndroidDev\\ProjectEngineEmpty\\GameEmptyReplaceMe\\Game\\DataSource\\FBXs\\TestSpinUpAxis.fbx"
+		}, {
+			"Path":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh",
+			"SourcePath":	"E:\\AndroidDev\\ProjectEngineEmpty\\GameEmptyReplaceMe\\Game\\DataSource\\FBXs\\TestSpinAllAxes.fbx"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -8,7 +31,7 @@
 			"Name":	"Hud Camera"
 		}, {
 			"ID":	10,
-			"Name":	"Cube"
+			"Name":	"AnimGuy"
 		}, {
 			"ID":	11,
 			"Name":	"Plane"
@@ -30,13 +53,19 @@
 		}, {
 			"ID":	17,
 			"Name":	"Wall"
+		}, {
+			"ID":	18,
+			"Name":	"TestSpinUpAxis"
+		}, {
+			"ID":	19,
+			"Name":	"TestSpinAllAxis"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
-			"Pos":	[0, 0, 10],
+			"Pos":	[0, 3, -10],
 			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[-17.600000, 0, 0]
 		}, {
 			"GOID":	7,
 			"ID":	0,
@@ -46,9 +75,9 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[4.768372e-007, -3, 0.090000],
+			"Pos":	[4.768372e-007, 0, 0],
 			"Scale":	[1, 1, 1],
-			"Rot":	[-90, 0, 0]
+			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	11,
 			"ID":	0,
@@ -91,8 +120,50 @@
 			"Pos":	[0, -3, -10],
 			"Scale":	[1, 1, 1],
 			"Rot":	[-90, 0, 0]
+		}, {
+			"GOID":	18,
+			"ID":	0,
+			"Pos":	[-3, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	19,
+			"ID":	0,
+			"Pos":	[3, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
+			"Type":	"Light",
+			"GOID":	12,
+			"ID":	48,
+			"Color":	[0, 1, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	13,
+			"ID":	49,
+			"Color":	[1, 0, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	14,
+			"ID":	50,
+			"Color":	[0, 0, 1, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	15,
+			"ID":	51,
+			"Color":	[1, 1, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	16,
+			"ID":	52,
+			"Color":	[0, 1, 1, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
@@ -123,7 +194,7 @@
 			"Type":	"Animation Player",
 			"GOID":	10,
 			"ID":	34,
-			"AnimIndex":	1,
+			"AnimIndex":	0,
 			"AnimFrame":	0
 		}, {
 			"Type":	"Lua Script",
@@ -151,22 +222,34 @@
 			"Mass":	0,
 			"Scale":	[1, 1, 1]
 		}, {
+			"Type":	"Animation Player",
+			"GOID":	18,
+			"ID":	62,
+			"AnimIndex":	0,
+			"AnimFrame":	0
+		}, {
+			"Type":	"Animation Player",
+			"GOID":	19,
+			"ID":	68,
+			"AnimIndex":	0,
+			"AnimFrame":	0
+		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Bones.mymaterial",
+			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/test.fbx.mymesh"
+			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh"
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/TextureLights.mymaterial",
+			"Materials":	["Data/Materials/TextureLights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
@@ -185,7 +268,7 @@
 			"ID":	54,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/TextureLights.mymaterial",
+			"Materials":	["Data/Materials/TextureLights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
@@ -199,34 +282,24 @@
 			"PlaneUVRangey":	1,
 			"SphereRadius":	1
 		}, {
-			"Type":	"Light",
-			"GOID":	12,
-			"ID":	48,
-			"Color":	[0, 1, 0, 0],
-			"Atten":	[0, 0, 0.090800]
+			"Type":	"Mesh-OBJ",
+			"GOID":	18,
+			"ID":	64,
+			"Visible":	1,
+			"Layers":	1,
+			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"],
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/TestSpinUpAxis.fbx.mymesh"
 		}, {
-			"Type":	"Light",
-			"GOID":	13,
-			"ID":	49,
-			"Color":	[1, 0, 0, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	14,
-			"ID":	50,
-			"Color":	[0, 0, 1, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	15,
-			"ID":	51,
-			"Color":	[1, 1, 0, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	16,
-			"ID":	52,
-			"Color":	[0, 1, 1, 0],
-			"Atten":	[0, 0, 0.090800]
+			"Type":	"Mesh-OBJ",
+			"GOID":	19,
+			"ID":	70,
+			"Visible":	1,
+			"Layers":	1,
+			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"],
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh"
 		}]
 }
