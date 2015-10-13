@@ -15,13 +15,13 @@
 			"Path":	"Data/Materials/Bones.mymaterial"
 		}, {
 			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh",
-			"SourcePath":	"E:\\AndroidDev\\ProjectEngineEmpty\\GameEmptyReplaceMe\\Game\\DataSource\\FBXs\\AnimGuy.fbx"
+			"SourcePath":	"DataSource/FBXs/AnimGuy.fbx"
 		}, {
 			"Path":	"Data/Meshes/TestSpinUpAxis.fbx.mymesh",
-			"SourcePath":	"E:\\AndroidDev\\ProjectEngineEmpty\\GameEmptyReplaceMe\\Game\\DataSource\\FBXs\\TestSpinUpAxis.fbx"
+			"SourcePath":	"DataSource/FBXs/TestSpinUpAxis.fbx"
 		}, {
 			"Path":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh",
-			"SourcePath":	"E:\\AndroidDev\\ProjectEngineEmpty\\GameEmptyReplaceMe\\Game\\DataSource\\FBXs\\TestSpinAllAxes.fbx"
+			"SourcePath":	"DataSource/FBXs/TestSpinAllAxes.fbx"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
