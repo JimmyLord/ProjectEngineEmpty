@@ -1,5 +1,40 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Scripts/SimpleCharacterController.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Meshes/test.fbx.mymesh", "Data/Meshes/test.fbx.myaniminfo", "Data/Materials/Bones.mymaterial", "Data/Materials/Lights.mymaterial"],
+	"Files":	[{
+			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+		}, {
+			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+		}, {
+			"Path":	"Data/Meshes/cube.obj.mymesh"
+		}, {
+			"Path":	"DataEngine/Textures/WhiteSquare.png"
+		}, {
+			"Path":	"Data/Scripts/Player.lua"
+		}, {
+			"Path":	"Data/Scripts/Enemy.lua"
+		}, {
+			"Path":	"Data/Meshes/test.mymesh"
+		}, {
+			"Path":	"Data/Scripts/SimpleCharacterController.lua"
+		}, {
+			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureVertexColor.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_BoneAnim.glsl"
+		}, {
+			"Path":	"Data/Meshes/test.fbx.mymesh"
+		}, {
+			"Path":	"Data/Meshes/test.fbx.myaniminfo"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Lights.mymaterial"
+		}, {
+			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh",
+			"SourcePath":	"DataSource/FBXs/AnimGuy.fbx"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -8,7 +43,7 @@
 			"Name":	"Hud Camera"
 		}, {
 			"ID":	10,
-			"Name":	"Cube"
+			"Name":	"AnimGuy"
 		}, {
 			"ID":	11,
 			"Name":	"Plane"
@@ -46,7 +81,7 @@
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
-			"Pos":	[0, 0, 10],
+			"Pos":	[0, 0, -10],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
@@ -58,9 +93,9 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[4.768372e-007, -3.050000, 0.090000],
+			"Pos":	[4.768372e-007, 0, 0],
 			"Scale":	[1, 1, 1],
-			"Rot":	[-90, 0, 0]
+			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	11,
 			"ID":	0,
@@ -129,6 +164,36 @@
 			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
+			"Type":	"Light",
+			"GOID":	12,
+			"ID":	48,
+			"Color":	[0, 1, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	13,
+			"ID":	49,
+			"Color":	[1, 0, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	14,
+			"ID":	50,
+			"Color":	[0, 0, 1, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	15,
+			"ID":	51,
+			"Color":	[1, 1, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	16,
+			"ID":	52,
+			"Color":	[0, 1, 1, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
@@ -166,30 +231,6 @@
 			"Mass":	0,
 			"Scale":	[1, 1, 1]
 		}, {
-			"Type":	"Animation Player",
-			"GOID":	10,
-			"ID":	34,
-			"AnimIndex":	1,
-			"AnimFrame":	0
-		}, {
-			"Type":	"Lua Script",
-			"GOID":	10,
-			"ID":	45,
-			"Script":	"Data/Scripts/SimpleCharacterController.lua",
-			"ExposedVars":	[{
-					"Name":	"Speed",
-					"Type":	1,
-					"Value":	5
-				}, {
-					"Name":	"Animation",
-					"Type":	1,
-					"Value":	1
-				}, {
-					"Name":	"SpeedRotation",
-					"Type":	1,
-					"Value":	10
-				}]
-		}, {
 			"Type":	"Collision Object",
 			"GOID":	17,
 			"ID":	53,
@@ -218,22 +259,46 @@
 			"Mass":	0,
 			"Scale":	[1, 1, 1]
 		}, {
+			"Type":	"Animation Player",
+			"GOID":	10,
+			"ID":	34,
+			"AnimIndex":	1,
+			"AnimFrame":	0
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	10,
+			"ID":	45,
+			"Script":	"Data/Scripts/SimpleCharacterController.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	5
+				}, {
+					"Name":	"Animation",
+					"Type":	1,
+					"Value":	1
+				}, {
+					"Name":	"SpeedRotation",
+					"Type":	1,
+					"Value":	10
+				}]
+		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Bones.mymaterial",
+			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/Lights.mymaterial", "Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/test.fbx.mymesh"
+			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh"
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Lights.mymaterial",
+			"Materials":	["Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
@@ -252,7 +317,7 @@
 			"ID":	54,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Lights.mymaterial",
+			"Materials":	["Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
@@ -271,7 +336,7 @@
 			"ID":	76,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Lights.mymaterial",
+			"Materials":	["Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
@@ -290,7 +355,7 @@
 			"ID":	78,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Lights.mymaterial",
+			"Materials":	["Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
@@ -309,7 +374,7 @@
 			"ID":	80,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Lights.mymaterial",
+			"Materials":	["Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
@@ -322,35 +387,5 @@
 			"PlaneUVRangex":	1,
 			"PlaneUVRangey":	1,
 			"SphereRadius":	1
-		}, {
-			"Type":	"Light",
-			"GOID":	12,
-			"ID":	48,
-			"Color":	[0, 1, 0, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	13,
-			"ID":	49,
-			"Color":	[1, 0, 0, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	14,
-			"ID":	50,
-			"Color":	[0, 0, 1, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	15,
-			"ID":	51,
-			"Color":	[1, 1, 0, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	16,
-			"ID":	52,
-			"Color":	[0, 1, 1, 0],
-			"Atten":	[0, 0, 0.090800]
 		}]
 }
