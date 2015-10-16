@@ -22,6 +22,8 @@
 		}, {
 			"Path":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh",
 			"SourcePath":	"DataSource/FBXs/TestSpinAllAxes.fbx"
+		}, {
+			"Path":	"Data/Textures/WhiteSquare.png"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -117,9 +119,9 @@
 		}, {
 			"GOID":	17,
 			"ID":	0,
-			"Pos":	[0, -3, -10],
+			"Pos":	[0, -3, 10],
 			"Scale":	[1, 1, 1],
-			"Rot":	[-90, 0, 0]
+			"Rot":	[90, 0, 0]
 		}, {
 			"GOID":	18,
 			"ID":	0,
