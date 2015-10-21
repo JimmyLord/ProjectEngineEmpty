@@ -7,6 +7,8 @@
 			"Path":	"Data/Scripts/Player.lua"
 		}, {
 			"Path":	"Data/Scripts/Enemy.lua"
+		}, {
+			"Path":	"Data/Materials/Color-Green.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -51,12 +53,14 @@
 		}, {
 			"GOID":	4,
 			"ID":	0,
+			"Divorced":	0,
 			"Pos":	[-1.827662, 0, 4.405595],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	5,
 			"ID":	0,
+			"Divorced":	0,
 			"Pos":	[1.420963, 0, 10.233938],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
@@ -85,6 +89,7 @@
 			"Type":	"Lua Script",
 			"GOID":	4,
 			"ID":	5,
+			"Divorced":	0,
 			"Script":	"Data/Scripts/Enemy.lua",
 			"ExposedVars":	[{
 					"Name":	"Speed",
@@ -111,6 +116,7 @@
 			"Type":	"Lua Script",
 			"GOID":	5,
 			"ID":	11,
+			"Divorced":	0,
 			"Script":	"Data/Scripts/Enemy.lua",
 			"ExposedVars":	[{
 					"Name":	"Speed",
@@ -126,7 +132,11 @@
 			"ID":	3,
 			"Visible":	1,
 			"Layers":	1,
+			"PrimitiveType":	4,
+			"PointSize":	1,
 			"Materials":	["Data/Materials/Normals.mymaterial"],
+			"Visible":	1,
+			"Layers":	1,
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh"
@@ -134,9 +144,14 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	4,
 			"ID":	4,
+			"Divorced":	0,
 			"Visible":	1,
 			"Layers":	1,
+			"PrimitiveType":	4,
+			"PointSize":	1,
 			"Materials":	["Data/Materials/Normals.mymaterial"],
+			"Visible":	1,
+			"Layers":	1,
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh"
@@ -144,9 +159,14 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	5,
 			"ID":	12,
+			"Divorced":	0,
 			"Visible":	1,
 			"Layers":	1,
+			"PrimitiveType":	4,
+			"PointSize":	1,
 			"Materials":	["Data/Materials/Normals.mymaterial"],
+			"Visible":	1,
+			"Layers":	1,
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh"
