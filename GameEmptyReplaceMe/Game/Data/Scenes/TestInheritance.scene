@@ -9,6 +9,10 @@
 			"Path":	"Data/Scripts/Enemy.lua"
 		}, {
 			"Path":	"Data/Materials/Color-Green.mymaterial"
+		}, {
+			"Path":	"Data/Meshes/sphere.obj.mymesh"
+		}, {
+			"Path":	"Data/Materials/Color-Pink.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -30,7 +34,13 @@
 				"GOID":	4
 			},
 			"ID":	5,
-			"Name":	"CubeChild - copy"
+			"Name":	"CubeChildChild"
+		}, {
+			"ParentGO":	{
+				"GOID":	4
+			},
+			"ID":	6,
+			"Name":	"CubeChildChild - copy"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -53,15 +63,22 @@
 		}, {
 			"GOID":	4,
 			"ID":	0,
-			"Divorced":	0,
-			"Pos":	[-1.827662, 0, 4.405595],
+			"Divorced":	4,
+			"Pos":	[-2, 0, 3],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	5,
 			"ID":	0,
-			"Divorced":	0,
-			"Pos":	[1.420963, 0, 10.233938],
+			"Divorced":	4,
+			"Pos":	[1.420000, 0, 10.233938],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	6,
+			"ID":	0,
+			"Divorced":	4,
+			"Pos":	[1.420000, -2.550000, 10.233938],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
@@ -86,47 +103,6 @@
 			"DepthBit":	0,
 			"Layers":	2
 		}, {
-			"Type":	"Lua Script",
-			"GOID":	4,
-			"ID":	5,
-			"Divorced":	0,
-			"Script":	"Data/Scripts/Enemy.lua",
-			"ExposedVars":	[{
-					"Name":	"Speed",
-					"Type":	1,
-					"Value":	1
-				}, {
-					"Name":	"ObjectChasing",
-					"Type":	2
-				}]
-		}, {
-			"Type":	"Lua Script",
-			"GOID":	3,
-			"ID":	8,
-			"Script":	"Data/Scripts/Enemy.lua",
-			"ExposedVars":	[{
-					"Name":	"Speed",
-					"Type":	1,
-					"Value":	1
-				}, {
-					"Name":	"ObjectChasing",
-					"Type":	2
-				}]
-		}, {
-			"Type":	"Lua Script",
-			"GOID":	5,
-			"ID":	11,
-			"Divorced":	0,
-			"Script":	"Data/Scripts/Enemy.lua",
-			"ExposedVars":	[{
-					"Name":	"Speed",
-					"Type":	1,
-					"Value":	1
-				}, {
-					"Name":	"ObjectChasing",
-					"Type":	2
-				}]
-		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	3,
 			"ID":	3,
@@ -134,41 +110,39 @@
 			"Layers":	1,
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Materials":	["Data/Materials/Normals.mymaterial"],
-			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
-			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh"
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	4,
 			"ID":	4,
-			"Divorced":	0,
+			"Divorced":	4,
 			"Visible":	1,
 			"Layers":	1,
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Materials":	["Data/Materials/Normals.mymaterial"],
-			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
-			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh"
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Color-Green.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	5,
 			"ID":	12,
-			"Divorced":	0,
+			"Divorced":	4,
 			"Visible":	1,
 			"Layers":	1,
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"Materials":	["Data/Materials/Normals.mymaterial"],
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	6,
+			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh"
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
 		}]
 }
