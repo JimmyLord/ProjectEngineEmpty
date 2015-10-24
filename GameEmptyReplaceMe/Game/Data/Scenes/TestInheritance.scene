@@ -41,6 +41,15 @@
 			},
 			"ID":	6,
 			"Name":	"CubeChildChild - copy"
+		}, {
+			"ID":	7,
+			"Name":	"MeshPrimTest"
+		}, {
+			"ParentGO":	{
+				"GOID":	7
+			},
+			"ID":	8,
+			"Name":	"MeshPrimTest - child"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -79,6 +88,19 @@
 			"ID":	0,
 			"Divorced":	4,
 			"Pos":	[1.420000, -2.550000, 10.233938],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	7,
+			"ID":	0,
+			"Pos":	[-6.535165, -5, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	8,
+			"ID":	0,
+			"Divorced":	4,
+			"Pos":	[6.007479, -5, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
@@ -143,6 +165,38 @@
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
+		}, {
+			"Type":	"Mesh-Primitive",
+			"GOID":	7,
+			"ID":	14,
+			"Visible":	1,
+			"Layers":	1,
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"MPType":	0,
+			"PlaneSize":	[10, 10],
+			"PlaneVertCountx":	10,
+			"PlaneVertCounty":	10,
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
+		}, {
+			"Type":	"Mesh-Primitive",
+			"GOID":	8,
+			"ID":	15,
+			"Visible":	1,
+			"Layers":	1,
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"MPType":	0,
+			"PlaneSize":	[10, 10],
+			"PlaneVertCountx":	10,
+			"PlaneVertCounty":	10,
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
 			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
 		}]
 }
