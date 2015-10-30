@@ -37,11 +37,11 @@ void ComponentInputTrackMousePos::OnLeftClick(unsigned int count, bool clear)
     ComponentBase::OnLeftClick( count, clear );
 }
 
-void ComponentInputTrackMousePos::FillPropertiesWindow(bool clear, bool addcomponentvariables)
+void ComponentInputTrackMousePos::FillPropertiesWindow(bool clear, bool addcomponentvariables, bool ignoreblockvisibleflag)
 {
     m_ControlID_ComponentTitleLabel = g_pPanelWatch->AddSpace( "Input Track Mouse Pos", this, ComponentBase::StaticOnComponentTitleLabelClicked );
 
-    if( m_PanelWatchBlockVisible )
+    if( m_PanelWatchBlockVisible && ignoreblockvisibleflag == false )
     {
         ComponentBase::FillPropertiesWindow( clear );
     }
