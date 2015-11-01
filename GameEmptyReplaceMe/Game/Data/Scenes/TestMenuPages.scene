@@ -1,5 +1,61 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Scripts/Player.lua", "Data/Fonts/System24.fnt", "Data/Fonts/System24_0.png", "Data/Menus/TestMenuActions.lua", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Pink.mymaterial", "Data/Materials/Color-Red.mymaterial", "Data/Menus/Test.menu", "Data/Materials/MenuShadow.mymaterial", "Data/Shaders/Shader_Texture.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Meshes/cube.obj.mymesh", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Enemy.lua", "Data/Meshes/test.fbx.myaniminfo", "Data/Scripts/SimpleCharacterController.lua", "Data/Scripts/CharacterController_Physics.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Meshes/sphere.obj.mymesh", "Data/Textures/test1.png", "Data/Materials/Lights.mymaterial", "Data/Materials/Bones.mymaterial", "Data/Materials/TestTexture.mymaterial", "Data/Meshes/test.fbx.mymesh"],
+	"Files":	[{
+			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+		}, {
+			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+		}, {
+			"Path":	"Data/Scripts/Player.lua"
+		}, {
+			"Path":	"Data/Fonts/System24.fnt"
+		}, {
+			"Path":	"Data/Fonts/System24_0.png"
+		}, {
+			"Path":	"Data/Menus/TestMenuActions.lua"
+		}, {
+			"Path":	"Data/Materials/Color-Green.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Color-Pink.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Color-Red.mymaterial"
+		}, {
+			"Path":	"Data/Menus/Test.menu"
+		}, {
+			"Path":	"Data/Materials/MenuShadow.mymaterial"
+		}, {
+			"Path":	"Data/Shaders/Shader_Texture.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureVertexColor.glsl"
+		}, {
+			"Path":	"Data/Meshes/cube.obj.mymesh"
+		}, {
+			"Path":	"DataEngine/Textures/WhiteSquare.png"
+		}, {
+			"Path":	"Data/Scripts/Enemy.lua"
+		}, {
+			"Path":	"Data/Meshes/test.fbx.myaniminfo"
+		}, {
+			"Path":	"Data/Scripts/SimpleCharacterController.lua"
+		}, {
+			"Path":	"Data/Scripts/CharacterController_Physics.lua"
+		}, {
+			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_BoneAnim.glsl"
+		}, {
+			"Path":	"Data/Meshes/sphere.obj.mymesh"
+		}, {
+			"Path":	"Data/Textures/test1.png"
+		}, {
+			"Path":	"Data/Materials/Lights.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
+		}, {
+			"Path":	"Data/Materials/TestTexture.mymaterial"
+		}, {
+			"Path":	"Data/Meshes/test.fbx.mymesh"
+		}],
 	"GameObjects":	[{
 			"ID":	5,
 			"Name":	"Main Camera"
@@ -83,6 +139,8 @@
 			"GOID":	8,
 			"ID":	10,
 			"Visible":	1,
+			"Layers":	2,
+			"InputEnabled":	1,
 			"Layers":	2,
 			"MenuFile":	"Data/Menus/Test.menu"
 		}]
