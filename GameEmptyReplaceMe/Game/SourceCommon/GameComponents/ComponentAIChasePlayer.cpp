@@ -42,7 +42,7 @@ void ComponentAIChasePlayer::FillPropertiesWindow(bool clear, bool addcomponentv
 {
     m_ControlID_ComponentTitleLabel = g_pPanelWatch->AddSpace( "AI Chase Player", this, ComponentBase::StaticOnComponentTitleLabelClicked );
 
-    if( m_PanelWatchBlockVisible && ignoreblockvisibleflag == false )
+    if( m_PanelWatchBlockVisible || ignoreblockvisibleflag == true )
     {
         ComponentBase::FillPropertiesWindow( clear );
 

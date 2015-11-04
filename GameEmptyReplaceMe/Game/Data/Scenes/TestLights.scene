@@ -1,5 +1,41 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Scripts/SimpleCharacterController.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Materials/Lights.mymaterial", "Data/Materials/Normals.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TintColor.mymaterial", "Data/Materials/Color-Green.mymaterial", "Data/Materials/Color-Red.mymaterial"],
+	"Files":	[{
+			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+		}, {
+			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+		}, {
+			"Path":	"Data/Meshes/cube.obj.mymesh"
+		}, {
+			"Path":	"DataEngine/Textures/WhiteSquare.png"
+		}, {
+			"Path":	"Data/Scripts/Player.lua"
+		}, {
+			"Path":	"Data/Scripts/Enemy.lua"
+		}, {
+			"Path":	"Data/Meshes/test.mymesh"
+		}, {
+			"Path":	"Data/Scripts/SimpleCharacterController.lua"
+		}, {
+			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureVertexColor.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_BoneAnim.glsl"
+		}, {
+			"Path":	"Data/Materials/Lights.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Normals.mymaterial"
+		}, {
+			"Path":	"Data/Materials/TextureLights.mymaterial"
+		}, {
+			"Path":	"Data/Materials/TintColor.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Color-Green.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Color-Red.mymaterial"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -235,29 +271,26 @@
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Materials":	["Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh"
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Lights.mymaterial"]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Materials":	["Data/Materials/Lights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
-			"PlaneSizex":	20,
-			"PlaneSizey":	20,
+			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
-			"PlaneUVStartx":	0,
-			"PlaneUVStarty":	0,
-			"PlaneUVRangex":	1,
-			"PlaneUVRangey":	1,
-			"SphereRadius":	1
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/Lights.mymaterial"]
 		}, {
 			"Type":	"Particle Emitter",
 			"GOID":	14,
