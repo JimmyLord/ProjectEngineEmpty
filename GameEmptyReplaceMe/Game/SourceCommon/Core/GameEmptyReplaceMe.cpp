@@ -8,6 +8,25 @@
 // 3. This notice may not be removed or altered from any source distribution.
 
 #include "GameCommonHeader.h"
+#include "../../Framework/MyFramework/SourceWindows/wglext.h"
+
+bool WGLExtensionSupported(const char *extension_name)
+{
+    // this is pointer to function which returns pointer to string with list of all wgl extensions
+    PFNWGLGETEXTENSIONSSTRINGEXTPROC _wglGetExtensionsStringEXT = NULL;
+
+    // determine pointer to wglGetExtensionsStringEXT function
+    _wglGetExtensionsStringEXT = (PFNWGLGETEXTENSIONSSTRINGEXTPROC)wglGetProcAddress( "wglGetExtensionsStringEXT" );
+
+    if( strstr( _wglGetExtensionsStringEXT(), extension_name ) == NULL )
+    {
+        // string was not found
+        return false;
+    }
+
+    // extension is supported
+    return true;
+}
 
 GameEmptyReplaceMe::GameEmptyReplaceMe()
 {
@@ -24,9 +43,32 @@ void GameEmptyReplaceMe::OneTimeInit()
     m_FreeAllMaterialsAndTexturesWhenUnloadingScene = true;
 
 #if !MYFW_USING_WX
+    extern char g_SceneToLoad[MAX_PATH];
+
     //m_pSceneFileToLoad = RequestFile( "Data/Scenes/test.scene" );
-    m_pSceneFileToLoad = RequestFile( "Data/Scenes/TestPhysicsCharacter.scene" );
+    if( g_SceneToLoad[0] != 0 )
+        m_pSceneFileToLoad = RequestFile( g_SceneToLoad );
+    else
+        m_pSceneFileToLoad = RequestFile( "Data/Scenes/TestAnimation.scene" );
     m_SceneLoaded = false;
+#endif
+
+#if MYFW_WINDOWS
+    // hacked in v-sync, TODO: clean this up
+    PFNWGLSWAPINTERVALEXTPROC wglSwapIntervalEXT = 0;
+    PFNWGLGETSWAPINTERVALEXTPROC wglGetSwapIntervalEXT = 0;
+
+    if( WGLExtensionSupported( "WGL_EXT_swap_control" ) )
+    {
+        // Extension is supported, init pointers.
+        wglSwapIntervalEXT = (PFNWGLSWAPINTERVALEXTPROC)wglGetProcAddress( "wglSwapIntervalEXT" );
+
+        // this is another function from WGL_EXT_swap_control extension
+        wglGetSwapIntervalEXT = (PFNWGLGETSWAPINTERVALEXTPROC)wglGetProcAddress( "wglGetSwapIntervalEXT" );
+    }
+
+    if( wglSwapIntervalEXT )
+        wglSwapIntervalEXT( 1 );
 #endif
 }
 

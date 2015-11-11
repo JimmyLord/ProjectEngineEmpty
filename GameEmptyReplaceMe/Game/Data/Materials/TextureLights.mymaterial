@@ -2,6 +2,7 @@
 	"Material":	{
 		"Name":	"TextureLights",
 		"Shader":	"Data/Shaders/Shader_TextureLights.glsl",
+		"TexColor":	"Data/Textures/WhiteSquare.png",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],
 		"ColorSpecular":	[1, 1, 1, 1],
