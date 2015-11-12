@@ -1,5 +1,45 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Shaders/PostEffects/BlurHorizontal.glsl", "Data/Meshes/cube.obj.mymesh", "DataEngine/Textures/WhiteSquare.png", "Data/Scripts/Player.lua", "Data/Scripts/Enemy.lua", "Data/Meshes/test.mymesh", "Data/Scripts/SimpleCharacterController.lua", "Data/Scripts/CharacterController_Physics.lua", "Data/Shaders/Shader_TestNormals.glsl", "Data/Shaders/Shader_TextureLights.glsl", "Data/Shaders/Shader_TextureVertexColor.glsl", "Data/Shaders/Shader_BoneAnim.glsl", "Data/Meshes/sphere.obj.mymesh", "Data/Textures/test1.png", "Data/Shaders/PostEffects/BlurVertical.glsl", "Data/Shaders/PostEffects/DoFHorizontal.glsl", "Data/Shaders/PostEffects/DoFVertical.glsl", "Data/Materials/Bones.mymaterial", "Data/Materials/Lights.mymaterial", "Data/Meshes/test.fbx.mymesh", "Data/Meshes/test.fbx.myaniminfo", "Data/Materials/BlurVertical.mymaterial", "Data/Materials/BlurHorizontal.mymaterial"],
+	"Files":	[{
+			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+		}, {
+			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+		}, {
+			"Path":	"Data/Shaders/PostEffects/BlurHorizontal.glsl"
+		}, {
+			"Path":	"Data/Meshes/cube.obj.mymesh"
+		}, {
+			"Path":	"DataEngine/Textures/WhiteSquare.png"
+		}, {
+			"Path":	"Data/Scripts/Player.lua"
+		}, {
+			"Path":	"Data/Scripts/Enemy.lua"
+		}, {
+			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh"
+		}, {
+			"Path":	"Data/Scripts/SimpleCharacterController.lua"
+		}, {
+			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureVertexColor.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_BoneAnim.glsl"
+		}, {
+			"Path":	"Data/Meshes/sphere.obj.mymesh"
+		}, {
+			"Path":	"Data/Textures/test1.png"
+		}, {
+			"Path":	"Data/Shaders/PostEffects/BlurVertical.glsl"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Lights.mymaterial"
+		}, {
+			"Path":	"Data/Materials/BlurVertical.mymaterial"
+		}, {
+			"Path":	"Data/Materials/BlurHorizontal.mymaterial"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -34,7 +74,7 @@
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
-			"Pos":	[0, 0, 10],
+			"Pos":	[0, 0, -10],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
@@ -46,9 +86,9 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[4.768372e-007, -3, 0.090000],
+			"Pos":	[4.768372e-007, -2.200000, 0.090000],
 			"Scale":	[1, 1, 1],
-			"Rot":	[-90, 0, 0]
+			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	11,
 			"ID":	0,
@@ -93,6 +133,46 @@
 			"Rot":	[-90, 0, 0]
 		}],
 	"Components":	[{
+			"Type":	"Light",
+			"GOID":	12,
+			"ID":	48,
+			"Color":	[0, 1, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	13,
+			"ID":	49,
+			"Color":	[1, 0, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	14,
+			"ID":	50,
+			"Color":	[0, 0, 1, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	15,
+			"ID":	51,
+			"Color":	[1, 1, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Light",
+			"GOID":	16,
+			"ID":	52,
+			"Color":	[0, 1, 1, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Post Effect Quad",
+			"GOID":	1,
+			"ID":	62,
+			"Material":	"Data/Materials/BlurHorizontal.mymaterial"
+		}, {
+			"Type":	"Post Effect Quad",
+			"GOID":	1,
+			"ID":	63,
+			"Material":	"Data/Materials/BlurVertical.mymaterial"
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
@@ -156,87 +236,41 @@
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Bones.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/test.fbx.mymesh"
+			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh",
+			"Materials":	["Data/Materials/Bones.mymaterial"]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Lights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
-			"PlaneSizex":	20,
-			"PlaneSizey":	20,
+			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
-			"PlaneUVStartx":	0,
-			"PlaneUVStarty":	0,
-			"PlaneUVRangex":	1,
-			"PlaneUVRangey":	1,
-			"SphereRadius":	1
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/Lights.mymaterial"]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	17,
 			"ID":	54,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/Lights.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
-			"PlaneSizex":	20,
-			"PlaneSizey":	20,
+			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
-			"PlaneUVStartx":	0,
-			"PlaneUVStarty":	0,
-			"PlaneUVRangex":	1,
-			"PlaneUVRangey":	1,
-			"SphereRadius":	1
-		}, {
-			"Type":	"Light",
-			"GOID":	12,
-			"ID":	48,
-			"Color":	[0, 1, 0, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	13,
-			"ID":	49,
-			"Color":	[1, 0, 0, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	14,
-			"ID":	50,
-			"Color":	[0, 0, 1, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	15,
-			"ID":	51,
-			"Color":	[1, 1, 0, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Light",
-			"GOID":	16,
-			"ID":	52,
-			"Color":	[0, 1, 1, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Post Effect Quad",
-			"GOID":	1,
-			"ID":	62,
-			"Material":	"Data/Materials/BlurHorizontal.mymaterial"
-		}, {
-			"Type":	"Post Effect Quad",
-			"GOID":	1,
-			"ID":	63,
-			"Material":	"Data/Materials/BlurVertical.mymaterial"
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/Lights.mymaterial"]
 		}]
 }

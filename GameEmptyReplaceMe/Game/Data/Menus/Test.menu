@@ -7,6 +7,8 @@
 			"TextSize":	[-431602080, -431602080],
 			"W":	300,
 			"H":	200,
+			"IW":	-1,
+			"IH":	-1,
 			"BGShadow":	[0, 0],
 			"TextShadow":	[0, 0],
 			"MatBG":	"Data/Materials/Color-Green.mymaterial",

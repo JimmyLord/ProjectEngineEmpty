@@ -16,7 +16,10 @@ bool WGLExtensionSupported(const char *extension_name)
     PFNWGLGETEXTENSIONSSTRINGEXTPROC _wglGetExtensionsStringEXT = NULL;
 
     // determine pointer to wglGetExtensionsStringEXT function
+#pragma warning( push )
+#pragma warning( disable : 4191 ) // unsafe conversion from 'type of expression' to 'type required'
     _wglGetExtensionsStringEXT = (PFNWGLGETEXTENSIONSSTRINGEXTPROC)wglGetProcAddress( "wglGetExtensionsStringEXT" );
+#pragma warning( pop )
 
     if( strstr( _wglGetExtensionsStringEXT(), extension_name ) == NULL )
     {
@@ -49,7 +52,7 @@ void GameEmptyReplaceMe::OneTimeInit()
     if( g_SceneToLoad[0] != 0 )
         m_pSceneFileToLoad = RequestFile( g_SceneToLoad );
     else
-        m_pSceneFileToLoad = RequestFile( "Data/Scenes/TestAnimation.scene" );
+        m_pSceneFileToLoad = RequestFile( "Data/Scenes/TestShadow.scene" );
     m_SceneLoaded = false;
 #endif
 
@@ -60,11 +63,14 @@ void GameEmptyReplaceMe::OneTimeInit()
 
     if( WGLExtensionSupported( "WGL_EXT_swap_control" ) )
     {
+#pragma warning( push )
+#pragma warning( disable : 4191 ) // unsafe conversion from 'type of expression' to 'type required'
         // Extension is supported, init pointers.
         wglSwapIntervalEXT = (PFNWGLSWAPINTERVALEXTPROC)wglGetProcAddress( "wglSwapIntervalEXT" );
 
         // this is another function from WGL_EXT_swap_control extension
         wglGetSwapIntervalEXT = (PFNWGLGETSWAPINTERVALEXTPROC)wglGetProcAddress( "wglGetSwapIntervalEXT" );
+#pragma warning( pop )
     }
 
     if( wglSwapIntervalEXT )
