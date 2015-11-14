@@ -13,6 +13,8 @@
 			"Path":	"Data/Meshes/sphere.obj.mymesh"
 		}, {
 			"Path":	"Data/Materials/Color-Pink.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,

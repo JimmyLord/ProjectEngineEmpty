@@ -1,5 +1,15 @@
 {
-	"Files":	["DataEngine/Shaders/Shader_TintColor.glsl", "DataEngine/Shaders/Shader_ClipSpaceTexture.glsl", "Data/Meshes/cube.obj.mymesh", "Data/Materials/TintColor.mymaterial"],
+	"Files":	[{
+			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+		}, {
+			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+		}, {
+			"Path":	"Data/Meshes/cube.obj.mymesh"
+		}, {
+			"Path":	"Data/Materials/TintColor.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -36,9 +46,9 @@
 			"ID":	3,
 			"Visible":	1,
 			"Layers":	1,
-			"Material":	"Data/Materials/TintColor.mymaterial",
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh"
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/TintColor.mymaterial"]
 		}]
 }

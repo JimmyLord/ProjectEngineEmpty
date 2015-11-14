@@ -10,8 +10,6 @@
 		}, {
 			"Path":	"Data/Meshes/teapot2.obj.mymesh"
 		}, {
-			"Path":	"Data/Meshes/Teapot.obj.mymesh"
-		}, {
 			"Path":	"Data/Scripts/Player.lua"
 		}, {
 			"Path":	"Data/Scripts/Enemy.lua"

@@ -3,6 +3,8 @@
 			"Path":	"Data/Materials/TestFragCoord.mymaterial"
 		}, {
 			"Path":	"Data/Shaders/TestFragCoord.glsl"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,

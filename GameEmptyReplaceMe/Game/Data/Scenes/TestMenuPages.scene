@@ -29,32 +29,6 @@
 			"Path":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Path":	"DataEngine/Textures/WhiteSquare.png"
-		}, {
-			"Path":	"Data/Scripts/Enemy.lua"
-		}, {
-			"Path":	"Data/Meshes/test.fbx.myaniminfo"
-		}, {
-			"Path":	"Data/Scripts/SimpleCharacterController.lua"
-		}, {
-			"Path":	"Data/Scripts/CharacterController_Physics.lua"
-		}, {
-			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
-		}, {
-			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
-		}, {
-			"Path":	"Data/Shaders/Shader_BoneAnim.glsl"
-		}, {
-			"Path":	"Data/Meshes/sphere.obj.mymesh"
-		}, {
-			"Path":	"Data/Textures/test1.png"
-		}, {
-			"Path":	"Data/Materials/Lights.mymaterial"
-		}, {
-			"Path":	"Data/Materials/Bones.mymaterial"
-		}, {
-			"Path":	"Data/Materials/TestTexture.mymaterial"
-		}, {
-			"Path":	"Data/Meshes/test.fbx.mymesh"
 		}],
 	"GameObjects":	[{
 			"ID":	5,

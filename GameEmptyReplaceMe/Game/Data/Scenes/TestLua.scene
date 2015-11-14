@@ -1,6 +1,10 @@
 {
 	"Files":	[{
 			"Path":	"Data/Scripts/MemoryTest.lua"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Color-Green.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -61,11 +65,6 @@
 			"Type":	"Sprite",
 			"GOID":	8,
 			"ID":	9,
-			"Visible":	1,
-			"Layers":	2,
-			"Tint":	[255, 0, 0, 255],
-			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Green.mymaterial",
 			"Visible":	1,
 			"Layers":	2,
 			"Tint":	[255, 0, 0, 255],

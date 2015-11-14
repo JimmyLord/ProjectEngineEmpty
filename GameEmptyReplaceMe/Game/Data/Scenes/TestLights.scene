@@ -12,8 +12,6 @@
 		}, {
 			"Path":	"Data/Scripts/Enemy.lua"
 		}, {
-			"Path":	"Data/Meshes/test.mymesh"
-		}, {
 			"Path":	"Data/Scripts/SimpleCharacterController.lua"
 		}, {
 			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
@@ -35,6 +33,8 @@
 			"Path":	"Data/Materials/Color-Green.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Color-Red.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,

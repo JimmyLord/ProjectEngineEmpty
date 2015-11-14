@@ -241,67 +241,61 @@
 			"ID":	13,
 			"Visible":	1,
 			"Layers":	1,
-			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh"
+			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh",
+			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
 			"Layers":	1,
-			"Materials":	["Data/Materials/TextureLights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
-			"PlaneSizex":	20,
-			"PlaneSizey":	20,
+			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
-			"PlaneUVStartx":	0,
-			"PlaneUVStarty":	0,
-			"PlaneUVRangex":	1,
-			"PlaneUVRangey":	1,
-			"SphereRadius":	1
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/TextureLights.mymaterial"]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	17,
 			"ID":	54,
 			"Visible":	1,
 			"Layers":	1,
-			"Materials":	["Data/Materials/TextureLights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
 			"MPType":	0,
-			"PlaneSizex":	20,
-			"PlaneSizey":	20,
+			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
-			"PlaneUVStartx":	0,
-			"PlaneUVStarty":	0,
-			"PlaneUVRangex":	1,
-			"PlaneUVRangey":	1,
-			"SphereRadius":	1
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/TextureLights.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	18,
 			"ID":	64,
 			"Visible":	1,
 			"Layers":	1,
-			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/TestSpinUpAxis.fbx.mymesh"
+			"OBJ":	"Data/Meshes/TestSpinUpAxis.fbx.mymesh",
+			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	19,
 			"ID":	70,
 			"Visible":	1,
 			"Layers":	1,
-			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"],
 			"PrimitiveType":	4,
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh"
+			"OBJ":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh",
+			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"]
 		}]
 }
