@@ -12,8 +12,6 @@
 		}, {
 			"Path":	"Data/Scripts/Enemy.lua"
 		}, {
-			"Path":	"Data/Meshes/test.mymesh"
-		}, {
 			"Path":	"Data/Scripts/SimpleCharacterController.lua"
 		}, {
 			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
@@ -24,16 +22,14 @@
 		}, {
 			"Path":	"Data/Shaders/Shader_BoneAnim.glsl"
 		}, {
-			"Path":	"Data/Meshes/test.fbx.mymesh"
-		}, {
-			"Path":	"Data/Meshes/test.fbx.myaniminfo"
-		}, {
 			"Path":	"Data/Materials/Bones.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Lights.mymaterial"
 		}, {
 			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh",
 			"SourcePath":	"DataSource/FBXs/AnimGuy.fbx"
+		}, {
+			"Path":	"Data/Meshes/AnimGuy.fbx.myaniminfo"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
