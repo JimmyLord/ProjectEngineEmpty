@@ -1,30 +1,4 @@
 {
-	"Files":	[{
-			"Path":	"Data/Scripts/SimpleCharacterController.lua"
-		}, {
-			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
-		}, {
-			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
-		}, {
-			"Path":	"Data/Shaders/Shader_TextureVertexColor.glsl"
-		}, {
-			"Path":	"Data/Shaders/Shader_BoneAnim.glsl"
-		}, {
-			"Path":	"Data/Materials/TextureLights.mymaterial"
-		}, {
-			"Path":	"Data/Materials/Bones.mymaterial"
-		}, {
-			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh",
-			"SourcePath":	"DataSource/FBXs/AnimGuy.fbx"
-		}, {
-			"Path":	"Data/Meshes/TestSpinUpAxis.fbx.mymesh",
-			"SourcePath":	"DataSource/FBXs/TestSpinUpAxis.fbx"
-		}, {
-			"Path":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh",
-			"SourcePath":	"DataSource/FBXs/TestSpinAllAxes.fbx"
-		}, {
-			"Path":	"Data/Textures/WhiteSquare.png"
-		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
