@@ -35,6 +35,8 @@
 			"Path":	"Data/Materials/Color-Red.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Bones.mymaterial"
+		}, {
+			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -69,17 +71,20 @@
 		}, {
 			"ID":	16,
 			"Name":	"Light - Red - copy"
+		}, {
+			"ID":	17,
+			"Name":	"AnimGuy"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
-			"Pos":	[0, 0, -10],
+			"Pos":	[0, 3, -10],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	7,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
+			"Pos":	[0, 3, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
@@ -97,43 +102,49 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[0, -2, 0],
+			"Pos":	[-5, 1, 4],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	11,
 			"ID":	0,
-			"Pos":	[0, -3, 0],
+			"Pos":	[0, 0, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[0, 2.500000, 0],
+			"Pos":	[0, 5.500000, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	13,
 			"ID":	0,
-			"Pos":	[2.190028, -2.500000, 6],
+			"Pos":	[2.200000, 0.500000, 6],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	14,
 			"ID":	0,
-			"Pos":	[-2.705945, -1.517002, 5.545629],
+			"Pos":	[-2.500000, 1.500000, 5.500000],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	15,
 			"ID":	0,
-			"Pos":	[-5.994285, -2.500000, 0.137840],
+			"Pos":	[-6, 0.500000, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	16,
 			"ID":	0,
-			"Pos":	[4.814156, -2.500000, 0.137840],
+			"Pos":	[4.800000, 0.500000, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	17,
+			"ID":	0,
+			"Pos":	[0, 1, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
@@ -211,13 +222,6 @@
 				}]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	10,
-			"ID":	14,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
 			"GOID":	11,
 			"ID":	16,
 			"Primitive":	"Cube",
@@ -225,25 +229,25 @@
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Animation Player",
-			"GOID":	10,
-			"ID":	34,
+			"GOID":	17,
+			"ID":	52,
 			"AnimIndex":	1,
 			"AnimFrame":	0
 		}, {
 			"Type":	"Lua Script",
-			"GOID":	10,
-			"ID":	45,
+			"GOID":	17,
+			"ID":	53,
 			"Script":	"Data/Scripts/SimpleCharacterController.lua",
 			"ExposedVars":	[{
 					"Name":	"Speed",
 					"Type":	1,
 					"Value":	5
 				}, {
-					"Name":	"Animation",
-					"Type":	1,
-					"Value":	1
-				}, {
 					"Name":	"SpeedRotation",
+					"Type":	1,
+					"Value":	10
+				}, {
+					"Name":	"Animation",
 					"Type":	1,
 					"Value":	10
 				}]
@@ -305,5 +309,15 @@
 			"coloroption":	1,
 			"color1":	[1, 1, 1, 1],
 			"color2":	[0, 0, 0, 1]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	17,
+			"ID":	54,
+			"Visible":	1,
+			"Layers":	1,
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh",
+			"Materials":	["Data/Materials/Bones.mymaterial"]
 		}]
 }

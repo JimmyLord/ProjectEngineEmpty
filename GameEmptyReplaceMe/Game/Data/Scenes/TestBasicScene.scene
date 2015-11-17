@@ -2,20 +2,16 @@
 	"Files":	[{
 			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
 		}, {
-			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
-		}, {
 			"Path":	"Data/Meshes/cube.obj.mymesh"
 		}, {
 			"Path":	"Data/Materials/TintColor.mymaterial"
-		}, {
-			"Path":	"Data/Materials/Bones.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
 		}, {
 			"ID":	3,
-			"Name":	"Wall"
+			"Name":	"Cube"
 		}],
 	"Transforms":	[{
 			"GOID":	1,

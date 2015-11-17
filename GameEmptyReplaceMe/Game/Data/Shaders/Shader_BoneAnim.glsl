@@ -54,7 +54,7 @@ precision mediump float;
 
     void main()
     {
-        // Calculate the normal vector in local space. normalized again since interpolation can/will distort it.
+        // Calculate the normal vector in world space. normalized again since interpolation can/will distort it.
         //   TODO: handle normal maps.
         vec3 WSnormal = normalize( v_WSNormal );
 
@@ -71,7 +71,7 @@ precision mediump float;
         // Add in each light, one by one. // finaldiffuse, finalspecular are inout.
     #if NUM_LIGHTS > 0
         for( int i=0; i<NUM_LIGHTS; i++ )
-            PointLightContribution( i, v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finaldiffuse, finalspecular );
+            PointLightContribution( i, v_WSPosition, u_WSCameraPos, WSnormal, u_Shininess, finaldiffuse, finalspecular );
     #endif
 
         // Mix the texture color with the light color.
@@ -80,6 +80,7 @@ precision mediump float;
 
         // Calculate final color including whether it's in shadow or not.
         gl_FragColor = ( ambdiff + spec ) * shadowperc;
+        //gl_FragColor = vec4( WSnormal, 1 );
         gl_FragColor.a = 1.0;
     }
 
