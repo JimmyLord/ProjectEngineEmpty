@@ -1739,6 +1739,7 @@
     <None Include="Data\Scenes\TestLua.scene" />
     <None Include="Data\Scenes\TestMenuPages.scene" />
     <None Include="Data\Scenes\TestParenting.scene" />
+    <None Include="Data\Scenes\TestParticles.scene" />
     <None Include="Data\Scenes\TestPhysics.scene" />
     <None Include="Data\Scenes\TestPhysicsCharacter.scene" />
     <None Include="Data\Scenes\TestPostEffects.scene" />
