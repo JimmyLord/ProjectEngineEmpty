@@ -30,6 +30,8 @@
 			"SourcePath":	"DataSource/FBXs/AnimGuy.fbx"
 		}, {
 			"Path":	"Data/Meshes/AnimGuy.fbx.myaniminfo"
+		}, {
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -368,5 +370,22 @@
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
 			"Materials":	["Data/Materials/Lights.mymaterial"]
+		}, {
+			"Type":	"Particle Emitter",
+			"GOID":	10,
+			"ID":	88,
+			"Visible":	1,
+			"Layers":	1,
+			"RunInEditor":	1,
+			"size":	0.100000,
+			"sizevar":	0.050000,
+			"timetolive":	5,
+			"centervar":	[1, 1],
+			"dir":	[0, 0.500000, 0],
+			"dirvar":	[0.280000, 0.280000, 0.280000],
+			"coloroption":	0,
+			"color1":	[1, 1, 1, 1],
+			"color2":	[0, 0, 0, 1],
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}]
 }

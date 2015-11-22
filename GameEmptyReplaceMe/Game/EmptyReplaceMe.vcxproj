@@ -1724,16 +1724,20 @@
     <None Include="..\..\Engine\DataEngine\Shaders\Include\WSVaryings.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Include\WSVaryings_Functions.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_ClipSpaceTexture.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_Texture.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_TextureTint.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_TintColor.glsl" />
     <None Include="..\..\todo.todo" />
     <None Include="Data\Materials\Bones.mymaterial" />
     <None Include="Data\Materials\Lights.mymaterial" />
+    <None Include="Data\Materials\TestGeometryShader.mymaterial" />
     <None Include="Data\Menus\Test.menu" />
     <None Include="Data\Menus\TestMenuActions.lua" />
     <None Include="Data\Scenes\Multi-enemy.scene" />
     <None Include="Data\Scenes\TestAnimation.scene" />
     <None Include="Data\Scenes\TestBasicScene.scene" />
     <None Include="Data\Scenes\TestFragCoord.scene" />
+    <None Include="Data\Scenes\TestGeometryShader.scene" />
     <None Include="Data\Scenes\TestInheritance.scene" />
     <None Include="Data\Scenes\TestLights.scene" />
     <None Include="Data\Scenes\TestLua.scene" />
@@ -1767,6 +1771,7 @@
     <None Include="Data\Shaders\Shader_VertSinY.glsl" />
     <None Include="Data\Shaders\Shader_Water.glsl" />
     <None Include="Data\Shaders\TestFragCoord.glsl" />
+    <None Include="Data\Shaders\TestGeometryShader.glsl" />
     <None Include="EditorPrefs.ini" />
     <None Include="SourceAndroid\AndroidApk\AndroidManifest.xml">
       <SubType>Designer</SubType>

@@ -1,0 +1,112 @@
+{
+	"Files":	[{
+			"Path":	"Data/Materials/TestGeometryShader.mymaterial"
+		}],
+	"GameObjects":	[{
+			"ID":	1,
+			"Name":	"Main Camera"
+		}, {
+			"ID":	7,
+			"Name":	"Hud Camera"
+		}, {
+			"ID":	12,
+			"Name":	"Light - Green"
+		}, {
+			"ID":	18,
+			"Name":	"Shadow Light"
+		}, {
+			"ID":	22,
+			"Name":	"IcoSphere"
+		}],
+	"Transforms":	[{
+			"GOID":	1,
+			"ID":	0,
+			"Pos":	[0, 2.400000, -10],
+			"Scale":	[1, 1, 1],
+			"Rot":	[-14.400000, 0, 0]
+		}, {
+			"GOID":	7,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	12,
+			"ID":	0,
+			"Pos":	[0, 3.156439, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	18,
+			"ID":	0,
+			"Pos":	[-20, 10, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[20, 90, 0]
+		}, {
+			"GOID":	22,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}],
+	"Components":	[{
+			"Type":	"Light",
+			"GOID":	12,
+			"ID":	48,
+			"Color":	[0, 1, 0, 0],
+			"Atten":	[0, 0, 0.090800]
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"Ortho":	0,
+			"DWidth":	640,
+			"DHeight":	960,
+			"ColorBit":	1,
+			"DepthBit":	1,
+			"Layers":	1
+		}, {
+			"Type":	"Camera",
+			"GOID":	7,
+			"ID":	8,
+			"Ortho":	1,
+			"DWidth":	640,
+			"DHeight":	960,
+			"ColorBit":	0,
+			"DepthBit":	0,
+			"Layers":	2
+		}, {
+			"Type":	"Shadow Dir Light",
+			"GOID":	18,
+			"ID":	62,
+			"Ortho":	0,
+			"DWidth":	512,
+			"DHeight":	512,
+			"ColorBit":	1,
+			"DepthBit":	1,
+			"Layers":	1
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	22,
+			"ID":	89,
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Mesh-Primitive",
+			"GOID":	22,
+			"ID":	90,
+			"Visible":	1,
+			"Layers":	1,
+			"PrimitiveType":	4,
+			"PointSize":	1,
+			"MPType":	1,
+			"PlaneSize":	[20, 20],
+			"PlaneVertCountx":	2,
+			"PlaneVertCounty":	2,
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/TestGeometryShader.mymaterial"]
+		}]
+}

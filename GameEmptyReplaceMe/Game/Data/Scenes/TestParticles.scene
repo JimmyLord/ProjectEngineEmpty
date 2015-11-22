@@ -117,6 +117,7 @@
 			"ID":	25,
 			"Visible":	1,
 			"Layers":	1,
+			"RunInEditor":	1,
 			"size":	0.200000,
 			"sizevar":	0.030000,
 			"timetolive":	10,

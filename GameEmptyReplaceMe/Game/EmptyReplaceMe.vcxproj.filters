@@ -405,5 +405,20 @@
     <None Include="Data\Scenes\TestParticles.scene">
       <Filter>Data\Scenes</Filter>
     </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_Texture.glsl">
+      <Filter>Data\Shaders\DataEngine</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_TextureTint.glsl">
+      <Filter>Data\Shaders\DataEngine</Filter>
+    </None>
+    <None Include="Data\Materials\TestGeometryShader.mymaterial">
+      <Filter>Data\Materials</Filter>
+    </None>
+    <None Include="Data\Shaders\TestGeometryShader.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Scenes\TestGeometryShader.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
   </ItemGroup>
 </Project>
