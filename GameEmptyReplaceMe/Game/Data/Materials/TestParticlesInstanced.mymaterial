@@ -1,0 +1,12 @@
+{
+	"Material":	{
+		"Name":	"TestParticlesInstanced",
+		"Shader":	"Data/Shaders/Shader_ParticlesInstanced.glsl",
+		"TexColor":	"Data/Textures/WhiteSquare.png",
+		"ColorAmbient":	[1, 1, 1, 1],
+		"ColorDiffuse":	[1, 1, 1, 1],
+		"ColorSpecular":	[1, 1, 1, 1],
+		"Shininess":	200,
+		"Blend":	2
+	}
+}

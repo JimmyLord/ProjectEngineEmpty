@@ -1731,6 +1731,7 @@
     <None Include="Data\Materials\Bones.mymaterial" />
     <None Include="Data\Materials\Lights.mymaterial" />
     <None Include="Data\Materials\TestGeometryShader.mymaterial" />
+    <None Include="Data\Materials\TestParticlesInstanced.mymaterial" />
     <None Include="Data\Menus\Test.menu" />
     <None Include="Data\Menus\TestMenuActions.lua" />
     <None Include="Data\Scenes\Multi-enemy.scene" />
@@ -1764,6 +1765,7 @@
     <None Include="Data\Shaders\PostEffects\DoFVertical.glsl" />
     <None Include="Data\Shaders\Shader_BoneAnim.glsl" />
     <None Include="Data\Shaders\Shader_Breathe.glsl" />
+    <None Include="Data\Shaders\Shader_ParticlesInstanced.glsl" />
     <None Include="Data\Shaders\Shader_TestNormals.glsl" />
     <None Include="Data\Shaders\Shader_Texture.glsl" />
     <None Include="Data\Shaders\Shader_TextureLights.glsl" />
