@@ -14,14 +14,13 @@
 #define SCREEN_WIDTH    400
 #define SCREEN_HEIGHT   600
 
-char g_SceneToLoad[MAX_PATH];
-
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
     MarkAllExistingAllocationsAsStatic();
 
     GameCore* pGameCore = new GameEmptyReplaceMe;
 
+    extern char g_SceneToLoad[MAX_PATH];
     strcpy_s( g_SceneToLoad, lpCmdLine );
 
     return MYFWWinMain( SCREEN_WIDTH, SCREEN_HEIGHT );

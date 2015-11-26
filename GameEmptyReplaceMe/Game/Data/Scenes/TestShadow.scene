@@ -379,6 +379,7 @@
 			"Visible":	1,
 			"Layers":	1,
 			"RunInEditor":	1,
+			"offset":	[0, 0.500000, 0],
 			"size":	0.100000,
 			"sizevar":	0.050000,
 			"timetolive":	5,

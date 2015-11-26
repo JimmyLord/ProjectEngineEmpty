@@ -8,6 +8,10 @@
 // 3. This notice may not be removed or altered from any source distribution.
 
 #include "GameCommonHeader.h"
+
+char g_SceneToLoad[MAX_PATH];
+
+#if MYFW_WINDOWS
 #include "../../Framework/MyFramework/SourceWindows/wglext.h"
 
 bool WGLExtensionSupported(const char *extension_name)
@@ -30,6 +34,7 @@ bool WGLExtensionSupported(const char *extension_name)
     // extension is supported
     return true;
 }
+#endif
 
 GameEmptyReplaceMe::GameEmptyReplaceMe()
 {
@@ -46,8 +51,6 @@ void GameEmptyReplaceMe::OneTimeInit()
     m_FreeAllMaterialsAndTexturesWhenUnloadingScene = true;
 
 #if !MYFW_USING_WX
-    extern char g_SceneToLoad[MAX_PATH];
-
     //m_pSceneFileToLoad = RequestFile( "Data/Scenes/test.scene" );
     if( g_SceneToLoad[0] != 0 )
         m_pSceneFileToLoad = RequestFile( g_SceneToLoad );
