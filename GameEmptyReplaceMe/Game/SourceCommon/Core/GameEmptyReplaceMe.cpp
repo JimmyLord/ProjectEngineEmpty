@@ -55,7 +55,13 @@ void GameEmptyReplaceMe::OneTimeInit()
     if( g_SceneToLoad[0] != 0 )
         m_pSceneFileToLoad = RequestFile( g_SceneToLoad );
     else
+    {
+#if MYFW_ANDROID
+        m_pSceneFileToLoad = RequestFile( "Data/Scenes/TestBasicScene.scene" );
+#else
         m_pSceneFileToLoad = RequestFile( "Data/Scenes/TestShadow.scene" );
+#endif
+    }
     m_SceneLoaded = false;
 #endif
 
