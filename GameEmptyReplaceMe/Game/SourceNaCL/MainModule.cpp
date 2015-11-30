@@ -13,7 +13,7 @@ class MainModule : public pp::Module
 public:
     MainModule() : pp::Module()
     {
-        g_pGameCore = MyNew GameEmptyReplaceMe();
+        //g_pGameCore = MyNew GameEmptyReplaceMe();
     }
 
     virtual ~MainModule()
@@ -34,7 +34,7 @@ public:
     // @return the plugin-side instance.
     virtual pp::Instance* CreateInstance(PP_Instance instance)
     {
-        return MyNew MainInstance(instance);
+        return MyNew MainInstance( instance );
     }
 };
 

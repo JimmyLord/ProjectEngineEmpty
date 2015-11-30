@@ -69,7 +69,7 @@ myframework.Application.prototype.run = function (opt_contentDivName)
     // NaCl module.  To load the debug versions of your .nexes, set the 'nacl'
     //  attribute to the _dbg.nmf version of the manifest file.
     contentDiv.innerHTML = '<embed id="' + myframework.Application.DomIds_.MODULE + '"'
-                         + ' src=myframework_dbg.nmf'
+                         + ' src=EmptyReplaceMe.nmf'
 //                         + ' src=myframework.nmf'
                          + ' type="application/x-nacl"'
                          + ' width="360" height="600" />'
