@@ -53,7 +53,9 @@ void GameEmptyReplaceMe::OneTimeInit()
 #if !MYFW_USING_WX
     //m_pSceneFileToLoad = RequestFile( "Data/Scenes/test.scene" );
     if( g_SceneToLoad[0] != 0 )
+    {
         m_pSceneFileToLoad = RequestFile( g_SceneToLoad );
+    }
     else
     {
 #if MYFW_ANDROID

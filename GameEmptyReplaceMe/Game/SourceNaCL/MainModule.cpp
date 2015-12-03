@@ -13,7 +13,7 @@ class MainModule : public pp::Module
 public:
     MainModule() : pp::Module()
     {
-        //g_pGameCore = MyNew GameEmptyReplaceMe();
+        g_pGameCore = MyNew GameEmptyReplaceMe();
     }
 
     virtual ~MainModule()

@@ -12,4 +12,8 @@ rem cd SourceAndroid/AndroidStudioProject/app/src/main/assets
 rem mklink /J "Data" "../../../../../../Data"
 rem mklink /J "DataEngine" "../../../../../../DataEngine"
 
+cd ../../../SourceNaCL/Web
+mklink /J "Data" "../../Data"
+mklink /J "DataEngine" "../../DataEngine"
+
 pause

@@ -158,7 +158,6 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PNaCl'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -445,10 +444,10 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PNaCl'">
     <LinkIncremental>true</LinkIncremental>
+    <NaClAddInVersion>1</NaClAddInVersion>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
     <OutDir>$(SolutionDir)Game\SourceNaCL\Web\</OutDir>
     <IntDir>$(SolutionDir)Output\Intermediate\$(PlatformName)\$(TargetName)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
-    <NaClAddInVersion>1</NaClAddInVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'">
     <LinkIncremental>true</LinkIncremental>
@@ -702,14 +701,17 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>MYFW_NACL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../wxWidgets/include/msvc;$(SolutionDir)../wxWidgets/include;$(SolutionDir)../bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../wxWidgets/include/msvc;$(SolutionDir)../wxWidgets/include;$(SolutionDir)../bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MYFW_NACL;_DEBUG;NACL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TranslateX86>false</TranslateX86>
+      <TranslateX64>false</TranslateX64>
+      <TranslateArm>false</TranslateArm>
       <AdditionalDependencies>MyEngine_$(Configuration);MyFramework_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
@@ -824,6 +826,9 @@
       <AdditionalDependencies>MyEngine_$(Configuration);MyFramework_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <TranslateX86>false</TranslateX86>
+      <TranslateX64>false</TranslateX64>
+      <TranslateArm>false</TranslateArm>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|Emscripten'">
@@ -1050,6 +1055,9 @@
       <AdditionalDependencies>MyEngine_$(Configuration);MyFramework_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <TranslateX86>false</TranslateX86>
+      <TranslateX64>false</TranslateX64>
+      <TranslateArm>false</TranslateArm>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'">
@@ -1180,6 +1188,9 @@
       <AdditionalDependencies>MyEngine_$(Configuration);MyFramework_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <TranslateX86>false</TranslateX86>
+      <TranslateX64>false</TranslateX64>
+      <TranslateArm>false</TranslateArm>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|Emscripten'">
@@ -2336,10 +2347,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WxRelease|PNaCl'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WxRelease|Emscripten'">true</ExcludedFromBuild>
     </None>
+    <None Include="SourceNaCL\Web\EmptyReplaceMe.nmf" />
     <None Include="SourceNaCL\Web\game.html" />
-    <None Include="SourceNaCL\Web\myframework.js" />
-    <None Include="SourceNaCL\Web\myframework.nmf" />
-    <None Include="SourceNaCL\Web\myframework_dbg.nmf" />
+    <None Include="SourceNaCL\Web\gametest.html" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

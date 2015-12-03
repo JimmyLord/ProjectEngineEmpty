@@ -120,9 +120,6 @@
     <ClCompile Include="SourceWP8\WP8Main.cpp">
       <Filter>Source - Platform\Source - WP8</Filter>
     </ClCompile>
-    <ClCompile Include="SourceCommon\Core\GameComponentTypeManager.cpp">
-      <Filter>Source\Core Files</Filter>
-    </ClCompile>
     <ClCompile Include="SourceCommon\GameComponents\ComponentAIChasePlayer.cpp">
       <Filter>Source\Game Components</Filter>
     </ClCompile>
@@ -130,6 +127,9 @@
       <Filter>Source\Game Components</Filter>
     </ClCompile>
     <ClCompile Include="SourceCommon\Core\GameMainFrame.cpp">
+      <Filter>Source\Core Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCommon\Core\GameComponentTypeManager.cpp">
       <Filter>Source\Core Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -170,9 +170,6 @@
     <ClInclude Include="SourceWP8\WP8Main.h">
       <Filter>Source - Platform\Source - WP8</Filter>
     </ClInclude>
-    <ClInclude Include="SourceCommon\Core\GameComponentTypeManager.h">
-      <Filter>Source\Core Files</Filter>
-    </ClInclude>
     <ClInclude Include="SourceCommon\GameComponents\ComponentAIChasePlayer.h">
       <Filter>Source\Game Components</Filter>
     </ClInclude>
@@ -182,17 +179,11 @@
     <ClInclude Include="SourceCommon\Core\GameMainFrame.h">
       <Filter>Source\Core Files</Filter>
     </ClInclude>
+    <ClInclude Include="SourceCommon\Core\GameComponentTypeManager.h">
+      <Filter>Source\Core Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SourceNaCL\Web\myframework.js">
-      <Filter>Source - Platform\Source - NaCL\Web Files</Filter>
-    </None>
-    <None Include="SourceNaCL\Web\myframework.nmf">
-      <Filter>Source - Platform\Source - NaCL\Web Files</Filter>
-    </None>
-    <None Include="SourceNaCL\Web\myframework_dbg.nmf">
-      <Filter>Source - Platform\Source - NaCL\Web Files</Filter>
-    </None>
     <None Include="SourceAndroid\AndroidApk\AndroidManifest.xml">
       <Filter>Source - Platform\Source - Android\APK files</Filter>
     </None>
@@ -425,6 +416,12 @@
     </None>
     <None Include="Data\Shaders\Shader_ParticlesInstanced.glsl">
       <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="SourceNaCL\Web\EmptyReplaceMe.nmf">
+      <Filter>Source - Platform\Source - NaCL\Web Files</Filter>
+    </None>
+    <None Include="SourceNaCL\Web\gametest.html">
+      <Filter>Source - Platform\Source - NaCL\Web Files</Filter>
     </None>
   </ItemGroup>
 </Project>
