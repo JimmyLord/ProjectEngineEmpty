@@ -423,5 +423,8 @@
     <None Include="SourceNaCL\Web\gametest.html">
       <Filter>Source - Platform\Source - NaCL\Web Files</Filter>
     </None>
+    <None Include="Data\Scripts\DemoLoadPauseMenu.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
   </ItemGroup>
 </Project>

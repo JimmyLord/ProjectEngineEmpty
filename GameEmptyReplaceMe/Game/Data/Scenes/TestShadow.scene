@@ -34,6 +34,10 @@
 			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
 			"Path":	"Data/Materials/TestParticlesInstanced.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
+		}, {
+			"Path":	"Data/Scripts/DemoLoadPauseMenu.lua"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -77,6 +81,9 @@
 		}, {
 			"ID":	21,
 			"Name":	"Wall Left topface"
+		}, {
+			"ID":	22,
+			"Name":	"MainLua"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -161,6 +168,12 @@
 			"ID":	0,
 			"Pos":	[-10.500000, 2.156439, 0],
 			"Scale":	[0.050000, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	22,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
@@ -282,6 +295,12 @@
 					"Type":	1,
 					"Value":	10
 				}]
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	22,
+			"ID":	89,
+			"Script":	"Data/Scripts/DemoLoadPauseMenu.lua",
+			"ExposedVars":	[]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,

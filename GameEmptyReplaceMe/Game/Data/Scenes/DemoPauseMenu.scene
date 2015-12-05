@@ -1,0 +1,24 @@
+{
+	"Files":	[],
+	"GameObjects":	[{
+			"ID":	1,
+			"Name":	"Pause Menu"
+		}],
+	"Transforms":	[{
+			"GOID":	1,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}],
+	"Components":	[{
+			"Type":	"Menu Page",
+			"GOID":	1,
+			"ID":	1,
+			"Visible":	1,
+			"Layers":	16385,
+			"InputEnabled":	1,
+			"Layers":	16385,
+			"MenuFile":	"Data/Menus/DemoPauseMenu.menu"
+		}]
+}
