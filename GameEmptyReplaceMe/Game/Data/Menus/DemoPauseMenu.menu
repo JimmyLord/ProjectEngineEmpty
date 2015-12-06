@@ -14,6 +14,7 @@
 			"MatBG":	"Data/Materials/Color-Green.mymaterial",
 			"MatBGPressed":	"Data/Materials/Colors/Color-Red.mymaterial",
 			"Font":	"DataEngine/Fonts/Nevis60.fnt",
-			"String1":	"Test Button"
+			"String1":	"Reload Scene",
+			"Action":	"ReloadScene"
 		}]
 }

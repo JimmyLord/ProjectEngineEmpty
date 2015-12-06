@@ -1,5 +1,7 @@
 {
-	"Files":	[],
+	"Files":	[{
+			"Path":	"Data/Menus/DemoPauseMenuActions.lua"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Pause Menu"
@@ -12,6 +14,12 @@
 			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
+			"Type":	"Lua Script",
+			"GOID":	1,
+			"ID":	2,
+			"Script":	"Data/Menus/DemoPauseMenuActions.lua",
+			"ExposedVars":	[]
+		}, {
 			"Type":	"Menu Page",
 			"GOID":	1,
 			"ID":	1,

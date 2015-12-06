@@ -51,20 +51,18 @@ void GameEmptyReplaceMe::OneTimeInit()
     m_FreeAllMaterialsAndTexturesWhenUnloadingScene = true;
 
 #if !MYFW_USING_WX
-    //m_pSceneFileToLoad = RequestFile( "Data/Scenes/test.scene" );
     if( g_SceneToLoad[0] != 0 )
     {
-        m_pSceneFileToLoad = RequestFile( g_SceneToLoad );
+        RequestScene( g_SceneToLoad );
     }
     else
     {
 #if MYFW_ANDROID
-        m_pSceneFileToLoad = RequestFile( "Data/Scenes/TestBasicScene.scene" );
+        RequestScene( "Data/Scenes/TestBasicScene.scene" );
 #else
-        m_pSceneFileToLoad = RequestFile( "Data/Scenes/TestShadow.scene" );
+        RequestScene( "Data/Scenes/TestShadow.scene" );
 #endif
     }
-    m_SceneLoaded = false;
 #endif
 
 #if MYFW_WINDOWS
