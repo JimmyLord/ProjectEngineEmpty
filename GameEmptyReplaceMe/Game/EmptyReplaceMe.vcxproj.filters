@@ -426,5 +426,11 @@
     <None Include="Data\Scripts\DemoLoadPauseMenu.lua">
       <Filter>Data\Scripts</Filter>
     </None>
+    <None Include="Data\Menus\DemoPauseMenu.menu">
+      <Filter>Data\Menus</Filter>
+    </None>
+    <None Include="Data\Menus\DemoPauseMenuActions.lua">
+      <Filter>Data\Menus</Filter>
+    </None>
   </ItemGroup>
 </Project>

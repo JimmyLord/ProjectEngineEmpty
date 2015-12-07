@@ -1509,6 +1509,8 @@
     <None Include="Data\Materials\Lights.mymaterial" />
     <None Include="Data\Materials\TestGeometryShader.mymaterial" />
     <None Include="Data\Materials\TestParticlesInstanced.mymaterial" />
+    <None Include="Data\Menus\DemoPauseMenu.menu" />
+    <None Include="Data\Menus\DemoPauseMenuActions.lua" />
     <None Include="Data\Menus\Test.menu" />
     <None Include="Data\Menus\TestMenuActions.lua" />
     <None Include="Data\Scenes\Multi-enemy.scene" />
