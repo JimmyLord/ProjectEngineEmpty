@@ -2,7 +2,7 @@
   "program": {
     "portable": {
       "pnacl-translate": {
-        "url": "EmptyReplaceMe_Release.pexe"
+        "url": "EmptyReplaceMe_Debug.pexe"
       }
     }
   }
