@@ -26,7 +26,6 @@
 			"Visible":	1,
 			"Layers":	2,
 			"InputEnabled":	1,
-			"Layers":	2,
 			"MenuFile":	"Data/Menus/DemoPauseMenu.menu"
 		}]
 }

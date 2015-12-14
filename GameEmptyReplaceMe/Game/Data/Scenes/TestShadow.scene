@@ -40,6 +40,9 @@
 			"Path":	"Data/Scripts/DemoLoadPauseMenu.lua"
 		}],
 	"GameObjects":	[{
+			"ID":	22,
+			"Name":	"MainLua"
+		}, {
 			"ID":	1,
 			"Name":	"Main Camera"
 		}, {
@@ -49,43 +52,52 @@
 			"ID":	10,
 			"Name":	"AnimGuy"
 		}, {
-			"ID":	11,
-			"Name":	"Plane"
+			"ID":	49,
+			"Name":	"Stage"
 		}, {
-			"ID":	12,
-			"Name":	"Light - Green"
-		}, {
-			"ID":	13,
-			"Name":	"Light - Red"
-		}, {
-			"ID":	14,
-			"Name":	"Light - Blue"
-		}, {
-			"ID":	15,
-			"Name":	"Light - Yellow"
+			"ID":	37,
+			"Name":	"5 Colored Lights"
 		}, {
 			"ID":	16,
 			"Name":	"Light - Turqoise"
 		}, {
-			"ID":	17,
-			"Name":	"Wall"
+			"ID":	15,
+			"Name":	"Light - Yellow"
+		}, {
+			"ID":	14,
+			"Name":	"Light - Blue"
+		}, {
+			"ID":	13,
+			"Name":	"Light - Red"
+		}, {
+			"ID":	12,
+			"Name":	"Light - Green"
 		}, {
 			"ID":	18,
 			"Name":	"Shadow Light"
 		}, {
-			"ID":	19,
-			"Name":	"Wall Left"
+			"ID":	21,
+			"Name":	"Wall Left topface"
 		}, {
 			"ID":	20,
 			"Name":	"Wall Left backface"
 		}, {
-			"ID":	21,
-			"Name":	"Wall Left topface"
+			"ID":	19,
+			"Name":	"Wall Left"
 		}, {
-			"ID":	22,
-			"Name":	"MainLua"
+			"ID":	17,
+			"Name":	"Wall"
+		}, {
+			"ID":	11,
+			"Name":	"Plane"
 		}],
 	"Transforms":	[{
+			"GOID":	22,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
 			"GOID":	1,
 			"ID":	0,
 			"Pos":	[0, 2.400000, -10],
@@ -104,47 +116,52 @@
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
-			"GOID":	11,
+			"GOID":	49,
 			"ID":	0,
-			"Pos":	[0, -0.843562, 0],
+			"Pos":	[0, 0, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
-			"GOID":	12,
+			"GOID":	37,
 			"ID":	0,
-			"Pos":	[0, 3.156439, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	13,
-			"ID":	0,
-			"Pos":	[-5, 3.156439, -5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	14,
-			"ID":	0,
-			"Pos":	[5, 3.156439, 5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	15,
-			"ID":	0,
-			"Pos":	[5, 3.156439, -5],
+			"Pos":	[0, 0, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	16,
 			"ID":	0,
+			"ParentGOID":	37,
 			"Pos":	[-5, 3.156439, 5],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
-			"GOID":	17,
+			"GOID":	15,
 			"ID":	0,
-			"Pos":	[0, -0.843562, 10],
+			"ParentGOID":	37,
+			"Pos":	[5, 3.156439, -5],
 			"Scale":	[1, 1, 1],
-			"Rot":	[90, 0, 0]
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	14,
+			"ID":	0,
+			"ParentGOID":	37,
+			"Pos":	[5, 3.156439, 5],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	13,
+			"ID":	0,
+			"ParentGOID":	37,
+			"Pos":	[-5, 3.156439, -5],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	12,
+			"ID":	0,
+			"ParentGOID":	37,
+			"Pos":	[0, 3.156439, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	18,
 			"ID":	0,
@@ -152,27 +169,38 @@
 			"Scale":	[1, 1, 1],
 			"Rot":	[20, 90, 0]
 		}, {
-			"GOID":	19,
-			"ID":	0,
-			"Pos":	[-10, -7.843560, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 90]
-		}, {
-			"GOID":	20,
-			"ID":	0,
-			"Pos":	[-10.999998, -7.843560, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, -90]
-		}, {
 			"GOID":	21,
 			"ID":	0,
+			"ParentGOID":	49,
 			"Pos":	[-10.500000, 2.156439, 0],
 			"Scale":	[0.050000, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
-			"GOID":	22,
+			"GOID":	20,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
+			"ParentGOID":	49,
+			"Pos":	[-10.999998, -7.843560, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, -90]
+		}, {
+			"GOID":	19,
+			"ID":	0,
+			"ParentGOID":	49,
+			"Pos":	[-10, -7.843560, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 90]
+		}, {
+			"GOID":	17,
+			"ID":	0,
+			"ParentGOID":	49,
+			"Pos":	[0, -0.843562, 10],
+			"Scale":	[1, 1, 1],
+			"Rot":	[90, 0, 0]
+		}, {
+			"GOID":	11,
+			"ID":	0,
+			"ParentGOID":	49,
+			"Pos":	[0, -0.843562, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
