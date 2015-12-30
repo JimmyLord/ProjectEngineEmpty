@@ -1,5 +1,7 @@
 {
-	"Files":	[],
+	"Files":	[{
+			"Path":	"Data/Scripts/CharacterController_2DPhysics.lua"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"
@@ -8,7 +10,16 @@
 			"Name":	"Hud Camera"
 		}, {
 			"ID":	3,
-			"Name":	"Box"
+			"Name":	"Floor"
+		}, {
+			"ID":	5,
+			"Name":	"Wall-left"
+		}, {
+			"ID":	6,
+			"Name":	"Wall-right"
+		}, {
+			"ID":	4,
+			"Name":	"Player"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -25,11 +36,57 @@
 		}, {
 			"GOID":	3,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
+			"Pos":	[0, -3, 0],
+			"Scale":	[10, 0.100000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	5,
+			"ID":	0,
+			"Pos":	[-5, 0, 0],
+			"Scale":	[0.100000, 6, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	6,
+			"ID":	0,
+			"Pos":	[5, 0, 0],
+			"Scale":	[0.100000, 6, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	4,
+			"ID":	0,
+			"Pos":	[0, 1.626220, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
+			"Type":	"Collision Object 2D",
+			"GOID":	3,
+			"ID":	3,
+			"PrimitiveType":	2,
+			"Static":	1,
+			"Mass":	0
+		}, {
+			"Type":	"Collision Object 2D",
+			"GOID":	4,
+			"ID":	7,
+			"PrimitiveType":	1,
+			"Static":	0,
+			"Mass":	1
+		}, {
+			"Type":	"Collision Object 2D",
+			"GOID":	5,
+			"ID":	15,
+			"PrimitiveType":	2,
+			"Static":	1,
+			"Mass":	0
+		}, {
+			"Type":	"Collision Object 2D",
+			"GOID":	6,
+			"ID":	23,
+			"PrimitiveType":	2,
+			"Static":	1,
+			"Mass":	0
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
@@ -50,16 +107,43 @@
 			"DepthBit":	0,
 			"Layers":	2
 		}, {
-			"Type":	"Collision Object 2D",
-			"GOID":	3,
-			"ID":	3,
-			"Primitive":	"Box",
-			"Mass":	0,
-			"Scale":	[1, 1, 1]
+			"Type":	"Lua Script",
+			"GOID":	4,
+			"ID":	12,
+			"Script":	"Data/Scripts/CharacterController_2DPhysics.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	10
+				}]
 		}, {
 			"Type":	"Sprite",
 			"GOID":	3,
 			"ID":	4,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1]
+		}, {
+			"Type":	"Sprite",
+			"GOID":	4,
+			"ID":	8,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1]
+		}, {
+			"Type":	"Sprite",
+			"GOID":	5,
+			"ID":	16,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1]
+		}, {
+			"Type":	"Sprite",
+			"GOID":	6,
+			"ID":	24,
 			"Visible":	1,
 			"Layers":	1,
 			"Tint":	[255, 255, 255, 255],

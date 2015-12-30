@@ -1529,6 +1529,7 @@
     <None Include="Data\Scenes\TestPostEffects.scene" />
     <None Include="Data\Scenes\TestPostEffectsBokeh.scene" />
     <None Include="Data\Scenes\TestShadow.scene" />
+    <None Include="Data\Scripts\CharacterController_2DPhysics.lua" />
     <None Include="Data\Scripts\CharacterController_Physics.lua" />
     <None Include="Data\Scripts\DemoLoadPauseMenu.lua" />
     <None Include="Data\Scripts\Enemy.lua" />

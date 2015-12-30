@@ -432,5 +432,8 @@
     <None Include="Data\Menus\DemoPauseMenuActions.lua">
       <Filter>Data\Menus</Filter>
     </None>
+    <None Include="Data\Scripts\CharacterController_2DPhysics.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
   </ItemGroup>
 </Project>
