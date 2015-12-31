@@ -68,4 +68,10 @@ Tick = function(timepassed)
 	this.jump = false;
 end,
 
+OnCollision = function(normal)
+	if( normal.y > 0 ) then
+		this.jump = true;
+	end
+end,
+
 }
