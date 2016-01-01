@@ -56,10 +56,17 @@ Tick = function(timepassed)
 	
 	-- move the player
 	this.dir = this.dir:Scale( this.Speed );
-	collisionobject:ApplyForce( this.dir, Vector2(0,0) );
+	--collisionobject:ApplyForce( this.dir, Vector2(0,0) );
+	local velocity = collisionobject:GetLinearVelocity();
+	local mass = collisionobject:GetMass();
+	local forceneeded = this.dir:Sub( velocity ).x;
+	forceneeded = forceneeded * mass;
+	--if this.dir:Length() > 0 then
+		collisionobject:ApplyLinearImpulse( Vector2(forceneeded, 0), Vector2(0,0) );
+	--end
 	
 	if this.jump then
-		collisionobject:ApplyLinearImpulse( Vector2(0,20), Vector2(0,0) );
+		--collisionobject:ApplyLinearImpulse( Vector2(0,20), Vector2(0,0) );
 	end
 
 	-- zero out the input vector

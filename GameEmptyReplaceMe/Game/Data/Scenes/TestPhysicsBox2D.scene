@@ -64,28 +64,28 @@
 			"ID":	3,
 			"PrimitiveType":	2,
 			"Static":	1,
-			"Mass":	0
+			"Density":	0
 		}, {
 			"Type":	"Collision Object 2D",
 			"GOID":	4,
 			"ID":	7,
 			"PrimitiveType":	1,
 			"Static":	0,
-			"Mass":	1
+			"Density":	0
 		}, {
 			"Type":	"Collision Object 2D",
 			"GOID":	5,
 			"ID":	15,
 			"PrimitiveType":	2,
 			"Static":	1,
-			"Mass":	0
+			"Density":	0
 		}, {
 			"Type":	"Collision Object 2D",
 			"GOID":	6,
 			"ID":	23,
 			"PrimitiveType":	2,
 			"Static":	1,
-			"Mass":	0
+			"Density":	0
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
@@ -114,7 +114,7 @@
 			"ExposedVars":	[{
 					"Name":	"Speed",
 					"Type":	1,
-					"Value":	10
+					"Value":	5
 				}]
 		}, {
 			"Type":	"Sprite",
