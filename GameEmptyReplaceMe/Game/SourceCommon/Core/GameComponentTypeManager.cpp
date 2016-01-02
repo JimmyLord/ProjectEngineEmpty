@@ -10,6 +10,7 @@
 #include "GameCommonHeader.h"
 
 // sort by category, otherwise right-click menu will have duplicates.
+// name(2nd column) is saved into the scene files, changing it will break objects.
 ComponentTypeInfo g_GameComponentTypeInfo[Component_NumGameComponentTypes] = // ADDING_NEW_ComponentTypeGame
 {
     { "Input handlers", "Track Mouse",      },

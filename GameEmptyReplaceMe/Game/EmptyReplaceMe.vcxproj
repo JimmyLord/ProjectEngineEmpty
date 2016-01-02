@@ -1525,6 +1525,7 @@
     <None Include="Data\Scenes\TestParenting.scene" />
     <None Include="Data\Scenes\TestParticles.scene" />
     <None Include="Data\Scenes\TestPhysics.scene" />
+    <None Include="Data\Scenes\TestPhysicsBox2D.scene" />
     <None Include="Data\Scenes\TestPhysicsCharacter.scene" />
     <None Include="Data\Scenes\TestPostEffects.scene" />
     <None Include="Data\Scenes\TestPostEffectsBokeh.scene" />

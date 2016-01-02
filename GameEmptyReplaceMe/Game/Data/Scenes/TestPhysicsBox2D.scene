@@ -1,6 +1,12 @@
 {
 	"Files":	[{
 			"Path":	"Data/Scripts/CharacterController_2DPhysics.lua"
+		}, {
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Colors/Color-Pink.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -20,6 +26,18 @@
 		}, {
 			"ID":	4,
 			"Name":	"Player"
+		}, {
+			"ID":	7,
+			"Name":	"Spinner"
+		}, {
+			"ID":	8,
+			"Name":	"Car Body"
+		}, {
+			"ID":	9,
+			"Name":	"Car Wheel Left"
+		}, {
+			"ID":	10,
+			"Name":	"Car Wheel Right"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -54,38 +72,113 @@
 		}, {
 			"GOID":	4,
 			"ID":	0,
-			"Pos":	[0, 1.626220, 0],
+			"Pos":	[0, 2.887760, 0],
 			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	7,
+			"ID":	0,
+			"Pos":	[1.566213, 0.690035, 0],
+			"Scale":	[3, 0.500000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	8,
+			"ID":	0,
+			"Pos":	[1.309922, -2.300000, 0],
+			"Scale":	[2, 0.200000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	9,
+			"ID":	0,
+			"Pos":	[0.349189, -2.300000, 0],
+			"Scale":	[0.400000, 0.400000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	10,
+			"ID":	0,
+			"Pos":	[2.325906, -2.300000, 0],
+			"Scale":	[0.400000, 0.400000, 1],
 			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
-			"Type":	"Collision Object 2D",
+			"Type":	"2D Collision Object",
 			"GOID":	3,
 			"ID":	3,
 			"PrimitiveType":	2,
 			"Static":	1,
 			"Density":	0
 		}, {
-			"Type":	"Collision Object 2D",
+			"Type":	"2D Collision Object",
 			"GOID":	4,
 			"ID":	7,
-			"PrimitiveType":	1,
+			"PrimitiveType":	0,
 			"Static":	0,
-			"Density":	0
+			"Density":	1
 		}, {
-			"Type":	"Collision Object 2D",
+			"Type":	"2D Collision Object",
 			"GOID":	5,
 			"ID":	15,
 			"PrimitiveType":	2,
 			"Static":	1,
 			"Density":	0
 		}, {
-			"Type":	"Collision Object 2D",
+			"Type":	"2D Collision Object",
 			"GOID":	6,
 			"ID":	23,
 			"PrimitiveType":	2,
 			"Static":	1,
 			"Density":	0
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	7,
+			"ID":	31,
+			"PrimitiveType":	0,
+			"Static":	0,
+			"Density":	1
+		}, {
+			"Type":	"2D Joint - Revolute",
+			"GOID":	7,
+			"ID":	40,
+			"AnchorB":	[0, 0]
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	8,
+			"ID":	49,
+			"PrimitiveType":	0,
+			"Static":	0,
+			"Density":	1
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	9,
+			"ID":	59,
+			"PrimitiveType":	1,
+			"Static":	0,
+			"Density":	1
+		}, {
+			"Type":	"2D Joint - Revolute",
+			"GOID":	8,
+			"ID":	62,
+			"SecondCollisionObject":	{
+				"GOID":	9,
+				"ComponentID":	59
+			},
+			"AnchorB":	[0, 0]
+		}, {
+			"Type":	"2D Joint - Revolute",
+			"GOID":	8,
+			"ID":	63,
+			"SecondCollisionObject":	{
+				"GOID":	10,
+				"ComponentID":	64
+			},
+			"AnchorB":	[0, 0]
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	10,
+			"ID":	64,
+			"PrimitiveType":	1,
+			"Static":	0,
+			"Density":	1
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
@@ -123,7 +216,8 @@
 			"Visible":	1,
 			"Layers":	1,
 			"Tint":	[255, 255, 255, 255],
-			"Size":	[1, 1]
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	4,
@@ -131,7 +225,8 @@
 			"Visible":	1,
 			"Layers":	1,
 			"Tint":	[255, 255, 255, 255],
-			"Size":	[1, 1]
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	5,
@@ -139,7 +234,8 @@
 			"Visible":	1,
 			"Layers":	1,
 			"Tint":	[255, 255, 255, 255],
-			"Size":	[1, 1]
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	6,
@@ -147,6 +243,43 @@
 			"Visible":	1,
 			"Layers":	1,
 			"Tint":	[255, 255, 255, 255],
-			"Size":	[1, 1]
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	7,
+			"ID":	32,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	8,
+			"ID":	51,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	9,
+			"ID":	60,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[2, 2],
+			"Material":	"Data/Materials/Colors/Color-Pink.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	10,
+			"ID":	65,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[2, 2],
+			"Material":	"Data/Materials/Colors/Color-Pink.mymaterial"
 		}]
 }

@@ -435,5 +435,8 @@
     <None Include="Data\Scripts\CharacterController_2DPhysics.lua">
       <Filter>Data\Scripts</Filter>
     </None>
+    <None Include="Data\Scenes\TestPhysicsBox2D.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
   </ItemGroup>
 </Project>
