@@ -38,6 +38,21 @@
 		}, {
 			"ID":	10,
 			"Name":	"Car Wheel Right"
+		}, {
+			"ID":	14,
+			"Name":	"Link1"
+		}, {
+			"ID":	12,
+			"Name":	"Link2"
+		}, {
+			"ID":	11,
+			"Name":	"Link3"
+		}, {
+			"ID":	13,
+			"Name":	"Link4"
+		}, {
+			"ID":	15,
+			"Name":	"Another Spinner"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -72,7 +87,7 @@
 		}, {
 			"GOID":	4,
 			"ID":	0,
-			"Pos":	[0, 2.887760, 0],
+			"Pos":	[2.674942, 2.887760, 0],
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
@@ -84,20 +99,50 @@
 		}, {
 			"GOID":	8,
 			"ID":	0,
-			"Pos":	[1.309922, -2.300000, 0],
+			"Pos":	[1.791546, -2.300000, 0],
 			"Scale":	[2, 0.200000, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	9,
 			"ID":	0,
-			"Pos":	[0.349189, -2.300000, 0],
+			"Pos":	[0.830813, -2.300000, 0],
 			"Scale":	[0.400000, 0.400000, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[2.325906, -2.300000, 0],
+			"Pos":	[2.807530, -2.300000, 0],
 			"Scale":	[0.400000, 0.400000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	14,
+			"ID":	0,
+			"Pos":	[-2.500000, 3.253895, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	12,
+			"ID":	0,
+			"Pos":	[-2.500000, 2.400000, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	11,
+			"ID":	0,
+			"Pos":	[-2.500000, 1.550000, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	13,
+			"ID":	0,
+			"Pos":	[-2.500000, 0.700000, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	15,
+			"ID":	0,
+			"Pos":	[-1.705130, -0.810316, 0],
+			"Scale":	[3, 0.500000, 1],
 			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
@@ -139,7 +184,14 @@
 			"Type":	"2D Joint - Revolute",
 			"GOID":	7,
 			"ID":	40,
-			"AnchorB":	[0, 0]
+			"AnchorA":	[0, 0],
+			"AnchorB":	[0, 0],
+			"MotorEnabled":	1,
+			"MotorSpeed":	-6.200000,
+			"MotorMaxTorque":	5.800000,
+			"LimitEnabled":	1,
+			"LimitMin":	-60,
+			"LimitMax":	60
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	8,
@@ -162,7 +214,14 @@
 				"GOID":	9,
 				"ComponentID":	59
 			},
-			"AnchorB":	[0, 0]
+			"AnchorA":	[-1, 0],
+			"AnchorB":	[0, 0],
+			"MotorEnabled":	0,
+			"MotorSpeed":	0,
+			"MotorMaxTorque":	0,
+			"LimitEnabled":	0,
+			"LimitMin":	0,
+			"LimitMax":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	8,
@@ -171,7 +230,14 @@
 				"GOID":	10,
 				"ComponentID":	64
 			},
-			"AnchorB":	[0, 0]
+			"AnchorA":	[1, 0],
+			"AnchorB":	[0, 0],
+			"MotorEnabled":	0,
+			"MotorSpeed":	0,
+			"MotorMaxTorque":	0,
+			"LimitEnabled":	0,
+			"LimitMin":	0,
+			"LimitMax":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	10,
@@ -179,6 +245,113 @@
 			"PrimitiveType":	1,
 			"Static":	0,
 			"Density":	1
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	11,
+			"ID":	76,
+			"PrimitiveType":	0,
+			"Static":	0,
+			"Density":	1
+		}, {
+			"Type":	"2D Joint - Revolute",
+			"GOID":	11,
+			"ID":	77,
+			"SecondCollisionObject":	{
+				"GOID":	12,
+				"ComponentID":	79
+			},
+			"AnchorA":	[0, 0.400000],
+			"AnchorB":	[0, -0.400000],
+			"MotorEnabled":	0,
+			"MotorSpeed":	0,
+			"MotorMaxTorque":	0,
+			"LimitEnabled":	0,
+			"LimitMin":	0,
+			"LimitMax":	0
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	12,
+			"ID":	79,
+			"PrimitiveType":	0,
+			"Static":	0,
+			"Density":	1
+		}, {
+			"Type":	"2D Joint - Revolute",
+			"GOID":	12,
+			"ID":	80,
+			"SecondCollisionObject":	{
+				"GOID":	14,
+				"ComponentID":	98
+			},
+			"AnchorA":	[0, 0.400000],
+			"AnchorB":	[0, -0.400000],
+			"MotorEnabled":	0,
+			"MotorSpeed":	0,
+			"MotorMaxTorque":	0,
+			"LimitEnabled":	0,
+			"LimitMin":	0,
+			"LimitMax":	0
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	13,
+			"ID":	82,
+			"PrimitiveType":	0,
+			"Static":	0,
+			"Density":	1
+		}, {
+			"Type":	"2D Joint - Revolute",
+			"GOID":	13,
+			"ID":	83,
+			"SecondCollisionObject":	{
+				"GOID":	11,
+				"ComponentID":	76
+			},
+			"AnchorA":	[0, 0.400000],
+			"AnchorB":	[0, -0.400000],
+			"MotorEnabled":	0,
+			"MotorSpeed":	0,
+			"MotorMaxTorque":	0,
+			"LimitEnabled":	0,
+			"LimitMin":	0,
+			"LimitMax":	0
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	14,
+			"ID":	98,
+			"PrimitiveType":	0,
+			"Static":	0,
+			"Density":	1
+		}, {
+			"Type":	"2D Joint - Revolute",
+			"GOID":	14,
+			"ID":	101,
+			"AnchorA":	[0, 0.500000],
+			"AnchorB":	[0, 0],
+			"MotorEnabled":	0,
+			"MotorSpeed":	0,
+			"MotorMaxTorque":	0,
+			"LimitEnabled":	0,
+			"LimitMin":	0,
+			"LimitMax":	0
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	15,
+			"ID":	102,
+			"PrimitiveType":	0,
+			"Static":	0,
+			"Density":	1
+		}, {
+			"Type":	"2D Joint - Revolute",
+			"GOID":	15,
+			"ID":	103,
+			"AnchorA":	[0, 0],
+			"AnchorB":	[0, 0],
+			"MotorEnabled":	1,
+			"MotorSpeed":	-7.400000,
+			"MotorMaxTorque":	5.800000,
+			"LimitEnabled":	0,
+			"LimitMin":	-60,
+			"LimitMax":	60
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
@@ -281,5 +454,50 @@
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[2, 2],
 			"Material":	"Data/Materials/Colors/Color-Pink.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	11,
+			"ID":	78,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	12,
+			"ID":	81,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	13,
+			"ID":	84,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	14,
+			"ID":	100,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	15,
+			"ID":	104,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}]
 }
