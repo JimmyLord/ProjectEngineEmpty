@@ -149,37 +149,52 @@
 			"Type":	"2D Collision Object",
 			"GOID":	3,
 			"ID":	3,
-			"PrimitiveType":	2,
+			"PrimitiveType":	"Edge",
 			"Static":	1,
-			"Density":	0
+			"Density":	0,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	4,
 			"ID":	7,
-			"PrimitiveType":	0,
+			"PrimitiveType":	"Box",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	5,
 			"ID":	15,
-			"PrimitiveType":	2,
+			"PrimitiveType":	"Edge",
 			"Static":	1,
-			"Density":	0
+			"Density":	0,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	6,
 			"ID":	23,
-			"PrimitiveType":	2,
+			"PrimitiveType":	"Edge",
 			"Static":	1,
-			"Density":	0
+			"Density":	0,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	7,
 			"ID":	31,
-			"PrimitiveType":	0,
+			"PrimitiveType":	"Box",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	7,
@@ -196,16 +211,22 @@
 			"Type":	"2D Collision Object",
 			"GOID":	8,
 			"ID":	49,
-			"PrimitiveType":	0,
+			"PrimitiveType":	"Box",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	9,
 			"ID":	59,
-			"PrimitiveType":	1,
+			"PrimitiveType":	"Circle",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	8,
@@ -242,16 +263,22 @@
 			"Type":	"2D Collision Object",
 			"GOID":	10,
 			"ID":	64,
-			"PrimitiveType":	1,
+			"PrimitiveType":	"Circle",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	11,
 			"ID":	76,
-			"PrimitiveType":	0,
+			"PrimitiveType":	"Box",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	11,
@@ -272,9 +299,12 @@
 			"Type":	"2D Collision Object",
 			"GOID":	12,
 			"ID":	79,
-			"PrimitiveType":	0,
+			"PrimitiveType":	"Box",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	12,
@@ -295,9 +325,12 @@
 			"Type":	"2D Collision Object",
 			"GOID":	13,
 			"ID":	82,
-			"PrimitiveType":	0,
+			"PrimitiveType":	"Box",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	13,
@@ -318,9 +351,12 @@
 			"Type":	"2D Collision Object",
 			"GOID":	14,
 			"ID":	98,
-			"PrimitiveType":	0,
+			"PrimitiveType":	"Box",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	14,
@@ -337,9 +373,12 @@
 			"Type":	"2D Collision Object",
 			"GOID":	15,
 			"ID":	102,
-			"PrimitiveType":	0,
+			"PrimitiveType":	"Box",
 			"Static":	0,
-			"Density":	1
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	15,
@@ -438,24 +477,6 @@
 			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
-			"GOID":	9,
-			"ID":	60,
-			"Visible":	1,
-			"Layers":	1,
-			"Tint":	[255, 255, 255, 255],
-			"Size":	[2, 2],
-			"Material":	"Data/Materials/Colors/Color-Pink.mymaterial"
-		}, {
-			"Type":	"Sprite",
-			"GOID":	10,
-			"ID":	65,
-			"Visible":	1,
-			"Layers":	1,
-			"Tint":	[255, 255, 255, 255],
-			"Size":	[2, 2],
-			"Material":	"Data/Materials/Colors/Color-Pink.mymaterial"
-		}, {
-			"Type":	"Sprite",
 			"GOID":	11,
 			"ID":	78,
 			"Visible":	1,
@@ -499,5 +520,37 @@
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
+		}, {
+			"Type":	"Mesh-Primitive",
+			"GOID":	9,
+			"ID":	120,
+			"Visible":	1,
+			"Layers":	1,
+			"PrimitiveType":	"TriangleFan",
+			"PointSize":	1,
+			"MPType":	"2DCircle",
+			"PlaneSize":	[10, 10],
+			"PlaneVertCountx":	10,
+			"PlaneVertCounty":	10,
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/Colors/Color-Pink.mymaterial"]
+		}, {
+			"Type":	"Mesh-Primitive",
+			"GOID":	10,
+			"ID":	121,
+			"Visible":	1,
+			"Layers":	1,
+			"PrimitiveType":	"TriangleFan",
+			"PointSize":	1,
+			"MPType":	"2DCircle",
+			"PlaneSize":	[10, 10],
+			"PlaneVertCountx":	10,
+			"PlaneVertCounty":	10,
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/Colors/Color-Pink.mymaterial"]
 		}]
 }
