@@ -53,6 +53,12 @@
 		}, {
 			"ID":	15,
 			"Name":	"Another Spinner"
+		}, {
+			"ID":	19,
+			"Name":	"Scale"
+		}, {
+			"ID":	20,
+			"Name":	"Weight"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -143,6 +149,18 @@
 			"ID":	0,
 			"Pos":	[-1.705130, -0.810316, 0],
 			"Scale":	[3, 0.500000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	19,
+			"ID":	0,
+			"Pos":	[0.253016, 3.115622, 0],
+			"Scale":	[3, 0.500000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	20,
+			"ID":	0,
+			"Pos":	[0.086912, 4.286298, 0],
+			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}],
 	"Components":	[{
@@ -392,6 +410,38 @@
 			"LimitMin":	-60,
 			"LimitMax":	60
 		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	19,
+			"ID":	122,
+			"PrimitiveType":	"Box",
+			"Static":	0,
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
+		}, {
+			"Type":	"2D Joint - Prismatic",
+			"GOID":	19,
+			"ID":	125,
+			"AnchorA":	[0, 0],
+			"AnchorB":	[0, 0],
+			"MotorEnabled":	1,
+			"MotorSpeed":	-20,
+			"MotorMaxForce":	30,
+			"LimitEnabled":	1,
+			"LimitMin":	0,
+			"LimitMax":	1
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	20,
+			"ID":	126,
+			"PrimitiveType":	"Box",
+			"Static":	0,
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
@@ -552,5 +602,23 @@
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
 			"Materials":	["Data/Materials/Colors/Color-Pink.mymaterial"]
+		}, {
+			"Type":	"Sprite",
+			"GOID":	19,
+			"ID":	124,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	20,
+			"ID":	128,
+			"Visible":	1,
+			"Layers":	1,
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}]
 }
