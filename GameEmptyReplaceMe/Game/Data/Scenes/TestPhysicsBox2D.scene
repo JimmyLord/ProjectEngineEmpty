@@ -15,6 +15,14 @@
 			"ID":	2,
 			"Name":	"Hud Camera"
 		}, {
+			"IsFolder":	1,
+			"ID":	28,
+			"PhysicsSceneID":	0,
+			"Name":	"Folder - StaticWorld"
+		}, {
+			"ID":	27,
+			"Name":	"WorldChain"
+		}, {
 			"ID":	3,
 			"Name":	"Floor"
 		}, {
@@ -24,20 +32,10 @@
 			"ID":	6,
 			"Name":	"Wall-right"
 		}, {
-			"ID":	4,
-			"Name":	"Player"
-		}, {
-			"ID":	7,
-			"Name":	"Spinner"
-		}, {
-			"ID":	8,
-			"Name":	"Car Body"
-		}, {
-			"ID":	9,
-			"Name":	"Car Wheel Left"
-		}, {
-			"ID":	10,
-			"Name":	"Car Wheel Right"
+			"IsFolder":	1,
+			"ID":	21,
+			"PhysicsSceneID":	0,
+			"Name":	"Folder - Chain Links"
 		}, {
 			"ID":	14,
 			"Name":	"Link1"
@@ -50,6 +48,26 @@
 		}, {
 			"ID":	13,
 			"Name":	"Link4"
+		}, {
+			"IsFolder":	1,
+			"ID":	46,
+			"PhysicsSceneID":	0,
+			"Name":	"Folder - Car"
+		}, {
+			"ID":	8,
+			"Name":	"Car Body"
+		}, {
+			"ID":	9,
+			"Name":	"Car Wheel Left"
+		}, {
+			"ID":	10,
+			"Name":	"Car Wheel Right"
+		}, {
+			"ID":	4,
+			"Name":	"Player"
+		}, {
+			"ID":	7,
+			"Name":	"Spinner"
 		}, {
 			"ID":	15,
 			"Name":	"Another Spinner"
@@ -73,22 +91,99 @@
 			"Scale":	[1, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
+			"GOID":	28,
+			"ID":	0,
+			"Pos":	[1.639128e-007, -1.788139e-007, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	27,
+			"ID":	0,
+			"ParentGOID":	28,
+			"Pos":	[0.221970, -3.457143, 0],
+			"Scale":	[10, 0.300000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
 			"GOID":	3,
 			"ID":	0,
-			"Pos":	[0, -3, 0],
-			"Scale":	[10, 0.100000, 1],
+			"ParentGOID":	28,
+			"Pos":	[0.221970, -3.457143, 0],
+			"Scale":	[10, 0.300000, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	5,
 			"ID":	0,
-			"Pos":	[-5, 0, 0],
+			"ParentGOID":	28,
+			"Pos":	[-4.778030, -0.457143, 0],
 			"Scale":	[0.100000, 6, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	6,
 			"ID":	0,
-			"Pos":	[5, 0, 0],
+			"ParentGOID":	28,
+			"Pos":	[5.221970, -0.457143, 0],
 			"Scale":	[0.100000, 6, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	21,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	14,
+			"ID":	0,
+			"ParentGOID":	21,
+			"Pos":	[-2.500000, 3.253895, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	12,
+			"ID":	0,
+			"ParentGOID":	21,
+			"Pos":	[-2.500000, 2.400000, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	11,
+			"ID":	0,
+			"ParentGOID":	21,
+			"Pos":	[-2.500000, 1.550000, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	13,
+			"ID":	0,
+			"ParentGOID":	21,
+			"Pos":	[-2.500000, 0.700000, 0],
+			"Scale":	[0.400000, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	46,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Scale":	[1, 1, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	8,
+			"ID":	0,
+			"ParentGOID":	46,
+			"Pos":	[1.791546, -2.300000, 0],
+			"Scale":	[2, 0.200000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	9,
+			"ID":	0,
+			"ParentGOID":	46,
+			"Pos":	[0.830813, -2.300000, 0],
+			"Scale":	[0.400000, 0.400000, 1],
+			"Rot":	[0, 0, 0]
+		}, {
+			"GOID":	10,
+			"ID":	0,
+			"ParentGOID":	46,
+			"Pos":	[2.807530, -2.300000, 0],
+			"Scale":	[0.400000, 0.400000, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	4,
@@ -101,48 +196,6 @@
 			"ID":	0,
 			"Pos":	[1.566213, 0.690035, 0],
 			"Scale":	[3, 0.500000, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	8,
-			"ID":	0,
-			"Pos":	[1.791546, -2.300000, 0],
-			"Scale":	[2, 0.200000, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	9,
-			"ID":	0,
-			"Pos":	[0.830813, -2.300000, 0],
-			"Scale":	[0.400000, 0.400000, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	10,
-			"ID":	0,
-			"Pos":	[2.807530, -2.300000, 0],
-			"Scale":	[0.400000, 0.400000, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	14,
-			"ID":	0,
-			"Pos":	[-2.500000, 3.253895, 0],
-			"Scale":	[0.400000, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	12,
-			"ID":	0,
-			"Pos":	[-2.500000, 2.400000, 0],
-			"Scale":	[0.400000, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	11,
-			"ID":	0,
-			"Pos":	[-2.500000, 1.550000, 0],
-			"Scale":	[0.400000, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	13,
-			"ID":	0,
-			"Pos":	[-2.500000, 0.700000, 0],
-			"Scale":	[0.400000, 1, 1],
 			"Rot":	[0, 0, 0]
 		}, {
 			"GOID":	15,
@@ -165,41 +218,11 @@
 		}],
 	"Components":	[{
 			"Type":	"2D Collision Object",
-			"GOID":	3,
-			"ID":	3,
-			"PrimitiveType":	"Edge",
-			"Static":	1,
-			"Density":	0,
-			"IsSensor":	0,
-			"Friction":	0.200000,
-			"Restitution":	0
-		}, {
-			"Type":	"2D Collision Object",
 			"GOID":	4,
 			"ID":	7,
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
-			"IsSensor":	0,
-			"Friction":	0.200000,
-			"Restitution":	0
-		}, {
-			"Type":	"2D Collision Object",
-			"GOID":	5,
-			"ID":	15,
-			"PrimitiveType":	"Edge",
-			"Static":	1,
-			"Density":	0,
-			"IsSensor":	0,
-			"Friction":	0.200000,
-			"Restitution":	0
-		}, {
-			"Type":	"2D Collision Object",
-			"GOID":	6,
-			"ID":	23,
-			"PrimitiveType":	"Edge",
-			"Static":	1,
-			"Density":	0,
 			"IsSensor":	0,
 			"Friction":	0.200000,
 			"Restitution":	0
@@ -442,6 +465,17 @@
 			"IsSensor":	0,
 			"Friction":	0.200000,
 			"Restitution":	0
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	27,
+			"ID":	145,
+			"PrimitiveType":	"Chain",
+			"Static":	1,
+			"Density":	0,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0,
+			"Vertices":	[-5.059054, 6.038836, -5.042925, -0.017154, 4.966260, 0.025604, 4.962137, 6.035725]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
