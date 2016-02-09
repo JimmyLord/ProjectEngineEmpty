@@ -8,7 +8,7 @@
 	path = wxWidgets
 	url = https://github.com/wxWidgets/wxWidgets.git
 [submodule "bullet3"]
-	path = bullet3
+	path = Libraries/bullet3
 	url = https://github.com/bulletphysics/bullet3.git
 [submodule "SharedGameCode"]
 	path = SharedGameCode

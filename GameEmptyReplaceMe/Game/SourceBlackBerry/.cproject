@@ -27,7 +27,7 @@
 									<listOptionValue builtIn="false" value="../../../../Framework/MyFramework/SourceCommon"/>
 									<listOptionValue builtIn="false" value="../../SourceCommon"/>
 									<listOptionValue builtIn="false" value="../.."/>
-									<listOptionValue builtIn="false" value="../../../../bullet3/src"/>
+									<listOptionValue builtIn="false" value="../../../../Libraries/bullet3/src"/>
 									<listOptionValue builtIn="false" value="../../../../Engine/MyEngine/SourceCommon"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.80732959" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
@@ -146,7 +146,7 @@
 									<listOptionValue builtIn="false" value="../../../../Framework/MyFramework/SourceCommon"/>
 									<listOptionValue builtIn="false" value="../../SourceCommon"/>
 									<listOptionValue builtIn="false" value="../.."/>
-									<listOptionValue builtIn="false" value="../../../../bullet3/src"/>
+									<listOptionValue builtIn="false" value="../../../../Libraries/bullet3/src"/>
 									<listOptionValue builtIn="false" value="../../../../Engine/MyEngine/SourceCommon"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.539509711" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
@@ -270,7 +270,7 @@
 									<listOptionValue builtIn="false" value="../../../../Framework/MyFramework/SourceCommon"/>
 									<listOptionValue builtIn="false" value="../../SourceCommon"/>
 									<listOptionValue builtIn="false" value="../.."/>
-									<listOptionValue builtIn="false" value="../../../../bullet3/src"/>
+									<listOptionValue builtIn="false" value="../../../../Libraries/bullet3/src"/>
 									<listOptionValue builtIn="false" value="../../../../Engine/MyEngine/SourceCommon"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.587566160" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
@@ -391,7 +391,7 @@
 									<listOptionValue builtIn="false" value="../../../../Framework/MyFramework/SourceCommon"/>
 									<listOptionValue builtIn="false" value="../../SourceCommon"/>
 									<listOptionValue builtIn="false" value="../.."/>
-									<listOptionValue builtIn="false" value="../../../../bullet3/src"/>
+									<listOptionValue builtIn="false" value="../../../../Libraries/bullet3/src"/>
 									<listOptionValue builtIn="false" value="../../../../Engine/MyEngine/SourceCommon"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1172772731" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
@@ -510,7 +510,7 @@
 									<listOptionValue builtIn="false" value="../../../../Framework/MyFramework/SourceCommon"/>
 									<listOptionValue builtIn="false" value="../../SourceCommon"/>
 									<listOptionValue builtIn="false" value="../.."/>
-									<listOptionValue builtIn="false" value="../../../../bullet3/src"/>
+									<listOptionValue builtIn="false" value="../../../../Libraries/bullet3/src"/>
 									<listOptionValue builtIn="false" value="../../../../Engine/MyEngine/SourceCommon"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1520562118" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
@@ -601,7 +601,7 @@
 									<listOptionValue builtIn="false" value="../../../../Framework/MyFramework/SourceCommon"/>
 									<listOptionValue builtIn="false" value="../../SourceCommon"/>
 									<listOptionValue builtIn="false" value="../.."/>
-									<listOptionValue builtIn="false" value="../../../../bullet3/src"/>
+									<listOptionValue builtIn="false" value="../../../../Libraries/bullet3/src"/>
 									<listOptionValue builtIn="false" value="../../../../Engine/MyEngine/SourceCommon"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1386714594" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
@@ -693,7 +693,7 @@
 									<listOptionValue builtIn="false" value="../../../../Framework/MyFramework/SourceCommon"/>
 									<listOptionValue builtIn="false" value="../../SourceCommon"/>
 									<listOptionValue builtIn="false" value="../.."/>
-									<listOptionValue builtIn="false" value="../../../../bullet3/src"/>
+									<listOptionValue builtIn="false" value="../../../../Libraries/bullet3/src"/>
 									<listOptionValue builtIn="false" value="../../../../Engine/MyEngine/SourceCommon"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.217359300" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
@@ -785,7 +785,7 @@
 									<listOptionValue builtIn="false" value="../../../../Framework/MyFramework/SourceCommon"/>
 									<listOptionValue builtIn="false" value="../../SourceCommon"/>
 									<listOptionValue builtIn="false" value="../.."/>
-									<listOptionValue builtIn="false" value="../../../../bullet3/src"/>
+									<listOptionValue builtIn="false" value="../../../../Libraries/bullet3/src"/>
 									<listOptionValue builtIn="false" value="../../../../Engine/MyEngine/SourceCommon"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1494591015" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
@@ -900,7 +900,7 @@
 									<listOptionValue builtIn="false" value="../../../../Framework/MyFramework/SourceCommon"/>
 									<listOptionValue builtIn="false" value="../../SourceCommon"/>
 									<listOptionValue builtIn="false" value="../.."/>
-									<listOptionValue builtIn="false" value="../../../../bullet3/src"/>
+									<listOptionValue builtIn="false" value="../../../../Libraries/bullet3/src"/>
 									<listOptionValue builtIn="false" value="../../../../Engine/MyEngine/SourceCommon"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.697990139" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
