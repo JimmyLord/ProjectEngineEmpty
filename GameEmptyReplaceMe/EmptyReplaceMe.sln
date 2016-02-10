@@ -12,7 +12,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EmptyReplaceMe", "Game\Empt
 		{016089D0-2136-4A3D-B08C-5031542BE1D7} = {016089D0-2136-4A3D-B08C-5031542BE1D7}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyEngine", "..\Engine\MyEngine\EntityComponentTest.vcxproj", "{CBF52F7E-23CE-4846-B48C-0146D0879805}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyEngine", "..\Engine\MyEngine\MyEngine.vcxproj", "{CBF52F7E-23CE-4846-B48C-0146D0879805}"
 	ProjectSection(ProjectDependencies) = postProject
 		{AD82F95E-C422-7443-A26D-57999762CED9} = {AD82F95E-C422-7443-A26D-57999762CED9}
 		{5E81B361-BFF0-A443-A143-44C7B2164E8E} = {5E81B361-BFF0-A443-A143-44C7B2164E8E}
@@ -22,11 +22,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyEngine", "..\Engine\MyEng
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bullet", "Bullet", "{124EFAD2-0BB6-4C2A-BAD7-3DFE5D9E21CD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BulletCollision", "..\Engine\Bullet\BulletCollision.vcxproj", "{1BD50A98-FB78-7F43-84A9-82901F5A00D0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BulletCollision", "..\Engine\Libraries\Bullet\BulletCollision.vcxproj", "{1BD50A98-FB78-7F43-84A9-82901F5A00D0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BulletDynamics", "..\Engine\Bullet\BulletDynamics.vcxproj", "{AD82F95E-C422-7443-A26D-57999762CED9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BulletDynamics", "..\Engine\Libraries\Bullet\BulletDynamics.vcxproj", "{AD82F95E-C422-7443-A26D-57999762CED9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearMath", "..\Engine\Bullet\LinearMath.vcxproj", "{5E81B361-BFF0-A443-A143-44C7B2164E8E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearMath", "..\Engine\Libraries\Bullet\LinearMath.vcxproj", "{5E81B361-BFF0-A443-A143-44C7B2164E8E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Box2D", "..\Framework\Libraries\Box2D\Box2D.vcxproj", "{98400D17-43A5-1A40-95BE-C53AC78E7694}"
 EndProject

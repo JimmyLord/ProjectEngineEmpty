@@ -438,5 +438,17 @@
     <None Include="Data\Scenes\TestPhysicsBox2D.scene">
       <Filter>Data\Scenes</Filter>
     </None>
+    <None Include="Data\Scripts\GGJRitual_Camera.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scripts\GGJRitual_Player.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scripts\GGJRitual_Trigger.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scenes\GGJRitual.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
   </ItemGroup>
 </Project>

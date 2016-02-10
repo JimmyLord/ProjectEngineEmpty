@@ -321,19 +321,19 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/Engine/MyEngine/EntityComponentTest.vcxproj</name>
+			<name>src/Engine/MyEngine/MyEngine.vcxproj</name>
 			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Engine/MyEngine/EntityComponentTest.vcxproj</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/Engine/MyEngine/MyEngine.vcxproj</locationURI>
 		</link>
 		<link>
-			<name>src/Engine/MyEngine/EntityComponentTest.vcxproj.filters</name>
+			<name>src/Engine/MyEngine/MyEngine.vcxproj.filters</name>
 			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Engine/MyEngine/EntityComponentTest.vcxproj.filters</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/Engine/MyEngine/MyEngine.vcxproj.filters</locationURI>
 		</link>
 		<link>
-			<name>src/Engine/MyEngine/EntityComponentTest.vcxproj.user</name>
+			<name>src/Engine/MyEngine/MyEngine.vcxproj.user</name>
 			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/Engine/MyEngine/EntityComponentTest.vcxproj.user</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/Engine/MyEngine/MyEngine.vcxproj.user</locationURI>
 		</link>
 		<link>
 			<name>src/Engine/MyEngine/MyEngine.xcodeproj</name>
