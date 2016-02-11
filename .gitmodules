@@ -10,6 +10,3 @@
 [submodule "SharedGameCode"]
 	path = SharedGameCode
 	url = https://github.com/JimmyLord/SharedGameCode.git
-[submodule "Libraries/Box2D"]
-	path = Libraries/Box2D
-	url = https://github.com/erincatto/Box2D.git
