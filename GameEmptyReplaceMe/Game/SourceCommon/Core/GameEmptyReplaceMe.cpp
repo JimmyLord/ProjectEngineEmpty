@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2015 Jimmy Lord http://www.flatheadgames.com
+// Copyright (c) 2012-2016 Jimmy Lord http://www.flatheadgames.com
 //
 // This software is provided 'as-is', without any express or implied warranty.  In no event will the authors be held liable for any damages arising from the use of this software.
 // Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
@@ -12,7 +12,7 @@
 char g_SceneToLoad[MAX_PATH];
 
 #if MYFW_WINDOWS
-#include "../../Framework/MyFramework/SourceWindows/wglext.h"
+#include "../../../Framework/MyFramework/SourceWindows/wglext.h"
 
 bool WGLExtensionSupported(const char *extension_name)
 {
