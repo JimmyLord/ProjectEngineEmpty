@@ -81,7 +81,7 @@ ComponentInputTrackMousePos& ComponentInputTrackMousePos::operator=(const Compon
 bool ComponentInputTrackMousePos::OnTouch(int action, int id, float x, float y, float pressure, float size)
 {
     // snap the object to the mouse pos.
-    m_pComponentTransform->SetPosition( Vector3( x, y, 0 ) );
+    m_pComponentTransform->SetWorldPosition( Vector3( x, y, 0 ) );
 
     //return true;
     return false; // allow other input handlers to use touch messages.
