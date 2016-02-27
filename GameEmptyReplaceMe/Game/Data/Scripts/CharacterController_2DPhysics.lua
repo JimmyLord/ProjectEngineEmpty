@@ -51,7 +51,7 @@ Tick = function(timepassed)
 	--local transform = this.gameobject:GetTransform();
 	local collisionobject = this.gameobject:Get2DCollisionObject();
 
-	--local pos = transform:GetPosition();
+	--local pos = transform:GetLocalPosition();
 	--local rot = transform:GetLocalRotation();
 	
 	-- move the player
@@ -68,7 +68,7 @@ Tick = function(timepassed)
 	if this.jump then
 		local object = g_pComponentSystemManager:FindGameObjectByName( "Weight" );
 		local newobject = g_pComponentSystemManager:CopyGameObject( object, "New Weight" );
-		--newobject.ComponentTransform:SetPosition( Vector3( 6, 1, 0 ) );
+		--newobject.Componenttransform:SetLocalPosition( Vector3( 6, 1, 0 ) );
 		--collisionobject:ApplyLinearImpulse( Vector2(0,20), Vector2(0,0) );
 	end
 

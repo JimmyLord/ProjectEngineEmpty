@@ -28,7 +28,7 @@ end,
 Tick = function(timepassed)
 	
 	local transform = this.gameobject:GetTransform();
-	local pos = transform:GetPosition();
+	local pos = transform:GetLocalPosition();
 
 	pos.z = pos.z + timepassed * this.Speed;
 
@@ -36,7 +36,7 @@ Tick = function(timepassed)
 		pos.z = pos.z - 60;
 	end
 
-	transform:SetPosition( pos );
+	transform:SetLocalPosition( pos );
 
 end,
 

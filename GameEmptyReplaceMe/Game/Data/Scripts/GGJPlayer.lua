@@ -84,10 +84,10 @@ Tick = function(timepassed)
 
 	if( force:LengthSquared() ~= 0 ) then
 		local transform = this.gameobject:GetTransform();
-		local pos = transform:GetPosition();
+		local pos = transform:GetLocalPosition();
 
 		pos = pos:Add( force:Scale( timepassed * this.Speed ) );
-		transform:SetPosition( pos );
+		transform:SetLocalPosition( pos );
 	end
 
 end,

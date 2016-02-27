@@ -55,7 +55,7 @@ Tick = function(timepassed)
 	local transform = this.gameobject:GetTransform();
 	local collisionobject = this.gameobject:GetCollisionObject();
 
-	local pos = transform:GetPosition();
+	local pos = transform:GetLocalPosition();
 	local rot = transform:GetLocalRotation();
 
 	-- play the correct animation and figure out facing direction based on input.
@@ -82,8 +82,8 @@ Tick = function(timepassed)
 	rot.y = rot.y % 360;
 
 	-- set the new position and rotation values
-	transform:SetPosition( pos );
-	transform:SetRotation( rot );
+	transform:SetLocalPosition( pos );
+	transform:SetLocalRotation( rot );
 
 	-- set the current animation
 	if( animplayer ) then

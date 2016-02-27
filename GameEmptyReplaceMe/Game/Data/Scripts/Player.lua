@@ -19,7 +19,7 @@ end,
 OnTouch = function(action, id, x, y, pressure, size)
 	--LogInfo( "OnTouch\n" );
 	local transform = this.gameobject:GetTransform();
-	local pos = transform:GetPosition();
+	local pos = transform:GetLocalPosition();
 
 	-- finger down
 	if( action == 0 ) then
@@ -35,7 +35,7 @@ OnTouch = function(action, id, x, y, pressure, size)
 	pos.x = x;
 	pos.y = y;
 
-	transform:SetPosition( pos );
+	transform:SetLocalPosition( pos );
 end,
 
 OnButtons = function(action, id)
@@ -46,12 +46,12 @@ Tick = function (timepassed)
 	--LogInfo( "Tick Start\n" );
 
 	--transform = this.gameobject:GetTransform();
-	--pos = transform:GetPosition();
+	--pos = transform:GetLocalPosition();
 
 	--speed = 100;
 	--pos.x = pos.x + timepassed*speed;
 	
-	--transform:SetPosition( pos );
+	--transform:SetLocalPosition( pos );
 	
 	--LogInfo( "Tick End\n" );
 end,

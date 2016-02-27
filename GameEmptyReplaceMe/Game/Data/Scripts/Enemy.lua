@@ -32,8 +32,8 @@ Tick = function(timepassed)
 
 	local transform = this.gameobject:GetTransform();
 
-	local pos = transform:GetPosition();
-	local posChasing = this.ObjectChasing:GetTransform():GetPosition();
+	local pos = transform:GetLocalPosition();
+	local posChasing = this.ObjectChasing:GetTransform():GetLocalPosition();
 
 	posChasing.x = posChasing.x + math.cos( GetSystemTime() ) * 200;
 	posChasing.y = posChasing.y + math.sin( GetSystemTime() ) * 200;
@@ -43,7 +43,7 @@ Tick = function(timepassed)
 	
 	pos = pos:Add( diff );
 
-	transform:SetPosition( pos );
+	transform:SetLocalPosition( pos );
 	
 	--obj = ComponentSystemManager:CreateGameObject( true );
 	--ComponentSystemManager:DeleteGameObject( obj );

@@ -34,7 +34,7 @@ Tick = function(timepassed)
 
 	--local transform = this.gameobject:GetTransform();
 
-	--local pos = transform:GetPosition();
+	--local pos = transform:GetLocalPosition();
 	local posChasing = Vector3( 320, 480, 0 ); --this.ObjectChasing:GetTransform():GetPosition();
 
 	--posChasing.x = posChasing.x + math.cos( GetSystemTime() ) * 200;
@@ -45,7 +45,7 @@ Tick = function(timepassed)
 	
 	--pos = pos:Add( diff );
 
-	--transform:SetPosition( pos );
+	--transform:SetLocalPosition( pos );
 	
 	--local memusage = collectgarbage("count");
 	--LogInfo( "Lua memory usage: " .. memusage .. "\n" );
