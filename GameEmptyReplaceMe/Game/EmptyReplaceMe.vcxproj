@@ -1516,6 +1516,7 @@
     <None Include="Data\Scenes\GGJRitual.scene" />
     <None Include="Data\Scenes\Multi-enemy.scene" />
     <None Include="Data\Scenes\TestAnimation.scene" />
+    <None Include="Data\Scenes\TestAudio.scene" />
     <None Include="Data\Scenes\TestBasicScene.scene" />
     <None Include="Data\Scenes\TestFragCoord.scene" />
     <None Include="Data\Scenes\TestGeometryShader.scene" />
