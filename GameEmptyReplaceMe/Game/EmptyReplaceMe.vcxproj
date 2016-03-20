@@ -1492,6 +1492,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\Engine\DataEngine\EngineGameObjects.mytemplate" />
     <None Include="..\..\Engine\DataEngine\Shaders\Include\Bone_AttribsAndUniforms.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Include\Bone_Functions.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Include\Light_Functions.glsl" />

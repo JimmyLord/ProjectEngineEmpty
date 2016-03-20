@@ -453,5 +453,8 @@
     <None Include="Data\Scenes\TestAudio.scene">
       <Filter>Data\Scenes</Filter>
     </None>
+    <None Include="..\..\Engine\DataEngine\EngineGameObjects.mytemplate">
+      <Filter>Data</Filter>
+    </None>
   </ItemGroup>
 </Project>

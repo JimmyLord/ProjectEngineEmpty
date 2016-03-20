@@ -1,6 +1,6 @@
 {
 	"Files":	[{
-			"Path":	"Data/Audio/Music.wav"
+			"Path":	"Data/Audio/Music.mycue"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -35,7 +35,7 @@
 			"Type":	"Audio Player",
 			"GOID":	3,
 			"ID":	3,
-			"AudioFile":	"Data/Audio/Music.wav"
+			"Cue":	"Music"
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
