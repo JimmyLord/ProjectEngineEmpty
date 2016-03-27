@@ -64,7 +64,10 @@
 			"Name":	"Car Wheel Right"
 		}, {
 			"ID":	4,
-			"Name":	"Player"
+			"Name":	"Player",
+			"Properties":	{
+				"Flags":	["Player"]
+			}
 		}, {
 			"ID":	7,
 			"Name":	"Spinner"
@@ -82,139 +85,139 @@
 			"GOID":	1,
 			"ID":	0,
 			"Pos":	[0, 0, -10],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	2,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	28,
 			"ID":	0,
 			"Pos":	[1.639128e-007, -1.788139e-007, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	27,
 			"ID":	0,
 			"ParentGOID":	28,
 			"Pos":	[0.221970, -3.457143, 0],
-			"Scale":	[10, 0.300000, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[10, 0.300000, 1]
 		}, {
 			"GOID":	3,
 			"ID":	0,
 			"ParentGOID":	28,
 			"Pos":	[0.221970, -3.457143, 0],
-			"Scale":	[10, 0.300000, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[10, 0.300000, 1]
 		}, {
 			"GOID":	5,
 			"ID":	0,
 			"ParentGOID":	28,
 			"Pos":	[-4.778030, -0.457143, 0],
-			"Scale":	[0.100000, 6, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.100000, 6, 1]
 		}, {
 			"GOID":	6,
 			"ID":	0,
 			"ParentGOID":	28,
 			"Pos":	[5.221970, -0.457143, 0],
-			"Scale":	[0.100000, 6, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.100000, 6, 1]
 		}, {
 			"GOID":	21,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
 			"ParentGOID":	21,
 			"Pos":	[-2.500000, 3.253895, 0],
-			"Scale":	[0.400000, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
 			"ParentGOID":	21,
 			"Pos":	[-2.500000, 2.400000, 0],
-			"Scale":	[0.400000, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
 			"ParentGOID":	21,
 			"Pos":	[-2.500000, 1.550000, 0],
-			"Scale":	[0.400000, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
 			"ParentGOID":	21,
 			"Pos":	[-2.500000, 0.700000, 0],
-			"Scale":	[0.400000, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 1, 1]
 		}, {
 			"GOID":	46,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	8,
 			"ID":	0,
 			"ParentGOID":	46,
 			"Pos":	[1.791546, -2.300000, 0],
-			"Scale":	[2, 0.200000, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 0.200000, 1]
 		}, {
 			"GOID":	9,
 			"ID":	0,
 			"ParentGOID":	46,
 			"Pos":	[0.830813, -2.300000, 0],
-			"Scale":	[0.400000, 0.400000, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 0.400000, 1]
 		}, {
 			"GOID":	10,
 			"ID":	0,
 			"ParentGOID":	46,
 			"Pos":	[2.807530, -2.300000, 0],
-			"Scale":	[0.400000, 0.400000, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.400000, 0.400000, 1]
 		}, {
 			"GOID":	4,
 			"ID":	0,
 			"Pos":	[2.674942, 2.887760, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
 			"Pos":	[1.566213, 0.690035, 0],
-			"Scale":	[3, 0.500000, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 0.500000, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
 			"Pos":	[-1.705130, -0.810316, 0],
-			"Scale":	[3, 0.500000, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 0.500000, 1]
 		}, {
 			"GOID":	19,
 			"ID":	0,
 			"Pos":	[0.253016, 3.115622, 0],
-			"Scale":	[3, 0.500000, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[3, 0.500000, 1]
 		}, {
 			"GOID":	20,
 			"ID":	0,
 			"Pos":	[0.299868, 5.127049, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"2D Collision Object",
@@ -247,7 +250,8 @@
 			"MotorMaxTorque":	5.800000,
 			"LimitEnabled":	1,
 			"LimitMin":	-60,
-			"LimitMax":	60
+			"LimitMax":	60,
+			"BreakForce":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	8,
@@ -283,7 +287,8 @@
 			"MotorMaxTorque":	0,
 			"LimitEnabled":	0,
 			"LimitMin":	0,
-			"LimitMax":	0
+			"LimitMax":	0,
+			"BreakForce":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	8,
@@ -299,7 +304,8 @@
 			"MotorMaxTorque":	0,
 			"LimitEnabled":	0,
 			"LimitMin":	0,
-			"LimitMax":	0
+			"LimitMax":	0,
+			"BreakForce":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	10,
@@ -335,7 +341,8 @@
 			"MotorMaxTorque":	0,
 			"LimitEnabled":	0,
 			"LimitMin":	0,
-			"LimitMax":	0
+			"LimitMax":	0,
+			"BreakForce":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	12,
@@ -361,7 +368,8 @@
 			"MotorMaxTorque":	0,
 			"LimitEnabled":	0,
 			"LimitMin":	0,
-			"LimitMax":	0
+			"LimitMax":	0,
+			"BreakForce":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	13,
@@ -387,7 +395,8 @@
 			"MotorMaxTorque":	0,
 			"LimitEnabled":	0,
 			"LimitMin":	0,
-			"LimitMax":	0
+			"LimitMax":	0,
+			"BreakForce":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	14,
@@ -409,7 +418,8 @@
 			"MotorMaxTorque":	0,
 			"LimitEnabled":	0,
 			"LimitMin":	0,
-			"LimitMax":	0
+			"LimitMax":	0,
+			"BreakForce":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	15,
@@ -431,7 +441,8 @@
 			"MotorMaxTorque":	5.800000,
 			"LimitEnabled":	0,
 			"LimitMin":	-60,
-			"LimitMax":	60
+			"LimitMax":	60,
+			"BreakForce":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	19,
