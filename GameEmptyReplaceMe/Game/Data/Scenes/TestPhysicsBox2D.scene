@@ -10,10 +10,16 @@
 		}],
 	"GameObjects":	[{
 			"ID":	1,
-			"Name":	"Main Camera"
+			"Name":	"Main Camera",
+			"Properties":	{
+				"Flags":	["Camera-Main"]
+			}
 		}, {
 			"ID":	2,
-			"Name":	"Hud Camera"
+			"Name":	"Hud Camera",
+			"Properties":	{
+				"Flags":	["Camera-HUD"]
+			}
 		}, {
 			"IsFolder":	1,
 			"ID":	28,
@@ -491,22 +497,22 @@
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"Layers":	["Main view"],
 			"Ortho":	0,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
+			"DepthBit":	1
 		}, {
 			"Type":	"Camera",
 			"GOID":	2,
 			"ID":	2,
+			"Layers":	["HUD"],
 			"Ortho":	1,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	0,
-			"DepthBit":	0,
-			"Layers":	2
+			"DepthBit":	0
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	4,
@@ -522,7 +528,7 @@
 			"GOID":	3,
 			"ID":	4,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
@@ -531,7 +537,7 @@
 			"GOID":	4,
 			"ID":	8,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
@@ -540,7 +546,7 @@
 			"GOID":	5,
 			"ID":	16,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
@@ -549,7 +555,7 @@
 			"GOID":	6,
 			"ID":	24,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
@@ -558,7 +564,7 @@
 			"GOID":	7,
 			"ID":	32,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
@@ -567,7 +573,7 @@
 			"GOID":	8,
 			"ID":	51,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
@@ -576,7 +582,7 @@
 			"GOID":	11,
 			"ID":	78,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
@@ -585,7 +591,7 @@
 			"GOID":	12,
 			"ID":	81,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
@@ -594,7 +600,7 @@
 			"GOID":	13,
 			"ID":	84,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
@@ -603,7 +609,7 @@
 			"GOID":	14,
 			"ID":	100,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
@@ -612,7 +618,7 @@
 			"GOID":	15,
 			"ID":	104,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
@@ -621,7 +627,7 @@
 			"GOID":	9,
 			"ID":	120,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"PrimitiveType":	"TriangleFan",
 			"PointSize":	1,
 			"MPType":	"2DCircle",
@@ -637,7 +643,7 @@
 			"GOID":	10,
 			"ID":	121,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"PrimitiveType":	"TriangleFan",
 			"PointSize":	1,
 			"MPType":	"2DCircle",
@@ -653,7 +659,7 @@
 			"GOID":	19,
 			"ID":	124,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
@@ -662,7 +668,7 @@
 			"GOID":	20,
 			"ID":	128,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
