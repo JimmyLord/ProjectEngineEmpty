@@ -411,9 +411,6 @@
     <None Include="Data\Scenes\TestGeometryShader.scene">
       <Filter>Data\Scenes</Filter>
     </None>
-    <None Include="Data\Materials\TestParticlesInstanced.mymaterial">
-      <Filter>Data\Materials</Filter>
-    </None>
     <None Include="Data\Shaders\Shader_ParticlesInstanced.glsl">
       <Filter>Data\Shaders</Filter>
     </None>
@@ -455,6 +452,12 @@
     </None>
     <None Include="..\..\Engine\DataEngine\EngineGameObjects.mytemplate">
       <Filter>Data</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_ParticlesBillboard.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Materials\TestParticles.mymaterial">
+      <Filter>Data\Materials</Filter>
     </None>
   </ItemGroup>
 </Project>

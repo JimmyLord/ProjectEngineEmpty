@@ -33,7 +33,7 @@
 		}, {
 			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
-			"Path":	"Data/Materials/TestParticlesInstanced.mymaterial"
+			"Path":	"Data/Materials/TestParticles.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
@@ -436,6 +436,6 @@
 			"coloroption":	0,
 			"color1":	[1, 1, 1, 1],
 			"color2":	[0, 0, 0, 1],
-			"Material":	"Data/Materials/Color-Green.mymaterial"
+			"Material":	"Data/Materials/TestParticles.mymaterial"
 		}]
 }
