@@ -18,10 +18,13 @@ attribute float ai_Scale;
 attribute vec4 ai_Color;
 
 uniform mat4 u_WorldViewProj;
+uniform mat4 u_CameraRotation;
 
 void main()
 {
-	gl_Position = u_WorldViewProj * vec4( a_Position*ai_Scale + ai_Position, 1 );
+    vec4 rotatedpos = u_CameraRotation * vec4( a_Position*ai_Scale, 1 );
+    gl_Position = u_WorldViewProj * vec4( rotatedpos.xyz + ai_Position, 1 );
+	//gl_Position = u_WorldViewProj * vec4( a_Position*ai_Scale + ai_Position, 1 );
 
 	v_UVCoord = a_UVCoord;
 	v_Color = vec4( ai_Color.rgb, 1 );
