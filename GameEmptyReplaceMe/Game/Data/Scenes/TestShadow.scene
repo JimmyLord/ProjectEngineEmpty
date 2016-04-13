@@ -29,8 +29,6 @@
 			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh",
 			"SourcePath":	"DataSource/FBXs/AnimGuy.fbx"
 		}, {
-			"Path":	"Data/Meshes/AnimGuy.fbx.myaniminfo"
-		}, {
 			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
 			"Path":	"Data/Materials/TestParticles.mymaterial"
@@ -55,6 +53,21 @@
 			"ID":	49,
 			"Name":	"Stage"
 		}, {
+			"ID":	21,
+			"Name":	"Wall Left topface"
+		}, {
+			"ID":	20,
+			"Name":	"Wall Left backface"
+		}, {
+			"ID":	19,
+			"Name":	"Wall Left"
+		}, {
+			"ID":	17,
+			"Name":	"Wall"
+		}, {
+			"ID":	11,
+			"Name":	"Plane"
+		}, {
 			"ID":	37,
 			"Name":	"5 Colored Lights"
 		}, {
@@ -75,134 +88,119 @@
 		}, {
 			"ID":	18,
 			"Name":	"Shadow Light"
-		}, {
-			"ID":	21,
-			"Name":	"Wall Left topface"
-		}, {
-			"ID":	20,
-			"Name":	"Wall Left backface"
-		}, {
-			"ID":	19,
-			"Name":	"Wall Left"
-		}, {
-			"ID":	17,
-			"Name":	"Wall"
-		}, {
-			"ID":	11,
-			"Name":	"Plane"
 		}],
 	"Transforms":	[{
 			"GOID":	22,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	1,
 			"ID":	0,
 			"Pos":	[0, 2.400000, -10],
-			"Scale":	[1, 1, 1],
-			"Rot":	[-14.400000, 0, 0]
+			"Rot":	[-14.400000, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	10,
 			"ID":	0,
 			"Pos":	[4.768372e-007, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	49,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	37,
-			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	16,
-			"ID":	0,
-			"ParentGOID":	37,
-			"Pos":	[-5, 3.156439, 5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	15,
-			"ID":	0,
-			"ParentGOID":	37,
-			"Pos":	[5, 3.156439, -5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	14,
-			"ID":	0,
-			"ParentGOID":	37,
-			"Pos":	[5, 3.156439, 5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	13,
-			"ID":	0,
-			"ParentGOID":	37,
-			"Pos":	[-5, 3.156439, -5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	12,
-			"ID":	0,
-			"ParentGOID":	37,
-			"Pos":	[0, 3.156439, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
-		}, {
-			"GOID":	18,
-			"ID":	0,
-			"Pos":	[-20, 10, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[20, 90, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	21,
 			"ID":	0,
 			"ParentGOID":	49,
 			"Pos":	[-10.500000, 2.156439, 0],
-			"Scale":	[0.050000, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.050000, 1, 1]
 		}, {
 			"GOID":	20,
 			"ID":	0,
 			"ParentGOID":	49,
 			"Pos":	[-10.999998, -7.843560, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, -90]
+			"Rot":	[0, 0, -90],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	19,
 			"ID":	0,
 			"ParentGOID":	49,
 			"Pos":	[-10, -7.843560, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 90]
+			"Rot":	[0, 0, 90],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	17,
 			"ID":	0,
 			"ParentGOID":	49,
 			"Pos":	[0, -0.843562, 10],
-			"Scale":	[1, 1, 1],
-			"Rot":	[90, 0, 0]
+			"Rot":	[90, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
 			"ParentGOID":	49,
 			"Pos":	[0, -0.843562, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	37,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	16,
+			"ID":	0,
+			"ParentGOID":	37,
+			"Pos":	[-5, 3.156439, 5],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	15,
+			"ID":	0,
+			"ParentGOID":	37,
+			"Pos":	[5, 3.156439, -5],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	14,
+			"ID":	0,
+			"ParentGOID":	37,
+			"Pos":	[5, 3.156439, 5],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	13,
+			"ID":	0,
+			"ParentGOID":	37,
+			"Pos":	[-5, 3.156439, -5],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	12,
+			"ID":	0,
+			"ParentGOID":	37,
+			"Pos":	[0, 3.156439, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	18,
+			"ID":	0,
+			"Pos":	[-20, 10, 0],
+			"Rot":	[20, 90, 0],
+			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"Light",
@@ -238,32 +236,32 @@
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"Layers":	["Main view"],
 			"Ortho":	0,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
+			"DepthBit":	1
 		}, {
 			"Type":	"Camera",
 			"GOID":	7,
 			"ID":	8,
+			"Layers":	["HUD"],
 			"Ortho":	1,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	0,
-			"DepthBit":	0,
-			"Layers":	2
+			"DepthBit":	0
 		}, {
 			"Type":	"Shadow Dir Light",
 			"GOID":	18,
 			"ID":	62,
+			"Layers":	["Main view"],
 			"Ortho":	0,
 			"DWidth":	512,
 			"DHeight":	512,
 			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
+			"DepthBit":	1
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	11,
@@ -303,7 +301,7 @@
 			"Type":	"Animation Player",
 			"GOID":	10,
 			"ID":	34,
-			"AnimIndex":	1,
+			"AnimIndex":	0,
 			"AnimFrame":	0
 		}, {
 			"Type":	"Lua Script",
@@ -334,8 +332,8 @@
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh",
 			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/Lights.mymaterial", "Data/Materials/Lights.mymaterial"]
@@ -344,10 +342,10 @@
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	0,
+			"MPType":	"Plane",
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
@@ -360,10 +358,10 @@
 			"GOID":	17,
 			"ID":	54,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	0,
+			"MPType":	"Plane",
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
@@ -376,10 +374,10 @@
 			"GOID":	19,
 			"ID":	76,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	0,
+			"MPType":	"Plane",
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
@@ -392,10 +390,10 @@
 			"GOID":	20,
 			"ID":	78,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	0,
+			"MPType":	"Plane",
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
@@ -408,10 +406,10 @@
 			"GOID":	21,
 			"ID":	80,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	0,
+			"MPType":	"Plane",
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
@@ -424,8 +422,10 @@
 			"GOID":	10,
 			"ID":	88,
 			"Visible":	1,
-			"Layers":	1,
+			"Layers":	["Main view"],
 			"RunInEditor":	1,
+			"ContinuousSpawn":	1,
+			"Billboard":	1,
 			"offset":	[0, 0.500000, 0],
 			"size":	0.100000,
 			"sizevar":	0.050000,
