@@ -16,7 +16,7 @@
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-    MarkAllExistingAllocationsAsStatic();
+    MyMemory_MarkAllExistingAllocationsAsStatic();
 
     GameCore* pGameCore = new GameEmptyReplaceMe;
 
