@@ -57,82 +57,82 @@
 			"GOID":	1,
 			"ID":	0,
 			"Pos":	[0, 0, -10],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	2,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	3,
 			"ID":	0,
 			"Pos":	[-5.332029, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	4,
 			"ID":	0,
 			"Divorced":	4,
 			"Pos":	[-2, 0, 3],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	5,
 			"ID":	0,
 			"Divorced":	4,
 			"Pos":	[1.420000, 0, 10.233938],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	6,
 			"ID":	0,
 			"Divorced":	4,
 			"Pos":	[1.420000, -2.550000, 10.233938],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
 			"Pos":	[-6.535165, -5, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	8,
 			"ID":	0,
 			"Divorced":	4,
 			"Pos":	[6.007479, -5, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"Layers":	["Main view"],
 			"Ortho":	0,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
+			"DepthBit":	1
 		}, {
 			"Type":	"Camera",
 			"GOID":	2,
 			"ID":	2,
+			"Layers":	["HUD"],
 			"Ortho":	1,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	0,
-			"DepthBit":	0,
-			"Layers":	2
+			"DepthBit":	0
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	3,
 			"ID":	3,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -142,8 +142,8 @@
 			"ID":	4,
 			"Divorced":	4,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Color-Green.mymaterial"]
@@ -153,8 +153,8 @@
 			"ID":	12,
 			"Divorced":	4,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
@@ -163,20 +163,20 @@
 			"GOID":	6,
 			"ID":	13,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
+			"Materials":	["Data/Materials/Color-Green.mymaterial"]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	7,
 			"ID":	14,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	0,
+			"MPType":	"Plane",
 			"PlaneSize":	[10, 10],
 			"PlaneVertCountx":	10,
 			"PlaneVertCounty":	10,
@@ -188,17 +188,18 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	8,
 			"ID":	15,
+			"Divorced":	4,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	0,
+			"MPType":	"Plane",
 			"PlaneSize":	[10, 10],
 			"PlaneVertCountx":	10,
 			"PlaneVertCounty":	10,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
-			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
+			"Materials":	["Data/Materials/Color-Green.mymaterial"]
 		}]
 }

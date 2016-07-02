@@ -1,7 +1,7 @@
 {
 	"Wide":	[{
 			"MIT":	3,
-			"Name":	"",
+			"Name":	"TestButton",
 			"X":	300,
 			"Y":	300,
 			"TextSize":	[-431602080, -431602080],

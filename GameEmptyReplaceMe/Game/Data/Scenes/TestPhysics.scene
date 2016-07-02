@@ -76,282 +76,327 @@
 			"ID":	22,
 			"Name":	"Duplicated Game Object"
 		}, {
-			"ID":	23,
-			"Name":	"Duplicated Game Object"
+			"ID":	40,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	24,
-			"Name":	"Duplicated Game Object"
+			"ID":	41,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	25,
-			"Name":	"Duplicated Game Object"
+			"ID":	42,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	26,
-			"Name":	"Duplicated Game Object"
+			"ID":	43,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	27,
-			"Name":	"Duplicated Game Object"
+			"ID":	44,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	28,
-			"Name":	"Duplicated Game Object"
+			"ID":	45,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	29,
-			"Name":	"Duplicated Game Object"
+			"ID":	46,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	30,
-			"Name":	"Duplicated Game Object"
+			"ID":	47,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	31,
-			"Name":	"Duplicated Game Object"
+			"ID":	48,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	32,
-			"Name":	"Duplicated Game Object"
+			"ID":	49,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	33,
-			"Name":	"Duplicated Game Object"
+			"ID":	50,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	34,
-			"Name":	"Duplicated Game Object"
+			"ID":	51,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	35,
-			"Name":	"Duplicated Game Object"
+			"ID":	52,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	36,
-			"Name":	"Duplicated Game Object"
+			"ID":	53,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	37,
-			"Name":	"Duplicated Game Object"
+			"ID":	54,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	38,
-			"Name":	"Duplicated Game Object"
+			"ID":	55,
+			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	39,
-			"Name":	"Duplicated Game Object"
+			"ID":	56,
+			"Name":	"Duplicated Game Object - copy"
+		}, {
+			"ID":	57,
+			"Name":	"Duplicated Game Object - copy"
+		}, {
+			"ID":	58,
+			"Name":	"Duplicated Game Object - copy"
+		}, {
+			"ID":	59,
+			"Name":	"Duplicated Game Object - copy"
+		}, {
+			"ID":	60,
+			"Name":	"Duplicated Game Object - copy"
+		}, {
+			"ID":	61,
+			"Name":	"Duplicated Game Object - copy"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
 			"Pos":	[0, 0, -40],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	8,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	9,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	10,
 			"ID":	0,
 			"Pos":	[0, -14.034456, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
 			"Pos":	[0, -16.358683, 0],
-			"Scale":	[30, 0.100000, 30],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[10, 0.100000, 10]
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-5.157875, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-4.157875, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-3.157875, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-2.157875, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	16,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-1.157875, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	17,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-0.157875, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	18,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[0.842125, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	19,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[1.842125, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	20,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[2.842125, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	21,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[3.842125, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	22,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[4.842125, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	23,
+			"GOID":	40,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-5.157875, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	24,
+			"GOID":	41,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-4.157875, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	25,
+			"GOID":	42,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-3.157875, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	26,
+			"GOID":	43,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-2.157875, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	27,
+			"GOID":	44,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-1.157875, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	28,
+			"GOID":	45,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-0.157875, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	29,
+			"GOID":	46,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[0.842125, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	30,
+			"GOID":	47,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[1.842125, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	31,
+			"GOID":	48,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[2.842125, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	32,
+			"GOID":	49,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[3.842125, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	33,
+			"GOID":	50,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[4.842125, 0, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	34,
+			"GOID":	51,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-5.157875, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	35,
+			"GOID":	52,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-4.157875, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	36,
+			"GOID":	53,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-3.157875, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	37,
+			"GOID":	54,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-2.157875, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	38,
+			"GOID":	55,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-1.157875, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	39,
+			"GOID":	56,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[-0.157875, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	57,
+			"ID":	0,
+			"Pos":	[0.842125, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	58,
+			"ID":	0,
+			"Pos":	[1.842125, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	59,
+			"ID":	0,
+			"Pos":	[2.842125, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	60,
+			"ID":	0,
+			"Pos":	[3.842125, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	61,
+			"ID":	0,
+			"Pos":	[4.842125, 0, -3.396735],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"Layers":	["Main view"],
 			"Ortho":	0,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
+			"DepthBit":	1
 		}, {
 			"Type":	"Camera",
 			"GOID":	7,
 			"ID":	8,
+			"Layers":	["HUD"],
 			"Ortho":	1,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	0,
-			"DepthBit":	0,
-			"Layers":	2
+			"DepthBit":	0
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	8,
@@ -388,7 +433,7 @@
 			"ID":	16,
 			"Primitive":	"Cube",
 			"Mass":	0,
-			"Scale":	[1, 1, 1]
+			"Scale":	[2, 2, 2]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	12,
@@ -468,120 +513,155 @@
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	23,
-			"ID":	43,
+			"GOID":	40,
+			"ID":	108,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	24,
-			"ID":	45,
+			"GOID":	41,
+			"ID":	110,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	25,
-			"ID":	47,
+			"GOID":	42,
+			"ID":	112,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	26,
-			"ID":	49,
+			"GOID":	43,
+			"ID":	114,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	27,
-			"ID":	51,
+			"GOID":	44,
+			"ID":	116,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	28,
-			"ID":	53,
+			"GOID":	45,
+			"ID":	118,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	29,
-			"ID":	55,
+			"GOID":	46,
+			"ID":	120,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	30,
-			"ID":	57,
+			"GOID":	47,
+			"ID":	122,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	31,
-			"ID":	59,
+			"GOID":	48,
+			"ID":	124,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	32,
-			"ID":	61,
+			"GOID":	49,
+			"ID":	126,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	33,
-			"ID":	63,
+			"GOID":	50,
+			"ID":	128,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	34,
-			"ID":	65,
+			"GOID":	51,
+			"ID":	130,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	35,
-			"ID":	67,
+			"GOID":	52,
+			"ID":	132,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	36,
-			"ID":	69,
+			"GOID":	53,
+			"ID":	134,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	37,
-			"ID":	71,
+			"GOID":	54,
+			"ID":	136,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	38,
-			"ID":	73,
+			"GOID":	55,
+			"ID":	138,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
-			"GOID":	39,
-			"ID":	75,
+			"GOID":	56,
+			"ID":	140,
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	57,
+			"ID":	142,
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	58,
+			"ID":	144,
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	59,
+			"ID":	146,
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	60,
+			"ID":	148,
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	61,
+			"ID":	150,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
@@ -590,7 +670,7 @@
 			"GOID":	8,
 			"ID":	9,
 			"Visible":	1,
-			"Layers":	2,
+			"Layers":	["HUD"],
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
 			"Material":	"Data/Materials/Color-Green.mymaterial"
@@ -599,7 +679,7 @@
 			"GOID":	9,
 			"ID":	11,
 			"Visible":	1,
-			"Layers":	2,
+			"Layers":	["HUD"],
 			"Tint":	[0, 255, 0, 255],
 			"Size":	[50, 50],
 			"Material":	"Data/Materials/Color-Red.mymaterial"
@@ -608,8 +688,8 @@
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/teapot2.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -618,8 +698,8 @@
 			"GOID":	11,
 			"ID":	15,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/TintColor.mymaterial"]
@@ -628,8 +708,8 @@
 			"GOID":	12,
 			"ID":	22,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -638,8 +718,8 @@
 			"GOID":	13,
 			"ID":	24,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -648,8 +728,8 @@
 			"GOID":	14,
 			"ID":	26,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -658,8 +738,8 @@
 			"GOID":	15,
 			"ID":	28,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -668,8 +748,8 @@
 			"GOID":	16,
 			"ID":	30,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -678,8 +758,8 @@
 			"GOID":	17,
 			"ID":	32,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -688,8 +768,8 @@
 			"GOID":	18,
 			"ID":	34,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -698,8 +778,8 @@
 			"GOID":	19,
 			"ID":	36,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -708,8 +788,8 @@
 			"GOID":	20,
 			"ID":	38,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -718,8 +798,8 @@
 			"GOID":	21,
 			"ID":	40,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
@@ -728,178 +808,228 @@
 			"GOID":	22,
 			"ID":	42,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	23,
-			"ID":	44,
+			"GOID":	40,
+			"ID":	109,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	24,
-			"ID":	46,
+			"GOID":	41,
+			"ID":	111,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	25,
-			"ID":	48,
+			"GOID":	42,
+			"ID":	113,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	26,
-			"ID":	50,
+			"GOID":	43,
+			"ID":	115,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	27,
-			"ID":	52,
+			"GOID":	44,
+			"ID":	117,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	28,
-			"ID":	54,
+			"GOID":	45,
+			"ID":	119,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	29,
-			"ID":	56,
+			"GOID":	46,
+			"ID":	121,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	30,
-			"ID":	58,
+			"GOID":	47,
+			"ID":	123,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	31,
-			"ID":	60,
+			"GOID":	48,
+			"ID":	125,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	32,
-			"ID":	62,
+			"GOID":	49,
+			"ID":	127,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	33,
-			"ID":	64,
+			"GOID":	50,
+			"ID":	129,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	34,
-			"ID":	66,
+			"GOID":	51,
+			"ID":	131,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	35,
-			"ID":	68,
+			"GOID":	52,
+			"ID":	133,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	36,
-			"ID":	70,
+			"GOID":	53,
+			"ID":	135,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	37,
-			"ID":	72,
+			"GOID":	54,
+			"ID":	137,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	38,
-			"ID":	74,
+			"GOID":	55,
+			"ID":	139,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
-			"GOID":	39,
-			"ID":	76,
+			"GOID":	56,
+			"ID":	141,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	57,
+			"ID":	143,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	58,
+			"ID":	145,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	59,
+			"ID":	147,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	60,
+			"ID":	149,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	61,
+			"ID":	151,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
 			"Materials":	["Data/Materials/Normals.mymaterial"]

@@ -1,0 +1,69 @@
+{
+	"Files":	[{
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
+		}, {
+			"Path":	"Data/Voxels/Tiles.png"
+		}, {
+			"Path":	"Data/Voxels/Tiles.mymaterial"
+		}],
+	"GameObjects":	[{
+			"ID":	1,
+			"Name":	"Main Camera",
+			"Properties":	{
+				"Flags":	["Camera-Main"]
+			}
+		}, {
+			"ID":	2,
+			"Name":	"Hud Camera",
+			"Properties":	{
+				"Flags":	["Camera-HUD"]
+			}
+		}, {
+			"ID":	3,
+			"Name":	"Voxel World"
+		}],
+	"Transforms":	[{
+			"GOID":	1,
+			"ID":	0,
+			"Pos":	[0, 0, -10],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	2,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	3,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}],
+	"Components":	[{
+			"Type":	"Voxel World",
+			"GOID":	3,
+			"ID":	3
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"Layers":	["Main view"],
+			"Ortho":	0,
+			"DWidth":	640,
+			"DHeight":	960,
+			"ColorBit":	1,
+			"DepthBit":	1
+		}, {
+			"Type":	"Camera",
+			"GOID":	2,
+			"ID":	2,
+			"Layers":	["HUD"],
+			"Ortho":	1,
+			"DWidth":	640,
+			"DHeight":	960,
+			"ColorBit":	0,
+			"DepthBit":	0
+		}]
+}

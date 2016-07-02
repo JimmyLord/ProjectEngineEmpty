@@ -1,0 +1,12 @@
+{
+	"Material":	{
+		"Name":	"Tiles",
+		"Shader":	"DataEngine/Shaders/Shader_TextureTint.glsl",
+		"TexColor":	"Data/Voxels/Tiles.png",
+		"ColorAmbient":	[1, 1, 1, 1],
+		"ColorDiffuse":	[1, 1, 1, 1],
+		"ColorSpecular":	[1, 1, 1, 1],
+		"Shininess":	200,
+		"Blend":	0
+	}
+}

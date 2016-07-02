@@ -31,6 +31,8 @@ OnTouch = function(action, id, x, y, pressure, size)
 	if( action == 1 ) then
 		--LogInfo( "ID: " .. this.id .. "\n" );
 	end
+	
+	--LogInfo( "pos: " .. x .. " " .. y .. "\n" );
 
 	pos.x = x;
 	pos.y = y;
