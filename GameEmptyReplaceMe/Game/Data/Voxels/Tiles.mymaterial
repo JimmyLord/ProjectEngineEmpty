@@ -1,7 +1,7 @@
 {
 	"Material":	{
 		"Name":	"Tiles",
-		"Shader":	"DataEngine/Shaders/Shader_TextureTint.glsl",
+		"Shader":	"Data/Shaders/Shader_TextureLights.glsl",
 		"TexColor":	"Data/Voxels/Tiles.png",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],

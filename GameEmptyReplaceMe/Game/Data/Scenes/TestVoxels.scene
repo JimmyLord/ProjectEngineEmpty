@@ -5,6 +5,16 @@
 			"Path":	"Data/Voxels/Tiles.png"
 		}, {
 			"Path":	"Data/Voxels/Tiles.mymaterial"
+		}, {
+			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
+		}, {
+			"Path":	"Data/Voxels/VoxelWorldPlayer.lua"
+		}, {
+			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh"
+		}, {
+			"Path":	"Data/Materials/Bones.mymaterial"
+		}, {
+			"Path":	"Data/Voxels/VoxelWorldCamera.lua"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -21,6 +31,21 @@
 		}, {
 			"ID":	3,
 			"Name":	"Voxel World"
+		}, {
+			"ID":	4,
+			"Name":	"Light"
+		}, {
+			"ID":	5,
+			"Name":	"Light - copy"
+		}, {
+			"ID":	6,
+			"Name":	"Light - copy"
+		}, {
+			"ID":	7,
+			"Name":	"Light - copy"
+		}, {
+			"ID":	8,
+			"Name":	"Player"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -40,11 +65,65 @@
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	4,
+			"ID":	0,
+			"Pos":	[39.200001, 56.400002, 40.599998],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	5,
+			"ID":	0,
+			"Pos":	[105.713272, 56.400002, 40.599998],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	6,
+			"ID":	0,
+			"Pos":	[105.713272, 56.400002, 118.575226],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	7,
+			"ID":	0,
+			"Pos":	[45.537262, 56.400002, 118.575226],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	8,
+			"ID":	0,
+			"Pos":	[68.031601, 44.215080, 32.923920],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.800000, 0.800000, 0.800000]
 		}],
 	"Components":	[{
 			"Type":	"Voxel World",
 			"GOID":	3,
 			"ID":	3
+		}, {
+			"Type":	"Light",
+			"GOID":	4,
+			"ID":	6,
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	5,
+			"ID":	9,
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	6,
+			"ID":	10,
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	7,
+			"ID":	11,
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.010000]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
@@ -65,5 +144,61 @@
 			"DHeight":	960,
 			"ColorBit":	0,
 			"DepthBit":	0
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	8,
+			"ID":	14,
+			"Script":	"Data/Voxels/VoxelWorldPlayer.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	10
+				}, {
+					"Name":	"SpeedRotation",
+					"Type":	1,
+					"Value":	10
+				}, {
+					"Name":	"Animation",
+					"Type":	1,
+					"Value":	1
+				}, {
+					"Name":	"VoxelWorldGameObject",
+					"Type":	2,
+					"Value":	{
+						"GOID":	3
+					}
+				}]
+		}, {
+			"Type":	"Animation Player",
+			"GOID":	8,
+			"ID":	16,
+			"AnimIndex":	0,
+			"AnimFrame":	0
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	1,
+			"ID":	18,
+			"Script":	"Data/Voxels/VoxelWorldCamera.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	8
+				}, {
+					"Name":	"ObjectChasing",
+					"Type":	2,
+					"Value":	{
+						"GOID":	8
+					}
+				}]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	8,
+			"ID":	15,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh",
+			"Materials":	["Data/Materials/Bones.mymaterial"]
 		}]
 }

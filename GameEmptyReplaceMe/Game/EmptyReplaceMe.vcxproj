@@ -1337,6 +1337,7 @@
     <None Include="Data\Scenes\TestPostEffects.scene" />
     <None Include="Data\Scenes\TestPostEffectsBokeh.scene" />
     <None Include="Data\Scenes\TestShadow.scene" />
+    <None Include="Data\Scenes\TestVoxels.scene" />
     <None Include="Data\Scripts\CharacterController_2DPhysics.lua" />
     <None Include="Data\Scripts\CharacterController_Physics.lua" />
     <None Include="Data\Scripts\DemoLoadPauseMenu.lua" />
@@ -1367,6 +1368,8 @@
     <None Include="Data\Shaders\Shader_Water.glsl" />
     <None Include="Data\Shaders\TestFragCoord.glsl" />
     <None Include="Data\Shaders\TestGeometryShader.glsl" />
+    <None Include="Data\Voxels\VoxelWorldCamera.lua" />
+    <None Include="Data\Voxels\VoxelWorldPlayer.lua" />
     <None Include="EditorPrefs.ini" />
     <None Include="SourceAndroid\AndroidApk\AndroidManifest.xml">
       <SubType>Designer</SubType>

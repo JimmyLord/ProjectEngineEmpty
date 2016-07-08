@@ -82,6 +82,9 @@
     <Filter Include="Data\Menus">
       <UniqueIdentifier>{5f5768ad-aaf4-445b-b6d2-7af5dd98e814}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data\Voxels">
+      <UniqueIdentifier>{19d3d33e-75ca-40f9-ac0f-75312b438dd0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceWindows\WinMain.cpp">
@@ -458,6 +461,15 @@
     </None>
     <None Include="Data\Materials\TestParticles.mymaterial">
       <Filter>Data\Materials</Filter>
+    </None>
+    <None Include="Data\Voxels\VoxelWorldCamera.lua">
+      <Filter>Data\Voxels</Filter>
+    </None>
+    <None Include="Data\Voxels\VoxelWorldPlayer.lua">
+      <Filter>Data\Voxels</Filter>
+    </None>
+    <None Include="Data\Scenes\TestVoxels.scene">
+      <Filter>Data\Scenes</Filter>
     </None>
   </ItemGroup>
 </Project>
