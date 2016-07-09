@@ -55,16 +55,18 @@ Tick = function(timepassed)
 	this.mousedirx = 0;
 	this.mousediry = 0;
 
-	-- Update the camera's matrix
+	-- Update the camera object's transform
 	local posChasing = this.ObjectChasing:GetTransform():GetLocalPosition();
 	local camOffset = Vector3( 0, 1, -3 );
 
-	local matrix = this.gameobject:GetTransform():GetLocalTransform();
+	local matrix = MyMatrix();
 	matrix:SetIdentity();
 	matrix:Translate( camOffset );
 	matrix:Rotate( this.anglex, 1, 0, 0 );
 	matrix:Rotate( this.angley, 0, 1, 0 );
 	matrix:Translate( posChasing );
+
+	this.gameobject:GetTransform():SetLocalTransform( matrix );
 
 end
 
