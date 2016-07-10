@@ -434,7 +434,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>MYFW_NACL;_DEBUG;NACL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -444,8 +444,8 @@
       <TranslateX86>false</TranslateX86>
       <TranslateX64>false</TranslateX64>
       <TranslateArm>false</TranslateArm>
-      <AdditionalDependencies>MyEngine_$(Configuration);MyFramework_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MyEngine_$(Configuration);SharedGameCode_$(Configuration);MyFramework_$(Configuration);Box2D_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
@@ -455,7 +455,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;_DEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -512,15 +512,15 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_NACL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>MyEngine_$(Configuration);MyFramework_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MyEngine_$(Configuration);SharedGameCode_$(Configuration);MyFramework_$(Configuration);Box2D_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <TranslateX86>false</TranslateX86>
       <TranslateX64>false</TranslateX64>
@@ -533,7 +533,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;_DEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -655,7 +655,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_NACL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -664,8 +664,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>MyEngine_$(Configuration);MyFramework_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MyEngine_$(Configuration);SharedGameCode_$(Configuration);MyFramework_$(Configuration);Box2D_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <TranslateX86>false</TranslateX86>
       <TranslateX64>false</TranslateX64>
@@ -680,7 +680,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -746,7 +746,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_NACL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Box2D_v2.2.1;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -755,8 +755,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>MyEngine_$(Configuration);MyFramework_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MyEngine_$(Configuration);SharedGameCode_$(Configuration);MyFramework_$(Configuration);Box2D_$(Configuration);BulletDynamics_$(Configuration);BulletCollision_$(Configuration);LinearMath_$(Configuration);ppapi_cpp;ppapi;ppapi_gles2</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <TranslateX86>false</TranslateX86>
       <TranslateX64>false</TranslateX64>
@@ -771,7 +771,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\Framework\Box2D_v2.2.1;SourceCommon</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
