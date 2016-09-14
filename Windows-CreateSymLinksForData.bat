@@ -4,7 +4,9 @@
 cd GameEmptyReplaceMe/Game
 mklink /J "DataEngine" "../../Engine/DataEngine"
 
-cd SourceAndroid/AndroidApk/assets
+cd SourceAndroid/AndroidApk
+mkdir assets
+cd assets
 mklink /J "Data" "../../../Data"
 mklink /J "DataEngine" "../../../DataEngine"
 
