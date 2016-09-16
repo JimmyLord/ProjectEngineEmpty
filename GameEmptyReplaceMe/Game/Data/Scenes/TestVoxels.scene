@@ -29,8 +29,17 @@
 				"Flags":	["Camera-HUD"]
 			}
 		}, {
+			"ID":	9,
+			"Name":	"Crosshair"
+		}, {
 			"ID":	3,
 			"Name":	"Voxel World"
+		}, {
+			"ID":	8,
+			"Name":	"Player"
+		}, {
+			"ID":	7,
+			"Name":	"PlayerLight"
 		}, {
 			"ID":	4,
 			"Name":	"Light"
@@ -40,12 +49,6 @@
 		}, {
 			"ID":	6,
 			"Name":	"Light - copy"
-		}, {
-			"ID":	7,
-			"Name":	"PlayerLight"
-		}, {
-			"ID":	8,
-			"Name":	"Player"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -60,9 +63,28 @@
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
+			"GOID":	9,
+			"ID":	0,
+			"Pos":	[320, 480, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
 			"GOID":	3,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	8,
+			"ID":	0,
+			"Pos":	[0, 0.140326, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[0.800000, 0.800000, 0.800000]
+		}, {
+			"GOID":	7,
+			"ID":	0,
+			"ParentGOID":	8,
+			"Pos":	[0, 1, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -83,46 +105,43 @@
 			"Pos":	[105.713272, 56.400002, 118.575226],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	7,
-			"ID":	0,
-			"ParentGOID":	8,
-			"Pos":	[0, 1, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	8,
-			"ID":	0,
-			"Pos":	[69.307137, 44.215080, 32.923920],
-			"Rot":	[0, 0, 0],
-			"Scale":	[0.800000, 0.800000, 0.800000]
 		}],
 	"Components":	[{
 			"Type":	"Voxel World",
 			"GOID":	3,
-			"ID":	3
+			"ID":	3,
+			"Material":	"Data/Voxels/Tiles.mymaterial",
+			"Bake World":	0,
+			"Max World Size":	[0, 0, 0],
+			"Material":	"Data/Voxels/Tiles.mymaterial",
+			"Bake World":	0,
+			"Max World Size":	[0, 0, 0]
 		}, {
 			"Type":	"Light",
 			"GOID":	4,
 			"ID":	6,
+			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
 			"Atten":	[1, 0, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	5,
 			"ID":	9,
+			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
 			"Atten":	[1, 0, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	6,
 			"ID":	10,
+			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
 			"Atten":	[1, 0, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	7,
 			"ID":	11,
+			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
 			"Atten":	[1, 0, 0.010000]
 		}, {
@@ -164,7 +183,7 @@
 					"Value":	1
 				}, {
 					"Name":	"VoxelWorldGameObject",
-					"Type":	2,
+					"Type":	4,
 					"Value":	{
 						"GOID":	3
 					}
@@ -186,7 +205,7 @@
 					"Value":	8
 				}, {
 					"Name":	"ObjectChasing",
-					"Type":	2,
+					"Type":	4,
 					"Value":	{
 						"GOID":	8
 					}
@@ -201,5 +220,14 @@
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh",
 			"Materials":	["Data/Materials/Bones.mymaterial"]
+		}, {
+			"Type":	"Sprite",
+			"GOID":	9,
+			"ID":	20,
+			"Visible":	1,
+			"Layers":	["HUD"],
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[10, 10],
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}]
 }
