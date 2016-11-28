@@ -13,28 +13,7 @@ char g_SceneToLoad[MAX_PATH];
 
 #if MYFW_WINDOWS
 #include "../../../Framework/MyFramework/SourceWindows/wglext.h"
-
-bool WGLExtensionSupported(const char *extension_name)
-{
-    // this is pointer to function which returns pointer to string with list of all wgl extensions
-    PFNWGLGETEXTENSIONSSTRINGEXTPROC _wglGetExtensionsStringEXT = NULL;
-
-    // determine pointer to wglGetExtensionsStringEXT function
-#pragma warning( push )
-#pragma warning( disable : 4191 ) // unsafe conversion from 'type of expression' to 'type required'
-    _wglGetExtensionsStringEXT = (PFNWGLGETEXTENSIONSSTRINGEXTPROC)wglGetProcAddress( "wglGetExtensionsStringEXT" );
-#pragma warning( pop )
-
-    if( strstr( _wglGetExtensionsStringEXT(), extension_name ) == NULL )
-    {
-        // string was not found
-        return false;
-    }
-
-    // extension is supported
-    return true;
-}
-#endif
+#endif //MYFW_WINDOWS
 
 GameEmptyReplaceMe::GameEmptyReplaceMe()
 {
@@ -62,30 +41,17 @@ void GameEmptyReplaceMe::OneTimeInit()
 #else
         //RequestScene( "Data/Scenes/TestShadow.scene" );
         RequestScene( "Data/Scenes/TestVoxels.scene" );
+        //RequestScene( "Data/Scenes/TestPhysicsBox2D.scene" );
+        //RequestScene( "Data/Scenes/TestPhysics.scene" );
 #endif
     }
 #endif
 
 #if MYFW_WINDOWS
-    // hacked in v-sync, TODO: clean this up
-    PFNWGLSWAPINTERVALEXTPROC wglSwapIntervalEXT = 0;
-    PFNWGLGETSWAPINTERVALEXTPROC wglGetSwapIntervalEXT = 0;
-
-    if( WGLExtensionSupported( "WGL_EXT_swap_control" ) )
-    {
-#pragma warning( push )
-#pragma warning( disable : 4191 ) // unsafe conversion from 'type of expression' to 'type required'
-        // Extension is supported, init pointers.
-        wglSwapIntervalEXT = (PFNWGLSWAPINTERVALEXTPROC)wglGetProcAddress( "wglSwapIntervalEXT" );
-
-        // this is another function from WGL_EXT_swap_control extension
-        wglGetSwapIntervalEXT = (PFNWGLGETSWAPINTERVALEXTPROC)wglGetProcAddress( "wglGetSwapIntervalEXT" );
-#pragma warning( pop )
-    }
-
-    if( wglSwapIntervalEXT )
-        wglSwapIntervalEXT( 1 );
-#endif
+    // Turn on v-sync
+    if( wglSwapInterval )
+        wglSwapInterval( 1 );
+#endif //MYFW_WINDOWS
 }
 
 void GameEmptyReplaceMe::OnSurfaceChanged(unsigned int startx, unsigned int starty, unsigned int width, unsigned int height)

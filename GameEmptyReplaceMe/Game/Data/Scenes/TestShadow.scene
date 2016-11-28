@@ -54,18 +54,23 @@
 			"ID":	49,
 			"Name":	"Stage"
 		}, {
+			"ParentGOID":	49,
 			"ID":	21,
 			"Name":	"Wall Left topface"
 		}, {
+			"ParentGOID":	49,
 			"ID":	20,
 			"Name":	"Wall Left backface"
 		}, {
+			"ParentGOID":	49,
 			"ID":	19,
 			"Name":	"Wall Left"
 		}, {
+			"ParentGOID":	49,
 			"ID":	17,
 			"Name":	"Wall"
 		}, {
+			"ParentGOID":	49,
 			"ID":	11,
 			"Name":	"Plane"
 		}, {
@@ -73,18 +78,23 @@
 			"ID":	37,
 			"Name":	"5 Colored Lights"
 		}, {
+			"ParentGOID":	37,
 			"ID":	16,
 			"Name":	"Light - Turqoise"
 		}, {
+			"ParentGOID":	37,
 			"ID":	15,
 			"Name":	"Light - Yellow"
 		}, {
+			"ParentGOID":	37,
 			"ID":	14,
 			"Name":	"Light - Blue"
 		}, {
+			"ParentGOID":	37,
 			"ID":	13,
 			"Name":	"Light - Red"
 		}, {
+			"ParentGOID":	37,
 			"ID":	12,
 			"Name":	"Light - Green"
 		}, {
@@ -112,88 +122,66 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[4.768372e-007, 0, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	49,
-			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Rot":	[0, 0, 0],
+			"Rot":	[0.000187, 0.004456, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	21,
 			"ID":	0,
-			"ParentGOID":	49,
 			"Pos":	[-10.500000, 2.156439, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[0.050000, 1, 1]
 		}, {
 			"GOID":	20,
 			"ID":	0,
-			"ParentGOID":	49,
 			"Pos":	[-10.999998, -7.843560, 0],
 			"Rot":	[0, 0, -90],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	19,
 			"ID":	0,
-			"ParentGOID":	49,
 			"Pos":	[-10, -7.843560, 0],
 			"Rot":	[0, 0, 90],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	17,
 			"ID":	0,
-			"ParentGOID":	49,
 			"Pos":	[0, -0.843562, 10],
 			"Rot":	[90, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
-			"ParentGOID":	49,
 			"Pos":	[0, -0.843562, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	37,
-			"ID":	0,
-			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	16,
 			"ID":	0,
-			"ParentGOID":	37,
 			"Pos":	[-5, 3.156439, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
-			"ParentGOID":	37,
 			"Pos":	[5, 3.156439, -5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
-			"ParentGOID":	37,
 			"Pos":	[5, 3.156439, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
-			"ParentGOID":	37,
 			"Pos":	[-5, 3.156439, -5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"ParentGOID":	37,
 			"Pos":	[0, 3.156439, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]

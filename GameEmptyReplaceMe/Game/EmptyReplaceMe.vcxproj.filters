@@ -471,5 +471,11 @@
     <None Include="Data\Scenes\TestVoxels.scene">
       <Filter>Data\Scenes</Filter>
     </None>
+    <None Include="Data\Scenes\DemoPauseMenu.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Voxels\Tiles.mymaterial">
+      <Filter>Data\Voxels</Filter>
+    </None>
   </ItemGroup>
 </Project>

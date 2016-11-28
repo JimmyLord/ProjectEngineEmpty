@@ -1318,6 +1318,7 @@
     <None Include="Data\Menus\DemoPauseMenuActions.lua" />
     <None Include="Data\Menus\Test.menu" />
     <None Include="Data\Menus\TestMenuActions.lua" />
+    <None Include="Data\Scenes\DemoPauseMenu.scene" />
     <None Include="Data\Scenes\GGJRitual.scene" />
     <None Include="Data\Scenes\Multi-enemy.scene" />
     <None Include="Data\Scenes\TestAnimation.scene" />
@@ -1368,6 +1369,7 @@
     <None Include="Data\Shaders\Shader_Water.glsl" />
     <None Include="Data\Shaders\TestFragCoord.glsl" />
     <None Include="Data\Shaders\TestGeometryShader.glsl" />
+    <None Include="Data\Voxels\Tiles.mymaterial" />
     <None Include="Data\Voxels\VoxelWorldCamera.lua" />
     <None Include="Data\Voxels\VoxelWorldPlayer.lua" />
     <None Include="EditorPrefs.ini" />

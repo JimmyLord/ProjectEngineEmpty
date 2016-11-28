@@ -53,82 +53,100 @@
 			},
 			"ID":	14,
 			"Name":	"Enemy2 - child - child"
+		}, {
+			"ID":	15,
+			"Name":	"Player2"
+		}, {
+			"ID":	16,
+			"Name":	"Player3"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
 			"Pos":	[0, 0, -10],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	8,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[400, 900, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	9,
 			"ID":	0,
-			"Pos":	[-250, 1.300371e-008, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Pos":	[2.737061, 4.915851, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	10,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
 			"Pos":	[0, -3, 0],
-			"Scale":	[10, 0.100000, 10],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[10, 0.100000, 10]
 		}, {
 			"GOID":	12,
 			"ID":	0,
 			"Pos":	[250.000015, 100, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 2.980232e-009]
+			"Rot":	[0, 0, 2.980232e-009],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
 			"Pos":	[350, 100, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 2.980232e-009]
+			"Rot":	[0, 0, 2.980232e-009],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
 			"Pos":	[450, 100, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 2.980232e-009]
+			"Rot":	[0, 0, 2.980232e-009],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	15,
+			"ID":	0,
+			"Pos":	[100, 400, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	16,
+			"ID":	0,
+			"Pos":	[600, 400, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"Layers":	["Main view"],
 			"Ortho":	0,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
+			"DepthBit":	1
 		}, {
 			"Type":	"Camera",
 			"GOID":	7,
 			"ID":	8,
+			"Layers":	["HUD"],
 			"Ortho":	1,
 			"DWidth":	640,
 			"DHeight":	960,
 			"ColorBit":	0,
-			"DepthBit":	0,
-			"Layers":	2
+			"DepthBit":	0
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	8,
@@ -146,7 +164,7 @@
 					"Value":	1
 				}, {
 					"Name":	"ObjectChasing",
-					"Type":	2,
+					"Type":	4,
 					"Value":	{
 						"GOID":	8
 					}
@@ -173,10 +191,10 @@
 			"ExposedVars":	[{
 					"Name":	"Speed",
 					"Type":	1,
-					"Value":	3
+					"Value":	0.150000
 				}, {
 					"Name":	"ObjectChasing",
-					"Type":	2,
+					"Type":	4,
 					"Value":	{
 						"GOID":	8
 					}
@@ -189,10 +207,11 @@
 			"ExposedVars":	[{
 					"Name":	"Speed",
 					"Type":	1,
-					"Value":	3
+					"Value":	0.250000,
+					"Divorced":	1
 				}, {
 					"Name":	"ObjectChasing",
-					"Type":	2,
+					"Type":	4,
 					"Value":	{
 						"GOID":	8
 					}
@@ -205,25 +224,33 @@
 			"ExposedVars":	[{
 					"Name":	"Speed",
 					"Type":	1,
-					"Value":	3
+					"Value":	0.550000,
+					"Divorced":	1
 				}, {
 					"Name":	"ObjectChasing",
-					"Type":	2,
+					"Type":	4,
 					"Value":	{
 						"GOID":	8
 					}
 				}]
 		}, {
+			"Type":	"Lua Script",
+			"GOID":	15,
+			"ID":	39,
+			"Script":	"Data/Scripts/Player.lua",
+			"ExposedVars":	[]
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	16,
+			"ID":	48,
+			"Script":	"Data/Scripts/Player.lua",
+			"ExposedVars":	[]
+		}, {
 			"Type":	"Sprite",
 			"GOID":	8,
 			"ID":	9,
 			"Visible":	1,
-			"Layers":	2,
-			"Tint":	[255, 0, 0, 255],
-			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Green.mymaterial",
-			"Visible":	1,
-			"Layers":	2,
+			"Layers":	["HUD"],
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
 			"Material":	"Data/Materials/Color-Green.mymaterial"
@@ -232,12 +259,7 @@
 			"GOID":	9,
 			"ID":	11,
 			"Visible":	1,
-			"Layers":	2,
-			"Tint":	[0, 255, 0, 255],
-			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Red.mymaterial",
-			"Visible":	1,
-			"Layers":	2,
+			"Layers":	["HUD"],
 			"Tint":	[0, 255, 0, 255],
 			"Size":	[50, 50],
 			"Material":	"Data/Materials/Color-Red.mymaterial"
@@ -246,32 +268,27 @@
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
-			"Layers":	1,
-			"Materials":	["Data/Materials/Normals.mymaterial"],
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh"
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	11,
 			"ID":	15,
 			"Visible":	1,
-			"Layers":	1,
-			"Materials":	["Data/Materials/TintColor.mymaterial"],
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh"
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/TintColor.mymaterial"]
 		}, {
 			"Type":	"Sprite",
 			"GOID":	12,
 			"ID":	17,
 			"Visible":	1,
-			"Layers":	2,
-			"Tint":	[114, 167, 88, 255],
-			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Red.mymaterial",
-			"Visible":	1,
-			"Layers":	2,
+			"Layers":	["HUD"],
 			"Tint":	[114, 167, 88, 255],
 			"Size":	[50, 50],
 			"Material":	"Data/Materials/Color-Red.mymaterial"
@@ -279,29 +296,39 @@
 			"Type":	"Sprite",
 			"GOID":	13,
 			"ID":	25,
+			"Divorced":	8,
 			"Visible":	1,
-			"Layers":	2,
+			"Layers":	["HUD"],
 			"Tint":	[114, 167, 88, 255],
-			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Red.mymaterial",
-			"Visible":	1,
-			"Layers":	2,
-			"Tint":	[114, 167, 88, 255],
-			"Size":	[50, 50],
+			"Size":	[71.400002, 24.600000],
 			"Material":	"Data/Materials/Color-Red.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	14,
 			"ID":	32,
+			"Divorced":	8,
 			"Visible":	1,
-			"Layers":	2,
+			"Layers":	["HUD"],
 			"Tint":	[114, 167, 88, 255],
-			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Red.mymaterial",
-			"Visible":	1,
-			"Layers":	2,
-			"Tint":	[114, 167, 88, 255],
-			"Size":	[50, 50],
+			"Size":	[27.400000, 83.199997],
 			"Material":	"Data/Materials/Color-Red.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	15,
+			"ID":	40,
+			"Visible":	1,
+			"Layers":	["HUD"],
+			"Tint":	[255, 0, 0, 255],
+			"Size":	[50, 50],
+			"Material":	"Data/Materials/Color-Green.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	16,
+			"ID":	49,
+			"Visible":	1,
+			"Layers":	["HUD"],
+			"Tint":	[255, 0, 0, 255],
+			"Size":	[50, 50],
+			"Material":	"Data/Materials/Color-Green.mymaterial"
 		}]
 }
