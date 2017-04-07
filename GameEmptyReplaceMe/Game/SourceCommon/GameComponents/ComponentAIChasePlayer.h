@@ -20,7 +20,7 @@ public:
     ComponentAIChasePlayer();
     virtual ~ComponentAIChasePlayer();
 
-    virtual cJSON* ExportAsJSONObject(bool savesceneid);
+    virtual cJSON* ExportAsJSONObject(bool savesceneid, bool saveid);
     virtual void ImportFromJSONObject(cJSON* jsonobj, unsigned int sceneid);
 
     virtual void Reset();

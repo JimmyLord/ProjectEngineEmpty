@@ -68,9 +68,9 @@ void ComponentAIChasePlayer::OnNewParentTransformDrop(int controlid, wxCoord x, 
 }
 #endif //MYFW_USING_WX
 
-cJSON* ComponentAIChasePlayer::ExportAsJSONObject(bool savesceneid)
+cJSON* ComponentAIChasePlayer::ExportAsJSONObject(bool savesceneid, bool saveid)
 {
-    cJSON* component = ComponentUpdateable::ExportAsJSONObject( savesceneid );
+    cJSON* component = ComponentUpdateable::ExportAsJSONObject( savesceneid, saveid );
 
     if( m_pPlayerComponentTransform )
         cJSON_AddNumberToObject( component, "ChasingGOID", m_pPlayerComponentTransform->m_pGameObject->GetID() );

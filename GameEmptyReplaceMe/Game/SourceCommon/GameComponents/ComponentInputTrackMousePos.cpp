@@ -48,9 +48,9 @@ void ComponentInputTrackMousePos::FillPropertiesWindow(bool clear, bool addcompo
 }
 #endif //MYFW_USING_WX
 
-cJSON* ComponentInputTrackMousePos::ExportAsJSONObject(bool savesceneid)
+cJSON* ComponentInputTrackMousePos::ExportAsJSONObject(bool savesceneid, bool saveid)
 {
-    cJSON* component = ComponentInputHandler::ExportAsJSONObject( savesceneid );
+    cJSON* component = ComponentInputHandler::ExportAsJSONObject( savesceneid, saveid );
 
     return component;
 }
