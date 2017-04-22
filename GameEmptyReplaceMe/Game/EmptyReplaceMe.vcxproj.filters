@@ -85,6 +85,12 @@
     <Filter Include="Data\Voxels">
       <UniqueIdentifier>{19d3d33e-75ca-40f9-ac0f-75312b438dd0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data\Animations">
+      <UniqueIdentifier>{4937f904-dbcd-4b8b-9f8c-61567b08acd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Prefabs">
+      <UniqueIdentifier>{2f7eae57-58d4-4cdd-8619-ffb4a3fa26cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceWindows\WinMain.cpp">
@@ -476,6 +482,21 @@
     </None>
     <None Include="Data\Voxels\Tiles.mymaterial">
       <Filter>Data\Voxels</Filter>
+    </None>
+    <None Include="Data\Scenes\TestSprites.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Animations\stickman.my2daniminfo">
+      <Filter>Data\Animations</Filter>
+    </None>
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_SelectedObjects.glsl">
+      <Filter>Data\Shaders\DataEngine</Filter>
+    </None>
+    <None Include="Data\Prefabs\Prefabs.myprefabs">
+      <Filter>Data\Prefabs</Filter>
+    </None>
+    <None Include="Data\Scenes\TestPrefabs.scene">
+      <Filter>Data\Scenes</Filter>
     </None>
   </ItemGroup>
 </Project>
