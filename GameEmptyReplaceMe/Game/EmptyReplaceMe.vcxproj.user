@@ -48,4 +48,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|PNaCl'">
     <LocalDebuggerCommand>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</LocalDebuggerCommand>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <Deploy>
+      <DeploymentType>DeployOff</DeploymentType>
+    </Deploy>
+  </ItemDefinitionGroup>
 </Project>

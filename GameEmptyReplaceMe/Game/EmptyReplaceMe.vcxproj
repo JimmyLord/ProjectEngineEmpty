@@ -564,6 +564,8 @@
       <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
+      <OutputFile>$(ProjectDir)SourceAndroid\AndroidStudio\app\src\main\jniLibs\armeabi\lib$(TargetName)$(TargetExt)</OutputFile>
+      <AndroidSystemLibs>c;m;log;gcc;OpenSLES</AndroidSystemLibs>
     </Link>
     <AntBuild>
       <AntBuildPath>$(ProjectDir)\SourceAndroid\AndroidApk\</AntBuildPath>
@@ -593,6 +595,7 @@
       <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
+      <AndroidSystemLibs>c;m;log;gcc;OpenSLES</AndroidSystemLibs>
     </Link>
     <AntBuild>
       <AntBuildPath>$(ProjectDir)\SourceAndroid\AndroidApk\</AntBuildPath>
@@ -806,6 +809,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\SharedGameCode.a;$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework.a;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\BulletDynamics.a;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\BulletCollision.a;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\LinearMath.a;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\Box2D.a</AdditionalDependencies>
       <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
+      <OutputFile>$(ProjectDir)SourceAndroid\AndroidStudio\app\src\main\jniLibs\armeabi\lib$(TargetName)$(TargetExt)</OutputFile>
+      <AndroidSystemLibs>c;m;log;gcc;OpenSLES</AndroidSystemLibs>
     </Link>
     <AntBuild>
       <AntBuildPath>$(ProjectDir)\SourceAndroid\AndroidApk\</AntBuildPath>
@@ -831,6 +836,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\MyEngine.a;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\SharedGameCode.a;$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework.a;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\BulletDynamics.a;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\BulletCollision.a;$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\LinearMath.a;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\Box2D.a</AdditionalDependencies>
       <AdditionalOptions>-lGLESv2 -lEGL</AdditionalOptions>
+      <AndroidSystemLibs>c;m;log;gcc;OpenSLES</AndroidSystemLibs>
     </Link>
     <AntBuild>
       <AntBuildPath>$(ProjectDir)\SourceAndroid\AndroidApk\</AntBuildPath>
