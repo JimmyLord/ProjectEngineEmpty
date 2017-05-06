@@ -1,6 +1,10 @@
 {
 	"Files":	[{
-			"Path":	"Data/Audio/Music.mycue"
+			"Path":	"Data/Audio/Jump.mycue"
+		}, {
+			"Path":	"Data/Audio/Randomize.mycue"
+		}, {
+			"Path":	"Data/Scripts/TestAudio.lua"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -10,7 +14,7 @@
 			"Name":	"Hud Camera"
 		}, {
 			"ID":	3,
-			"Name":	"Music Player"
+			"Name":	"Sound Player"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -35,26 +39,34 @@
 			"Type":	"Audio Player",
 			"GOID":	3,
 			"ID":	3,
-			"Cue":	"Music"
+			"Cue":	"Randomize"
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"Layers":	["Main view"],
 			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"FoV":	45,
 			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
+			"DepthBit":	1
 		}, {
 			"Type":	"Camera",
 			"GOID":	2,
 			"ID":	2,
+			"Layers":	["HUD"],
 			"Ortho":	1,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"FoV":	45,
 			"ColorBit":	0,
-			"DepthBit":	0,
-			"Layers":	2
+			"DepthBit":	0
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	3,
+			"ID":	6,
+			"Script":	"Data/Scripts/TestAudio.lua",
+			"ExposedVars":	[]
 		}]
 }

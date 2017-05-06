@@ -498,5 +498,8 @@
     <None Include="Data\Scenes\TestPrefabs.scene">
       <Filter>Data\Scenes</Filter>
     </None>
+    <None Include="Data\Scripts\TestAudio.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
   </ItemGroup>
 </Project>

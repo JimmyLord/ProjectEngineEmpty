@@ -1363,6 +1363,7 @@
     <None Include="Data\Scripts\MemoryTest.lua" />
     <None Include="Data\Scripts\Player.lua" />
     <None Include="Data\Scripts\SimpleCharacterController.lua" />
+    <None Include="Data\Scripts\TestAudio.lua" />
     <None Include="Data\Shaders\PostEffects\BlurHorizontal.glsl" />
     <None Include="Data\Shaders\PostEffects\BlurVertical.glsl" />
     <None Include="Data\Shaders\PostEffects\DoFBokeh.glsl" />
