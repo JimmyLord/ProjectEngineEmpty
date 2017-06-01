@@ -26,39 +26,39 @@
 			"ID":	3,
 			"Name":	"Cube"
 		}, {
+			"ID":	4,
+			"Name":	"CubeChild",
 			"ParentGO":	{
 				"GOID":	3
-			},
-			"ID":	4,
-			"Name":	"CubeChild"
+			}
 		}, {
-			"ParentGO":	{
-				"GOID":	4
-			},
 			"ID":	5,
-			"Name":	"CubeChildChild"
-		}, {
+			"Name":	"CubeChildChild",
 			"ParentGO":	{
 				"GOID":	4
-			},
+			}
+		}, {
 			"ID":	6,
-			"Name":	"CubeChildChild - copy"
+			"Name":	"CubeChildChild - copy",
+			"ParentGO":	{
+				"GOID":	4
+			}
 		}, {
 			"ID":	7,
 			"Name":	"MeshPrimTest"
 		}, {
+			"ID":	8,
+			"Name":	"MeshPrimTest - child",
 			"ParentGO":	{
 				"GOID":	7
-			},
-			"ID":	8,
-			"Name":	"MeshPrimTest - child"
+			}
 		}],
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
 			"Pos":	[0, 0, -10],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
+			"Rot":	[0, 0, 0.000041],
+			"Scale":	[1.000003, 1, 1]
 		}, {
 			"GOID":	2,
 			"ID":	0,
@@ -68,29 +68,29 @@
 		}, {
 			"GOID":	3,
 			"ID":	0,
-			"Pos":	[-5.332029, 0, 0],
+			"Pos":	[-5.330000, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	4,
 			"ID":	0,
-			"Divorced":	4,
-			"Pos":	[-2, 0, 3],
-			"Rot":	[0, 0, 0],
+			"Divorced":	2,
+			"Pos":	[-1.999998, 2.384186e-007, 3.000002],
+			"Rot":	[-0.000007, 0.000067, 0.000087],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	5,
 			"ID":	0,
-			"Divorced":	4,
-			"Pos":	[1.420000, 0, 10.233938],
-			"Rot":	[0, 0, 0],
+			"Divorced":	2,
+			"Pos":	[1.420000, -0.000004, 10.233938],
+			"Rot":	[-0.000006, 0.000120, 0.000087],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	6,
 			"ID":	0,
-			"Divorced":	4,
-			"Pos":	[1.420000, -2.550000, 10.233938],
-			"Rot":	[0, 0, 0],
+			"Divorced":	2,
+			"Pos":	[1.419999, -2.549998, 10.233938],
+			"Rot":	[-0.000007, 0.000067, 0.000087],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
@@ -101,7 +101,7 @@
 		}, {
 			"GOID":	8,
 			"ID":	0,
-			"Divorced":	4,
+			"Divorced":	2,
 			"Pos":	[6.007479, -5, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
@@ -112,8 +112,13 @@
 			"ID":	1,
 			"Layers":	["Main view"],
 			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
@@ -122,8 +127,13 @@
 			"ID":	2,
 			"Layers":	["HUD"],
 			"Ortho":	1,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	0,
 			"DepthBit":	0
 		}, {
@@ -180,6 +190,7 @@
 			"PlaneSize":	[10, 10],
 			"PlaneVertCountx":	10,
 			"PlaneVertCounty":	10,
+			"UVs per Quad":	0,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
@@ -197,6 +208,7 @@
 			"PlaneSize":	[10, 10],
 			"PlaneVertCountx":	10,
 			"PlaneVertCounty":	10,
+			"UVs per Quad":	0,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,

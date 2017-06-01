@@ -6,37 +6,25 @@
 		}, {
 			"Path":	"Data/Meshes/cube.obj.mymesh"
 		}, {
-			"Path":	"Data/DataEngine/Textures/WhiteSquare.png"
-		}, {
 			"Path":	"Data/Scripts/Player.lua"
 		}, {
 			"Path":	"Data/Scripts/Enemy.lua"
-		}, {
-			"Path":	"Data/Scripts/SimpleCharacterController.lua"
 		}, {
 			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
 		}, {
 			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
 		}, {
-			"Path":	"Data/Shaders/Shader_TextureVertexColor.glsl"
-		}, {
-			"Path":	"Data/Shaders/Shader_BoneAnim.glsl"
-		}, {
-			"Path":	"Data/Materials/Lights.mymaterial"
+			"Path":	"Data/DataEngine/Textures/WhiteSquare.png"
 		}, {
 			"Path":	"Data/Materials/Normals.mymaterial"
 		}, {
 			"Path":	"Data/Materials/TextureLights.mymaterial"
 		}, {
-			"Path":	"Data/Materials/TintColor.mymaterial"
-		}, {
 			"Path":	"Data/Materials/Color-Green.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Color-Red.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Bones.mymaterial"
-		}, {
-			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh"
+			"Path":	"Data/Prefabs/Prefabs.myprefabs"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -58,33 +46,34 @@
 			"Name":	"Plane"
 		}, {
 			"ID":	12,
-			"Name":	"Light - Green"
+			"Name":	"Light - Blue"
 		}, {
 			"ID":	13,
 			"Name":	"Light - Red"
 		}, {
-			"ID":	14,
-			"Name":	"Light - Blue"
-		}, {
 			"ID":	15,
-			"Name":	"Light - Red - copy"
+			"Name":	"Plane",
+			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
+			"PrefabID":	1
 		}, {
 			"ID":	16,
-			"Name":	"Light - Red - copy"
+			"Name":	"Cube",
+			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
+			"PrefabID":	3
 		}, {
 			"ID":	17,
-			"Name":	"AnimGuy"
+			"Name":	"Cube - child"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
-			"Pos":	[0, 3, -10],
+			"Pos":	[0, 0, -10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
-			"Pos":	[0, 3, 0],
+			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -102,58 +91,52 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[-5, 1, 4],
+			"Pos":	[4.768372e-007, 2.125861, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
+			"Pos":	[0, -3, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[0, 5.500000, 0],
+			"Pos":	[0, 2.500000, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
-			"Pos":	[2.200000, 0.500000, 6],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	14,
-			"ID":	0,
-			"Pos":	[-2.500000, 1.500000, 5.500000],
+			"Pos":	[-5, -2.500000, 6],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
-			"Pos":	[-6, 0.500000, 0],
+			"Pos":	[12.293224, -1.309767, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	16,
 			"ID":	0,
-			"Pos":	[4.800000, 0.500000, 0],
+			"Pos":	[-4.295078, 7.101099, -0.000008],
 			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
+			"Scale":	[1, 2, 1]
 		}, {
 			"GOID":	17,
 			"ID":	0,
-			"Pos":	[0, 1, 0],
+			"Pos":	[-0.025599, 7.101099, -0.000008],
 			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
+			"Scale":	[1, 2, 1]
 		}],
 	"Components":	[{
 			"Type":	"Light",
 			"GOID":	12,
 			"ID":	21,
 			"LightType":	"Point",
-			"Color":	[0, 1, 0, 1],
+			"Color":	[0, 0, 1, 1],
 			"Atten":	[1, 0, 0.010000]
 		}, {
 			"Type":	"Light",
@@ -163,26 +146,40 @@
 			"Color":	[1, 0, 0, 1],
 			"Atten":	[1, 0, 0.010000]
 		}, {
-			"Type":	"Light",
-			"GOID":	14,
-			"ID":	25,
-			"LightType":	"Point",
-			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0, 0.010000]
+			"Type":	"Collision Object",
+			"GOID":	10,
+			"ID":	14,
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Light",
+			"Type":	"Collision Object",
+			"GOID":	11,
+			"ID":	16,
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[20, 0, 20]
+		}, {
+			"Type":	"Collision Object",
 			"GOID":	15,
-			"ID":	26,
-			"LightType":	"Point",
-			"Color":	[1, 0, 0, 1],
-			"Atten":	[1, 0, 0.010000]
+			"ID":	41,
+			"Primitive":	"Cube",
+			"Mass":	0,
+			"Scale":	[20, 0, 20]
 		}, {
-			"Type":	"Light",
+			"Type":	"Collision Object",
 			"GOID":	16,
-			"ID":	27,
-			"LightType":	"Point",
-			"Color":	[1, 0, 0, 1],
-			"Atten":	[1, 0, 0.010000]
+			"ID":	47,
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	17,
+			"ID":	54,
+			"Primitive":	"Cube",
+			"Mass":	1,
+			"Scale":	[2, 2, 2]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
@@ -191,11 +188,7 @@
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
-			"OrthoNearZ":	0,
-			"OrthoFarZ":	1000,
 			"FoV":	45,
-			"PerspectiveNearZ":	1,
-			"PerspectiveFarZ":	10000,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
@@ -206,11 +199,7 @@
 			"Ortho":	1,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
-			"OrthoNearZ":	0,
-			"OrthoFarZ":	1000,
 			"FoV":	45,
-			"PerspectiveNearZ":	1,
-			"PerspectiveFarZ":	10000,
 			"ColorBit":	0,
 			"DepthBit":	0
 		}, {
@@ -234,30 +223,6 @@
 					"Value":	{
 						"GOID":	8
 					}
-				}]
-		}, {
-			"Type":	"Animation Player",
-			"GOID":	17,
-			"ID":	52,
-			"AnimIndex":	1,
-			"AnimFrame":	0
-		}, {
-			"Type":	"Lua Script",
-			"GOID":	17,
-			"ID":	53,
-			"Script":	"Data/Scripts/SimpleCharacterController.lua",
-			"ExposedVars":	[{
-					"Name":	"Speed",
-					"Type":	1,
-					"Value":	5
-				}, {
-					"Name":	"SpeedRotation",
-					"Type":	1,
-					"Value":	10
-				}, {
-					"Name":	"Animation",
-					"Type":	1,
-					"Value":	10
 				}]
 		}, {
 			"Type":	"Sprite",
@@ -286,7 +251,7 @@
 			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/Lights.mymaterial"]
+			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
@@ -303,35 +268,43 @@
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
-			"Materials":	["Data/Materials/Lights.mymaterial"]
+			"Materials":	["Data/Materials/TextureLights.mymaterial"]
 		}, {
-			"Type":	"Particle Emitter",
-			"GOID":	14,
-			"ID":	28,
-			"Visible":	1,
-			"Layers":	["Main view"],
-			"RunInEditor":	0,
-			"ContinuousSpawn":	1,
-			"Billboard":	1,
-			"offset":	[0, 0, 0],
-			"size":	0.010000,
-			"sizevar":	0.100000,
-			"timetolive":	1,
-			"centervar":	[1, 1],
-			"dir":	[0, 0.500000, 0],
-			"dirvar":	[0.500000, 0.500000, 0.500000],
-			"coloroption":	1,
-			"color1":	[1, 1, 1, 1],
-			"color2":	[0, 0, 0, 1]
-		}, {
-			"Type":	"Mesh-OBJ",
-			"GOID":	17,
-			"ID":	54,
+			"Type":	"Mesh-Primitive",
+			"GOID":	15,
+			"ID":	42,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh",
-			"Materials":	["Data/Materials/Bones.mymaterial"]
+			"MPType":	"Plane",
+			"PlaneSize":	[20, 20],
+			"PlaneVertCountx":	20,
+			"PlaneVertCounty":	20,
+			"UVs per Quad":	0,
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/Color-Green.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	16,
+			"ID":	48,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	17,
+			"ID":	55,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}]
 }

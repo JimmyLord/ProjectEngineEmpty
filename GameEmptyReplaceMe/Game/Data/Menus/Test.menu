@@ -13,7 +13,7 @@
 			"TextShadow":	[0, 0],
 			"MatBG":	"Data/Materials/Color-Green.mymaterial",
 			"MatBGPressed":	"Data/Materials/Color-Red.mymaterial",
-			"Font":	"DataEngine/Fonts/Nevis60.fnt",
+			"Font":	"Data/DataEngine/Fonts/Nevis60.fnt",
 			"String1":	"Test Button"
 		}]
 }

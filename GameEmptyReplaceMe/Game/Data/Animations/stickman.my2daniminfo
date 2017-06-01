@@ -1,0 +1,36 @@
+{
+	"Anims":	[{
+			"Name":	"Idle",
+			"Frames":	[{
+					"Material":	"Data/SpriteSheets/Stickman_Idle1.png.mymaterial",
+					"Duration":	0.100000
+				}, {
+					"Material":	"Data/SpriteSheets/Stickman_Idle2.png.mymaterial",
+					"Duration":	0.100000
+				}, {
+					"Material":	"Data/SpriteSheets/Stickman_Idle3.png.mymaterial",
+					"Duration":	0.100000
+				}, {
+					"Material":	"Data/SpriteSheets/Stickman_Idle4.png.mymaterial",
+					"Duration":	0.100000
+				}, {
+					"Material":	"Data/SpriteSheets/Stickman_Idle3.png.mymaterial",
+					"Duration":	0.100000
+				}, {
+					"Material":	"Data/SpriteSheets/Stickman_Idle2.png.mymaterial",
+					"Duration":	0.100000
+				}]
+		}, {
+			"Name":	"Walk",
+			"Frames":	[{
+					"Material":	"Data/SpriteSheets/Stickman_Walk1.png.mymaterial",
+					"Duration":	0.200000
+				}, {
+					"Material":	"Data/SpriteSheets/Stickman_Walk2.png.mymaterial",
+					"Duration":	0.200000
+				}, {
+					"Material":	"Data/SpriteSheets/Stickman_Walk3.png.mymaterial",
+					"Duration":	0.200000
+				}]
+		}]
+}

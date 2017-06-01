@@ -21,53 +21,64 @@
 				"Flags":	["Camera-HUD"]
 			}
 		}, {
-			"IsFolder":	1,
 			"ID":	28,
+			"Name":	"Folder - StaticWorld",
 			"PhysicsSceneID":	0,
-			"Name":	"Folder - StaticWorld"
+			"SubType":	"Folder"
 		}, {
 			"ID":	27,
-			"Name":	"WorldChain"
+			"Name":	"WorldChain",
+			"ParentGOID":	28
 		}, {
 			"ID":	3,
-			"Name":	"Floor"
+			"Name":	"Floor",
+			"ParentGOID":	28
 		}, {
 			"ID":	5,
-			"Name":	"Wall-left"
+			"Name":	"Wall-left",
+			"ParentGOID":	28
 		}, {
 			"ID":	6,
-			"Name":	"Wall-right"
+			"Name":	"Wall-right",
+			"ParentGOID":	28
 		}, {
-			"IsFolder":	1,
 			"ID":	21,
+			"Name":	"Folder - Chain Links",
 			"PhysicsSceneID":	0,
-			"Name":	"Folder - Chain Links"
+			"SubType":	"Folder"
 		}, {
 			"ID":	14,
-			"Name":	"Link1"
+			"Name":	"Link1",
+			"ParentGOID":	21
 		}, {
 			"ID":	12,
-			"Name":	"Link2"
+			"Name":	"Link2",
+			"ParentGOID":	21
 		}, {
 			"ID":	11,
-			"Name":	"Link3"
+			"Name":	"Link3",
+			"ParentGOID":	21
 		}, {
 			"ID":	13,
-			"Name":	"Link4"
+			"Name":	"Link4",
+			"ParentGOID":	21
 		}, {
-			"IsFolder":	1,
 			"ID":	46,
+			"Name":	"Folder - Car",
 			"PhysicsSceneID":	0,
-			"Name":	"Folder - Car"
+			"SubType":	"Folder"
 		}, {
 			"ID":	8,
-			"Name":	"Car Body"
+			"Name":	"Car Body",
+			"ParentGOID":	46
 		}, {
 			"ID":	9,
-			"Name":	"Car Wheel Left"
+			"Name":	"Car Wheel Left",
+			"ParentGOID":	46
 		}, {
 			"ID":	10,
-			"Name":	"Car Wheel Right"
+			"Name":	"Car Wheel Right",
+			"ParentGOID":	46
 		}, {
 			"ID":	4,
 			"Name":	"Player",
@@ -86,6 +97,9 @@
 		}, {
 			"ID":	20,
 			"Name":	"Weight"
+		}, {
+			"ID":	55,
+			"Name":	"Light"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -100,97 +114,68 @@
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	28,
-			"ID":	0,
-			"Pos":	[1.639128e-007, -1.788139e-007, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
 			"GOID":	27,
 			"ID":	0,
-			"ParentGOID":	28,
 			"Pos":	[0.221970, -3.457143, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[10, 0.300000, 1]
 		}, {
 			"GOID":	3,
 			"ID":	0,
-			"ParentGOID":	28,
 			"Pos":	[0.221970, -3.457143, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[10, 0.300000, 1]
 		}, {
 			"GOID":	5,
 			"ID":	0,
-			"ParentGOID":	28,
 			"Pos":	[-4.778030, -0.457143, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[0.100000, 6, 1]
 		}, {
 			"GOID":	6,
 			"ID":	0,
-			"ParentGOID":	28,
 			"Pos":	[5.221970, -0.457143, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[0.100000, 6, 1]
 		}, {
-			"GOID":	21,
-			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
 			"GOID":	14,
 			"ID":	0,
-			"ParentGOID":	21,
 			"Pos":	[-2.500000, 3.253895, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[0.400000, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"ParentGOID":	21,
 			"Pos":	[-2.500000, 2.400000, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[0.400000, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
-			"ParentGOID":	21,
 			"Pos":	[-2.500000, 1.550000, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[0.400000, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
-			"ParentGOID":	21,
 			"Pos":	[-2.500000, 0.700000, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[0.400000, 1, 1]
 		}, {
-			"GOID":	46,
-			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
 			"GOID":	8,
 			"ID":	0,
-			"ParentGOID":	46,
 			"Pos":	[1.791546, -2.300000, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[2, 0.200000, 1]
 		}, {
 			"GOID":	9,
 			"ID":	0,
-			"ParentGOID":	46,
 			"Pos":	[0.830813, -2.300000, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[0.400000, 0.400000, 1]
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"ParentGOID":	46,
 			"Pos":	[2.807530, -2.300000, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[0.400000, 0.400000, 1]
@@ -224,11 +209,18 @@
 			"Pos":	[0.299868, 5.127049, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	55,
+			"ID":	0,
+			"Pos":	[1.136030, 1.374548, -2.780201],
+			"Rot":	[0, 0, 0],
+			"Scale":	[4.479102, 4.479102, 4.479102]
 		}],
 	"Components":	[{
 			"Type":	"2D Collision Object",
 			"GOID":	4,
 			"ID":	7,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -239,6 +231,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	7,
 			"ID":	31,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -262,6 +255,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	8,
 			"ID":	49,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -272,6 +266,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	9,
 			"ID":	59,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Circle",
 			"Static":	0,
 			"Density":	1,
@@ -316,6 +311,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	10,
 			"ID":	64,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Circle",
 			"Static":	0,
 			"Density":	1,
@@ -326,6 +322,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	11,
 			"ID":	76,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -353,6 +350,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	12,
 			"ID":	79,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -380,6 +378,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	13,
 			"ID":	82,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -407,6 +406,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	14,
 			"ID":	98,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -430,6 +430,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	15,
 			"ID":	102,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -453,6 +454,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	19,
 			"ID":	122,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -476,6 +478,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	20,
 			"ID":	126,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	1,
@@ -486,6 +489,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	27,
 			"ID":	145,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Chain",
 			"Static":	1,
 			"Density":	0,
@@ -494,13 +498,21 @@
 			"Restitution":	0,
 			"Vertices":	[-5.059054, 6.038836, -5.042925, -0.017154, 4.966260, 0.025604, 4.962137, 6.035725]
 		}, {
+			"Type":	"Light",
+			"GOID":	55,
+			"ID":	164,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[0, 0, 0.010000]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
 			"Layers":	["Main view"],
 			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"FoV":	45,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
@@ -509,8 +521,9 @@
 			"ID":	2,
 			"Layers":	["HUD"],
 			"Ortho":	1,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"FoV":	45,
 			"ColorBit":	0,
 			"DepthBit":	0
 		}, {
@@ -634,6 +647,7 @@
 			"PlaneSize":	[10, 10],
 			"PlaneVertCountx":	10,
 			"PlaneVertCounty":	10,
+			"UVs per Quad":	0,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
@@ -650,6 +664,7 @@
 			"PlaneSize":	[10, 10],
 			"PlaneVertCountx":	10,
 			"PlaneVertCounty":	10,
+			"UVs per Quad":	0,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,

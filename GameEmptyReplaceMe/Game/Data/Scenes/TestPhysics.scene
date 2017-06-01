@@ -1,8 +1,8 @@
 {
 	"Files":	[{
-			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+			"Path":	"Data/DataEngine/Shaders/Shader_TintColor.glsl"
 		}, {
-			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+			"Path":	"Data/DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
 		}, {
 			"Path":	"Data/Meshes/cube.obj.mymesh"
 		}, {
@@ -37,11 +37,11 @@
 			"ID":	9,
 			"Name":	"Second Object"
 		}, {
-			"ID":	10,
-			"Name":	"Cube"
-		}, {
 			"ID":	11,
 			"Name":	"Plane"
+		}, {
+			"ID":	10,
+			"Name":	"Teapot"
 		}, {
 			"ID":	12,
 			"Name":	"Duplicated Game Object"
@@ -167,17 +167,17 @@
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	10,
-			"ID":	0,
-			"Pos":	[0, -14.034456, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
 			"GOID":	11,
 			"ID":	0,
 			"Pos":	[0, -16.358683, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[10, 0.100000, 10]
+		}, {
+			"GOID":	10,
+			"ID":	0,
+			"Pos":	[0, -14.034456, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
@@ -241,7 +241,7 @@
 		}, {
 			"GOID":	22,
 			"ID":	0,
-			"Pos":	[4.842125, 0, 0],
+			"Pos":	[8.950724, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -373,18 +373,265 @@
 		}, {
 			"GOID":	61,
 			"ID":	0,
-			"Pos":	[4.842125, 0, -3.396735],
+			"Pos":	[8.950724, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
+			"Type":	"Collision Object",
+			"GOID":	10,
+			"ID":	14,
+			"Mass":	1,
+			"Primitive":	"Convex Hull",
+			"Scale":	[1, 1, 1],
+			"OBJ":	"Data/Meshes/teapot2.obj.mymesh"
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	11,
+			"ID":	16,
+			"Mass":	0,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	12,
+			"ID":	21,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	13,
+			"ID":	23,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	14,
+			"ID":	25,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	15,
+			"ID":	27,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	16,
+			"ID":	29,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	17,
+			"ID":	31,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	18,
+			"ID":	33,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	19,
+			"ID":	35,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	20,
+			"ID":	37,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	21,
+			"ID":	39,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	22,
+			"ID":	41,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	40,
+			"ID":	108,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	41,
+			"ID":	110,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	42,
+			"ID":	112,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	43,
+			"ID":	114,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	44,
+			"ID":	116,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	45,
+			"ID":	118,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	46,
+			"ID":	120,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	47,
+			"ID":	122,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	48,
+			"ID":	124,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	49,
+			"ID":	126,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	50,
+			"ID":	128,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	51,
+			"ID":	130,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	52,
+			"ID":	132,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	53,
+			"ID":	134,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	54,
+			"ID":	136,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	55,
+			"ID":	138,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	56,
+			"ID":	140,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	57,
+			"ID":	142,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	58,
+			"ID":	144,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	59,
+			"ID":	146,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	60,
+			"ID":	148,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	61,
+			"ID":	150,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
 			"Layers":	["Main view"],
 			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"FoV":	45,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
@@ -393,8 +640,9 @@
 			"ID":	8,
 			"Layers":	["HUD"],
 			"Ortho":	1,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"FoV":	45,
 			"ColorBit":	0,
 			"DepthBit":	0
 		}, {
@@ -414,257 +662,11 @@
 					"Value":	1
 				}, {
 					"Name":	"ObjectChasing",
-					"Type":	2,
+					"Type":	4,
 					"Value":	{
 						"GOID":	8
 					}
 				}]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	10,
-			"ID":	14,
-			"Primitive":	"Convex Hull",
-			"Mass":	1,
-			"Scale":	[1, 1, 1],
-			"OBJ":	"Data/Meshes/teapot2.obj.mymesh"
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	11,
-			"ID":	16,
-			"Primitive":	"Cube",
-			"Mass":	0,
-			"Scale":	[2, 2, 2]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	12,
-			"ID":	21,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	13,
-			"ID":	23,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	14,
-			"ID":	25,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	15,
-			"ID":	27,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	16,
-			"ID":	29,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	17,
-			"ID":	31,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	18,
-			"ID":	33,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	19,
-			"ID":	35,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	20,
-			"ID":	37,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	21,
-			"ID":	39,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	22,
-			"ID":	41,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	40,
-			"ID":	108,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	41,
-			"ID":	110,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	42,
-			"ID":	112,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	43,
-			"ID":	114,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	44,
-			"ID":	116,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	45,
-			"ID":	118,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	46,
-			"ID":	120,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	47,
-			"ID":	122,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	48,
-			"ID":	124,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	49,
-			"ID":	126,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	50,
-			"ID":	128,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	51,
-			"ID":	130,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	52,
-			"ID":	132,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	53,
-			"ID":	134,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	54,
-			"ID":	136,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	55,
-			"ID":	138,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	56,
-			"ID":	140,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	57,
-			"ID":	142,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	58,
-			"ID":	144,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	59,
-			"ID":	146,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	60,
-			"ID":	148,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
-		}, {
-			"Type":	"Collision Object",
-			"GOID":	61,
-			"ID":	150,
-			"Primitive":	"Cube",
-			"Mass":	1,
-			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Sprite",
 			"GOID":	8,

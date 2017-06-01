@@ -75,7 +75,7 @@ precision mediump float;
     #endif
 
         // Mix the texture color with the light color.
-        vec3 ambdiff = /*texcolor.rgb * v_Color * */( finalambient + finaldiffuse );
+        vec3 ambdiff = /*texcolor.rgb * v_Color.rgb * */( finalambient + finaldiffuse );
         vec3 spec = /*u_TextureSpecColor.rgb **/ finalspecular;
 
         // Calculate final color including whether it's in shadow or not.

@@ -1,14 +1,14 @@
 {
 	"Files":	[{
-			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+			"Path":	"Data/DataEngine/Shaders/Shader_TintColor.glsl"
 		}, {
-			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+			"Path":	"Data/DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
 		}, {
 			"Path":	"Data/Shaders/PostEffects/BlurHorizontal.glsl"
 		}, {
 			"Path":	"Data/Meshes/cube.obj.mymesh"
 		}, {
-			"Path":	"DataEngine/Textures/WhiteSquare.png"
+			"Path":	"Data/DataEngine/Textures/WhiteSquare.png"
 		}, {
 			"Path":	"Data/Scripts/Player.lua"
 		}, {

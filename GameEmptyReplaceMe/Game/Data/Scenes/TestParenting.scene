@@ -1,8 +1,8 @@
 {
 	"Files":	[{
-			"Path":	"DataEngine/Shaders/Shader_TintColor.glsl"
+			"Path":	"Data/DataEngine/Shaders/Shader_TintColor.glsl"
 		}, {
-			"Path":	"DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
+			"Path":	"Data/DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
 		}, {
 			"Path":	"Data/Meshes/cube.obj.mymesh"
 		}, {
@@ -14,7 +14,7 @@
 		}, {
 			"Path":	"Data/Shaders/Shader_TextureLights.glsl"
 		}, {
-			"Path":	"DataEngine/Textures/WhiteSquare.png"
+			"Path":	"Data/DataEngine/Textures/WhiteSquare.png"
 		}, {
 			"Path":	"Data/Materials/Normals.mymaterial"
 		}, {
@@ -28,24 +28,12 @@
 			"ID":	1,
 			"Name":	"Main Camera"
 		}, {
-			"ID":	7,
-			"Name":	"Hud Camera"
-		}, {
-			"ID":	8,
-			"Name":	"Player Object"
-		}, {
-			"ID":	9,
-			"Name":	"Second Object"
-		}, {
 			"ID":	10,
 			"Name":	"Parent Cube"
 		}, {
 			"ID":	12,
 			"Name":	"Child Cube",
 			"ParentGOID":	10
-		}, {
-			"ID":	11,
-			"Name":	"Plane"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -54,27 +42,9 @@
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	7,
-			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	8,
-			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	9,
-			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
 			"GOID":	10,
 			"ID":	18,
-			"Pos":	[0, 0, -5],
+			"Pos":	[0.048244, 0, -5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -83,12 +53,6 @@
 			"Pos":	[0, 0, 10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	11,
-			"ID":	0,
-			"Pos":	[0, -3, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[10, 0.100000, 10]
 		}],
 	"Components":	[{
 			"Type":	"Camera",
@@ -101,69 +65,9 @@
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
-			"Type":	"Camera",
-			"GOID":	7,
-			"ID":	8,
-			"Layers":	["HUD"],
-			"Ortho":	1,
-			"DWidth":	640,
-			"DHeight":	960,
-			"ColorBit":	0,
-			"DepthBit":	0
-		}, {
-			"Type":	"Lua Script",
-			"GOID":	8,
-			"ID":	10,
-			"Script":	"Data/Scripts/Player.lua",
-			"ExposedVars":	[]
-		}, {
-			"Type":	"Lua Script",
-			"GOID":	9,
-			"ID":	12,
-			"Script":	"Data/Scripts/Enemy.lua",
-			"ExposedVars":	[{
-					"Name":	"Speed",
-					"Type":	1,
-					"Value":	1
-				}, {
-					"Name":	"ObjectChasing",
-					"Type":	4,
-					"Value":	{
-						"GOID":	8
-					}
-				}]
-		}, {
-			"Type":	"Sprite",
-			"GOID":	8,
-			"ID":	9,
-			"Visible":	1,
-			"Layers":	["HUD"],
-			"Tint":	[255, 0, 0, 255],
-			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Green.mymaterial"
-		}, {
-			"Type":	"Sprite",
-			"GOID":	9,
-			"ID":	11,
-			"Visible":	1,
-			"Layers":	["HUD"],
-			"Tint":	[0, 255, 0, 255],
-			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Red.mymaterial"
-		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
-			"Visible":	1,
-			"Layers":	["Main view"],
-			"PrimitiveType":	"Triangles",
-			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/Normals.mymaterial"]
-		}, {
-			"Type":	"Mesh-OBJ",
-			"GOID":	11,
-			"ID":	15,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",

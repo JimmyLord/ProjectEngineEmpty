@@ -91,6 +91,9 @@
     <Filter Include="Data\Prefabs">
       <UniqueIdentifier>{2f7eae57-58d4-4cdd-8619-ffb4a3fa26cb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data\Materials\Colors">
+      <UniqueIdentifier>{1f697af1-7f7b-4560-80b8-6caa12d1c8b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SourceWindows\WinMain.cpp">
@@ -500,6 +503,18 @@
     </None>
     <None Include="Data\Scripts\TestAudio.lua">
       <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Materials\Colors\Color-Green.mymaterial">
+      <Filter>Data\Materials\Colors</Filter>
+    </None>
+    <None Include="Data\Materials\Colors\Color-Pink.mymaterial">
+      <Filter>Data\Materials\Colors</Filter>
+    </None>
+    <None Include="Data\Materials\Colors\Color-Red.mymaterial">
+      <Filter>Data\Materials\Colors</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_TintColor.glsl">
+      <Filter>Data\Shaders</Filter>
     </None>
   </ItemGroup>
 </Project>

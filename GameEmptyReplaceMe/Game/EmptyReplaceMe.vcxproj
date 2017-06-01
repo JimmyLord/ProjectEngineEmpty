@@ -455,13 +455,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;_DEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework.bc</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\LinearMath_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\BulletCollision_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\BulletDynamics_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\Box2D_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\SharedGameCode_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\MyEngine_$(Configuration).bc</AdditionalDependencies>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
@@ -533,13 +533,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;_DEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework.bc</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\LinearMath_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\BulletCollision_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\BulletDynamics_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\Box2D_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\SharedGameCode_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\MyEngine_$(Configuration).bc</AdditionalDependencies>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
@@ -683,7 +683,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -691,7 +691,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework.bc</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\LinearMath_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\BulletCollision_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\BulletDynamics_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\Box2D_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\SharedGameCode_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\MyEngine_$(Configuration).bc</AdditionalDependencies>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
@@ -774,7 +774,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -782,7 +782,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework.bc</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration)\LinearMath_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration)\BulletCollision_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration)\BulletDynamics_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)\Box2D_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration)\MyFramework_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration)\SharedGameCode_$(Configuration).bc;$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration)\MyEngine_$(Configuration).bc</AdditionalDependencies>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
@@ -1319,6 +1319,9 @@
     <None Include="..\..\todo.todo" />
     <None Include="Data\Animations\stickman.my2daniminfo" />
     <None Include="Data\Materials\Bones.mymaterial" />
+    <None Include="Data\Materials\Colors\Color-Green.mymaterial" />
+    <None Include="Data\Materials\Colors\Color-Pink.mymaterial" />
+    <None Include="Data\Materials\Colors\Color-Red.mymaterial" />
     <None Include="Data\Materials\Lights.mymaterial" />
     <None Include="Data\Materials\TestGeometryShader.mymaterial" />
     <None Include="Data\Materials\TestParticles.mymaterial" />
@@ -1377,6 +1380,7 @@
     <None Include="Data\Shaders\Shader_Texture.glsl" />
     <None Include="Data\Shaders\Shader_TextureLights.glsl" />
     <None Include="Data\Shaders\Shader_TextureVertexColor.glsl" />
+    <None Include="Data\Shaders\Shader_TintColor.glsl" />
     <None Include="Data\Shaders\Shader_VertSinY.glsl" />
     <None Include="Data\Shaders\Shader_Water.glsl" />
     <None Include="Data\Shaders\TestFragCoord.glsl" />
