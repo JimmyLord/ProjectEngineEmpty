@@ -50,8 +50,10 @@ void MainLoop()
         
     PollSDLEvents();
 
+    g_pGameCore->OnDrawFrameStart( 0 );
     g_pGameCore->Tick( timepassed );
     g_pGameCore->OnDrawFrame( 0 );
+    g_pGameCore->OnDrawFrameDone();
 }
 
 void PollSDLEvents()

@@ -397,7 +397,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_WINDOWS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
     </ClCompile>
@@ -455,7 +455,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;_DEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -474,7 +474,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_WINDOWS;WIN32;MYFW_USING_WX;wxMSVC_VERSION_AUTO;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -533,7 +533,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;_DEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -613,7 +613,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_WINDOWS;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
     </ClCompile>
@@ -683,7 +683,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -706,7 +706,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_WINDOWS;WIN32;MYFW_USING_WX;wxMSVC_VERSION_AUTO;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -774,7 +774,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>

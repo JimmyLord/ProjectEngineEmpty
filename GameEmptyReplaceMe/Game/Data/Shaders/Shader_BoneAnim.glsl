@@ -71,7 +71,7 @@ precision mediump float;
         // Add in each light, one by one. // finaldiffuse, finalspecular are inout.
     #if NUM_LIGHTS > 0
         for( int i=0; i<NUM_LIGHTS; i++ )
-            PointLightContribution( i, v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finaldiffuse, finalspecular );
+            PointLightContribution( u_LightPos[i], u_LightColor[i], u_LightAttenuation[i], v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finaldiffuse, finalspecular );
     #endif
 
         // Mix the texture color with the light color.
