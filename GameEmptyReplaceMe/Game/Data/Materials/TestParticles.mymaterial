@@ -1,7 +1,7 @@
 {
 	"Material":	{
 		"Name":	"TestParticles",
-		"Shader":	"Data/Shaders/Shader_TextureLights.glsl",
+		"Shader":	"Data/Shaders/Shader_VertexColorLights.glsl",
 		"ShaderInstanced":	"Data/Shaders/Shader_ParticlesInstanced.glsl",
 		"TexColor":	"Data/Textures/WhiteSquare.png",
 		"ColorAmbient":	[1, 1, 1, 1],

@@ -4,8 +4,6 @@
 		}, {
 			"Path":	"Data/DataEngine/Shaders/Shader_ClipSpaceTexture.glsl"
 		}, {
-			"Path":	"Data/Meshes/cube.obj.mymesh"
-		}, {
 			"Path":	"Data/DataEngine/Textures/WhiteSquare.png"
 		}, {
 			"Path":	"Data/Scripts/Player.lua"

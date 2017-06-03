@@ -1381,6 +1381,7 @@
     <None Include="Data\Shaders\Shader_TextureLights.glsl" />
     <None Include="Data\Shaders\Shader_TextureVertexColor.glsl" />
     <None Include="Data\Shaders\Shader_TintColor.glsl" />
+    <None Include="Data\Shaders\Shader_VertexColorLights.glsl" />
     <None Include="Data\Shaders\Shader_VertSinY.glsl" />
     <None Include="Data\Shaders\Shader_Water.glsl" />
     <None Include="Data\Shaders\TestFragCoord.glsl" />

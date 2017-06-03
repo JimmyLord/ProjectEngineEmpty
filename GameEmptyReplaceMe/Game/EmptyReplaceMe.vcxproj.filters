@@ -516,5 +516,8 @@
     <None Include="Data\Shaders\Shader_TintColor.glsl">
       <Filter>Data\Shaders</Filter>
     </None>
+    <None Include="Data\Shaders\Shader_VertexColorLights.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
