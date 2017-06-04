@@ -1,4 +1,11 @@
 {
+    "Files":	[{
+			"Path":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh",
+			"SourcePath":	"DataSource/FBXs/TestSpinAllAxes.fbx"
+		}, {
+			"Path":	"Data/Meshes/TestSpinUpAxis.fbx.mymesh",
+			"SourcePath":	"DataSource/FBXs/TestSpinUpAxis.fbx"
+		}],
 	"GameObjects":	[{
 			"ID":	1,
 			"Name":	"Main Camera"

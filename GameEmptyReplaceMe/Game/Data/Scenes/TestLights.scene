@@ -36,7 +36,8 @@
 		}, {
 			"Path":	"Data/Materials/Bones.mymaterial"
 		}, {
-			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh"
+			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh",
+			"SourcePath":	"DataSource/FBXs/AnimGuy.fbx"
 		}],
 	"GameObjects":	[{
 			"ID":	1,

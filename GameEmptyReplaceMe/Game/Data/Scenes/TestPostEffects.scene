@@ -14,7 +14,8 @@
 		}, {
 			"Path":	"Data/Scripts/Enemy.lua"
 		}, {
-			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh"
+			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh",
+			"SourcePath":	"DataSource/FBXs/AnimGuy.fbx"
 		}, {
 			"Path":	"Data/Scripts/SimpleCharacterController.lua"
 		}, {

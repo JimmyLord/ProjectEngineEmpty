@@ -10,7 +10,8 @@
 		}, {
 			"Path":	"Data/Voxels/VoxelWorldPlayer.lua"
 		}, {
-			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh"
+			"Path":	"Data/Meshes/AnimGuy.fbx.mymesh",
+			"SourcePath":	"DataSource/FBXs/AnimGuy.fbx"
 		}, {
 			"Path":	"Data/Materials/Bones.mymaterial"
 		}, {
