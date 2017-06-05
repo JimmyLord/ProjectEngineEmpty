@@ -34,6 +34,12 @@
 			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Path":	"Data/Scripts/DemoLoadPauseMenu.lua"
+		}, {
+			"Path":	"Data/Materials/Grass.mymaterial"
+		}, {
+			"Path":	"Data/Shaders/Shader_VertexColorLights.glsl"
+		}, {
+			"Path":	"Data/Shaders/Shader_Grass.glsl"
 		}],
 	"GameObjects":	[{
 			"ID":	22,
@@ -70,6 +76,10 @@
 		}, {
 			"ID":	11,
 			"Name":	"Plane",
+			"ParentGOID":	49
+		}, {
+			"ID":	62,
+			"Name":	"Grass",
 			"ParentGOID":	49
 		}, {
 			"ID":	37,
@@ -121,7 +131,7 @@
 			"GOID":	10,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Rot":	[0.000187, 0.004456, 0],
+			"Rot":	[0.000187, 90, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	21,
@@ -151,6 +161,12 @@
 			"GOID":	11,
 			"ID":	0,
 			"Pos":	[0, -0.843562, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	62,
+			"ID":	0,
+			"Pos":	[0, -0.840000, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -257,6 +273,13 @@
 			"Type":	"Collision Object",
 			"GOID":	21,
 			"ID":	79,
+			"Mass":	0,
+			"Primitive":	"Cube",
+			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	62,
+			"ID":	97,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
@@ -450,5 +473,22 @@
 			"color1":	[1, 1, 1, 1],
 			"color2":	[0, 0, 0, 1],
 			"Material":	"Data/Materials/TestParticles.mymaterial"
+		}, {
+			"Type":	"Mesh-Primitive",
+			"GOID":	62,
+			"ID":	98,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"MPType":	"Grass",
+			"PlaneSize":	[20, 20],
+			"PlaneVertCountx":	200,
+			"PlaneVertCounty":	200,
+			"UVs per Quad":	0,
+			"PlaneUVStart":	[0.050000, 1],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/Grass.mymaterial"]
 		}]
 }
