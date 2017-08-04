@@ -1,0 +1,14 @@
+{
+	"Cue":	{
+		"Name":	"Randomize",
+		"Sounds":	[{
+				"Path":	"Data/Audio/Wavs/Randomize6.wav"
+			}, {
+				"Path":	"Data/Audio/Wavs/Randomize7.wav"
+			}, {
+				"Path":	"Data/Audio/Wavs/Randomize32.wav"
+			}, {
+				"Path":	"Data/Audio/Wavs/Randomize35.wav"
+			}]
+	}
+}

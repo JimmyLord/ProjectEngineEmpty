@@ -39,8 +39,8 @@ void GameEmptyReplaceMe::OneTimeInit()
 #if MYFW_ANDROID
         RequestScene( "Data/Scenes/TestBasicScene.scene" );
 #else
-        RequestScene( "Data/Scenes/TestShadow.scene" );
-        //RequestScene( "Data/Scenes/TestVoxels.scene" );
+        //RequestScene( "Data/Scenes/TestShadow.scene" );
+        RequestScene( "Data/Scenes/TestVoxels.scene" );
         //RequestScene( "Data/Scenes/TestPhysicsBox2D.scene" );
         //RequestScene( "Data/Scenes/TestPhysics.scene" );
 #endif

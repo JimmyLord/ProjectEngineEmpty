@@ -49,7 +49,11 @@
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
 			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {

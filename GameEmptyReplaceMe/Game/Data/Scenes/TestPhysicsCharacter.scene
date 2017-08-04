@@ -10,11 +10,11 @@
 		}, {
 			"Path":	"Data/Fonts/System24_0.png"
 		}, {
-			"Path":	"Data/Materials/Color-Green.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Pink.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Pink.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Red.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Path":	"Data/Shaders/Shader_Texture.glsl"
 		}, {

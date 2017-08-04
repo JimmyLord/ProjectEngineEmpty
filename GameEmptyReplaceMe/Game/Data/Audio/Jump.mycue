@@ -1,0 +1,8 @@
+{
+	"Cue":	{
+		"Name":	"Jump",
+		"Sounds":	[{
+				"Path":	"Data/Audio/Wavs/Jump20.wav"
+			}]
+	}
+}

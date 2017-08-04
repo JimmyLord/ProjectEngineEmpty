@@ -4,7 +4,7 @@
 		}, {
 			"Path":	"Data/Materials/Bones.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Green.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -69,6 +69,6 @@
 			"Layers":	2,
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Green.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}]
 }

@@ -12,11 +12,11 @@
 		}, {
 			"Path":	"Data/Menus/TestMenuActions.lua"
 		}, {
-			"Path":	"Data/Materials/Color-Green.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Pink.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Pink.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Red.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Path":	"Data/Menus/Test.menu"
 		}, {

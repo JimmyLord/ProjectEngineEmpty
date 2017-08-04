@@ -1316,6 +1316,7 @@
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_Texture.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_TextureTint.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_TintColor.glsl" />
+    <None Include="..\..\notes.txt" />
     <None Include="..\..\todo.todo" />
     <None Include="Data\Animations\stickman.my2daniminfo" />
     <None Include="Data\Materials\Bones.mymaterial" />
@@ -1374,6 +1375,7 @@
     <None Include="Data\Shaders\PostEffects\DoFVertical.glsl" />
     <None Include="Data\Shaders\Shader_BoneAnim.glsl" />
     <None Include="Data\Shaders\Shader_Breathe.glsl" />
+    <None Include="Data\Shaders\Shader_Grass.glsl" />
     <None Include="Data\Shaders\Shader_ParticlesBillboard.glsl" />
     <None Include="Data\Shaders\Shader_ParticlesInstanced.glsl" />
     <None Include="Data\Shaders\Shader_TestNormals.glsl" />

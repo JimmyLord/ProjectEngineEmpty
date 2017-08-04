@@ -29,6 +29,7 @@ precision mediump float;
 
     uniform vec3 u_WSCameraPos;
 
+    #define NUM_DIR_LIGHTS 1
     #include <Include/Light_Uniforms.glsl>
 
 #ifdef VertexShader
@@ -74,7 +75,10 @@ precision mediump float;
         // Accumulate diffuse and specular color for all lights.
         vec3 finaldiffuse = vec3(0,0,0);
         vec3 finalspecular = vec3(0,0,0);
-            
+
+        DirLightContribution( v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finaldiffuse, finalspecular );
+        finaldiffuse *= shadowperc;
+
         // Add in each light, one by one. // finaldiffuse, finalspecular are inout.
 #if NUM_LIGHTS > 0
         for( int i=0; i<NUM_LIGHTS; i++ )
@@ -85,8 +89,8 @@ precision mediump float;
         vec3 ambdiff = texcolor.rgb * ( finalambient + finaldiffuse );
         vec3 spec = u_TextureSpecColor.rgb * finalspecular;
 
-        // Calculate final color including whether it's in shadow or not.
-        gl_FragColor.rgb = v_Color.rgb; //( ambdiff + spec ) * shadowperc;
+        // Calculate final color.
+        gl_FragColor.rgb = v_Color.rgb; //( ambdiff + spec );
         gl_FragColor.a = v_Color.a;
     }
 

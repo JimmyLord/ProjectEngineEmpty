@@ -12,9 +12,9 @@
 		}, {
 			"Path":	"Data/Shaders/Shader_TestNormals.glsl"
 		}, {
-			"Path":	"Data/Materials/Color-Green.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Red.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Normals.mymaterial"
 		}, {
@@ -253,7 +253,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Green.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	9,
@@ -262,7 +262,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[0, 255, 0, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Red.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
@@ -291,7 +291,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[114, 167, 88, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Red.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	13,
@@ -301,7 +301,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[114, 167, 88, 255],
 			"Size":	[71.400002, 24.600000],
-			"Material":	"Data/Materials/Color-Red.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	14,
@@ -311,7 +311,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[114, 167, 88, 255],
 			"Size":	[27.400000, 83.199997],
-			"Material":	"Data/Materials/Color-Red.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	15,
@@ -320,7 +320,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Green.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	16,
@@ -329,6 +329,6 @@
 			"Layers":	["HUD"],
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Green.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}]
 }

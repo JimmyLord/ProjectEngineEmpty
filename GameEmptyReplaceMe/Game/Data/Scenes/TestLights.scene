@@ -30,9 +30,9 @@
 		}, {
 			"Path":	"Data/Materials/TintColor.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Green.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Red.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Bones.mymaterial"
 		}, {
@@ -268,7 +268,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Green.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	9,
@@ -277,7 +277,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[0, 255, 0, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Red.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,

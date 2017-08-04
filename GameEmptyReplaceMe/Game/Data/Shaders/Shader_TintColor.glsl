@@ -39,11 +39,13 @@ void main()
 
 #ifdef FragmentShader
 
-uniform vec4 u_TextureTintColor;
+exposed uniform vec4 u_FragmentColor;
+exposed uniform vec4 u_Color2;
 
 uniform vec3 u_WSCameraPos;
 uniform float u_Shininess;
 
+#define NUM_DIR_LIGHTS 1
 #include <Include/Light_Uniforms.glsl>
 #include <Include/Light_Functions.glsl>
 
@@ -60,6 +62,9 @@ void main()
     vec3 finaldiffuse = vec3(0,0,0);
     vec3 finalspecular = vec3(0,0,0);
 
+    DirLightContribution( v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finaldiffuse, finalspecular );
+    //finaldiffuse *= shadowperc;
+
     // Add in each light, one by one. // finaldiffuse, finalspecular are inout.
 #if NUM_LIGHTS > 0
     for( int i=0; i<NUM_LIGHTS; i++ )
@@ -67,12 +72,12 @@ void main()
 #endif
 
     // Mix the texture color with the light color.
-    vec3 ambdiff = u_TextureTintColor.rgb * ( finalambient + finaldiffuse );
+    vec3 ambdiff = u_FragmentColor.rgb * u_Color2.rgb * ( finalambient + finaldiffuse );
     vec3 spec = finalspecular;
 
     // Calculate final color
     gl_FragColor.rgb = ambdiff + spec;
-    gl_FragColor.a = u_TextureTintColor.a;
+    gl_FragColor.a = u_FragmentColor.a;
 }
 
 #endif

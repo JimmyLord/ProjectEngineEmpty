@@ -14,6 +14,8 @@ attribute vec2 a_UVCoord;
 
 uniform float u_Time;
 uniform vec3 u_CameraAngle;
+#define MAX_DEFORMS 5
+uniform vec4 u_DeformXYZRadius[MAX_DEFORMS];
 
 vec4 GetObjectSpacePosition()
 {
@@ -22,8 +24,20 @@ vec4 GetObjectSpacePosition()
     objpos.x += cos( a_UVCoord.x + u_CameraAngle.y ) * a_UVCoord.y;
     objpos.z += sin( a_UVCoord.x + u_CameraAngle.y ) * a_UVCoord.y;
 
-    objpos.x += sin( u_Time + objpos.x + objpos.z ) * objpos.y * 0.05;
-    objpos.z += sin( u_Time + objpos.x + objpos.z ) * objpos.y * 0.05;
+    for( int i=0; i<MAX_DEFORMS; i++ )
+    {
+        vec2 dir = objpos.xz - u_DeformXYZRadius[i].xz;
+        float len = length( dir );
+        float deformlen = max( u_DeformXYZRadius[i].w - len, 0 );
+        dir = normalize( dir );
+        if( objpos.y != 0 )
+        {
+            objpos.xz += dir * deformlen;
+        }
+    }
+
+    //objpos.x += clamp( sin( u_Time/10 + objpos.z ) * objpos.y, 0.0f, 1.0f ) * 0.5;
+    //objpos.z += clamp( sin( u_Time/15 + objpos.z ) * objpos.y, 0.0f, 1.0f ) * 0.05;
 
     return objpos;
 }
@@ -52,6 +66,7 @@ vec4 GetObjectSpacePosition()
 
     uniform vec3 u_WSCameraPos;
 
+    #define NUM_DIR_LIGHTS 1
     #include <Include/Light_Uniforms.glsl>
 
 #ifdef VertexShader
@@ -99,6 +114,9 @@ vec4 GetObjectSpacePosition()
         vec3 finaldiffuse = vec3(0,0,0);
         vec3 finalspecular = vec3(0,0,0);
 
+        DirLightContribution( v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finaldiffuse, finalspecular );
+        finaldiffuse *= shadowperc;
+
         // Add in each light, one by one. // finaldiffuse, finalspecular are inout.
 #if NUM_LIGHTS > 0
         for( int i=0; i<NUM_LIGHTS; i++ )
@@ -109,8 +127,8 @@ vec4 GetObjectSpacePosition()
         vec3 ambdiff = v_Color.rgb * ( finalambient + finaldiffuse );
         vec3 spec = u_TextureSpecColor.rgb * finalspecular;
 
-        // Calculate final color including whether it's in shadow or not.
-        gl_FragColor.rgb = ( ambdiff + spec ) * shadowperc;
+        // Calculate final color.
+        gl_FragColor.rgb = ( ambdiff + spec );
         gl_FragColor.a = v_Color.a;
     }
 

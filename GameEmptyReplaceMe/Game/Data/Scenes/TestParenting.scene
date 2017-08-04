@@ -20,9 +20,9 @@
 		}, {
 			"Path":	"Data/Materials/TextureLights.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Green.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Red.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,

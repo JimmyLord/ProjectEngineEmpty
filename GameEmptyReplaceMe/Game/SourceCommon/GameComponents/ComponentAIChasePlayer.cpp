@@ -55,9 +55,11 @@ void ComponentAIChasePlayer::FillPropertiesWindow(bool clear, bool addcomponentv
 
 void ComponentAIChasePlayer::OnNewParentTransformDrop(int controlid, wxCoord x, wxCoord y)
 {
-    if( g_DragAndDropStruct.m_Type == DragAndDropType_ComponentPointer )
+    DragAndDropItem* pDropItem = g_DragAndDropStruct.GetItem( 0 );
+
+    if( pDropItem->m_Type == DragAndDropType_ComponentPointer )
     {
-        ComponentTransform* pComponent = (ComponentTransform*)g_DragAndDropStruct.m_Value;
+        ComponentTransform* pComponent = (ComponentTransform*)pDropItem->m_Value;
         MyAssert( pComponent );
 
         if( pComponent->IsA( "TransformComponent" ) )
@@ -90,7 +92,7 @@ void ComponentAIChasePlayer::ImportFromJSONObject(cJSON* jsonobj, unsigned int s
         MyAssert( pGameObject );
 
         if( pGameObject )
-            m_pPlayerComponentTransform = pGameObject->m_pComponentTransform;
+            m_pPlayerComponentTransform = pGameObject->GetTransform();
     }
 }
 
@@ -98,7 +100,7 @@ void ComponentAIChasePlayer::Reset()
 {
     ComponentUpdateable::Reset();
 
-    m_pComponentTransform = m_pGameObject->m_pComponentTransform;
+    m_pComponentTransform = m_pGameObject->GetTransform();
 
 #if MYFW_USING_WX
     m_pPanelWatchBlockVisible = &m_PanelWatchBlockVisible;

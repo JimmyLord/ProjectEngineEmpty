@@ -40,7 +40,8 @@
 			"Name":	"Player"
 		}, {
 			"ID":	7,
-			"Name":	"PlayerLight"
+			"Name":	"PlayerLight",
+			"ParentGOID":	8
 		}, {
 			"ID":	4,
 			"Name":	"Light"
@@ -84,7 +85,6 @@
 		}, {
 			"GOID":	7,
 			"ID":	0,
-			"ParentGOID":	8,
 			"Pos":	[0, 1, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
@@ -111,9 +111,6 @@
 			"Type":	"Voxel World",
 			"GOID":	3,
 			"ID":	3,
-			"Material":	"Data/Voxels/Tiles.mymaterial",
-			"Bake World":	0,
-			"Max World Size":	[0, 0, 0],
 			"Material":	"Data/Voxels/Tiles.mymaterial",
 			"Bake World":	0,
 			"Max World Size":	[0, 0, 0]
@@ -151,8 +148,13 @@
 			"ID":	1,
 			"Layers":	["Main view"],
 			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
@@ -161,8 +163,13 @@
 			"ID":	2,
 			"Layers":	["HUD"],
 			"Ortho":	1,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	0,
 			"DepthBit":	0
 		}, {

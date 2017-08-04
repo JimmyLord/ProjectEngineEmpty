@@ -28,7 +28,7 @@ end,
 
 OnTouch = function(action, id, x, y, pressure, size)
 
-	-- LogInfo( "OnTouch " .. x .. "\n" );
+	--LogInfo( "OnTouch " .. x .. "\n" );
 	
 	if( action == 0 ) then --GCBA_Down
 		SetMouseLock( true );

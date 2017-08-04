@@ -8,11 +8,11 @@
 		}, {
 			"Path":	"Data/Scripts/Enemy.lua"
 		}, {
-			"Path":	"Data/Materials/Color-Green.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
 			"Path":	"Data/Meshes/sphere.obj.mymesh"
 		}, {
-			"Path":	"Data/Materials/Color-Pink.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Pink.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Bones.mymaterial"
 		}],
@@ -156,7 +156,7 @@
 			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/Color-Green.mymaterial"]
+			"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	5,
@@ -167,7 +167,7 @@
 			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
+			"Materials":	["Data/Materials/Colors/Color-Pink.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	6,
@@ -177,7 +177,7 @@
 			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/Color-Green.mymaterial"]
+			"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	7,
@@ -194,7 +194,7 @@
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
-			"Materials":	["Data/Materials/Color-Pink.mymaterial"]
+			"Materials":	["Data/Materials/Colors/Color-Pink.mymaterial"]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	8,
@@ -212,6 +212,6 @@
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
-			"Materials":	["Data/Materials/Color-Green.mymaterial"]
+			"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
 		}]
 }

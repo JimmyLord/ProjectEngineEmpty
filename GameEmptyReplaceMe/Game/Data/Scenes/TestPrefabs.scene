@@ -20,11 +20,13 @@
 		}, {
 			"Path":	"Data/Materials/TextureLights.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Green.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Color-Red.mymaterial"
+			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Path":	"Data/Prefabs/Prefabs.myprefabs"
+		}, {
+			"Path":	"Data/Meshes/sphere.obj.mymesh"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -42,6 +44,12 @@
 			"ID":	10,
 			"Name":	"Cube"
 		}, {
+			"ID":	25,
+			"Name":	"Cube - child",
+			"ParentGO":	{
+				"GOID":	10
+			}
+		}, {
 			"ID":	11,
 			"Name":	"Plane"
 		}, {
@@ -52,17 +60,17 @@
 			"Name":	"Light - Red"
 		}, {
 			"ID":	15,
-			"Name":	"Plane",
+			"Name":	"PlaneFromPrefab",
 			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
 			"PrefabID":	1
 		}, {
 			"ID":	16,
-			"Name":	"Cube",
+			"Name":	"CubeFromPrefab",
 			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
 			"PrefabID":	3
 		}, {
 			"ID":	17,
-			"Name":	"Cube - child"
+			"Name":	"Cube2"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -91,7 +99,13 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[4.768372e-007, 2.125861, 0],
+			"Pos":	[6.998250, 7.183677, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	25,
+			"ID":	0,
+			"Pos":	[11.103810, 7.183677, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -115,7 +129,7 @@
 		}, {
 			"GOID":	15,
 			"ID":	0,
-			"Pos":	[12.293224, -1.309767, 0],
+			"Pos":	[16.234993, -2.813079, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -149,36 +163,43 @@
 			"Type":	"Collision Object",
 			"GOID":	10,
 			"ID":	14,
-			"Primitive":	"Cube",
 			"Mass":	1,
+			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	11,
 			"ID":	16,
-			"Primitive":	"Cube",
 			"Mass":	0,
+			"Primitive":	"Cube",
 			"Scale":	[20, 0, 20]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	15,
 			"ID":	41,
-			"Primitive":	"Cube",
 			"Mass":	0,
-			"Scale":	[20, 0, 20]
+			"Primitive":	"Cube",
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	16,
 			"ID":	47,
-			"Primitive":	"Cube",
 			"Mass":	1,
-			"Scale":	[2, 2, 2]
+			"Primitive":	"Cube",
+			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"Collision Object",
 			"GOID":	17,
 			"ID":	54,
-			"Primitive":	"Cube",
 			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	25,
+			"ID":	79,
+			"Mass":	1,
+			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
 			"Type":	"Camera",
@@ -188,7 +209,11 @@
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
 			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
@@ -199,7 +224,11 @@
 			"Ortho":	1,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
 			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	0,
 			"DepthBit":	0
 		}, {
@@ -232,7 +261,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[255, 0, 0, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Green.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	9,
@@ -241,7 +270,7 @@
 			"Layers":	["HUD"],
 			"Tint":	[0, 255, 0, 255],
 			"Size":	[50, 50],
-			"Material":	"Data/Materials/Color-Red.mymaterial"
+			"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
@@ -273,6 +302,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	15,
 			"ID":	42,
+			"Divorced":	4,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -285,7 +315,7 @@
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
-			"Materials":	["Data/Materials/Color-Green.mymaterial"]
+			"Materials":	["Data/Materials/TextureLights.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	16,
@@ -300,6 +330,16 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	17,
 			"ID":	55,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	25,
+			"ID":	80,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",

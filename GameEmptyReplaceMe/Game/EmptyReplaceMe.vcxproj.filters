@@ -519,5 +519,9 @@
     <None Include="Data\Shaders\Shader_VertexColorLights.glsl">
       <Filter>Data\Shaders</Filter>
     </None>
+    <None Include="Data\Shaders\Shader_Grass.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="..\..\notes.txt" />
   </ItemGroup>
 </Project>
