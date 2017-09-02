@@ -1,0 +1,43 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/GameEmptyReplaceMe/build/Debug/ProjectEmptyReplaceMe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}/GameEmptyReplaceMe/Game",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "wxDebug Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/GameEmptyReplaceMe/build/wxDebug/ProjectEmptyReplaceMe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}/GameEmptyReplaceMe/Game",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

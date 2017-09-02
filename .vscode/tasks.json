@@ -1,0 +1,43 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "Debug build",
+            "type": "shell",
+            "command": "cd GameEmptyReplaceMe && ./build.sh Debug",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "taskName": "wxDebug build",
+            "type": "shell",
+            "command": "cd GameEmptyReplaceMe && ./build.sh wxDebug",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "taskName": "Release build",
+            "type": "shell",
+            "command": "cd GameEmptyReplaceMe && ./build.sh Release",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "taskName": "wxRelease build",
+            "type": "shell",
+            "command": "cd GameEmptyReplaceMe && ./build.sh wxRelease",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
