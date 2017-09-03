@@ -28,9 +28,9 @@ vec4 GetObjectSpacePosition()
     {
         vec2 dir = objpos.xz - u_DeformXYZRadius[i].xz;
         float len = length( dir );
-        float deformlen = max( u_DeformXYZRadius[i].w - len, 0 );
+        float deformlen = max( u_DeformXYZRadius[i].w - len, 0.0 );
         dir = normalize( dir );
-        if( objpos.y != 0 )
+        if( objpos.y != 0.0 )
         {
             objpos.xz += dir * deformlen;
         }

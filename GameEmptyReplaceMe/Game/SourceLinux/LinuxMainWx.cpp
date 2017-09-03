@@ -17,11 +17,14 @@
 void WinMain_CreateGameCore()
 {
     g_pGameCore = MyNew GameEmptyReplaceMe;
+
+    char* value = std::getenv( "GDK_SYNCHRONIZE" );
+    int bp = 1;
 }
 
 MainFrame* WinMain_CreateMainFrame()
 {
-    return MyNew MainFrame( 0 );
+    return MyNew EngineMainFrame();
 }
 
 void WinMain_GetClientSize(int* width, int* height, GLViewTypes* viewtype)

@@ -40,7 +40,7 @@ if [[ $CleanBuild == clean ]]; then
 fi
 
 # Link the engine data folder to data folder
-if [ ! -d "GameEmptyReplaceMe/Game/Data/DataEngine" ]; then
+if [ ! -d "Game/Data/DataEngine" ]; then
     pushd Game/Data > /dev/null
         ln -s ../../../Engine/DataEngine/ DataEngine
     popd > /dev/null

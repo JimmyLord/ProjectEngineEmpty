@@ -28,7 +28,7 @@
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}/GameEmptyReplaceMe/Game",
-            "environment": [],
+            "environment": [{"name":"GDK_SYNCHRONIZE", "value":"1"}],
             "externalConsole": true,
             "MIMode": "gdb",
             "setupCommands": [
