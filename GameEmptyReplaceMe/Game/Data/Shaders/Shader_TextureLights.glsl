@@ -24,7 +24,7 @@ precision mediump float;
     uniform sampler2D u_ShadowTexture;
 #endif //ReceiveShadows
 
-    exposed uniform sampler2D u_TextureColor;
+    uniform sampler2D u_TextureColor;
     uniform vec4 u_TextureTintColor;
     uniform vec4 u_TextureSpecColor;
     uniform float u_Shininess;

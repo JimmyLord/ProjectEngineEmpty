@@ -523,5 +523,8 @@
       <Filter>Data\Shaders</Filter>
     </None>
     <None Include="..\..\notes.txt" />
+    <None Include="Data\Materials\TextureLights.mymaterial">
+      <Filter>Data\Materials</Filter>
+    </None>
   </ItemGroup>
 </Project>

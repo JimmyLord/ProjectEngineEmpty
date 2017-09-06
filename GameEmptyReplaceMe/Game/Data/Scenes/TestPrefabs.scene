@@ -6,8 +6,6 @@
 		}, {
 			"Path":	"Data/Meshes/cube.obj.mymesh"
 		}, {
-			"Path":	"Data/Scripts/Player.lua"
-		}, {
 			"Path":	"Data/Scripts/Enemy.lua"
 		}, {
 			"Path":	"Data/Shaders/Shader_TestNormals.glsl"

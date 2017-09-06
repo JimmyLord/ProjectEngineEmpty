@@ -9,7 +9,6 @@
 		"Blend":	0,
 		"UVScale":	[1, 1],
 		"UVOffset":	[0, 0],
-		"u_FragmentColor":	[184, 244, 0, 255],
-		"u_Color2":	[255, 255, 255, 255]
+		"u_FragmentColor":	[184, 244, 0, 255]
 	}
 }
