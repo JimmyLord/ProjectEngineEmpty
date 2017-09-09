@@ -39,7 +39,7 @@ void main()
 
 #ifdef FragmentShader
 
-uniform vec4 u_TextureColor;
+uniform vec4 u_TextureTintColor;
 
 uniform vec3 u_WSCameraPos;
 uniform float u_Shininess;
@@ -71,12 +71,12 @@ void main()
 #endif
 
     // Mix the texture color with the light color.
-    vec3 ambdiff = u_TextureColor.rgb * ( finalambient + finaldiffuse );
+    vec3 ambdiff = u_TextureTintColor.rgb * ( finalambient + finaldiffuse );
     vec3 spec = finalspecular;
 
     // Calculate final color
     gl_FragColor.rgb = ambdiff + spec;
-    gl_FragColor.a = u_TextureColor.a;
+    gl_FragColor.a = u_TextureTintColor.a;
 }
 
 #endif
