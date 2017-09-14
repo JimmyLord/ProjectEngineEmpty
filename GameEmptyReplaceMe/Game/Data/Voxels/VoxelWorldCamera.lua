@@ -34,7 +34,7 @@ OnTouch = function(action, id, x, y, pressure, size)
 		SetMouseLock( true );
 	end
 
-	if( action == 2 ) then --GCBA_Held
+	if( action == 4 ) then --GCBA_RelativeMovement
 		this.mousedirx = x * -1;
 		this.mousediry = y * -1;
 	end
@@ -47,8 +47,8 @@ end,
 Tick = function(timepassed)
 
 	-- Spin camera based on mouse x/y
-	this.anglex = this.anglex + this.mousediry * 1;
-	this.angley = this.angley + this.mousedirx * 1;
+	this.anglex = this.anglex + this.mousediry * 0.5;
+	this.angley = this.angley + this.mousedirx * 0.5;
 
 	this.mousedirx = 0;
 	this.mousediry = 0;
