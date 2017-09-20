@@ -1,0 +1,15 @@
+{
+	"Files":	[],
+	"GameObjects":	[{
+			"ID":	1,
+			"Name":	"LuaLoadScene",
+			"SubType":	"Logic"
+		}],
+	"Transforms":	[],
+	"Components":	[{
+			"Type":	"Lua Script",
+			"GOID":	1,
+			"ID":	1,
+			"LuaString_OnPlay":	"g_pEngineCore:SwitchScene( \"Data/Scenes/TestVoxels.scene\" );"
+		}]
+}

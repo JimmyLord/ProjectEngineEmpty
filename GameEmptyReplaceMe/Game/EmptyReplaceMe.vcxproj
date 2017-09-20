@@ -423,9 +423,10 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;BulletCollision_$(Configuration).lib;BulletDynamics_$(Configuration).lib;LinearMath_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)../Framework/MyFramework/SourceWindows/pthreads-w32-2-9-1/lib/x86;$(SolutionDir)../Framework/Box2D_v2.2.1/Build/vs2010/bin/$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;xinput.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;SharedGameCode_$(Configuration).lib;BulletCollision_$(Configuration).lib;BulletDynamics_$(Configuration).lib;LinearMath_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/MyFramework/SourceWindows/pthreads-w32-2-9-1/lib/x64;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PNaCl'">
@@ -500,8 +501,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;BulletCollision_$(Configuration).lib;BulletDynamics_$(Configuration).lib;LinearMath_$(Configuration).lib;wxbase31ud.lib;wxmsw31ud_core.lib;wxmsw31ud_gl.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)../Framework/MyFramework/SourceWindows/pthreads-w32-2-9-1/lib/x86;$(SolutionDir)../Framework/Box2D_v2.2.1/Build/vs2010/bin/Debug;$(SolutionDir)../Framework/Libraries/wxWidgets/lib/vc100_lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;xinput.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;SharedGameCode_$(Configuration).lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;LinearMath_Debug.lib;wxbase31ud.lib;wxmsw31ud_core.lib;wxmsw31ud_gl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/MyFramework/SourceWindows/pthreads-w32-2-9-1/lib/x64;$(SolutionDir)Output\$(PlatformName)\BulletCollision\Debug;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\Debug;$(SolutionDir)Output\$(PlatformName)\LinearMath\Debug;$(SolutionDir)Output\$(PlatformName)\Box2D\Debug;$(SolutionDir)../Framework/Libraries/wxWidgets/lib/vc100_lib</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
     </Link>
@@ -645,9 +646,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;BulletCollision_$(Configuration).lib;BulletDynamics_$(Configuration).lib;LinearMath_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)../Framework/MyFramework/SourceWindows/pthreads-w32-2-9-1/lib/x86;$(SolutionDir)../Framework/Box2D_v2.2.1/Build/vs2010/bin/$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;xinput.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;SharedGameCode_$(Configuration).lib;BulletCollision_$(Configuration).lib;BulletDynamics_$(Configuration).lib;LinearMath_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/MyFramework/SourceWindows/pthreads-w32-2-9-1/lib/x64;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PNaCl'">
@@ -736,9 +738,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;BulletCollision_$(Configuration).lib;BulletDynamics_$(Configuration).lib;LinearMath_$(Configuration).lib;wxbase31u.lib;wxmsw31u_core.lib;wxmsw31u_gl.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)../Framework/MyFramework/SourceWindows/pthreads-w32-2-9-1/lib/x86;$(SolutionDir)../Framework/Box2D_v2.2.1/Build/vs2010/bin/Release;$(SolutionDir)../Framework/Libraries/wxWidgets/lib/vc100_lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;xinput.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;SharedGameCode_$(Configuration).lib;BulletCollision_Release.lib;BulletDynamics_Release.lib;LinearMath_Release.lib;wxbase31u.lib;wxmsw31u_core.lib;wxmsw31u_gl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/MyFramework/SourceWindows/pthreads-w32-2-9-1/lib/x64;$(SolutionDir)Output\$(PlatformName)\BulletCollision\Release;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\Release;$(SolutionDir)Output\$(PlatformName)\LinearMath\Release;$(SolutionDir)Output\$(PlatformName)\Box2D\Release;$(SolutionDir)../Framework/Libraries/wxWidgets/lib/vc100_lib</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|PNaCl'">
@@ -1334,6 +1337,7 @@
     <None Include="Data\Prefabs\Prefabs.myprefabs" />
     <None Include="Data\Scenes\DemoPauseMenu.scene" />
     <None Include="Data\Scenes\GGJRitual.scene" />
+    <None Include="Data\Scenes\Initial.scene" />
     <None Include="Data\Scenes\Multi-enemy.scene" />
     <None Include="Data\Scenes\TestAnimation.scene" />
     <None Include="Data\Scenes\TestAudio.scene" />

@@ -526,5 +526,8 @@
     <None Include="Data\Materials\TextureLights.mymaterial">
       <Filter>Data\Materials</Filter>
     </None>
+    <None Include="Data\Scenes\Initial.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
   </ItemGroup>
 </Project>
