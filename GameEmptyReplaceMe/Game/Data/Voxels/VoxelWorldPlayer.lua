@@ -122,7 +122,7 @@ Tick = function(timepassed)
 	-- snap the y pos to the terrain
 	local voxelworld = this.VoxelWorldGameObject:GetVoxelWorld();
 	local groundy = voxelworld:GetSceneYForNextBlockBelowPosition( pos, 0.1 );
-	pos.y = groundy;
+	pos.y = groundy + 0.8;
 
 	-- rotate towards the target angle
 	local anglediff = this.targetangle - rot.y;

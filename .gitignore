@@ -25,5 +25,6 @@ xcuserdata
 /GameEmptyReplaceMe/Game/SourceBlackBerry/PlayBook-*
 /GameEmptyReplaceMe/Game/SourceBada/.Target*
 /GameEmptyReplaceMe/Game/Data/DataEngine
+/GameEmptyReplaceMe/Game/pthreadVC2.dll
 /MyLocalInclude.h
 build

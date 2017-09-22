@@ -409,6 +409,11 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x86\pthreadVC2.dll $(ProjectDir)</Command>
+      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
+    </PostBuildEvent>
+    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -431,6 +436,10 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x64\pthreadVC2.dll $(ProjectDir)</Command>
+      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PNaCl'">
     <ClCompile>
@@ -489,6 +498,10 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x86\pthreadVC2.dll $(ProjectDir)</Command>
+      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|x64'">
     <ClCompile>
@@ -511,6 +524,10 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x64\pthreadVC2.dll $(ProjectDir)</Command>
+      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|PNaCl'">
     <ClCompile>
@@ -633,6 +650,10 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x86\pthreadVC2.dll $(ProjectDir)</Command>
+      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -658,6 +679,10 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x64\pthreadVC2.dll $(ProjectDir)</Command>
+      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PNaCl'">
     <ClCompile>
@@ -728,6 +753,10 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x86\pthreadVC2.dll $(ProjectDir)</Command>
+      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|x64'">
     <ClCompile>
@@ -753,6 +782,10 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x64\pthreadVC2.dll $(ProjectDir)</Command>
+      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|PNaCl'">
     <ClCompile>
