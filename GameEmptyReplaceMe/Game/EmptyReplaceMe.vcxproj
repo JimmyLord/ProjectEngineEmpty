@@ -408,12 +408,8 @@
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/Libraries/pthreads-w32/lib/x86;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>pthreadVC2.dll</DelayLoadDLLs>
     </Link>
-    <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x86\pthreadVC2.dll $(ProjectDir)</Command>
-      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
-    </PostBuildEvent>
-    <PreBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -430,16 +426,13 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;xinput.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;SharedGameCode_$(Configuration).lib;BulletCollision_$(Configuration).lib;BulletDynamics_$(Configuration).lib;LinearMath_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/Libraries/pthreads-w32/lib/x64;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>pthreadVC2.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x64\pthreadVC2.dll $(ProjectDir)</Command>
-      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PNaCl'">
     <ClCompile>
@@ -497,11 +490,8 @@
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/Libraries/pthreads-w32/lib/x86;$(SolutionDir)Output\$(PlatformName)\BulletCollision\Debug;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\Debug;$(SolutionDir)Output\$(PlatformName)\LinearMath\Debug;$(SolutionDir)Output\$(PlatformName)\Box2D\Debug;$(SolutionDir)../Framework/Libraries/wxWidgets/lib/vc$(PlatformToolsetVersion)_lib</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>pthreadVC2.dll</DelayLoadDLLs>
     </Link>
-    <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x86\pthreadVC2.dll $(ProjectDir)</Command>
-      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|x64'">
     <ClCompile>
@@ -523,11 +513,8 @@
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/Libraries/pthreads-w32/lib/x64;$(SolutionDir)Output\$(PlatformName)\BulletCollision\Debug;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\Debug;$(SolutionDir)Output\$(PlatformName)\LinearMath\Debug;$(SolutionDir)Output\$(PlatformName)\Box2D\Debug;$(SolutionDir)../Framework/Libraries/wxWidgets/lib/vc100_x64_lib</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>pthreadVC2.dll</DelayLoadDLLs>
     </Link>
-    <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x64\pthreadVC2.dll $(ProjectDir)</Command>
-      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|PNaCl'">
     <ClCompile>
@@ -639,21 +626,20 @@
       <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;xinput.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;SharedGameCode_$(Configuration).lib;BulletCollision_$(Configuration).lib;BulletDynamics_$(Configuration).lib;LinearMath_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/Libraries/pthreads-w32/lib/x86;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>pthreadVC2.dll</DelayLoadDLLs>
     </Link>
-    <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x86\pthreadVC2.dll $(ProjectDir)</Command>
-      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -668,21 +654,20 @@
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;xinput.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;SharedGameCode_$(Configuration).lib;BulletCollision_$(Configuration).lib;BulletDynamics_$(Configuration).lib;LinearMath_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/Libraries/pthreads-w32/lib/x64;$(SolutionDir)Output\$(PlatformName)\BulletCollision\$(Configuration);$(SolutionDir)Output\$(PlatformName)\BulletDynamics\$(Configuration);$(SolutionDir)Output\$(PlatformName)\LinearMath\$(Configuration);$(SolutionDir)Output\$(PlatformName)\Box2D\$(Configuration)</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>pthreadVC2.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
-    <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x64\pthreadVC2.dll $(ProjectDir)</Command>
-      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PNaCl'">
     <ClCompile>
@@ -742,21 +727,20 @@
       <PreprocessorDefinitions>MYFW_WINDOWS;MYFW_USING_WX;wxMSVC_VERSION_AUTO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;xinput.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;SharedGameCode_$(Configuration).lib;BulletCollision_Release.lib;BulletDynamics_Release.lib;LinearMath_Release.lib;wxbase31u.lib;wxmsw31u_core.lib;wxmsw31u_gl.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/Libraries/pthreads-w32/lib/x86;$(SolutionDir)Output\$(PlatformName)\BulletCollision\Release;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\Release;$(SolutionDir)Output\$(PlatformName)\LinearMath\Release;$(SolutionDir)Output\$(PlatformName)\Box2D\Release;$(SolutionDir)../Framework/Libraries/wxWidgets/lib/vc$(PlatformToolsetVersion)_lib</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>pthreadVC2.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
-    <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x86\pthreadVC2.dll $(ProjectDir)</Command>
-      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|x64'">
     <ClCompile>
@@ -771,21 +755,20 @@
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>pthreadVC2.lib;Ws2_32.lib;Box2D.lib;opengl32.lib;glu32.lib;xinput.lib;MyFramework_$(Configuration).lib;MyEngine_$(Configuration).lib;SharedGameCode_$(Configuration).lib;BulletCollision_Release.lib;BulletDynamics_Release.lib;LinearMath_Release.lib;wxbase31u.lib;wxmsw31u_core.lib;wxmsw31u_gl.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Output\$(PlatformName)\MyFramework\$(Configuration);$(SolutionDir)Output\$(PlatformName)\MyEngine\$(Configuration);$(SolutionDir)Output\$(PlatformName)\SharedGameCode\$(Configuration);$(SolutionDir)../Framework/Libraries/pthreads-w32/lib/x64;$(SolutionDir)Output\$(PlatformName)\BulletCollision\Release;$(SolutionDir)Output\$(PlatformName)\BulletDynamics\Release;$(SolutionDir)Output\$(PlatformName)\LinearMath\Release;$(SolutionDir)Output\$(PlatformName)\Box2D\Release;$(SolutionDir)../Framework/Libraries/wxWidgets/lib/vc100_x64_lib</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+      <DelayLoadDLLs>pthreadVC2.dll</DelayLoadDLLs>
     </Link>
-    <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)..\Framework\Libraries\pthreads-w32\dll\x64\pthreadVC2.dll $(ProjectDir)</Command>
-      <Message>Copying correct pthreadVC2.dll file to game folder</Message>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|PNaCl'">
     <ClCompile>

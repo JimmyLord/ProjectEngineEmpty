@@ -8,6 +8,9 @@
 // 3. This notice may not be removed or altered from any source distribution.
 
 #include "GameCommonHeader.h"
+
+#include <delayimp.h>
+
 #include "../../../Framework/MyFramework/SourceWindows/Screenshot.h"
 #include "../../../Framework/MyFramework/SourceWindows/MYFWWinMain.h"
 
@@ -25,3 +28,27 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
     return MYFWWinMain( SCREEN_WIDTH, SCREEN_HEIGHT );
 }
+
+FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
+{
+    switch( dliNotify )
+    {
+        case dliNotePreLoadLibrary:
+            if( strcmp( pdli->szDll, "pthreadVC2.dll" ) == 0 )
+            {
+#if _WIN64
+                return (FARPROC)LoadLibrary( L"pthreadVC2-x64.dll" );
+#else
+                return (FARPROC)LoadLibrary( L"pthreadVC2-x86.dll" );
+#endif
+            }
+            break;
+
+        default:
+            return 0;
+    }
+
+    return 0;
+}
+
+PfnDliHook __pfnDliNotifyHook2 = delayHook;
