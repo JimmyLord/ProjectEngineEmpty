@@ -1,0 +1,131 @@
+{
+	"Files":	[{
+			"Path":	"Data/Animations/stickman.my2daniminfo"
+		}, {
+			"Path":	"Data/Scripts/CharacterController_2DPhysics.lua"
+		}, {
+			"Path":	"Data/SpriteSheets/Stickman.myspritesheet"
+		}],
+	"GameObjects":	[{
+			"ID":	1,
+			"Name":	"Main Camera",
+			"Properties":	{
+				"Flags":	["Camera-Main"]
+			}
+		}, {
+			"ID":	2,
+			"Name":	"Hud Camera",
+			"Properties":	{
+				"Flags":	["Camera-HUD"]
+			}
+		}, {
+			"ID":	3,
+			"Name":	"Animated Sprite"
+		}, {
+			"ID":	4,
+			"Name":	"2D Physics Chain"
+		}],
+	"Transforms":	[{
+			"GOID":	1,
+			"ID":	0,
+			"Pos":	[0, 0, -10],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	2,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	3,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 2, 1]
+		}, {
+			"GOID":	4,
+			"ID":	0,
+			"Pos":	[0, -1.203838, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[2, 0.050000, 1]
+		}],
+	"Components":	[{
+			"Type":	"2D Animation Player",
+			"GOID":	3,
+			"ID":	7,
+			"Animation Index":	0,
+			"Animation Frame":	0,
+			"Frame Index":	0,
+			"AnimFile":	"Data/Animations/stickman.my2daniminfo"
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	4,
+			"ID":	12,
+			"PrimitiveType":	"Chain",
+			"Static":	1,
+			"Density":	0,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0,
+			"Vertices":	[2.446450, 2.662350, 2.469935, 0.027010, -2.953368, -0.042594, -2.896197, 2.588876]
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	3,
+			"ID":	13,
+			"PrimitiveType":	"Box",
+			"Static":	0,
+			"Density":	0,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"Layers":	["Main view"],
+			"Ortho":	0,
+			"DWidth":	640,
+			"DHeight":	960,
+			"ColorBit":	1,
+			"DepthBit":	1
+		}, {
+			"Type":	"Camera",
+			"GOID":	2,
+			"ID":	2,
+			"Layers":	["HUD"],
+			"Ortho":	1,
+			"DWidth":	640,
+			"DHeight":	960,
+			"ColorBit":	0,
+			"DepthBit":	0
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	3,
+			"ID":	18,
+			"Script":	"Data/Scripts/CharacterController_2DPhysics.lua",
+			"ExposedVars":	[{
+					"Name":	"Speed",
+					"Type":	1,
+					"Value":	10
+				}]
+		}, {
+			"Type":	"Sprite",
+			"GOID":	3,
+			"ID":	4,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/SpriteSheets/Stickman_Idle4.png.mymaterial"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	4,
+			"ID":	11,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1.200000, 4.800000],
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
+		}]
+}

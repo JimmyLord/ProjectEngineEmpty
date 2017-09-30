@@ -8,7 +8,6 @@
 		"Shininess":	200,
 		"Blend":	0,
 		"UVScale":	[1, 1],
-		"UVOffset":	[0, 0],
-		"u_FragmentColor":	[240, 30, 183, 255]
+		"UVOffset":	[0, 0]
 	}
 }
