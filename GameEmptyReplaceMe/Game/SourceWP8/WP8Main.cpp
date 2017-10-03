@@ -90,9 +90,9 @@ void WP8App::Run()
             timer->Update();
             CoreWindow::GetForCurrentThread()->Dispatcher->ProcessEvents(CoreProcessEventsOption::ProcessAllIfPresent);
 
-            //if( m_CoreWindow->Visible == false && g_pGameCore->m_HasFocus == true )
+            //if( m_CoreWindow->Visible == false && g_pGameCore->HasFocus() == true )
             //    g_pGameCore->OnFocusLost();
-            //if( m_CoreWindow->Visible == true && g_pGameCore->m_HasFocus == false )
+            //if( m_CoreWindow->Visible == true && g_pGameCore->HasFocus() == false )
             //    g_pGameCore->OnFocusGained();
 
             g_pGameCore->OnDrawFrameStart( 0 );

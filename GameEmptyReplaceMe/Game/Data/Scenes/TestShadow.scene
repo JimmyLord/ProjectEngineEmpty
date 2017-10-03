@@ -320,14 +320,19 @@
 			"Type":	"Lua Script",
 			"GOID":	22,
 			"ID":	89,
-			"Script":	"Data/Scripts/DemoLoadPauseMenu.lua",
-			"ExposedVars":	[]
+			"Script":	"Data/Scripts/DemoLoadPauseMenu.lua"
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	62,
 			"ID":	99,
 			"Script":	"Data/Scripts/Grass.lua",
-			"ExposedVars":	[]
+			"ExposedVars":	[{
+					"Name":	"ObjectsToTrack",
+					"Type":	4,
+					"Value":	{
+						"GOID":	10
+					}
+				}]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,

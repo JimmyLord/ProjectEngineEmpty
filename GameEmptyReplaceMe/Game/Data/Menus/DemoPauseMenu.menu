@@ -16,6 +16,23 @@
 			"Font":	"Data/DataEngine/Fonts/Nevis60.fnt",
 			"String1":	"Reload Scene",
 			"Action":	"ReloadScene"
+		}, {
+			"MIT":	3,
+			"Name":	"Load Voxels",
+			"X":	-32.400002,
+			"Y":	858.799988,
+			"TextSize":	[-431602080, -431602080],
+			"W":	200,
+			"H":	100,
+			"IW":	-1,
+			"IH":	-1,
+			"BGShadow":	[0, 0],
+			"TextShadow":	[0, 0],
+			"MatBG":	"Data/Materials/Colors/Color-Green.mymaterial",
+			"MatBGPressed":	"Data/Materials/Colors/Color-Red.mymaterial",
+			"Font":	"Data/DataEngine/Fonts/Nevis60.fnt",
+			"String1":	"Load Voxels",
+			"Action":	"LoadVoxels"
 		}],
 	"Tall":	[{
 			"MIT":	3,

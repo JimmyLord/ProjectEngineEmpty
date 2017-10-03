@@ -17,8 +17,7 @@
 			"Type":	"Lua Script",
 			"GOID":	1,
 			"ID":	2,
-			"Script":	"Data/Menus/DemoPauseMenuActions.lua",
-			"ExposedVars":	[]
+			"Script":	"Data/Menus/DemoPauseMenuActions.lua"
 		}, {
 			"Type":	"Menu Page",
 			"GOID":	1,
