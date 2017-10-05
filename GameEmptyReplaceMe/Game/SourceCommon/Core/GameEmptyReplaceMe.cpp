@@ -37,7 +37,8 @@ void GameEmptyReplaceMe::OneTimeInit()
     else
     {
 #if MYFW_ANDROID
-        RequestScene( "Data/Scenes/TestBasicScene.scene" );
+        //RequestScene( "Data/Scenes/TestBasicScene.scene" );
+        RequestScene( "Data/Scenes/Initial.scene" );
 #else
         RequestScene( "Data/Scenes/Initial.scene" );
         //RequestScene( "Data/Scenes/TestShadow.scene" );
