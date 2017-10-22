@@ -39,9 +39,6 @@
 			"ID":	9,
 			"Name":	"Second Object"
 		}, {
-			"ID":	10,
-			"Name":	"Cube"
-		}, {
 			"ID":	25,
 			"Name":	"Cube - child",
 			"ParentGO":	{
@@ -49,10 +46,15 @@
 			}
 		}, {
 			"ID":	11,
-			"Name":	"Plane"
+			"Name":	"PlaneWithCubeAndLight"
+		}, {
+			"ID":	10,
+			"Name":	"Cube",
+			"ParentGOID":	11
 		}, {
 			"ID":	12,
-			"Name":	"Light - Blue"
+			"Name":	"Light - Blue",
+			"ParentGOID":	11
 		}, {
 			"ID":	13,
 			"Name":	"Light - Red"
@@ -69,6 +71,12 @@
 		}, {
 			"ID":	17,
 			"Name":	"Cube2"
+		}, {
+			"ID":	33,
+			"Name":	"Cube3"
+		}, {
+			"ID":	34,
+			"Name":	"Cube4"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -95,27 +103,28 @@
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	10,
-			"ID":	0,
-			"Pos":	[6.998250, 7.183677, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
 			"GOID":	25,
 			"ID":	0,
-			"Pos":	[11.103810, 7.183677, 0],
+			"Divorced":	2,
+			"Pos":	[20, 10, -0.110000],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
-			"Pos":	[0, -3, 0],
+			"Pos":	[-7.587317, -2.613292, -0.109800],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	10,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[0, 2.500000, 0],
+			"Pos":	[0, 3, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -133,13 +142,26 @@
 		}, {
 			"GOID":	16,
 			"ID":	0,
-			"Pos":	[-4.295078, 7.101099, -0.000008],
+			"Divorced":	2,
+			"Pos":	[-4, 7.100000, -0.000008],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 2, 1]
 		}, {
 			"GOID":	17,
 			"ID":	0,
-			"Pos":	[-0.025599, 7.101099, -0.000008],
+			"Pos":	[0, 7.100000, -0.000008],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 2, 1]
+		}, {
+			"GOID":	33,
+			"ID":	0,
+			"Pos":	[0, 4, 10],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 2, 1]
+		}, {
+			"GOID":	34,
+			"ID":	0,
+			"Pos":	[4, 4, 10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 2, 1]
 		}],
@@ -200,6 +222,20 @@
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
+			"Type":	"Collision Object",
+			"GOID":	33,
+			"ID":	92,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Collision Object",
+			"GOID":	34,
+			"ID":	94,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
@@ -233,8 +269,7 @@
 			"Type":	"Lua Script",
 			"GOID":	8,
 			"ID":	10,
-			"Script":	"Data/Scripts/Player.lua",
-			"ExposedVars":	[]
+			"Script":	"Data/Scripts/Player.lua"
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	9,
@@ -338,6 +373,26 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	25,
 			"ID":	80,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	33,
+			"ID":	93,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	34,
+			"ID":	95,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",

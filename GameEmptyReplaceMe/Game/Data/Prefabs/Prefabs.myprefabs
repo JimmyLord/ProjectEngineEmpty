@@ -1,0 +1,152 @@
+{
+	"Plane":	{
+		"ID":	1,
+		"Object":	{
+            "Name":	"Plane",
+			"Components":	[{
+					"Type":	"Collision Object",
+					"Primitive":	"Cube",
+					"Mass":	0,
+					"Scale":	[1, 1, 1]
+				}, {
+					"Type":	"Mesh-Primitive",
+					"Visible":	1,
+					"Layers":	["Main view"],
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"MPType":	"Plane",
+					"PlaneSize":	[20, 20],
+					"PlaneVertCountx":	20,
+					"PlaneVertCounty":	20,
+					"UVs per Quad":	0,
+					"PlaneUVStart":	[0, 0],
+					"PlaneUVRange":	[1, 1],
+					"SphereRadius":	1,
+					"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
+				}]
+		}
+	},
+	"Light - Red":	{
+		"ID":	2,
+		"Object":	{
+            "Name":	"Light - Red",
+			"Components":	[{
+					"Type":	"Light",
+					"LightType":	"Point",
+					"Color":	[1, 0, 0, 1],
+					"Atten":	[1, 0, 0.010000]
+				}]
+		}
+	},
+	"Cube":	{
+		"ID":	3,
+		"Object":	{
+            "Name":	"Cube",
+			"Components":	[{
+					"Type":	"Collision Object",
+					"Primitive":	"Cube",
+					"Mass":	1,
+					"Scale":	[1, 1, 1]
+				}, {
+					"Type":	"Mesh-OBJ",
+					"Visible":	1,
+					"Layers":	["Main view"],
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"OBJ":	"Data/Meshes/cube.obj.mymesh",
+					"Materials":	["Data/Materials/Normals.mymaterial"]
+				}]
+		}
+	},
+	"Second Object Prefab":	{
+		"ID":	4,
+		"Object":	{
+            "Name":	"Second Object Prefab",
+			"Components":	[{
+					"Type":	"Lua Script",
+					"Script":	"Data/Scripts/Enemy.lua",
+					"ExposedVars":	[{
+							"Name":	"Speed",
+							"Type":	1,
+							"Value":	1
+						}, {
+							"Name":	"ObjectChasing",
+							"Type":	4,
+							"Value":	{
+								"Scene":	"Data/Scenes/TestPrefabs.scene",
+								"GOID":	8
+							}
+						}]
+				}, {
+					"Type":	"Sprite",
+					"Visible":	1,
+					"Layers":	["HUD"],
+					"Tint":	[0, 255, 0, 255],
+					"Size":	[50, 50],
+					"Material":	"Data/Materials/Colors/Color-Red.mymaterial"
+				}]
+		}
+	},
+	"PlaneWithCubeAndLight":	{
+		"ID":	5,
+		"Object":	{
+			"Name":	"PlaneWithCubeAndLight",
+			"Components":	[{
+					"Type":	"Collision Object",
+					"Mass":	0,
+					"Primitive":	"Cube",
+					"Scale":	[20, 0, 20]
+				}, {
+					"Type":	"Mesh-Primitive",
+					"Visible":	1,
+					"Layers":	["Main view"],
+					"PrimitiveType":	"Triangles",
+					"PointSize":	1,
+					"MPType":	"Plane",
+					"PlaneSize":	[20, 20],
+					"PlaneVertCountx":	2,
+					"PlaneVertCounty":	2,
+					"UVs per Quad":	0,
+					"PlaneUVStart":	[0, 0],
+					"PlaneUVRange":	[1, 1],
+					"SphereRadius":	1,
+					"Materials":	["Data/Materials/TextureLights.mymaterial"]
+				}],
+			"Children":	[{
+					"Name":	"Cube",
+					"Components":	[{
+							"Type":	"Collision Object",
+							"Mass":	1,
+							"Primitive":	"Cube",
+							"Scale":	[2, 2, 2]
+						}, {
+							"Type":	"Mesh-OBJ",
+							"Visible":	1,
+							"Layers":	["Main view"],
+							"PrimitiveType":	"Triangles",
+							"PointSize":	1,
+							"OBJ":	"Data/Meshes/cube.obj.mymesh",
+							"Materials":	["Data/Materials/Normals.mymaterial"]
+						}],
+					"LocalTransform":	{
+						"Pos":	[0, 0, 0],
+						"Rot":	[0, 0, 0],
+						"Scale":	[1, 1, 1]
+					}
+				}, {
+					"Name":	"Light - Blue",
+					"Components":	[{
+							"Type":	"Light",
+							"LightType":	"Point",
+							"Color":	[0, 0, 1, 1],
+							"Atten":	[1, 0, 0.010000]
+						}],
+					"LocalTransform":	{
+						"Pos":	[0, 3, 0],
+						"Rot":	[0, 0, 0],
+						"Scale":	[1, 1, 1]
+					}
+				}]
+		}
+	}
+}
