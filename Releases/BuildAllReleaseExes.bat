@@ -4,4 +4,5 @@ msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=Wi
 msbuild EmptyReplaceMe.sln /property:Configuration=WxRelease /property:Platform=Win32
 msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=x64
 msbuild EmptyReplaceMe.sln /property:Configuration=WxRelease /property:Platform=x64
+msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=PNaCl
 pause
