@@ -196,24 +196,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SourceAndroid\AndroidApk\AndroidManifest.xml">
-      <Filter>Source - Platform\Source - Android\APK files</Filter>
-    </None>
-    <None Include="SourceAndroid\AndroidApk\build.xml">
-      <Filter>Source - Platform\Source - Android\APK files</Filter>
-    </None>
-    <None Include="SourceAndroid\AndroidApk\project.properties">
-      <Filter>Source - Platform\Source - Android\APK files</Filter>
-    </None>
-    <None Include="SourceAndroid\AndroidApk\local.properties">
-      <Filter>Source - Platform\Source - Android\APK files</Filter>
-    </None>
-    <None Include="SourceAndroid\AndroidApk\res\values\strings.xml">
-      <Filter>Source - Platform\Source - Android\APK files</Filter>
-    </None>
-    <None Include="SourceAndroid\AndroidApk\res\layout\main.xml">
-      <Filter>Source - Platform\Source - Android\APK files</Filter>
-    </None>
     <None Include="SourceNaCL\Web\game.html">
       <Filter>Source - Platform\Source - NaCL\Web Files</Filter>
     </None>
@@ -528,6 +510,15 @@
     </None>
     <None Include="Data\Scenes\Initial.scene">
       <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="SourceAndroid\AndroidStudio\app\src\main\AndroidManifest.xml">
+      <Filter>Source - Platform\Source - Android\APK files</Filter>
+    </None>
+    <None Include="SourceAndroid\AndroidStudio\app\src\main\res\values\strings.xml">
+      <Filter>Source - Platform\Source - Android\APK files</Filter>
+    </None>
+    <None Include="SourceAndroid\AndroidStudio\app\src\main\res\layout\main.xml">
+      <Filter>Source - Platform\Source - Android\APK files</Filter>
     </None>
   </ItemGroup>
 </Project>

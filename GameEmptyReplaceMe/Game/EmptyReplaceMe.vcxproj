@@ -131,7 +131,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'" Label="Configuration">
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|Android'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -1423,17 +1423,10 @@
     <None Include="Data\Voxels\VoxelWorldCamera.lua" />
     <None Include="Data\Voxels\VoxelWorldPlayer.lua" />
     <None Include="EditorPrefs.ini" />
-    <None Include="SourceAndroid\AndroidApk\AndroidManifest.xml">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SourceAndroid\AndroidApk\build.xml" />
-    <None Include="SourceAndroid\AndroidApk\local.properties" />
-    <None Include="SourceAndroid\AndroidApk\project.properties" />
-    <None Include="SourceAndroid\AndroidApk\res\layout\main.xml">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SourceAndroid\AndroidApk\res\values\strings.xml" />
     <None Include="SourceAndroid\AndroidApk\src\com\flathead\EmptyReplaceMePackage\EmptyReplaceMeActivity.java" />
+    <None Include="SourceAndroid\AndroidStudio\app\src\main\AndroidManifest.xml" />
+    <None Include="SourceAndroid\AndroidStudio\app\src\main\res\layout\main.xml" />
+    <None Include="SourceAndroid\AndroidStudio\app\src\main\res\values\strings.xml" />
     <None Include="SourceBlackBerry\.cproject">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='WxDebug|Android'">true</ExcludedFromBuild>

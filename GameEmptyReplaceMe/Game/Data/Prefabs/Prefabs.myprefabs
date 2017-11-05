@@ -2,7 +2,7 @@
 	"Plane":	{
 		"ID":	1,
 		"Object":	{
-            "Name":	"Plane",
+			"Name":	"Plane",
 			"Components":	[{
 					"Type":	"Collision Object",
 					"Primitive":	"Cube",
@@ -29,7 +29,7 @@
 	"Light - Red":	{
 		"ID":	2,
 		"Object":	{
-            "Name":	"Light - Red",
+			"Name":	"Light - Red",
 			"Components":	[{
 					"Type":	"Light",
 					"LightType":	"Point",
@@ -41,7 +41,7 @@
 	"Cube":	{
 		"ID":	3,
 		"Object":	{
-            "Name":	"Cube",
+			"Name":	"Cube",
 			"Components":	[{
 					"Type":	"Collision Object",
 					"Primitive":	"Cube",
@@ -61,7 +61,7 @@
 	"Second Object Prefab":	{
 		"ID":	4,
 		"Object":	{
-            "Name":	"Second Object Prefab",
+			"Name":	"Second Object Prefab",
 			"Components":	[{
 					"Type":	"Lua Script",
 					"Script":	"Data/Scripts/Enemy.lua",
@@ -121,13 +121,14 @@
 							"Scale":	[2, 2, 2]
 						}, {
 							"Type":	"Mesh-OBJ",
-							"Visible":	1,
+							"Visible":	0,
 							"Layers":	["Main view"],
 							"PrimitiveType":	"Triangles",
 							"PointSize":	1,
 							"OBJ":	"Data/Meshes/cube.obj.mymesh",
 							"Materials":	["Data/Materials/Normals.mymaterial"]
 						}],
+					"ChildID":	1,
 					"LocalTransform":	{
 						"Pos":	[0, 0, 0],
 						"Rot":	[0, 0, 0],
@@ -141,8 +142,31 @@
 							"Color":	[0, 0, 1, 1],
 							"Atten":	[1, 0, 0.010000]
 						}],
+					"ChildID":	2,
 					"LocalTransform":	{
 						"Pos":	[0, 3, 0],
+						"Rot":	[0, 0, 0],
+						"Scale":	[1, 1, 1]
+					}
+				}]
+		}
+	},
+	"LightPrefab":	{
+		"ID":	6,
+		"Object":	{
+			"Name":	"LightPrefab",
+			"SubType":	"Folder",
+			"Children":	[{
+					"Name":	"Point Light",
+					"Components":	[{
+							"Type":	"Light",
+							"LightType":	"Point",
+							"Color":	[1, 1, 1, 1],
+							"Atten":	[0, 0, 0.090000]
+						}],
+					"ChildID":	1,
+					"LocalTransform":	{
+						"Pos":	[0, 2, 0],
 						"Rot":	[0, 0, 0],
 						"Scale":	[1, 1, 1]
 					}
