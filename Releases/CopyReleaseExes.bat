@@ -8,6 +8,9 @@ copy ..\GameEmptyReplaceMe\Output\x64\EmptyReplaceMe\WxRelease\EmptyReplaceMe_Wx
 
 copy ..\GameEmptyReplaceMe\Game\SourceNaCL\Web\EmptyReplaceMe_Release.pexe %1\Web\MyEngine.pexe
 
+mkdir %1\Android\lib\armeabi
+copy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\jniLibs\armeabi\libEmptyReplaceMe.so %1\Android\lib\armeabi\libEmptyReplaceMe.so
+
 @GOTO End
 
 :Error

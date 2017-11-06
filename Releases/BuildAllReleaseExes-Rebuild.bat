@@ -5,4 +5,5 @@ msbuild EmptyReplaceMe.sln /property:Configuration=WxRelease /property:Platform=
 msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=x64 /t:Rebuild
 msbuild EmptyReplaceMe.sln /property:Configuration=WxRelease /property:Platform=x64 /t:Rebuild
 msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=PNaCl /t:Rebuild
+msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=Android /t:Rebuild
 pause
