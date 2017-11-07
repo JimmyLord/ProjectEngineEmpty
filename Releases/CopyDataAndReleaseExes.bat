@@ -4,11 +4,8 @@
 xcopy ..\GameEmptyReplaceMe\Game %1 /U /S /Y
 
 @rem Update all existing files with matching files from the Android build folders.
-xcopy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\AndroidManifest.xml %1\Android\AndroidManifest.xml /U /Y
-xcopy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\aidl %1\Android\aidl /U /S /Y
-xcopy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\java %1\Android\java /U /S /Y
-xcopy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\res %1\Android\res /U /S /Y
-xcopy ..\Framework\MyFramework\SourceAndroid\MYFWsrc %1\Android\java /U /S /Y
+xcopy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\AndroidManifest.xml %1\Android /Y
+xcopy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\res %1\Android\res\ /S /Y
 
 call CopyReleaseExes.bat %1
 

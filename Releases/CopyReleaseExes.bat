@@ -10,6 +10,7 @@ copy ..\GameEmptyReplaceMe\Game\SourceNaCL\Web\EmptyReplaceMe_Release.pexe %1\We
 
 mkdir %1\Android\lib\armeabi
 copy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\jniLibs\armeabi\libEmptyReplaceMe.so %1\Android\lib\armeabi\libEmptyReplaceMe.so
+copy ..\GameEmptyReplaceMe\Output\AndroidClassesDex\classes.dex %1\Android\classes.dex
 
 @GOTO End
 
