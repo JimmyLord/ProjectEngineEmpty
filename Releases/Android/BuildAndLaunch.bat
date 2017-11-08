@@ -6,6 +6,9 @@ mkdir Output
 
 call Setup.bat
 
+SET ADDITIONAL_ARGUMENTS=--es "LaunchScene" "%1"
+IF [%1] == [] SET ADDITIONAL_ARGUMENTS=
+
 path=%path%;%ANDROID_PLATFORM_TOOLS%;%ANDROID_BUILD_TOOLS%;%JAVA_SDK_BIN%
 mklink /J "assets/Data" "../Data"
 
@@ -20,6 +23,6 @@ zipalign -f 4 Output/MyEngine.apk.unaligned Output/MyEngine.apk
 
 @rem Install and run game.
 adb install -r Output/MyEngine.apk
-adb shell am start -a android.intent.action.MAIN -n com.flathead.EmptyReplaceMePackage/.EmptyReplaceMeActivity
+adb shell am start -a android.intent.action.MAIN -n com.flathead.EmptyReplaceMePackage/.EmptyReplaceMeActivity %ADDITIONAL_ARGUMENTS%
 
 pause
