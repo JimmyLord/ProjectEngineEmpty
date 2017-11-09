@@ -8,6 +8,7 @@ msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=x6
 msbuild EmptyReplaceMe.sln /property:Configuration=WxRelease /property:Platform=x64 /t:Rebuild
 msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=PNaCl /t:Rebuild
 msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=Android /t:Rebuild
+msbuild EmptyReplaceMe.sln /property:Configuration=Release /property:Platform=Emscripten /t:Rebuild
 
 @rem Build Android Java files.
 cd Game\SourceAndroid\BuildClassesDex

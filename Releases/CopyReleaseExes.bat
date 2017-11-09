@@ -12,6 +12,11 @@ mkdir %1\Android\lib\armeabi
 copy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\jniLibs\armeabi\libEmptyReplaceMe.so %1\Android\lib\armeabi\libEmptyReplaceMe.so
 copy ..\GameEmptyReplaceMe\Output\AndroidClassesDex\classes.dex %1\Android\classes.dex
 
+mkdir %1\Emscripten
+xcopy Emscripten %1\Emscripten /Y
+copy ..\GameEmptyReplaceMe\Output\Emscripten\EmptyReplaceMe\Release\EmptyReplaceMe.html.mem %1\Emscripten\MyEngine.html.mem
+copy ..\GameEmptyReplaceMe\Output\Emscripten\EmptyReplaceMe\Release\EmptyReplaceMe.js %1\Emscripten\MyEngine.js
+
 @GOTO End
 
 :Error

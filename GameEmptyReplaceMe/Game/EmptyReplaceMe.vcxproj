@@ -471,7 +471,7 @@
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalOptions> --preload-file "Data" -s TOTAL_MEMORY=40000000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>-s TOTAL_MEMORY=40000000 %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxDebug|Win32'">
@@ -714,7 +714,7 @@
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalOptions> --preload-file "Data" -s TOTAL_MEMORY=40000000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>-s TOTAL_MEMORY=40000000 %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WxRelease|Win32'">
