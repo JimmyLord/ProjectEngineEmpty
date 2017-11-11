@@ -24,5 +24,3 @@ zipalign -f 4 Output/MyEngine.apk.unaligned Output/MyEngine.apk
 @rem Install and run game.
 adb install -r Output/MyEngine.apk
 adb shell am start -a android.intent.action.MAIN -n com.flathead.EmptyReplaceMePackage/.EmptyReplaceMeActivity %ADDITIONAL_ARGUMENTS%
-
-pause

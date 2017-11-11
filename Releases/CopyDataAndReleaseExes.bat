@@ -1,9 +1,12 @@
 @IF [%1] == [] GOTO Error
 
+call CleanupTempFiles.bat %1
+
 @rem Update all existing files with matching files from the Game folder. (Data, DataSource and Tools)
 xcopy ..\GameEmptyReplaceMe\Game %1 /U /S /Y
 
 @rem Update all existing files with matching files from the Android build folders.
+xcopy Android %1\Android /Y
 xcopy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\AndroidManifest.xml %1\Android /Y
 xcopy ..\GameEmptyReplaceMe\Game\SourceAndroid\AndroidStudio\app\src\main\res %1\Android\res\ /S /Y
 

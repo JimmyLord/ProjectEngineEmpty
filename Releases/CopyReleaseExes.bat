@@ -21,6 +21,6 @@ copy ..\GameEmptyReplaceMe\Output\Emscripten\EmptyReplaceMe\Release\EmptyReplace
 
 :Error
 @echo "Must supply a folder name (i.e. Drag and drop a folder onto this batch file)"
+@pause
 
 :End
-@pause
