@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <Group
-      location = "container:"
-      name = "Bullet Projects">
-      <FileRef
-         location = "absolute:../Engine/Libraries/bullet3/build3/xcode4/BulletCollision.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../Engine/Libraries/bullet3/build3/xcode4/BulletDynamics.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../Engine/Libraries/bullet3/build3/xcode4/LinearMath.xcodeproj">
-      </FileRef>
-   </Group>
+   <FileRef
+      location = "group:../Engine/Libraries/BulletCollision.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Engine/Libraries/BulletDynamics.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Engine/Libraries/LinearMath.xcodeproj">
+   </FileRef>
    <FileRef
       location = "group:../Framework/MyFramework/MyFramework.xcodeproj">
    </FileRef>

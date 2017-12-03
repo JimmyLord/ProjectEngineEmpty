@@ -98,6 +98,7 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
     
         if( g_pGameCore->IsReadyToRender() )
         {
+            g_pGameCore->OnDrawFrameStart( 0 );
             g_pGameCore->OnDrawFrame( 0 );
             glFlush();
         }
