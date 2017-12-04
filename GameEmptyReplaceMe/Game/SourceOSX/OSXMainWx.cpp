@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2016 Jimmy Lord http://www.flatheadgames.com
+// Copyright (c) 2017 Jimmy Lord http://www.flatheadgames.com
 //
 // This software is provided 'as-is', without any express or implied warranty.  In no event will the authors be held liable for any damages arising from the use of this software.
 // Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
@@ -8,25 +8,23 @@
 // 3. This notice may not be removed or altered from any source distribution.
 
 #include "GameCommonHeader.h"
-
-#if MYFW_WINDOWS
-
-#include <delayimp.h>
-
 #include "../../../Framework/MyFramework/SourceWindows/Screenshot.h"
 #include "../../../Framework/MyFramework/SourceWidgets/MYFWMainWx.h"
 
-#define SCREEN_WIDTH    1200
+#define SCREEN_WIDTH    1324
 #define SCREEN_HEIGHT   576
 
 void WinMain_CreateGameCore()
 {
     g_pGameCore = MyNew GameEmptyReplaceMe;
+
+    char* value = std::getenv( "GDK_SYNCHRONIZE" );
+    int bp = 1;
 }
 
 MainFrame* WinMain_CreateMainFrame()
 {
-    return MyNew EngineMainFrame;
+    return MyNew EngineMainFrame();
 }
 
 void WinMain_GetClientSize(int* width, int* height, GLViewTypes* viewtype)
@@ -35,30 +33,3 @@ void WinMain_GetClientSize(int* width, int* height, GLViewTypes* viewtype)
     *height = SCREEN_HEIGHT;
     *viewtype = GLView_Tall;
 }
-
-FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
-{
-    switch( dliNotify )
-    {
-        case dliNotePreLoadLibrary:
-            if( strcmp( pdli->szDll, "pthreadVC2.dll" ) == 0 )
-            {
-#if _WIN64
-                return (FARPROC)LoadLibrary( L"pthreadVC2-x64.dll" );
-#else
-                return (FARPROC)LoadLibrary( L"pthreadVC2-x86.dll" );
-#endif
-            }
-            break;
-
-        default:
-            return 0;
-    }
-
-    return 0;
-}
-
-PfnDliHook __pfnDliNotifyHook2 = delayHook;
-
-#endif //MYFW_WINDOWS
-
