@@ -4,25 +4,31 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "Debug build",
+            "label": "Debug build",
             "type": "shell",
             "command": "cd GameEmptyReplaceMe && ./build.sh Debug",
+            "osx": {
+                "command": "cd GameEmptyReplaceMe && xcodebuild -scheme EmptyReplaceMe-OSX build"
+            },
             "group": "build",
             "problemMatcher": [
                 "$gcc"
             ]
         },
         {
-            "taskName": "wxDebug build",
+            "label": "wxDebug build",
             "type": "shell",
             "command": "cd GameEmptyReplaceMe && ./build.sh wxDebug",
+            "osx": {
+                "command": "cd GameEmptyReplaceMe && xcodebuild -scheme EmptyReplaceMe-wx build"
+            },
             "group": "build",
             "problemMatcher": [
                 "$gcc"
             ]
         },
         {
-            "taskName": "Release build",
+            "label": "Release build",
             "type": "shell",
             "command": "cd GameEmptyReplaceMe && ./build.sh Release",
             "group": "build",
@@ -31,7 +37,7 @@
             ]
         },
         {
-            "taskName": "wxRelease build",
+            "label": "wxRelease build",
             "type": "shell",
             "command": "cd GameEmptyReplaceMe && ./build.sh wxRelease",
             "group": "build",

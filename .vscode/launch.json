@@ -5,13 +5,19 @@
             "name": "Debug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/GameEmptyReplaceMe/build/Debug/ProjectEmptyReplaceMe",
+            "osx": {
+                "program": "${workspaceRoot}/GameEmptyReplaceMe/Output/EmptyReplaceMe/Build/Products/Debug/EmptyReplaceMe-OSX.app/Contents/MacOS/EmptyReplaceMe-OSX",
+                "MIMode": "lldb"
+            },
+            "linux": {
+                "program": "${workspaceRoot}/GameEmptyReplaceMe/build/Debug/ProjectEmptyReplaceMe",
+                "MIMode": "gdb"
+            },
+            "environment": [],
+            "cwd": "${workspaceRoot}/GameEmptyReplaceMe/Game",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}/GameEmptyReplaceMe/Game",
-            "environment": [],
             "externalConsole": true,
-            "MIMode": "gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -24,13 +30,20 @@
             "name": "wxDebug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/GameEmptyReplaceMe/build/wxDebug/ProjectEmptyReplaceMe",
+            "osx": {
+                "program": "${workspaceRoot}/GameEmptyReplaceMe/Output/EmptyReplaceMe/Build/Products/Debug/EmptyReplaceMe-wx.app/Contents/MacOS/EmptyReplaceMe-wx",
+                "MIMode": "lldb",
+                "environment": []
+            },
+            "linux": {
+                "program": "${workspaceRoot}/GameEmptyReplaceMe/build/wxDebug/ProjectEmptyReplaceMe",
+                "MIMode": "gdb",
+                "environment": [{"name":"GDK_SYNCHRONIZE", "value":"1"}]
+            },
+            "cwd": "${workspaceRoot}/GameEmptyReplaceMe/Game",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}/GameEmptyReplaceMe/Game",
-            "environment": [{"name":"GDK_SYNCHRONIZE", "value":"1"}],
             "externalConsole": true,
-            "MIMode": "gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
