@@ -1,0 +1,10 @@
+if [ "$1" != "" ]; then
+
+    rsync -avL ../GameEmptyReplaceMe/Output/EmptyReplaceMe/Build/Products/Release/EmptyReplaceMe-OSX.app/ $1/MyEngine_Game.app/
+    rsync -avL ../GameEmptyReplaceMe/Output/EmptyReplaceMe/Build/Products/Release/EmptyReplaceMe-wx.app/ $1/MyEngine_Editor.app/
+
+else
+
+    echo "Must supply a folder name"
+
+fi
