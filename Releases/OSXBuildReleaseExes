@@ -1,4 +1,0 @@
-cd ../GameEmptyReplaceMe
-
-xcodebuild -scheme EmptyReplaceMe-OSX -config Release build
-xcodebuild -scheme EmptyReplaceMe-wx -config Release build

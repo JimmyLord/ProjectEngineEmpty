@@ -19,7 +19,6 @@
 		0423ABEC1AE2FDAD00C1AE29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64F51ADEE62F00BABD53 /* Foundation.framework */; };
 		0423ABED1AE2FDAD00C1AE29 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64ED1ADEE2C800BABD53 /* OpenAL.framework */; };
 		0423ABEE1AE2FDAD00C1AE29 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64EE1ADEE2C800BABD53 /* OpenGL.framework */; };
-		0423ABF01AE2FDAD00C1AE29 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 044C62A01ADDEAEE00BABD53 /* Data */; };
 		0423ABF11AE2FDAD00C1AE29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044C65321ADF128600BABD53 /* MainMenu.xib */; };
 		0423ABF81AE2FEBD00C1AE29 /* Info-wx.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0423ABF71AE2FEBD00C1AE29 /* Info-wx.plist */; };
 		043168991FD301A6009DCA2E /* libMyEngine-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431689F1FD301A6009DCA2E /* libMyEngine-OSX.a */; };
@@ -62,10 +61,8 @@
 		044C65301ADF119C00BABD53 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C652C1ADF119C00BABD53 /* CoreData.framework */; };
 		044C65311ADF119C00BABD53 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C652D1ADF119C00BABD53 /* CoreVideo.framework */; };
 		044C65341ADF129A00BABD53 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044C65321ADF128600BABD53 /* MainMenu.xib */; };
-		044C65351ADF130700BABD53 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 044C62A01ADDEAEE00BABD53 /* Data */; };
 		045EDF1C1A068036007912CA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EDF1B1A068036007912CA /* StoreKit.framework */; };
 		04936F001AE3F24B00344903 /* WinMainWx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04936EFD1AE3F24B00344903 /* WinMainWx.cpp */; };
-		04B5E8201B0EB2E000A58A64 /* DataEngine in Resources */ = {isa = PBXBuildFile; fileRef = 04B5E81F1B0EB2E000A58A64 /* DataEngine */; };
 		04CDEC181FD24E28006D7D06 /* libwx_baseu-3.1.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDEC101FD24DF5006D7D06 /* libwx_baseu-3.1.1.0.0.dylib */; };
 		04CDEC191FD24E28006D7D06 /* libwx_osx_cocoau_aui-3.1.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDEC111FD24DF5006D7D06 /* libwx_osx_cocoau_aui-3.1.1.0.0.dylib */; };
 		04CDEC1A1FD24E28006D7D06 /* libwx_osx_cocoau_core-3.1.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDEC121FD24DF6006D7D06 /* libwx_osx_cocoau_core-3.1.1.0.0.dylib */; };
@@ -446,7 +443,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0423ABF01AE2FDAD00C1AE29 /* Data in Resources */,
 				0423ABF11AE2FDAD00C1AE29 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,7 +451,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044C65351ADF130700BABD53 /* Data in Resources */,
 				044C65341ADF129A00BABD53 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,7 +465,6 @@
 				044C62C01ADDEB0900BABD53 /* InfoPlist.strings in Resources */,
 				044C62CD1ADDEFD400BABD53 /* Default-568h@2x.png in Resources */,
 				044C62C21ADDEB0900BABD53 /* ViewController_iPhone.xib in Resources */,
-				04B5E8201B0EB2E000A58A64 /* DataEngine in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
