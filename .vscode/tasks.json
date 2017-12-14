@@ -5,42 +5,48 @@
     "tasks": [
         {
             "label": "Debug build",
+            "group": "build",
             "type": "shell",
             "command": "cd GameEmptyReplaceMe && ./build.sh Debug",
             "osx": {
-                "command": "cd GameEmptyReplaceMe && xcodebuild -scheme EmptyReplaceMe-OSX build"
+                "command": "cd GameEmptyReplaceMe && xcodebuild -scheme EmptyReplaceMe-OSX -config Debug build"
             },
-            "group": "build",
             "problemMatcher": [
                 "$gcc"
             ]
         },
         {
             "label": "wxDebug build",
+            "group": "build",
             "type": "shell",
             "command": "cd GameEmptyReplaceMe && ./build.sh wxDebug",
             "osx": {
-                "command": "cd GameEmptyReplaceMe && xcodebuild -scheme EmptyReplaceMe-wx build"
+                "command": "cd GameEmptyReplaceMe && xcodebuild -scheme EmptyReplaceMe-wx -config Debug build"
             },
-            "group": "build",
             "problemMatcher": [
                 "$gcc"
             ]
         },
         {
             "label": "Release build",
+            "group": "build",
             "type": "shell",
             "command": "cd GameEmptyReplaceMe && ./build.sh Release",
-            "group": "build",
+            "osx": {
+                "command": "cd GameEmptyReplaceMe && xcodebuild -scheme EmptyReplaceMe-OSX -config Release build"
+            },
             "problemMatcher": [
                 "$gcc"
             ]
         },
         {
             "label": "wxRelease build",
+            "group": "build",
             "type": "shell",
             "command": "cd GameEmptyReplaceMe && ./build.sh wxRelease",
-            "group": "build",
+            "osx": {
+                "command": "cd GameEmptyReplaceMe && xcodebuild -scheme EmptyReplaceMe-OSX -config Release build"
+            },
             "problemMatcher": [
                 "$gcc"
             ]

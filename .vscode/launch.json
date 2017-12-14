@@ -5,6 +5,7 @@
             "name": "Debug Launch",
             "type": "cppdbg",
             "request": "launch",
+            "program": "",
             "osx": {
                 "program": "${workspaceRoot}/GameEmptyReplaceMe/Output/EmptyReplaceMe/Build/Products/Debug/EmptyReplaceMe-OSX.app/Contents/MacOS/EmptyReplaceMe-OSX",
                 "MIMode": "lldb"
@@ -30,6 +31,7 @@
             "name": "wxDebug Launch",
             "type": "cppdbg",
             "request": "launch",
+            "program": "",
             "osx": {
                 "program": "${workspaceRoot}/GameEmptyReplaceMe/Output/EmptyReplaceMe/Build/Products/Debug/EmptyReplaceMe-wx.app/Contents/MacOS/EmptyReplaceMe-wx",
                 "MIMode": "lldb",
@@ -37,6 +39,59 @@
             },
             "linux": {
                 "program": "${workspaceRoot}/GameEmptyReplaceMe/build/wxDebug/ProjectEmptyReplaceMe",
+                "MIMode": "gdb",
+                "environment": [{"name":"GDK_SYNCHRONIZE", "value":"1"}]
+            },
+            "cwd": "${workspaceRoot}/GameEmptyReplaceMe/Game",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": true,
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Release Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "",
+            "osx": {
+                "program": "${workspaceRoot}/GameEmptyReplaceMe/Output/EmptyReplaceMe/Build/Products/Release/EmptyReplaceMe-OSX.app/Contents/MacOS/EmptyReplaceMe-OSX",
+                "MIMode": "lldb"
+            },
+            "linux": {
+                "program": "${workspaceRoot}/GameEmptyReplaceMe/build/Release/ProjectEmptyReplaceMe",
+                "MIMode": "gdb"
+            },
+            "environment": [],
+            "cwd": "${workspaceRoot}/GameEmptyReplaceMe/Game",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": true,
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "wxRelease Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "",
+            "osx": {
+                "program": "${workspaceRoot}/GameEmptyReplaceMe/Output/EmptyReplaceMe/Build/Products/Release/EmptyReplaceMe-wx.app/Contents/MacOS/EmptyReplaceMe-wx",
+                "MIMode": "lldb",
+                "environment": []
+            },
+            "linux": {
+                "program": "${workspaceRoot}/GameEmptyReplaceMe/build/wxRelease/ProjectEmptyReplaceMe",
                 "MIMode": "gdb",
                 "environment": [{"name":"GDK_SYNCHRONIZE", "value":"1"}]
             },
