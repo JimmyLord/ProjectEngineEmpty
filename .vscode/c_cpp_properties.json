@@ -18,7 +18,7 @@
                 "${workspaceRoot}/GameEmptyReplaceMe/Game/SourceCommon",
                 "${workspaceRoot}/GameEmptyReplaceMe/Game"
             ],
-            "defines": [],
+            "defines": [ "MYFW_USING_WX" ],
             "intelliSenseMode": "clang-x64",
             "browse": {
                 "path": [
