@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     g_pGameCore = MyNew GameEmptyReplaceMe;
     g_pGameCore->OnSurfaceCreated();
     
-    int returnvalue;
+    int returnvalue = 0;
     @autoreleasepool
     {
         returnvalue = UIApplicationMain( argc, argv, nil, NSStringFromClass([AppDelegate class]) );

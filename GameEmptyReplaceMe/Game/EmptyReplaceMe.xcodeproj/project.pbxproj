@@ -21,13 +21,11 @@
 		0423ABEE1AE2FDAD00C1AE29 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044C64EE1ADEE2C800BABD53 /* OpenGL.framework */; };
 		0423ABF11AE2FDAD00C1AE29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044C65321ADF128600BABD53 /* MainMenu.xib */; };
 		04316D351FD4916E009DCA2E /* OSXMainWx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04316D311FD48D07009DCA2E /* OSXMainWx.cpp */; };
-		044C62A11ADDEAEE00BABD53 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 044C62A01ADDEAEE00BABD53 /* Data */; };
 		044C62BA1ADDEB0900BABD53 /* GameComponentTypeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62A41ADDEB0900BABD53 /* GameComponentTypeManager.cpp */; };
 		044C62BB1ADDEB0900BABD53 /* GameEmptyReplaceMe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62A61ADDEB0900BABD53 /* GameEmptyReplaceMe.cpp */; };
 		044C62BC1ADDEB0900BABD53 /* GameCommonHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62A81ADDEB0900BABD53 /* GameCommonHeader.cpp */; };
 		044C62BD1ADDEB0900BABD53 /* ComponentAIChasePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62AB1ADDEB0900BABD53 /* ComponentAIChasePlayer.cpp */; };
 		044C62BE1ADDEB0900BABD53 /* ComponentInputTrackMousePos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044C62AD1ADDEB0900BABD53 /* ComponentInputTrackMousePos.cpp */; };
-		044C62C01ADDEB0900BABD53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044C62B21ADDEB0900BABD53 /* InfoPlist.strings */; };
 		044C62C11ADDEB0900BABD53 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044C62B41ADDEB0900BABD53 /* ViewController_iPad.xib */; };
 		044C62C21ADDEB0900BABD53 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044C62B61ADDEB0900BABD53 /* ViewController_iPhone.xib */; };
 		044C62C31ADDEB0900BABD53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 044C62B91ADDEB0900BABD53 /* main.mm */; };
@@ -49,6 +47,7 @@
 		044C65341ADF129A00BABD53 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044C65321ADF128600BABD53 /* MainMenu.xib */; };
 		045EDF1C1A068036007912CA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045EDF1B1A068036007912CA /* StoreKit.framework */; };
 		04936F001AE3F24B00344903 /* WinMainWx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04936EFD1AE3F24B00344903 /* WinMainWx.cpp */; };
+		04A4F9A71FE5AE1E002AA24B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A4F9A61FE5AE1E002AA24B /* Assets.xcassets */; };
 		04CDEC181FD24E28006D7D06 /* libwx_baseu-3.1.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDEC101FD24DF5006D7D06 /* libwx_baseu-3.1.1.0.0.dylib */; };
 		04CDEC191FD24E28006D7D06 /* libwx_osx_cocoau_aui-3.1.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDEC111FD24DF5006D7D06 /* libwx_osx_cocoau_aui-3.1.1.0.0.dylib */; };
 		04CDEC1A1FD24E28006D7D06 /* libwx_osx_cocoau_core-3.1.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDEC121FD24DF6006D7D06 /* libwx_osx_cocoau_core-3.1.1.0.0.dylib */; };
@@ -98,13 +97,10 @@
 		044C62AC1ADDEB0900BABD53 /* ComponentAIChasePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentAIChasePlayer.h; sourceTree = "<group>"; };
 		044C62AD1ADDEB0900BABD53 /* ComponentInputTrackMousePos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentInputTrackMousePos.cpp; sourceTree = "<group>"; };
 		044C62AE1ADDEB0900BABD53 /* ComponentInputTrackMousePos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentInputTrackMousePos.h; sourceTree = "<group>"; };
-		044C62B11ADDEB0900BABD53 /* EmptyReplaceMe-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EmptyReplaceMe-Prefix.pch"; sourceTree = "<group>"; };
-		044C62B31ADDEB0900BABD53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		044C62B51ADDEB0900BABD53 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		044C62B71ADDEB0900BABD53 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		044C62B81ADDEB0900BABD53 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		044C62B91ADDEB0900BABD53 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		044C62CC1ADDEFD400BABD53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		044C63AF1ADED17300BABD53 /* EmptyReplaceMe-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EmptyReplaceMe-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C64ED1ADEE2C800BABD53 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
 		044C64EE1ADEE2C800BABD53 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
@@ -125,6 +121,7 @@
 		04936EFC1AE3F24B00344903 /* WinMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinMain.h; sourceTree = "<group>"; };
 		04936EFD1AE3F24B00344903 /* WinMainWx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WinMainWx.cpp; sourceTree = "<group>"; };
 		04936EFE1AE3F24B00344903 /* WinMainWx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinMainWx.h; sourceTree = "<group>"; };
+		04A4F9A61FE5AE1E002AA24B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B5E81F1B0EB2E000A58A64 /* DataEngine */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataEngine; path = ../../Engine/DataEngine; sourceTree = "<group>"; };
 		04CDEC101FD24DF5006D7D06 /* libwx_baseu-3.1.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_baseu-3.1.1.0.0.dylib"; path = "../../Framework/Libraries/wxWidgets/build-cocoa-debug/lib/libwx_baseu-3.1.1.0.0.dylib"; sourceTree = "<group>"; };
 		04CDEC111FD24DF5006D7D06 /* libwx_osx_cocoau_aui-3.1.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libwx_osx_cocoau_aui-3.1.1.0.0.dylib"; path = "../../Framework/Libraries/wxWidgets/build-cocoa-debug/lib/libwx_osx_cocoau_aui-3.1.1.0.0.dylib"; sourceTree = "<group>"; };
@@ -266,8 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				04FC207C1FE4C71C00120D0C /* Info.plist */,
-				044C62B11ADDEB0900BABD53 /* EmptyReplaceMe-Prefix.pch */,
-				044C62B21ADDEB0900BABD53 /* InfoPlist.strings */,
 				044C62B41ADDEB0900BABD53 /* ViewController_iPad.xib */,
 				044C62B61ADDEB0900BABD53 /* ViewController_iPhone.xib */,
 				044C62B81ADDEB0900BABD53 /* main.h */,
@@ -307,8 +302,8 @@
 		BF267CF3151B68C6009458AE = {
 			isa = PBXGroup;
 			children = (
+				04A4F9A61FE5AE1E002AA24B /* Assets.xcassets */,
 				04B5E81F1B0EB2E000A58A64 /* DataEngine */,
-				044C62CC1ADDEFD400BABD53 /* Default-568h@2x.png */,
 				044C62A01ADDEAEE00BABD53 /* Data */,
 				044C62A21ADDEB0900BABD53 /* SourceCommon */,
 				044C62AF1ADDEB0900BABD53 /* SourceIOS */,
@@ -481,10 +476,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044C62C11ADDEB0900BABD53 /* ViewController_iPad.xib in Resources */,
-				044C62A11ADDEAEE00BABD53 /* Data in Resources */,
-				044C62C01ADDEB0900BABD53 /* InfoPlist.strings in Resources */,
+				04A4F9A71FE5AE1E002AA24B /* Assets.xcassets in Resources */,
 				044C62C21ADDEB0900BABD53 /* ViewController_iPhone.xib in Resources */,
+				044C62C11ADDEB0900BABD53 /* ViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +496,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "touch -cm ${SRCROOT}/Data";
+			shellScript = "touch -cm ${SRCROOT}/Data\nrsync -avL ${SRCROOT}/Data ${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -552,14 +546,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		044C62B21ADDEB0900BABD53 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				044C62B31ADDEB0900BABD53 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		044C62B41ADDEB0900BABD53 /* ViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -677,6 +663,8 @@
 		BF267D28151B68C6009458AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"MYFW_IOS=1",
@@ -687,12 +675,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatheadgames.EmptyReplaceMe;
 				PRODUCT_NAME = "EmptyReplaceMe-iOS";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		BF267D29151B68C6009458AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"MYFW_IOS=1",
@@ -703,6 +694,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatheadgames.EmptyReplaceMe;
 				PRODUCT_NAME = "EmptyReplaceMe-iOS";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
