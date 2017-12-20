@@ -188,13 +188,13 @@
 		}, {
 			"GOID":	7,
 			"ID":	0,
-			"Pos":	[1.566213, 0.690035, 0],
+			"Pos":	[1.566211, 0.690035, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[3, 0.500000, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
-			"Pos":	[-1.705130, -0.810316, 0],
+			"Pos":	[-1.705130, -0.810317, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[3, 0.500000, 1]
 		}, {
@@ -512,7 +512,11 @@
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
 			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
@@ -523,7 +527,11 @@
 			"Ortho":	1,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
 			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	0,
 			"DepthBit":	0
 		}, {

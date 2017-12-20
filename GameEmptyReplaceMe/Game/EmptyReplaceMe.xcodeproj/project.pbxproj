@@ -646,6 +646,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "_DEBUG=1";
 				LIBRARY_SEARCH_PATHS = ../../Engine/Libraries/bullet3/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = EmptyReplaceMe;
 				USER_HEADER_SEARCH_PATHS = "./SourceCommon . ../../Framework/Libraries/b2Settings ../../Framework/Libraries/Box2D/Box2D ../../Engine/Libraries/bullet3/src";
@@ -658,6 +659,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				LIBRARY_SEARCH_PATHS = ../../Engine/Libraries/bullet3/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = EmptyReplaceMe;
 				USER_HEADER_SEARCH_PATHS = "./SourceCommon . ../../Framework/Libraries/b2Settings ../../Framework/Libraries/Box2D/Box2D ../../Engine/Libraries/bullet3/src";
 			};
