@@ -1,7 +1,7 @@
 pushd ../GameEmptyReplaceMe
 
 echo ""
-echo "$(tput setaf 5)==> Building Debug Package: iOS$(tput sgr0)"
+echo "$(tput setaf 5)==> Building Release Package: iOS$(tput sgr0)"
 xcodebuild -scheme EmptyReplaceMe-iOS -config Release build -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 xcodebuild -scheme EmptyReplaceMe-iOS -config Release build -sdk iphoneos CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
