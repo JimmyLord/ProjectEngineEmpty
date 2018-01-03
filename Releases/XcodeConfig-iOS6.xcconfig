@@ -1,0 +1,5 @@
+//
+// Override the iOS deployment target in the workspace for my old iPod.
+//
+
+IPHONEOS_DEPLOYMENT_TARGET = 6
