@@ -9,7 +9,7 @@ rsync -avL Data MyEngine_Game_iOS_Device.app/
 
 echo ""
 echo "$(tput setaf 5)==> Signing Code and Data$(tput sgr0)"
-codesign -s "$IOSSigningIdentity" MyEngine_Game_iOS_Device.app/
+codesign -f -s "$IOSSigningIdentity" MyEngine_Game_iOS_Device.app/
 
 echo ""
 echo "$(tput setaf 5)==> Launching app$(tput sgr0)"
