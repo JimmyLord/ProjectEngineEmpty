@@ -151,7 +151,7 @@
 		}, {
 			"GOID":	7,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
+			"Pos":	[-4.535732, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -181,204 +181,204 @@
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[-5.157875, 0, 0],
+			"Pos":	[-9.693606, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
-			"Pos":	[-4.157875, 0, 0],
+			"Pos":	[-8.693607, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
-			"Pos":	[-3.157875, 0, 0],
+			"Pos":	[-7.693607, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
-			"Pos":	[-2.157875, 0, 0],
+			"Pos":	[-6.693607, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	16,
 			"ID":	0,
-			"Pos":	[-1.157875, 0, 0],
+			"Pos":	[-5.693607, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	17,
 			"ID":	0,
-			"Pos":	[-0.157875, 0, 0],
+			"Pos":	[-4.693607, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	18,
 			"ID":	0,
-			"Pos":	[0.842125, 0, 0],
+			"Pos":	[-3.693607, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	19,
 			"ID":	0,
-			"Pos":	[1.842125, 0, 0],
+			"Pos":	[-2.693607, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	20,
 			"ID":	0,
-			"Pos":	[2.842125, 0, 0],
+			"Pos":	[-1.693607, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	21,
 			"ID":	0,
-			"Pos":	[3.842125, 0, 0],
+			"Pos":	[-0.693607, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	22,
 			"ID":	0,
-			"Pos":	[8.950724, 0, 0],
+			"Pos":	[9, 5, -3],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	40,
 			"ID":	0,
-			"Pos":	[-5.157875, 0, 3.422448],
+			"Pos":	[-9.693606, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	41,
 			"ID":	0,
-			"Pos":	[-4.157875, 0, 3.422448],
+			"Pos":	[-8.693607, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	42,
 			"ID":	0,
-			"Pos":	[-3.157875, 0, 3.422448],
+			"Pos":	[-7.693607, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	43,
 			"ID":	0,
-			"Pos":	[-2.157875, 0, 3.422448],
+			"Pos":	[-6.693607, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	44,
 			"ID":	0,
-			"Pos":	[-1.157875, 0, 3.422448],
+			"Pos":	[-5.693607, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	45,
 			"ID":	0,
-			"Pos":	[-0.157875, 0, 3.422448],
+			"Pos":	[-4.693607, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	46,
 			"ID":	0,
-			"Pos":	[0.842125, 0, 3.422448],
+			"Pos":	[-3.693607, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	47,
 			"ID":	0,
-			"Pos":	[1.842125, 0, 3.422448],
+			"Pos":	[-2.693607, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	48,
 			"ID":	0,
-			"Pos":	[2.842125, 0, 3.422448],
+			"Pos":	[-1.693607, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	49,
 			"ID":	0,
-			"Pos":	[3.842125, 0, 3.422448],
+			"Pos":	[-0.693607, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	50,
 			"ID":	0,
-			"Pos":	[4.842125, 0, 3.422448],
+			"Pos":	[0.306393, 0, 3.422448],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	51,
 			"ID":	0,
-			"Pos":	[-5.157875, 0, -3.396735],
+			"Pos":	[-9.693606, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	52,
 			"ID":	0,
-			"Pos":	[-4.157875, 0, -3.396735],
+			"Pos":	[-8.693607, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	53,
 			"ID":	0,
-			"Pos":	[-3.157875, 0, -3.396735],
+			"Pos":	[-7.693607, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	54,
 			"ID":	0,
-			"Pos":	[-2.157875, 0, -3.396735],
+			"Pos":	[-6.693607, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	55,
 			"ID":	0,
-			"Pos":	[-1.157875, 0, -3.396735],
+			"Pos":	[-5.693607, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	56,
 			"ID":	0,
-			"Pos":	[-0.157875, 0, -3.396735],
+			"Pos":	[-4.693607, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	57,
 			"ID":	0,
-			"Pos":	[0.842125, 0, -3.396735],
+			"Pos":	[-3.693607, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	58,
 			"ID":	0,
-			"Pos":	[1.842125, 0, -3.396735],
+			"Pos":	[-2.693607, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	59,
 			"ID":	0,
-			"Pos":	[2.842125, 0, -3.396735],
+			"Pos":	[-1.693607, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	60,
 			"ID":	0,
-			"Pos":	[3.842125, 0, -3.396735],
+			"Pos":	[-0.693607, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	61,
 			"ID":	0,
-			"Pos":	[8.950724, 0, -3.396735],
+			"Pos":	[9, 0, -3],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	10,
 			"ID":	14,
 			"Mass":	1,
@@ -386,243 +386,259 @@
 			"Scale":	[1, 1, 1],
 			"OBJ":	"Data/Meshes/teapot2.obj.mymesh"
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	11,
 			"ID":	16,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	12,
 			"ID":	21,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	13,
 			"ID":	23,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	14,
 			"ID":	25,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	15,
 			"ID":	27,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	16,
 			"ID":	29,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	17,
 			"ID":	31,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	18,
 			"ID":	33,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	19,
 			"ID":	35,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	20,
 			"ID":	37,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	21,
 			"ID":	39,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	22,
 			"ID":	41,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	40,
 			"ID":	108,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	41,
 			"ID":	110,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	42,
 			"ID":	112,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	43,
 			"ID":	114,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	44,
 			"ID":	116,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	45,
 			"ID":	118,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	46,
 			"ID":	120,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	47,
 			"ID":	122,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	48,
 			"ID":	124,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	49,
 			"ID":	126,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	50,
 			"ID":	128,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	51,
 			"ID":	130,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	52,
 			"ID":	132,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	53,
 			"ID":	134,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	54,
 			"ID":	136,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	55,
 			"ID":	138,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	56,
 			"ID":	140,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	57,
 			"ID":	142,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	58,
 			"ID":	144,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	59,
 			"ID":	146,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	60,
 			"ID":	148,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	61,
 			"ID":	150,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"3D Joint - Point2Point",
+			"GOID":	61,
+			"ID":	192,
+			"PivotA":	[0, 0, 0],
+			"PivotB":	[0, 0, 0]
+		}, {
+			"Type":	"3D Joint - Point2Point",
+			"GOID":	22,
+			"ID":	234,
+			"SecondCollisionObject":	{
+				"GOID":	61,
+				"ComponentID":	150
+			},
+			"PivotA":	[0, 0, 0],
+			"PivotB":	[0, 5, 0]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
@@ -631,7 +647,11 @@
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
 			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
@@ -642,15 +662,18 @@
 			"Ortho":	1,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
 			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	0,
 			"DepthBit":	0
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	8,
 			"ID":	10,
-			"Script":	"Data/Scripts/Player.lua",
-			"ExposedVars":	[]
+			"Script":	"Data/Scripts/Player.lua"
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	9,

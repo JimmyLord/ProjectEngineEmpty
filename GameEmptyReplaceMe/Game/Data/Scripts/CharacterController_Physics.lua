@@ -53,7 +53,7 @@ Tick = function(timepassed)
 	-- todo - do these 2 lookups once in OnPlay?
 	local animplayer = this.gameobject:GetAnimationPlayer();
 	local transform = this.gameobject:GetTransform();
-	local collisionobject = this.gameobject:GetCollisionObject();
+	local collisionobject = this.gameobject:Get3DCollisionObject();
 
 	local pos = transform:GetLocalPosition();
 	local rot = transform:GetLocalRotation();

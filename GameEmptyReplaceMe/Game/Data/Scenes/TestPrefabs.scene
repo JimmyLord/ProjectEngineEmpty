@@ -259,70 +259,70 @@
 			"Color":	[1, 0, 0, 1],
 			"Atten":	[1, 0, 0.010000]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	10,
 			"ID":	14,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	11,
 			"ID":	16,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[20, 0, 20]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	15,
 			"ID":	41,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	16,
 			"ID":	47,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	17,
 			"ID":	54,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	25,
 			"ID":	79,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	33,
 			"ID":	92,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	34,
 			"ID":	94,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	35,
 			"ID":	109,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[20, 0, 20]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	36,
 			"ID":	111,
 			"Mass":	1,
@@ -336,7 +336,7 @@
 			"Color":	[0, 0, 1, 1],
 			"Atten":	[1, 0, 0.010000]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	38,
 			"ID":	130,
 			"Mass":	1,

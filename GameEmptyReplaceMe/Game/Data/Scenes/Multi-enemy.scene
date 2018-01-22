@@ -170,14 +170,14 @@
 					}
 				}]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	10,
 			"ID":	14,
 			"Primitive":	"Cube",
 			"Mass":	1,
 			"Scale":	[1, 1, 1]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	11,
 			"ID":	16,
 			"Primitive":	"Cube",

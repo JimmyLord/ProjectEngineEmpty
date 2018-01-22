@@ -13,7 +13,6 @@ void AndroidMain_CreateGameCore(const char* launchscene)
 {
     g_pGameCore = MyNew GameEmptyReplaceMe;
 
-#define MAX_PATH 260
     extern char g_SceneToLoad[MAX_PATH];
     strcpy( g_SceneToLoad, launchscene );
 }

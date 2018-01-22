@@ -4,7 +4,7 @@
 		"Object":	{
 			"Name":	"Plane",
 			"Components":	[{
-					"Type":	"Collision Object",
+					"Type":	"3D Collision Object",
 					"Primitive":	"Cube",
 					"Mass":	0,
 					"Scale":	[1, 1, 1]
@@ -43,7 +43,7 @@
 		"Object":	{
 			"Name":	"Cube",
 			"Components":	[{
-					"Type":	"Collision Object",
+					"Type":	"3D Collision Object",
 					"Primitive":	"Cube",
 					"Mass":	1,
 					"Scale":	[1, 1, 1]
@@ -92,7 +92,7 @@
 		"Object":	{
 			"Name":	"PlaneWithCubeAndLight",
 			"Components":	[{
-					"Type":	"Collision Object",
+					"Type":	"3D Collision Object",
 					"Mass":	0,
 					"Primitive":	"Cube",
 					"Scale":	[20, 0, 20]
@@ -115,7 +115,7 @@
 			"Children":	[{
 					"Name":	"Cube",
 					"Components":	[{
-							"Type":	"Collision Object",
+							"Type":	"3D Collision Object",
 							"Mass":	1,
 							"Primitive":	"Cube",
 							"Scale":	[2, 2, 2]

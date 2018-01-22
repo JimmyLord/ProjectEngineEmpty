@@ -86,7 +86,7 @@
 			"DepthBit":	1,
 			"Layers":	1
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	22,
 			"ID":	89,
 			"Primitive":	"Cube",

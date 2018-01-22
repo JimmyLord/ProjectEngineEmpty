@@ -68,14 +68,14 @@
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	11,
 			"ID":	16,
 			"Primitive":	"Cube",
 			"Mass":	0,
 			"Scale":	[1, 1, 1]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	14,
 			"ID":	26,
 			"Primitive":	"Cube",

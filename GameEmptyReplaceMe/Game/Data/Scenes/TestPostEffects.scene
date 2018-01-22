@@ -194,7 +194,7 @@
 			"DepthBit":	0,
 			"Layers":	2
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	11,
 			"ID":	16,
 			"Primitive":	"Cube",
@@ -225,7 +225,7 @@
 					"Value":	10
 				}]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	17,
 			"ID":	53,
 			"Primitive":	"Cube",
