@@ -307,9 +307,9 @@
 		}, {
 			"GOID":	50,
 			"ID":	0,
-			"Pos":	[0.306393, 0, 3.422448],
+			"Pos":	[15.387268, 2.158775, 3.422448],
 			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
+			"Scale":	[8.800000, 1, 1]
 		}, {
 			"GOID":	51,
 			"ID":	0,
@@ -367,7 +367,7 @@
 		}, {
 			"GOID":	60,
 			"ID":	0,
-			"Pos":	[-0.693607, 0, -3.396735],
+			"Pos":	[15.807438, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -639,6 +639,31 @@
 			},
 			"PivotA":	[0, 0, 0],
 			"PivotB":	[0, 5, 0]
+		}, {
+			"Type":	"3D Joint - Hinge",
+			"GOID":	50,
+			"ID":	276,
+			"PivotA":	[0, 0],
+			"PivotB":	[0, 0],
+			"MotorEnabled":	1,
+			"MotorSpeed":	1,
+			"MotorMaxTorque":	1,
+			"LimitEnabled":	0,
+			"LimitMin":	0,
+			"LimitMax":	0,
+			"BreakForce":	0
+		}, {
+			"Type":	"3D Joint - Slider",
+			"GOID":	60,
+			"ID":	318,
+			"AxisA":	[0, 0, 0],
+			"AxisB":	[0, 0, 0],
+			"MotorEnabled":	0,
+			"MotorSpeed":	0,
+			"MotorMaxForce":	0,
+			"LimitEnabled":	0,
+			"LimitMin":	0,
+			"LimitMax":	0
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,

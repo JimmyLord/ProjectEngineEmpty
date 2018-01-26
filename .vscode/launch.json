@@ -4,7 +4,9 @@
         {
             "type": "myenginelua",
             "request": "launch",
-            "name": "Attach to MyEngine"
+            "name": "Attach to MyEngine",
+            "stopOnEntry": true,
+            "debugServer": 4711
         },
         {
             "name": "Debug Launch",
