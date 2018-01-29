@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2016 Jimmy Lord http://www.flatheadgames.com
+// Copyright (c) 2012-2018 Jimmy Lord http://www.flatheadgames.com
 //
 // This software is provided 'as-is', without any express or implied warranty.  In no event will the authors be held liable for any damages arising from the use of this software.
 // Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
@@ -26,7 +26,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     extern char g_SceneToLoad[MAX_PATH];
     strcpy_s( g_SceneToLoad, lpCmdLine );
 
+#if MYFW_EDITOR
+    return MYFWWinMain( 1200, 650 );
+#else
     return MYFWWinMain( SCREEN_WIDTH, SCREEN_HEIGHT );
+#endif
 }
 
 FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
