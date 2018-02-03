@@ -29,23 +29,18 @@ void GameEmptyReplaceMe::OneTimeInit()
 
     m_FreeAllMaterialsAndTexturesWhenUnloadingScene = true;
 
-#if !MYFW_USING_WX
+#if !MYFW_EDITOR
     if( g_SceneToLoad[0] != 0 )
     {
         RequestScene( g_SceneToLoad );
     }
     else
     {
-#if MYFW_ANDROID
-        //RequestScene( "Data/Scenes/TestBasicScene.scene" );
-        RequestScene( "Data/Scenes/Initial.scene" );
-#else
         RequestScene( "Data/Scenes/Initial.scene" );
         //RequestScene( "Data/Scenes/TestShadow.scene" );
         //RequestScene( "Data/Scenes/TestVoxels.scene" );
         //RequestScene( "Data/Scenes/TestPhysicsBox2D.scene" );
         //RequestScene( "Data/Scenes/TestPhysics.scene" );
-#endif
     }
 #endif
 

@@ -67,14 +67,14 @@
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	3,
 			"ID":	3,
 			"Primitive":	"Static Plane",
 			"Mass":	0,
 			"Scale":	[10, 0, 10]
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	4,
 			"ID":	4,
 			"Primitive":	"Cube",

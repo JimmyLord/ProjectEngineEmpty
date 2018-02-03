@@ -149,7 +149,7 @@
 			"DepthBit":	0,
 			"Layers":	0
 		}, {
-			"Type":	"Collision Object",
+			"Type":	"3D Collision Object",
 			"GOID":	10,
 			"ID":	14,
 			"Mass":	0,

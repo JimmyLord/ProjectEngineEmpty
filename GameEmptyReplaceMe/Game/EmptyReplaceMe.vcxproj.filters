@@ -517,5 +517,6 @@
     </None>
     <None Include="wxEditorPrefs.ini" />
     <None Include="EditorPrefs.ini" />
+    <None Include="imgui.ini" />
   </ItemGroup>
 </Project>
