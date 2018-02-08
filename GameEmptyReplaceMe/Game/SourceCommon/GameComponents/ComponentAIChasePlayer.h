@@ -30,6 +30,7 @@ public:
     virtual void Tick(double TimePassed);
 
 public:
+#if MYFW_EDITOR
 #if MYFW_USING_WX
     static bool m_PanelWatchBlockVisible;
 
@@ -40,6 +41,7 @@ public:
     static void StaticOnNewParentTransformDrop(void* pObjectPtr, int controlid, wxCoord x, wxCoord y) { ((ComponentAIChasePlayer*)pObjectPtr)->OnNewParentTransformDrop(controlid, x, y); }
     void OnNewParentTransformDrop(int controlid, wxCoord x, wxCoord y);
 #endif //MYFW_USING_WX
+#endif //MYFW_EDITOR
 };
 
 #endif //__ComponentAIChasePlayer_H__
