@@ -55,4 +55,9 @@ FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
     return 0;
 }
 
+#if WINVER >= 0x0A00
+const PfnDliHook __pfnDliNotifyHook2 = delayHook;
+#else
 PfnDliHook __pfnDliNotifyHook2 = delayHook;
+#endif
+
