@@ -7,6 +7,8 @@
 			"Path":	"Data/Materials/Colors/Color-Pink.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
+		}, {
+			"Path":	"Data/Textures/WhiteSquare.png"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
