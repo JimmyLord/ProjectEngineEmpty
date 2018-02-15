@@ -80,7 +80,7 @@ cJSON* ComponentAIChasePlayer::ExportAsJSONObject(bool savesceneid, bool saveid)
     return component;
 }
 
-void ComponentAIChasePlayer::ImportFromJSONObject(cJSON* jsonobj, unsigned int sceneid)
+void ComponentAIChasePlayer::ImportFromJSONObject(cJSON* jsonobj, SceneID sceneid)
 {
     ComponentUpdateable::ImportFromJSONObject( jsonobj, sceneid );
 
