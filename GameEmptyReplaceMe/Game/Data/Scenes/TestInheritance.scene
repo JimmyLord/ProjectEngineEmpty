@@ -54,7 +54,7 @@
 			}
 		}, {
 			"ID":	9,
-			"Name":	"New Game Object"
+			"Name":	"Light"
 		}],
 	"Transforms":	[{
 			"GOID":	1,

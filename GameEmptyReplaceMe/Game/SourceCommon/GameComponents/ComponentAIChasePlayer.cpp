@@ -53,7 +53,7 @@ void ComponentAIChasePlayer::FillPropertiesWindow(bool clear, bool addcomponentv
     }
 }
 
-void ComponentAIChasePlayer::OnNewParentTransformDrop(int controlid, wxCoord x, wxCoord y)
+void ComponentAIChasePlayer::OnNewParentTransformDrop(int controlid, int x, int y)
 {
     DragAndDropItem* pDropItem = g_DragAndDropStruct.GetItem( 0 );
 

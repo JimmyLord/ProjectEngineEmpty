@@ -38,8 +38,8 @@ public:
     static void StaticOnLeftClick(void* pObjectPtr, wxTreeItemId id, unsigned int count) { ((ComponentAIChasePlayer*)pObjectPtr)->OnLeftClick( count, true ); }
     void OnLeftClick(unsigned int count, bool clear);
     virtual void FillPropertiesWindow(bool clear, bool addcomponentvariables = false, bool ignoreblockvisibleflag = false);
-    static void StaticOnNewParentTransformDrop(void* pObjectPtr, int controlid, wxCoord x, wxCoord y) { ((ComponentAIChasePlayer*)pObjectPtr)->OnNewParentTransformDrop(controlid, x, y); }
-    void OnNewParentTransformDrop(int controlid, wxCoord x, wxCoord y);
+    static void StaticOnNewParentTransformDrop(void* pObjectPtr, int controlid, int x, int y) { ((ComponentAIChasePlayer*)pObjectPtr)->OnNewParentTransformDrop(controlid, x, y); }
+    void OnNewParentTransformDrop(int controlid, int x, int y);
 #endif //MYFW_USING_WX
 #endif //MYFW_EDITOR
 };
