@@ -27,7 +27,7 @@
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
-			"Pos":	[0, 0, -10],
+			"Pos":	[0, 1, -10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -57,29 +57,34 @@
 			"Color":	[0.305882, 0.352941, 0.713726, 1],
 			"Atten":	[0, 0, 0.090000]
 		}, {
-			"Type":	"Camera",
-			"GOID":	1,
-			"ID":	1,
-			"Layers":	["Main view"],
-			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
-			"ColorBit":	1,
-			"DepthBit":	1
-		}, {
 			"Type":	"3D Collision Object",
 			"GOID":	3,
 			"ID":	3,
-			"Primitive":	"Static Plane",
 			"Mass":	0,
+			"Primitive":	"Static Plane",
 			"Scale":	[10, 0, 10]
 		}, {
 			"Type":	"3D Collision Object",
 			"GOID":	4,
 			"ID":	4,
-			"Primitive":	"Cube",
 			"Mass":	20,
+			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"Layers":	["Main view"],
+			"Ortho":	0,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	1,
+			"DepthBit":	1
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	3,

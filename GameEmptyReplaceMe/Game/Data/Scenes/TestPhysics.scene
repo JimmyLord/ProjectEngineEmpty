@@ -43,6 +43,18 @@
 			"ID":	10,
 			"Name":	"Teapot"
 		}, {
+			"ID":	22,
+			"Name":	"BalancedPoint"
+		}, {
+			"ID":	61,
+			"Name":	"RootPoint"
+		}, {
+			"ID":	50,
+			"Name":	"Spinner"
+		}, {
+			"ID":	60,
+			"Name":	"Slider"
+		}, {
 			"ID":	12,
 			"Name":	"Duplicated Game Object"
 		}, {
@@ -71,9 +83,6 @@
 			"Name":	"Duplicated Game Object"
 		}, {
 			"ID":	21,
-			"Name":	"Duplicated Game Object"
-		}, {
-			"ID":	22,
 			"Name":	"Duplicated Game Object"
 		}, {
 			"ID":	40,
@@ -106,9 +115,6 @@
 			"ID":	49,
 			"Name":	"Duplicated Game Object - copy"
 		}, {
-			"ID":	50,
-			"Name":	"Duplicated Game Object - copy"
-		}, {
 			"ID":	51,
 			"Name":	"Duplicated Game Object - copy"
 		}, {
@@ -134,12 +140,6 @@
 			"Name":	"Duplicated Game Object - copy"
 		}, {
 			"ID":	59,
-			"Name":	"Duplicated Game Object - copy"
-		}, {
-			"ID":	60,
-			"Name":	"Duplicated Game Object - copy"
-		}, {
-			"ID":	61,
 			"Name":	"Duplicated Game Object - copy"
 		}],
 	"Transforms":	[{
@@ -176,6 +176,30 @@
 			"GOID":	10,
 			"ID":	0,
 			"Pos":	[0, -14.034456, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	22,
+			"ID":	0,
+			"Pos":	[9, 5, -3],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	61,
+			"ID":	0,
+			"Pos":	[9, 0, -3],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	50,
+			"ID":	0,
+			"Pos":	[15.387268, 2.158775, 3.422448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[8.800000, 1, 1]
+		}, {
+			"GOID":	60,
+			"ID":	0,
+			"Pos":	[15.807438, 0, -3.396735],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -235,13 +259,7 @@
 		}, {
 			"GOID":	21,
 			"ID":	0,
-			"Pos":	[-0.693607, 0, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	22,
-			"ID":	0,
-			"Pos":	[9, 5, -3],
+			"Pos":	[3.962718, 0, -5.105370],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -305,12 +323,6 @@
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	50,
-			"ID":	0,
-			"Pos":	[15.387268, 2.158775, 3.422448],
-			"Rot":	[0, 0, 0],
-			"Scale":	[8.800000, 1, 1]
-		}, {
 			"GOID":	51,
 			"ID":	0,
 			"Pos":	[-9.693606, 0, -3.396735],
@@ -362,18 +374,6 @@
 			"GOID":	59,
 			"ID":	0,
 			"Pos":	[-1.693607, 0, -3.396735],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	60,
-			"ID":	0,
-			"Pos":	[15.807438, 0, -3.396735],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	61,
-			"ID":	0,
-			"Pos":	[9, 0, -3],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
@@ -656,7 +656,7 @@
 			"Type":	"3D Joint - Slider",
 			"GOID":	60,
 			"ID":	318,
-			"AxisA":	[0, 0, 0],
+			"AxisA":	[1, 0, 0],
 			"AxisB":	[0, 0, 0],
 			"MotorEnabled":	0,
 			"MotorSpeed":	0,

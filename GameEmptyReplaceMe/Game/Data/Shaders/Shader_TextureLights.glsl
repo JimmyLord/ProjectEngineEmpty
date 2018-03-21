@@ -73,20 +73,18 @@ precision mediump float;
         // Whether fragment is in shadow or not, return 0.5 if it is, 1.0 if not.
         float shadowperc = CalculateShadowPercentage();
 
-        // Hardcoded ambient
-        vec3 finalambient = vec3( 0.2, 0.2, 0.2 );
-
-        // Accumulate diffuse and specular color for all lights.
+        // Accumulate ambient, diffuse and specular color for all lights.
+        vec3 finalambient = vec3(0,0,0);
         vec3 finaldiffuse = vec3(0,0,0);
         vec3 finalspecular = vec3(0,0,0);
             
-        DirLightContribution( v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finaldiffuse, finalspecular );
+        DirLightContribution( v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finalambient, finaldiffuse, finalspecular );
         finaldiffuse *= shadowperc;
 
         // Add in each light, one by one. // finaldiffuse, finalspecular are inout.
 #if NUM_LIGHTS > 0
         for( int i=0; i<NUM_LIGHTS; i++ )
-            PointLightContribution( u_LightPos[i], u_LightColor[i], u_LightAttenuation[i], v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finaldiffuse, finalspecular );
+            PointLightContribution( u_LightPos[i], u_LightColor[i], u_LightAttenuation[i], v_WSPosition.xyz, u_WSCameraPos, WSnormal, u_Shininess, finalambient, finaldiffuse, finalspecular );
 #endif
 
         // Mix the texture color with the light color.

@@ -55,6 +55,9 @@
 		}, {
 			"ID":	9,
 			"Name":	"Light"
+		}, {
+			"ID":	10,
+			"Name":	"Unrelated Cube"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -112,6 +115,12 @@
 			"GOID":	9,
 			"ID":	0,
 			"Pos":	[1.283334, 0.289953, 0.535773],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	10,
+			"ID":	0,
+			"Pos":	[-7.021281, 3.773768, 1.857568],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
@@ -229,5 +238,15 @@
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
 			"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	10,
+			"ID":	25,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
 		}]
 }

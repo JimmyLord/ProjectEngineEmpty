@@ -5,6 +5,8 @@
 			"Path":	"Data/Scripts/CharacterController_2DPhysics.lua"
 		}, {
 			"Path":	"Data/SpriteSheets/Stickman.myspritesheet"
+		}, {
+			"Path":	"Data/Animations/stickmanSlow.my2daniminfo"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -62,6 +64,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	4,
 			"ID":	12,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Chain",
 			"Static":	1,
 			"Density":	0,
@@ -73,6 +76,7 @@
 			"Type":	"2D Collision Object",
 			"GOID":	3,
 			"ID":	13,
+			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
 			"Density":	0,
@@ -85,8 +89,13 @@
 			"ID":	1,
 			"Layers":	["Main view"],
 			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	1,
 			"DepthBit":	1
 		}, {
@@ -95,8 +104,13 @@
 			"ID":	2,
 			"Layers":	["HUD"],
 			"Ortho":	1,
-			"DWidth":	640,
-			"DHeight":	960,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
 			"ColorBit":	0,
 			"DepthBit":	0
 		}, {
@@ -117,7 +131,7 @@
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
 			"Size":	[1, 1],
-			"Material":	"Data/SpriteSheets/Stickman_Idle4.png.mymaterial"
+			"Material":	"Data/SpriteSheets/Stickman_Idle1.png.mymaterial"
 		}, {
 			"Type":	"Sprite",
 			"GOID":	4,

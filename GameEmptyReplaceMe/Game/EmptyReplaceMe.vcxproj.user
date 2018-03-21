@@ -51,6 +51,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'">
     <LocalDebuggerCommand>$(VCTargetsPath)\Platforms\Emscripten\run_in_browser.bat</LocalDebuggerCommand>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorDebug|PNaCl'">
+    <LocalDebuggerCommand>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</LocalDebuggerCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EditorRelease|PNaCl'">
+    <LocalDebuggerCommand>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</LocalDebuggerCommand>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
     <Deploy>
       <DeploymentType>DeployOff</DeploymentType>
