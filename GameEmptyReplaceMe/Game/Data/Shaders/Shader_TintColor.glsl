@@ -35,7 +35,7 @@ void main()
     gl_Position = u_WorldViewProj * pos;
 }
 
-#endif
+#endif //VertexShader
 
 #ifdef FragmentShader
 
@@ -51,6 +51,19 @@ uniform float u_Shininess;
 
 void main()
 {
+	vec4 materialColor = u_TextureTintColor;
+
+#ifdef Deferred
+
+	gl_FragData[0].rgb = materialColor.rgb;
+	gl_FragData[0].a = u_Shininess;
+	gl_FragData[1].xyz = v_WSPosition.xyz;
+	gl_FragData[1].a = 1;
+	gl_FragData[2].xyz = normalize( v_WSNormal );
+	gl_FragData[2].a = 1;
+
+#else
+
     // Calculate the normal vector in world space. normalized again since interpolation can/will distort it.
     //   TODO: handle normal maps.
     vec3 WSnormal = normalize( v_WSNormal );
@@ -70,14 +83,16 @@ void main()
 #endif
 
     // Mix the texture color with the light color.
-    vec3 ambdiff = u_TextureTintColor.rgb * ( finalambient + finaldiffuse );
+    vec3 ambdiff = materialColor.rgb * ( finalambient + finaldiffuse );
     //vec3 texcolor = texture2D( u_TestTexture, gl_FragCoord.xy/300.0 ).rgb;
     //vec3 ambdiff = texcolor * ( finalambient + finaldiffuse );
     vec3 spec = finalspecular;
 
     // Calculate final color
     gl_FragColor.rgb = ambdiff + spec;
-    gl_FragColor.a = u_TextureTintColor.a;
+    gl_FragColor.a = materialColor.a;
+
+#endif //Deferred
 }
 
-#endif
+#endif //FragmentShader

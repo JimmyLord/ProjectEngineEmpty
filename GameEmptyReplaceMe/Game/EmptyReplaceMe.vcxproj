@@ -1970,6 +1970,7 @@
     <None Include="..\..\Engine\DataEngine\Shaders\Include\WSVaryings.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Include\WSVaryings_Functions.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_ClipSpaceTexture.glsl" />
+    <None Include="..\..\Engine\DataEngine\Shaders\Shader_Deferred.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_SelectedObjects.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_Texture.glsl" />
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_TextureTint.glsl" />
