@@ -8,13 +8,9 @@
 		}, {
 			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
 		}, {
+			"Path":	"Data/Materials/Colors/Color-White.mymaterial"
+		}, {
 			"Path":	"Data/Textures/WhiteSquare.png"
-		}, {
-			"Path":	"Data/Meshes/cube.obj.mymesh"
-		}, {
-			"Path":	"Data/Meshes/Teapot.obj.mymesh"
-		}, {
-			"Path":	"Data/Meshes/teapot2.obj.mymesh"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -28,6 +24,9 @@
 			"Properties":	{
 				"Flags":	["Camera-HUD"]
 			}
+		}, {
+			"ID":	56,
+			"Name":	"Background"
 		}, {
 			"ID":	28,
 			"Name":	"Folder - StaticWorld",
@@ -106,17 +105,8 @@
 			"ID":	55,
 			"Name":	"Light"
 		}, {
-			"ID":	56,
-			"Name":	"New mesh"
-		}, {
 			"ID":	57,
-			"Name":	"New mesh"
-		}, {
-			"ID":	58,
-			"Name":	"New mesh"
-		}, {
-			"ID":	59,
-			"Name":	"New mesh"
+			"Name":	"Light1"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -130,6 +120,12 @@
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	56,
+			"ID":	0,
+			"Pos":	[0, 0, 5],
+			"Rot":	[0, 0, 0],
+			"Scale":	[20, 20, 50]
 		}, {
 			"GOID":	27,
 			"ID":	0,
@@ -229,31 +225,13 @@
 		}, {
 			"GOID":	55,
 			"ID":	0,
-			"Pos":	[1.136030, 1.374548, -2.780201],
-			"Rot":	[0, 0, 0],
-			"Scale":	[4.479000, 4.479102, 4.479102]
-		}, {
-			"GOID":	56,
-			"ID":	0,
-			"Pos":	[6.360868, 1.705999, -2.367760],
+			"Pos":	[0, 0, -3],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	57,
 			"ID":	0,
-			"Pos":	[-5.860603, 4.798913, -9.536743e-007],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	58,
-			"ID":	0,
-			"Pos":	[6.035213, 3.548526, -0.000007],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	59,
-			"ID":	0,
-			"Pos":	[0.864707, 2.992111, 12.382624],
+			"Pos":	[5, 3, -3],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
@@ -543,7 +521,14 @@
 			"GOID":	55,
 			"ID":	164,
 			"LightType":	"Point",
-			"Color":	[0.999990, 1, 0.999990, 1],
+			"Color":	[0, 1, 0, 1],
+			"Atten":	[1, 0.100000, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	57,
+			"ID":	185,
+			"LightType":	"Point",
+			"Color":	[0, 0, 1, 1],
 			"Atten":	[1, 0.100000, 0.010000]
 		}, {
 			"Type":	"Camera",
@@ -739,44 +724,13 @@
 			"Size":	[1, 1],
 			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
-			"Type":	"Mesh-OBJ",
+			"Type":	"Sprite",
 			"GOID":	56,
-			"ID":	183,
-			"Visible":	1,
-			"Layers":	["Main view"],
-			"PrimitiveType":	"Triangles",
-			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
-		}, {
-			"Type":	"Mesh-OBJ",
-			"GOID":	57,
 			"ID":	184,
 			"Visible":	1,
 			"Layers":	["Main view"],
-			"PrimitiveType":	"Triangles",
-			"PointSize":	1,
-			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
-		}, {
-			"Type":	"Mesh-OBJ",
-			"GOID":	58,
-			"ID":	185,
-			"Visible":	1,
-			"Layers":	["Main view"],
-			"PrimitiveType":	"Triangles",
-			"PointSize":	1,
-			"OBJ":	"Data/Meshes/Teapot.obj.mymesh",
-			"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
-		}, {
-			"Type":	"Mesh-OBJ",
-			"GOID":	59,
-			"ID":	186,
-			"Visible":	1,
-			"Layers":	["Main view"],
-			"PrimitiveType":	"Triangles",
-			"PointSize":	1,
-			"OBJ":	"Data/Meshes/teapot2.obj.mymesh",
-			"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-White.mymaterial"
 		}]
 }
