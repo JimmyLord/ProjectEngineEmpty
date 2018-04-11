@@ -102,44 +102,61 @@
 			"ID":	20,
 			"Name":	"Weight"
 		}, {
+			"ID":	89,
+			"Name":	"Lights",
+			"SubType":	"Folder"
+		}, {
 			"ID":	55,
-			"Name":	"Light"
+			"Name":	"Light",
+			"ParentGOID":	89
 		}, {
 			"ID":	57,
-			"Name":	"Light1"
+			"Name":	"Light1",
+			"ParentGOID":	89
 		}, {
 			"ID":	78,
-			"Name":	"Light2"
+			"Name":	"Light2",
+			"ParentGOID":	89
 		}, {
 			"ID":	79,
-			"Name":	"Light3"
+			"Name":	"Light3",
+			"ParentGOID":	89
 		}, {
 			"ID":	80,
-			"Name":	"Light4"
+			"Name":	"Light4",
+			"ParentGOID":	89
 		}, {
 			"ID":	81,
-			"Name":	"Light5"
+			"Name":	"Light5",
+			"ParentGOID":	89
 		}, {
 			"ID":	82,
-			"Name":	"Light6"
+			"Name":	"Light6",
+			"ParentGOID":	89
 		}, {
 			"ID":	83,
-			"Name":	"Light7"
+			"Name":	"Light7",
+			"ParentGOID":	89
 		}, {
 			"ID":	84,
-			"Name":	"Light8"
+			"Name":	"Light8",
+			"ParentGOID":	89
 		}, {
 			"ID":	85,
-			"Name":	"Light9"
+			"Name":	"Light9",
+			"ParentGOID":	89
 		}, {
 			"ID":	86,
-			"Name":	"Light10"
+			"Name":	"Light10",
+			"ParentGOID":	89
 		}, {
 			"ID":	87,
-			"Name":	"Light11"
+			"Name":	"Light11",
+			"ParentGOID":	89
 		}, {
 			"ID":	88,
-			"Name":	"Light12"
+			"Name":	"Light12",
+			"ParentGOID":	89
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -258,7 +275,7 @@
 		}, {
 			"GOID":	55,
 			"ID":	0,
-			"Pos":	[0, 0, -3],
+			"Pos":	[1.140879, 1.499998, -3.842378],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -294,7 +311,7 @@
 		}, {
 			"GOID":	82,
 			"ID":	0,
-			"Pos":	[-2.776323, -0.673583, 5],
+			"Pos":	[-2.776323, -0.673583, 4.999999],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -620,92 +637,92 @@
 			"GOID":	55,
 			"ID":	164,
 			"LightType":	"Point",
-			"Color":	[0, 1, 0, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Color":	[1, 1, 0, 1],
+			"Atten":	[12.500000, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	57,
 			"ID":	185,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	78,
 			"ID":	205,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	79,
 			"ID":	206,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	80,
 			"ID":	207,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	81,
 			"ID":	208,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	82,
 			"ID":	209,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	83,
 			"ID":	210,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	84,
 			"ID":	211,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	85,
 			"ID":	212,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	86,
 			"ID":	213,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	87,
 			"ID":	214,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	88,
 			"ID":	215,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0.100000, 0.010000]
+			"Atten":	[5, 0.100000, 0.010000]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
