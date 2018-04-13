@@ -55,6 +55,20 @@ precision mediump float;
 
     void main()
     {
+        // Get the textures color.
+        vec4 materialColor = vec4( 1, 1, 1, 1 ); //texture2D( u_TextureColor, v_UVCoord );
+
+#ifdef Deferred
+
+	    gl_FragData[0].rgb = materialColor.rgb;
+	    gl_FragData[0].a = 1;
+	    gl_FragData[1].xyz = v_WSPosition.xyz; //(v_WSPosition.xyz + vec3(15,0,0)) / 100.0;
+	    gl_FragData[1].a = u_Shininess;
+	    gl_FragData[2].xyz = normalize( v_WSNormal ); // / 2 + 0.5;
+	    gl_FragData[2].a = 1;
+
+#else
+
         // Calculate the normal vector in world space. normalized again since interpolation can/will distort it.
         //   TODO: handle normal maps.
         vec3 WSnormal = normalize( v_WSNormal );
@@ -77,13 +91,15 @@ precision mediump float;
 #endif
 
         // Mix the texture color with the light color.
-        vec3 ambdiff = /*texcolor.rgb * v_Color.rgb * */( finalambient + finaldiffuse );
+        vec3 ambdiff = /*materialColor.rgb * v_Color.rgb * */( finalambient + finaldiffuse );
         vec3 spec = /*u_TextureSpecColor.rgb **/ finalspecular;
 
         // Calculate final color.
         gl_FragColor.rgb = ( ambdiff + spec );
         //gl_FragColor.rgb = WSnormal;
-        gl_FragColor.a = 1.0; //texcolor.a
+        gl_FragColor.a = 1.0; //materialColor.a
+
+#endif //Deferred
     }
 
 #endif

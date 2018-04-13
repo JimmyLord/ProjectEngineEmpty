@@ -216,35 +216,35 @@
 			"ID":	48,
 			"LightType":	"Point",
 			"Color":	[0, 1, 0, 0],
-			"Atten":	[5, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"Light",
 			"GOID":	13,
 			"ID":	49,
 			"LightType":	"Point",
 			"Color":	[1, 0, 0, 0],
-			"Atten":	[5, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"Light",
 			"GOID":	14,
 			"ID":	50,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 0],
-			"Atten":	[5, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"Light",
 			"GOID":	15,
 			"ID":	51,
 			"LightType":	"Point",
 			"Color":	[1, 1, 0, 0],
-			"Atten":	[5, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"Light",
 			"GOID":	16,
 			"ID":	52,
 			"LightType":	"Point",
 			"Color":	[0, 1, 1, 0],
-			"Atten":	[5, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,

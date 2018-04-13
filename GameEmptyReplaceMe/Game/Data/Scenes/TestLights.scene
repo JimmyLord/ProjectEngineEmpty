@@ -67,20 +67,14 @@
 			"ID":	14,
 			"Name":	"Light - Blue"
 		}, {
-			"ID":	15,
-			"Name":	"Light - Red - copy"
-		}, {
-			"ID":	16,
-			"Name":	"Light - Red - copy"
-		}, {
 			"ID":	17,
 			"Name":	"AnimGuy"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
-			"Pos":	[0, 3, -10],
-			"Rot":	[0, 0, 0],
+			"Pos":	[-1.280648e-008, 3.229276, -9.892426],
+			"Rot":	[-25.135853, -0.000048, -0.000023],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
@@ -115,31 +109,19 @@
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[0, 5.500000, 0],
+			"Pos":	[0, 1, -3],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
-			"Pos":	[2.200000, 0.500000, 6],
+			"Pos":	[3, 1, -3],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
-			"Pos":	[-2.500000, 1.500000, 5.500000],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	15,
-			"ID":	0,
-			"Pos":	[-6, 0.500000, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	16,
-			"ID":	0,
-			"Pos":	[4.800000, 0.500000, 0],
+			"Pos":	[-3, 1, -3],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -155,40 +137,27 @@
 			"ID":	21,
 			"LightType":	"Point",
 			"Color":	[0, 1, 0, 1],
-			"Atten":	[1, 0, 0.010000]
+			"Atten":	[10, 0, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	13,
 			"ID":	24,
 			"LightType":	"Point",
 			"Color":	[1, 0, 0, 1],
-			"Atten":	[1, 0, 0.010000]
+			"Atten":	[10, 0, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	14,
 			"ID":	25,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[1, 0, 0.010000]
-		}, {
-			"Type":	"Light",
-			"GOID":	15,
-			"ID":	26,
-			"LightType":	"Point",
-			"Color":	[1, 0, 0, 1],
-			"Atten":	[1, 0, 0.010000]
-		}, {
-			"Type":	"Light",
-			"GOID":	16,
-			"ID":	27,
-			"LightType":	"Point",
-			"Color":	[1, 0, 0, 1],
-			"Atten":	[1, 0, 0.010000]
+			"Atten":	[10, 0, 0.010000]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
 			"Layers":	["Main view"],
+			"Deferred":	0,
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -204,6 +173,7 @@
 			"GOID":	7,
 			"ID":	8,
 			"Layers":	["HUD"],
+			"Deferred":	0,
 			"Ortho":	1,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -218,8 +188,7 @@
 			"Type":	"Lua Script",
 			"GOID":	8,
 			"ID":	10,
-			"Script":	"Data/Scripts/Player.lua",
-			"ExposedVars":	[]
+			"Script":	"Data/Scripts/Player.lua"
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	9,
