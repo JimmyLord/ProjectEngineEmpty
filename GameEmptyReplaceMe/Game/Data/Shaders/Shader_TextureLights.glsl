@@ -70,9 +70,9 @@ precision mediump float;
 
 	    gl_FragData[0].rgb = materialColor.rgb;
 	    gl_FragData[0].a = 1;
-	    gl_FragData[1].xyz = v_WSPosition.xyz; //(v_WSPosition.xyz + vec3(15,0,0)) / 100.0;
+	    gl_FragData[1].xyz = v_WSPosition.xyz;
 	    gl_FragData[1].a = u_Shininess;
-	    gl_FragData[2].xyz = normalize( v_WSNormal ); // / 2 + 0.5;
+	    gl_FragData[2].xyz = normalize( v_WSNormal );
 	    gl_FragData[2].a = 1;
 
 #else

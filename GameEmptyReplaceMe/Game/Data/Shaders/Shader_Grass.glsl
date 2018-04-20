@@ -98,7 +98,18 @@ vec4 GetObjectSpacePosition()
     void main()
     {
         // Get the textures color.
-        vec4 texcolor = v_Color;
+        vec4 materialColor = v_Color;
+
+#ifdef Deferred
+
+	    gl_FragData[0].rgb = materialColor.rgb;
+	    gl_FragData[0].a = 1;
+	    gl_FragData[1].xyz = v_WSPosition.xyz;
+	    gl_FragData[1].a = u_Shininess;
+	    gl_FragData[2].xyz = normalize( v_WSNormal );
+	    gl_FragData[2].a = 1;
+
+#else
 
         // Calculate the normal vector in local space. normalized again since interpolation can/will distort it.
         //   TODO: handle normal maps.
@@ -122,12 +133,14 @@ vec4 GetObjectSpacePosition()
 #endif
 
         // Mix the texture color with the light color.
-        vec3 ambdiff = v_Color.rgb * ( finalambient + finaldiffuse );
+        vec3 ambdiff = materialColor.rgb * ( finalambient + finaldiffuse );
         vec3 spec = u_TextureSpecColor.rgb * finalspecular;
 
         // Calculate final color.
         gl_FragColor.rgb = ( ambdiff + spec );
-        gl_FragColor.a = v_Color.a;
+        gl_FragColor.a = materialColor.a;
+
+#endif //Deferred
     }
 
 #endif //Fragment Shader

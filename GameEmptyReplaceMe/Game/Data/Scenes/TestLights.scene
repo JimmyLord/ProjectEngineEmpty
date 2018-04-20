@@ -58,6 +58,9 @@
 			"ID":	11,
 			"Name":	"Plane"
 		}, {
+			"ID":	17,
+			"Name":	"AnimGuy"
+		}, {
 			"ID":	12,
 			"Name":	"Light - Green"
 		}, {
@@ -67,8 +70,14 @@
 			"ID":	14,
 			"Name":	"Light - Blue"
 		}, {
-			"ID":	17,
-			"Name":	"AnimGuy"
+			"ID":	18,
+			"Name":	"Light - Blue1"
+		}, {
+			"ID":	19,
+			"Name":	"Light - Red1"
+		}, {
+			"ID":	20,
+			"Name":	"Light - Green1"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -97,13 +106,19 @@
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[-5, 1, 4],
+			"Pos":	[-5.329519, 0.999992, 4.204346],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	17,
+			"ID":	0,
+			"Pos":	[0, 1, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -125,9 +140,21 @@
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
-			"GOID":	17,
+			"GOID":	18,
 			"ID":	0,
-			"Pos":	[0, 1, 0],
+			"Pos":	[-3, 1, 2.210437],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	19,
+			"ID":	0,
+			"Pos":	[3, 1, 2.210437],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	20,
+			"ID":	0,
+			"Pos":	[0, 1, 2.210437],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
@@ -153,11 +180,32 @@
 			"Color":	[0, 0, 1, 1],
 			"Atten":	[10, 0, 0.010000]
 		}, {
+			"Type":	"Light",
+			"GOID":	18,
+			"ID":	60,
+			"LightType":	"Point",
+			"Color":	[0, 0, 1, 1],
+			"Atten":	[10, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	19,
+			"ID":	62,
+			"LightType":	"Point",
+			"Color":	[1, 0, 0, 1],
+			"Atten":	[10, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	20,
+			"ID":	63,
+			"LightType":	"Point",
+			"Color":	[0, 1, 0, 1],
+			"Atten":	[10, 0, 0.010000]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
 			"Layers":	["Main view"],
-			"Deferred":	0,
+			"Deferred":	1,
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -303,5 +351,24 @@
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh",
 			"Materials":	["Data/Materials/Bones.mymaterial"]
+		}, {
+			"Type":	"Particle Emitter",
+			"GOID":	18,
+			"ID":	61,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"RunInEditor":	0,
+			"ContinuousSpawn":	1,
+			"Billboard":	1,
+			"offset":	[0, 0, 0],
+			"size":	0.010000,
+			"sizevar":	0.100000,
+			"timetolive":	1,
+			"centervar":	[1, 1],
+			"dir":	[0, 0.500000, 0],
+			"dirvar":	[0.500000, 0.500000, 0.500000],
+			"coloroption":	1,
+			"color1":	[1, 1, 1, 1],
+			"color2":	[0, 0, 0, 1]
 		}]
 }
