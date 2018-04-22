@@ -59,8 +59,8 @@ precision mediump float;
         //   TODO: handle normal maps.
         vec3 WSnormal = normalize( v_WSNormal );
 
-        // Whether fragment is in shadow or not, return 0.5 if it is, 1.0 if not.
-        float shadowperc = CalculateShadowPercentage();
+        // Whether fragment is in shadow or not, returns 0.0 if it is, 1.0 if not.
+        float shadowperc = CalculateShadowPercentage( v_ShadowPos );
 
         // Accumulate ambient, diffuse and specular color for all lights.
         vec3 finalambient = vec3(0,0,0);

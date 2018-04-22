@@ -14,15 +14,13 @@ precision mediump float;
     varying lowp vec4 v_Color;
 #if ReceiveShadows
     varying lowp vec4 v_ShadowPos;
+
+    uniform mat4 u_ShadowLightWVPT;
+    uniform sampler2D u_ShadowTexture;
 #endif //ReceiveShadows
 
     uniform mat4 u_World;
     uniform mat4 u_WorldViewProj;
-
-#if ReceiveShadows
-    uniform mat4 u_ShadowLightWVPT;
-    uniform sampler2D u_ShadowTexture;
-#endif //ReceiveShadows
 
     uniform sampler2D u_TextureColor;
     uniform vec4 u_TextureTintColor;
@@ -81,8 +79,8 @@ precision mediump float;
         //   TODO: handle normal maps.
         vec3 WSnormal = normalize( v_WSNormal );
 
-        // Whether fragment is in shadow or not, return 0.5 if it is, 1.0 if not.
-        float shadowperc = CalculateShadowPercentage();
+        // Whether fragment is in shadow or not, returns 0.0 if it is, 1.0 if not.
+        float shadowperc = CalculateShadowPercentage( v_ShadowPos );
 
         // Accumulate ambient, diffuse and specular color for all lights.
         vec3 finalambient = vec3(0,0,0);
