@@ -1982,6 +1982,7 @@
     <None Include="Data\Materials\Colors\Color-Green.mymaterial" />
     <None Include="Data\Materials\Colors\Color-Pink.mymaterial" />
     <None Include="Data\Materials\Colors\Color-Red.mymaterial" />
+    <None Include="Data\Materials\Colors\Color-White.mymaterial" />
     <None Include="Data\Materials\Lights.mymaterial" />
     <None Include="Data\Materials\TestGeometryShader.mymaterial" />
     <None Include="Data\Materials\TestParticles.mymaterial" />

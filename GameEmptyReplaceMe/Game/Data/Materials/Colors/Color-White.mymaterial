@@ -1,6 +1,6 @@
 {
 	"Material":	{
-		"Name":	"new",
+		"Name":	"Color-White",
 		"Shader":	"Data/Shaders/Shader_TintColor.glsl",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],

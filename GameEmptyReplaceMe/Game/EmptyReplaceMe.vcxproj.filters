@@ -521,5 +521,8 @@
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_Deferred.glsl">
       <Filter>Data\Shaders\DataEngine</Filter>
     </None>
+    <None Include="Data\Materials\Colors\Color-White.mymaterial">
+      <Filter>Data\Materials\Colors</Filter>
+    </None>
   </ItemGroup>
 </Project>
