@@ -524,5 +524,8 @@
     <None Include="Data\Materials\Colors\Color-White.mymaterial">
       <Filter>Data\Materials\Colors</Filter>
     </None>
+    <None Include="Data\Scenes\TestLightsDeferred.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
   </ItemGroup>
 </Project>

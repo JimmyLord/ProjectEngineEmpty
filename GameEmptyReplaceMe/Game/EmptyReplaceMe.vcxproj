@@ -2003,6 +2003,7 @@
     <None Include="Data\Scenes\TestGeometryShader.scene" />
     <None Include="Data\Scenes\TestInheritance.scene" />
     <None Include="Data\Scenes\TestLights.scene" />
+    <None Include="Data\Scenes\TestLightsDeferred.scene" />
     <None Include="Data\Scenes\TestLua.scene" />
     <None Include="Data\Scenes\TestMenuPages.scene" />
     <None Include="Data\Scenes\TestParenting.scene" />

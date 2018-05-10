@@ -1,0 +1,555 @@
+{
+	"Files":	[{
+			"Path":	"Data/Materials/Colors/Color-White.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Lights.mymaterial"
+		}],
+	"GameObjects":	[{
+			"ID":	1,
+			"Name":	"Main Camera",
+			"Properties":	{
+				"Flags":	["Camera-Main"]
+			}
+		}, {
+			"ID":	2,
+			"Name":	"Hud Camera",
+			"Properties":	{
+				"Flags":	["Camera-HUD"]
+			}
+		}, {
+			"ID":	3,
+			"Name":	"Ground"
+		}, {
+			"ID":	5,
+			"Name":	"Sprite"
+		}, {
+			"ID":	30,
+			"Name":	"Lights Row1",
+			"SubType":	"Folder"
+		}, {
+			"ID":	25,
+			"Name":	"Point Light20",
+			"ParentGOID":	30
+		}, {
+			"ID":	26,
+			"Name":	"Point Light21",
+			"ParentGOID":	30
+		}, {
+			"ID":	27,
+			"Name":	"Point Light22",
+			"ParentGOID":	30
+		}, {
+			"ID":	28,
+			"Name":	"Point Light23",
+			"ParentGOID":	30
+		}, {
+			"ID":	29,
+			"Name":	"Point Light24",
+			"ParentGOID":	30
+		}, {
+			"ID":	31,
+			"Name":	"Lights Row2",
+			"SubType":	"Folder"
+		}, {
+			"ID":	20,
+			"Name":	"Point Light15",
+			"ParentGOID":	31
+		}, {
+			"ID":	21,
+			"Name":	"Point Light16",
+			"ParentGOID":	31
+		}, {
+			"ID":	22,
+			"Name":	"Point Light17",
+			"ParentGOID":	31
+		}, {
+			"ID":	23,
+			"Name":	"Point Light18",
+			"ParentGOID":	31
+		}, {
+			"ID":	24,
+			"Name":	"Point Light19",
+			"ParentGOID":	31
+		}, {
+			"ID":	32,
+			"Name":	"Lights Row3",
+			"SubType":	"Folder"
+		}, {
+			"ID":	4,
+			"Name":	"Point Light",
+			"ParentGOID":	32
+		}, {
+			"ID":	6,
+			"Name":	"Point Light1",
+			"ParentGOID":	32
+		}, {
+			"ID":	7,
+			"Name":	"Point Light2",
+			"ParentGOID":	32
+		}, {
+			"ID":	8,
+			"Name":	"Point Light3",
+			"ParentGOID":	32
+		}, {
+			"ID":	9,
+			"Name":	"Point Light4",
+			"ParentGOID":	32
+		}, {
+			"ID":	33,
+			"Name":	"Lights Row4",
+			"SubType":	"Folder"
+		}, {
+			"ID":	10,
+			"Name":	"Point Light5",
+			"ParentGOID":	33
+		}, {
+			"ID":	11,
+			"Name":	"Point Light6",
+			"ParentGOID":	33
+		}, {
+			"ID":	12,
+			"Name":	"Point Light7",
+			"ParentGOID":	33
+		}, {
+			"ID":	13,
+			"Name":	"Point Light8",
+			"ParentGOID":	33
+		}, {
+			"ID":	14,
+			"Name":	"Point Light9",
+			"ParentGOID":	33
+		}, {
+			"ID":	34,
+			"Name":	"Lights Row5",
+			"SubType":	"Folder"
+		}, {
+			"ID":	15,
+			"Name":	"Point Light10",
+			"ParentGOID":	34
+		}, {
+			"ID":	16,
+			"Name":	"Point Light11",
+			"ParentGOID":	34
+		}, {
+			"ID":	17,
+			"Name":	"Point Light12",
+			"ParentGOID":	34
+		}, {
+			"ID":	18,
+			"Name":	"Point Light13",
+			"ParentGOID":	34
+		}, {
+			"ID":	19,
+			"Name":	"Point Light14",
+			"ParentGOID":	34
+		}],
+	"Transforms":	[{
+			"GOID":	1,
+			"ID":	0,
+			"Pos":	[0, 2.241959, -10],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	2,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	3,
+			"ID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	5,
+			"ID":	0,
+			"Pos":	[2.500000, 0.500000, 0.500000],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	25,
+			"ID":	0,
+			"Pos":	[3.318328, 0.381745, -3.685448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	26,
+			"ID":	0,
+			"Pos":	[1.623653, 0.381745, -3.685448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	27,
+			"ID":	0,
+			"Pos":	[0, 0.381745, -3.685448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	28,
+			"ID":	0,
+			"Pos":	[-1.707191, 0.381745, -3.685448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	29,
+			"ID":	0,
+			"Pos":	[-3.410158, 0.381745, -3.685448],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	20,
+			"ID":	0,
+			"Pos":	[3.318328, 0.381745, -1.902036],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	21,
+			"ID":	0,
+			"Pos":	[1.623653, 0.381745, -1.902036],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	22,
+			"ID":	0,
+			"Pos":	[0, 0.381745, -1.902036],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	23,
+			"ID":	0,
+			"Pos":	[-1.707191, 0.381745, -1.902036],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	24,
+			"ID":	0,
+			"Pos":	[-3.410158, 0.381745, -1.902036],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	4,
+			"ID":	0,
+			"Pos":	[0, 0.381745, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	6,
+			"ID":	0,
+			"Pos":	[-1.707191, 0.381745, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	7,
+			"ID":	0,
+			"Pos":	[-3.410158, 0.381745, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	8,
+			"ID":	0,
+			"Pos":	[1.623653, 0.381745, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	9,
+			"ID":	0,
+			"Pos":	[3.318328, 0.381745, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	10,
+			"ID":	0,
+			"Pos":	[3.318328, 0.381745, 2.092873],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	11,
+			"ID":	0,
+			"Pos":	[1.623653, 0.381745, 2.092873],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	12,
+			"ID":	0,
+			"Pos":	[0, 0.381745, 2.092873],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	13,
+			"ID":	0,
+			"Pos":	[-1.707191, 0.381745, 2.092873],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	14,
+			"ID":	0,
+			"Pos":	[-3.410158, 0.381745, 2.092873],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	15,
+			"ID":	0,
+			"Pos":	[3.318328, 0.381745, 3.802240],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	16,
+			"ID":	0,
+			"Pos":	[1.623653, 0.381745, 3.802240],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	17,
+			"ID":	0,
+			"Pos":	[0, 0.381745, 3.802240],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	18,
+			"ID":	0,
+			"Pos":	[-1.707191, 0.381745, 3.802240],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	19,
+			"ID":	0,
+			"Pos":	[-3.410158, 0.381745, 3.802240],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}],
+	"Components":	[{
+			"Type":	"Light",
+			"GOID":	4,
+			"ID":	4,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	6,
+			"ID":	9,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	7,
+			"ID":	10,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	8,
+			"ID":	11,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	9,
+			"ID":	12,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	10,
+			"ID":	17,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	11,
+			"ID":	18,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	12,
+			"ID":	19,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	13,
+			"ID":	20,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	14,
+			"ID":	21,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	15,
+			"ID":	22,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	16,
+			"ID":	23,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	17,
+			"ID":	24,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	18,
+			"ID":	25,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	19,
+			"ID":	26,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	20,
+			"ID":	27,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	21,
+			"ID":	28,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	22,
+			"ID":	29,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	23,
+			"ID":	30,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	24,
+			"ID":	31,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	25,
+			"ID":	32,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	26,
+			"ID":	33,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	27,
+			"ID":	34,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	28,
+			"ID":	35,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Light",
+			"GOID":	29,
+			"ID":	36,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[1, 0, 0.090000]
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"Layers":	["Main view"],
+			"Deferred":	1,
+			"Ortho":	0,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	1,
+			"DepthBit":	1
+		}, {
+			"Type":	"Camera",
+			"GOID":	2,
+			"ID":	2,
+			"Layers":	["HUD"],
+			"Deferred":	0,
+			"Ortho":	1,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	0,
+			"DepthBit":	0
+		}, {
+			"Type":	"Mesh-Primitive",
+			"GOID":	3,
+			"ID":	3,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"MPType":	"Plane",
+			"PlaneSize":	[10, 10],
+			"PlaneVertCountx":	2,
+			"PlaneVertCounty":	2,
+			"UVs per Quad":	0,
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/Lights.mymaterial"]
+		}, {
+			"Type":	"Sprite",
+			"GOID":	5,
+			"ID":	5,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Lights.mymaterial"
+		}]
+}
