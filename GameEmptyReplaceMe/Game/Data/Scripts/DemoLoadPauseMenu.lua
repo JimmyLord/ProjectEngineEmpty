@@ -19,7 +19,7 @@ end,
 OnButtons = function(action, id)
 end,
 
-Tick = function(timepassed)
+Tick = function(deltaTime)
 end
 
 }

@@ -1,3 +1,5 @@
+#define EMISSIVE
+
 #ifdef WIN32
 #define lowp
 #define mediump
@@ -59,6 +61,19 @@ precision mediump float;
         //   TODO: handle normal maps.
         vec3 WSnormal = normalize( v_WSNormal );
 
+        vec4 materialColor = vec4( WSnormal, 1 );
+
+#ifdef Deferred
+
+	    gl_FragData[0].rgb = materialColor.rgb;
+	    gl_FragData[0].a = 1;
+	    gl_FragData[1].xyz = v_WSPosition.xyz;
+	    gl_FragData[1].a = u_Shininess;
+	    gl_FragData[2].xyz = WSnormal; //normalize( v_WSNormal );
+	    gl_FragData[2].a = 1;
+
+#else
+
         // Whether fragment is in shadow or not, returns 0.0 if it is, 1.0 if not.
         float shadowperc = CalculateShadowPercentage( v_ShadowPos );
 
@@ -82,9 +97,11 @@ precision mediump float;
 
         // Calculate final color.
         gl_FragColor.rgb = ( ambdiff + spec );
-        
-        gl_FragColor.rgb = WSnormal;
-        gl_FragColor.a = 1.0; //texcolor.a
+
+        gl_FragColor.rgb = materialColor.rgb;
+        gl_FragColor.a = 1.0;
+
+#endif //Deferred
     }
 
 #endif

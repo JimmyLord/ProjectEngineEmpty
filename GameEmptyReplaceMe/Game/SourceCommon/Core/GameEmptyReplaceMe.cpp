@@ -64,9 +64,9 @@ void GameEmptyReplaceMe::OnSurfaceChanged(unsigned int startx, unsigned int star
 #endif
 }
 
-double GameEmptyReplaceMe::Tick(double TimePassed)
+float GameEmptyReplaceMe::Tick(float deltaTime)
 {
-    return EngineCore::Tick( TimePassed );
+    return EngineCore::Tick( deltaTime );
 }
 
 void GameEmptyReplaceMe::OnDrawFrame(unsigned int canvasid)

@@ -25,12 +25,12 @@ end,
 OnButtons = function(action, id)
 end,
 
-Tick = function(timepassed)
+Tick = function(deltaTime)
 	
 	local transform = this.gameobject:GetTransform();
 	local pos = transform:GetLocalPosition();
 
-	pos.z = pos.z + timepassed * this.Speed;
+	pos.z = pos.z + deltaTime * this.Speed;
 
 	if( pos.z >= 10 ) then
 		pos.z = pos.z - 60;

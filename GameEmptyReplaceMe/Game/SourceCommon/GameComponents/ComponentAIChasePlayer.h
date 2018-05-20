@@ -27,7 +27,7 @@ public:
     virtual void CopyFromSameType_Dangerous(ComponentBase* pObject) { *this = (ComponentAIChasePlayer&)*pObject; }
     virtual ComponentAIChasePlayer& operator=(const ComponentAIChasePlayer& other);
 
-    virtual void Tick(double TimePassed);
+    virtual void Tick(float deltaTime);
 
 public:
 #if MYFW_EDITOR

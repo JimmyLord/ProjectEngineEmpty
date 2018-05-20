@@ -26,7 +26,7 @@ OnButtons = function(action, id)
 	--LogInfo( "OnButtons\n" );
 end,
 
-Tick = function(timepassed)
+Tick = function(deltaTime)
 	--LogInfo( "Tick Start\n" );
 	--LogInfo( "System time: " .. GetSystemTime() .. "\n" );
 
@@ -41,7 +41,7 @@ Tick = function(timepassed)
 	--posChasing.y = posChasing.y + math.sin( GetSystemTime() ) * 200;
 	
 	--local diff = posChasing:Sub( pos );
-	--diff = diff:Scale( timepassed * 10 );--this.Speed );
+	--diff = diff:Scale( deltaTime * 10 );--this.Speed );
 	
 	--pos = pos:Add( diff );
 

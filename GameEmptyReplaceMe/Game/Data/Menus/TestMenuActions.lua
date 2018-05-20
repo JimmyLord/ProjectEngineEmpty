@@ -19,11 +19,11 @@ OnButtons = function(action, id)
 	--LogInfo( "OnButtons\n" );
 end,
 
-Tick = function(timepassed)
+Tick = function(deltaTime)
 	--LogInfo( "Tick\n" );
 end,
 
-PressedMenuButton = function(timepassed)
+PressedMenuButton = function(deltaTime)
 	LogInfo( "PressedMenuButton was called\n" );
 end,
 

@@ -44,7 +44,7 @@ end,
 OnButtons = function(action, id)
 end,
 
-Tick = function(timepassed)
+Tick = function(deltaTime)
 
 	-- Spin camera based on mouse x/y
 	this.anglex = this.anglex + this.mousediry * 0.5;

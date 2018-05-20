@@ -48,7 +48,7 @@ OnButtons = function(action, id)
 	end
 end,
 
-Tick = function(timepassed)
+Tick = function(deltaTime)
 	
 	-- todo - do these 2 lookups once in OnPlay?
 	local animplayer = this.gameobject:GetAnimationPlayer();
@@ -67,15 +67,15 @@ Tick = function(timepassed)
 
 	-- move the player
 	this.dir:Normalize(); -- avoid fast diagonals.
-	pos.x = pos.x + this.dir.x * timepassed * this.Speed;
-	pos.z = pos.z + this.dir.z * timepassed * this.Speed;
+	pos.x = pos.x + this.dir.x * deltaTime * this.Speed;
+	pos.z = pos.z + this.dir.z * deltaTime * this.Speed;
 
 	-- rotate towards the target angle
 	local anglediff = this.targetangle - rot.y;
 	if( anglediff > 180 ) then anglediff = anglediff - 360;	end
 	if( anglediff < -180 ) then anglediff = anglediff + 360; end
 	--LogInfo( "rot.y " .. rot.y .. " " .. "this.targetangle " .. this.targetangle .. " " .. "anglediff " .. anglediff .. "\n" );
-	rot.y = rot.y + anglediff * timepassed * this.SpeedRotation;
+	rot.y = rot.y + anglediff * deltaTime * this.SpeedRotation;
 	rot.y = rot.y % 360;
 
 	-- set the new position and rotation values

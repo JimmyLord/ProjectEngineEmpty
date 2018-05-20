@@ -46,7 +46,7 @@ OnButtons = function(action, id)
 	end
 end,
 
-Tick = function(timepassed)
+Tick = function(deltaTime)
 	-- todo - do these lookups once in OnPlay?
 	--local transform = this.gameobject:GetTransform();
 	local collisionobject = this.gameobject:Get2DCollisionObject();

@@ -22,7 +22,7 @@ public:
 
     virtual void OneTimeInit();
 
-    virtual double Tick(double TimePassed);
+    virtual float Tick(float deltaTime);
     virtual void OnSurfaceChanged(unsigned int startx, unsigned int starty, unsigned int width, unsigned int height);
     virtual void OnDrawFrame(unsigned int canvasid);
 

@@ -63,9 +63,9 @@ OnButtons = function(action, id)
 
 end,
 
-Tick = function(timepassed)
+Tick = function(deltaTime)
 	
-	-- LogInfo( "Tick " .. timepassed .. "\n" );
+	-- LogInfo( "Tick " .. deltaTime .. "\n" );
 
 	-- todo - do these 3 lookups once in OnPlay?
 	local cameraobject = g_pComponentSystemManager:FindGameObjectByName( "Main Camera" );
@@ -116,8 +116,8 @@ Tick = function(timepassed)
 	local rot = transform:GetLocalRotation();
 
 	this.dir:Normalize(); -- avoid fast diagonals.
-	pos.x = pos.x + this.dir.x * timepassed * this.Speed;
-	pos.z = pos.z + this.dir.z * timepassed * this.Speed;
+	pos.x = pos.x + this.dir.x * deltaTime * this.Speed;
+	pos.z = pos.z + this.dir.z * deltaTime * this.Speed;
 
 	-- snap the y pos to the terrain
 	local voxelworld = this.VoxelWorldGameObject:GetVoxelWorld();
@@ -129,7 +129,7 @@ Tick = function(timepassed)
 	if( anglediff > 180 ) then anglediff = anglediff - 360;	end
 	if( anglediff < -180 ) then anglediff = anglediff + 360; end
 	--LogInfo( "rot.y " .. rot.y .. " " .. "this.targetangle " .. this.targetangle .. " " .. "anglediff " .. anglediff .. "\n" );
-	rot.y = rot.y + anglediff * timepassed * this.SpeedRotation;
+	rot.y = rot.y + anglediff * deltaTime * this.SpeedRotation;
 	rot.y = rot.y % 360;
 
 	-- set the new position and rotation values

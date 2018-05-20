@@ -11,6 +11,8 @@
 			"Path":	"Data/Materials/Colors/Color-White.mymaterial"
 		}, {
 			"Path":	"Data/Textures/WhiteSquare.png"
+		}, {
+			"Path":	"Data/Materials/Lights.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -932,6 +934,6 @@
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
-			"Materials":	["Data/Materials/Colors/Color-White.mymaterial"]
+			"Materials":	["Data/Materials/Lights.mymaterial"]
 		}]
 }

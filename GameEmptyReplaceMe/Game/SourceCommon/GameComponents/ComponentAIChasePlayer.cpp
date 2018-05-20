@@ -118,7 +118,7 @@ ComponentAIChasePlayer& ComponentAIChasePlayer::operator=(const ComponentAIChase
     return *this;
 }
 
-void ComponentAIChasePlayer::Tick(double TimePassed)
+void ComponentAIChasePlayer::Tick(float deltaTime)
 {
     if( m_pComponentTransform == 0 || m_pPlayerComponentTransform == 0 )
     {
@@ -127,5 +127,5 @@ void ComponentAIChasePlayer::Tick(double TimePassed)
     }
 
     Vector3 posdiff = m_pPlayerComponentTransform->GetWorldPosition() - m_pComponentTransform->GetWorldPosition();
-    m_pComponentTransform->SetWorldPosition( m_pComponentTransform->GetWorldPosition() + posdiff * (float)TimePassed );
+    m_pComponentTransform->SetWorldPosition( m_pComponentTransform->GetWorldPosition() + posdiff * deltaTime );
 }

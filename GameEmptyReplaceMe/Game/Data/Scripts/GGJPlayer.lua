@@ -66,7 +66,7 @@ OnButtons = function(action, id)
 	end
 end,
 
-Tick = function(timepassed)
+Tick = function(deltaTime)
 	local force = Vector3( 0,0,0 );
 
 	if( this.heldw == true ) then
@@ -86,7 +86,7 @@ Tick = function(timepassed)
 		local transform = this.gameobject:GetTransform();
 		local pos = transform:GetLocalPosition();
 
-		pos = pos:Add( force:Scale( timepassed * this.Speed ) );
+		pos = pos:Add( force:Scale( deltaTime * this.Speed ) );
 		transform:SetLocalPosition( pos );
 	end
 

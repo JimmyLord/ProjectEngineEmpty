@@ -44,14 +44,14 @@ OnButtons = function(action, id)
 	--LogInfo( "OnButtons\n" );
 end,
 
-Tick = function (timepassed)
+Tick = function (deltaTime)
 	--LogInfo( "Tick Start\n" );
 
 	--transform = this.gameobject:GetTransform();
 	--pos = transform:GetLocalPosition();
 
 	--speed = 100;
-	--pos.x = pos.x + timepassed*speed;
+	--pos.x = pos.x + deltaTime*speed;
 	
 	--transform:SetLocalPosition( pos );
 	

@@ -20,7 +20,7 @@
 void MainLoop();
 void PollSDLEvents();
 
-static double g_lasttime;
+static double g_LastTime;
 
 //TODO: look into this javascript warning
 // Looks like you are rendering without using requestAnimationFrame for the main loop. You should use 0 for the frame rate in emscripten_set_main_loop in order to use requestAnimationFrame, as that can greatly improve your frame rates!
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
     g_pGameCore->OnSurfaceChanged( 0, 0, 768, 432 );//SCREEN_WIDTH, SCREEN_HEIGHT );
     g_pGameCore->OneTimeInit();
 
-    g_lasttime = MyTime_GetSystemTime();
+    g_LastTime = MyTime_GetSystemTime();
 
     emscripten_set_main_loop( MainLoop, 60, false );
 }
@@ -44,14 +44,14 @@ int main(int argc, char *argv[])
 void MainLoop()
 {
     // Main loop
-    double currtime = MyTime_GetSystemTime();
-    double timepassed = currtime - g_lasttime;
-    g_lasttime = currtime;
+    double currentTime = MyTime_GetSystemTime();
+    float deltaTime = (float)(currentTime - g_LastTime);
+    g_LastTime = currentTime;
         
     PollSDLEvents();
 
     g_pGameCore->OnDrawFrameStart( 0 );
-    g_pGameCore->Tick( timepassed );
+    g_pGameCore->Tick( deltaTime );
     g_pGameCore->OnDrawFrame( 0 );
     g_pGameCore->OnDrawFrameDone();
 }
