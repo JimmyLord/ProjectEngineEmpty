@@ -1983,10 +1983,13 @@
     <None Include="Data\Materials\Colors\Color-Pink.mymaterial" />
     <None Include="Data\Materials\Colors\Color-Red.mymaterial" />
     <None Include="Data\Materials\Colors\Color-White.mymaterial" />
+    <None Include="Data\Materials\Colors\UnlitColor-Green.mymaterial" />
+    <None Include="Data\Materials\Colors\UnlitColor-Red.mymaterial" />
     <None Include="Data\Materials\Lights.mymaterial" />
     <None Include="Data\Materials\TestGeometryShader.mymaterial" />
     <None Include="Data\Materials\TestParticles.mymaterial" />
     <None Include="Data\Materials\TextureLights.mymaterial" />
+    <None Include="Data\Materials\TintColor.mymaterial" />
     <None Include="Data\Menus\DemoPauseMenu.menu" />
     <None Include="Data\Menus\DemoPauseMenuActions.lua" />
     <None Include="Data\Menus\Test.menu" />

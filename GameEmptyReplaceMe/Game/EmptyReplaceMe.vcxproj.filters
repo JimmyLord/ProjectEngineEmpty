@@ -527,5 +527,14 @@
     <None Include="Data\Scenes\TestLightsDeferred.scene">
       <Filter>Data\Scenes</Filter>
     </None>
+    <None Include="Data\Materials\TintColor.mymaterial">
+      <Filter>Data\Materials</Filter>
+    </None>
+    <None Include="Data\Materials\Colors\UnlitColor-Green.mymaterial">
+      <Filter>Data\Materials\Colors</Filter>
+    </None>
+    <None Include="Data\Materials\Colors\UnlitColor-Red.mymaterial">
+      <Filter>Data\Materials\Colors</Filter>
+    </None>
   </ItemGroup>
 </Project>
