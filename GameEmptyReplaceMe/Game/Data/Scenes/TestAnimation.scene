@@ -1,5 +1,5 @@
 {
-    "Files":	[{
+	"Files":	[{
 			"Path":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh",
 			"SourcePath":	"DataSource/FBXs/TestSpinAllAxes.fbx"
 		}, {
@@ -47,132 +47,156 @@
 			"GOID":	1,
 			"ID":	0,
 			"Pos":	[0, 3, -10],
-			"Scale":	[1, 1, 1],
-			"Rot":	[-17.600000, 0, 0]
+			"Rot":	[-17.600000, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	10,
 			"ID":	0,
 			"Pos":	[4.768372e-007, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
 			"Pos":	[0, -3, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
 			"Pos":	[0, 1, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
 			"Pos":	[-5, 1, -5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
 			"Pos":	[5, 1, 5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
 			"Pos":	[5, 1, -5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	16,
 			"ID":	0,
 			"Pos":	[-5, 1, 5],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	17,
 			"ID":	0,
 			"Pos":	[0, -3, 10],
-			"Scale":	[1, 1, 1],
-			"Rot":	[90, 0, 0]
+			"Rot":	[90, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	18,
 			"ID":	0,
 			"Pos":	[-3, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	19,
 			"ID":	0,
 			"Pos":	[3, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"Light",
 			"GOID":	12,
 			"ID":	48,
+			"LightType":	"Point",
 			"Color":	[0, 1, 0, 0],
-			"Atten":	[0, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"Light",
 			"GOID":	13,
 			"ID":	49,
+			"LightType":	"Point",
 			"Color":	[1, 0, 0, 0],
-			"Atten":	[0, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"Light",
 			"GOID":	14,
 			"ID":	50,
+			"LightType":	"Point",
 			"Color":	[0, 0, 1, 0],
-			"Atten":	[0, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"Light",
 			"GOID":	15,
 			"ID":	51,
+			"LightType":	"Point",
 			"Color":	[1, 1, 0, 0],
-			"Atten":	[0, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"Light",
 			"GOID":	16,
 			"ID":	52,
+			"LightType":	"Point",
 			"Color":	[0, 1, 1, 0],
-			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Camera",
-			"GOID":	1,
-			"ID":	1,
-			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
-			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
-		}, {
-			"Type":	"Camera",
-			"GOID":	7,
-			"ID":	8,
-			"Ortho":	1,
-			"DWidth":	640,
-			"DHeight":	960,
-			"ColorBit":	0,
-			"DepthBit":	0,
-			"Layers":	2
+			"Atten":	[10, 0, 0.090800]
 		}, {
 			"Type":	"3D Collision Object",
 			"GOID":	11,
 			"ID":	16,
-			"Primitive":	"Cube",
 			"Mass":	0,
+			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"3D Collision Object",
+			"GOID":	17,
+			"ID":	53,
+			"Mass":	0,
+			"Primitive":	"Cube",
+			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"Layers":	["Main view"],
+			"Deferred":	0,
+			"Ortho":	0,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	1,
+			"DepthBit":	1
+		}, {
+			"Type":	"Camera",
+			"GOID":	7,
+			"ID":	8,
+			"Layers":	["HUD"],
+			"Deferred":	0,
+			"Ortho":	1,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	0,
+			"DepthBit":	0
 		}, {
 			"Type":	"Animation Player",
 			"GOID":	10,
@@ -198,13 +222,6 @@
 					"Value":	10
 				}]
 		}, {
-			"Type":	"3D Collision Object",
-			"GOID":	17,
-			"ID":	53,
-			"Primitive":	"Cube",
-			"Mass":	0,
-			"Scale":	[1, 1, 1]
-		}, {
 			"Type":	"Animation Player",
 			"GOID":	18,
 			"ID":	62,
@@ -221,8 +238,8 @@
 			"GOID":	10,
 			"ID":	13,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/AnimGuy.fbx.mymesh",
 			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"]
@@ -231,13 +248,14 @@
 			"GOID":	11,
 			"ID":	22,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	0,
+			"MPType":	"Plane",
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
+			"UVs per Quad":	0,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
@@ -247,13 +265,14 @@
 			"GOID":	17,
 			"ID":	54,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	0,
+			"MPType":	"Plane",
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
+			"UVs per Quad":	0,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
@@ -263,8 +282,8 @@
 			"GOID":	18,
 			"ID":	64,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/TestSpinUpAxis.fbx.mymesh",
 			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"]
@@ -273,8 +292,8 @@
 			"GOID":	19,
 			"ID":	70,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/TestSpinAllAxes.fbx.mymesh",
 			"Materials":	["Data/Materials/Bones.mymaterial", "Data/Materials/TextureLights.mymaterial", "Data/Materials/TextureLights.mymaterial"]

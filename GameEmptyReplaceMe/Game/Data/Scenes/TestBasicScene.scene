@@ -8,9 +8,11 @@
 		}, {
 			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
 		}, {
-			"Path":	"Data/Materials/Colors/Color-Pink.mymaterial"
-		}, {
 			"Path":	"Data/Materials/Colors/Color-Red.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Colors/UnlitColor-Green.mymaterial"
+		}, {
+			"Path":	"Data/Materials/Colors/UnlitColor-Red.mymaterial"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -31,7 +33,7 @@
 		}, {
 			"GOID":	3,
 			"ID":	0,
-			"Pos":	[0, 0, 0],
+			"Pos":	[-2.220291, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -46,6 +48,7 @@
 			"GOID":	1,
 			"ID":	1,
 			"Layers":	["Main view"],
+			"Deferred":	0,
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -65,7 +68,7 @@
 			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/TintColor.mymaterial"]
+			"Materials":	["Data/Materials/Colors/UnlitColor-Green.mymaterial"]
 		}, {
 			"Type":	"Mesh-OBJ",
 			"GOID":	5,
@@ -75,6 +78,6 @@
 			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
 			"OBJ":	"Data/Meshes/cube.obj.mymesh",
-			"Materials":	["Data/Materials/TintColor.mymaterial"]
+			"Materials":	["Data/Materials/Colors/UnlitColor-Red.mymaterial"]
 		}]
 }

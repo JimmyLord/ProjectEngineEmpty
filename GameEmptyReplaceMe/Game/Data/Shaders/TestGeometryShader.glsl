@@ -1,3 +1,4 @@
+#define EMISSIVE
 #define USING_GEOMETRY_SHADER 1
 
 #ifdef WIN32
@@ -27,7 +28,7 @@ uniform mat4 u_WorldViewProj;
 
 void main()
 {
-    // draw the original primitive
+    // Draw the original primitive
     for( int i=0; i<3; i++ )
     {
         gl_Position = u_WorldViewProj * gl_in[i].gl_Position;
@@ -35,33 +36,33 @@ void main()
     }
     EndPrimitive();
 
-    // draw a second primitive 6 units over in model space.
+    // Draw a second primitive 6 units over in object space.
     for( int i=0; i<3; i++ )
     {
-        vec4 mspos = gl_in[i].gl_Position;
-        mspos.x += 6;
-        gl_Position = u_WorldViewProj * mspos;
+        vec4 objectSpacePos = gl_in[i].gl_Position;
+        objectSpacePos.x += 6;
+        gl_Position = u_WorldViewProj * objectSpacePos;
         EmitVertex();
     }
     EndPrimitive();
 
-    // draw a third primitive.
+    // Draw a third primitive.
     for( int i=0; i<3; i++ )
     {
-        vec4 mspos = gl_in[i].gl_Position;
-        mspos.y += 4;
-        gl_Position = u_WorldViewProj * mspos;
+        vec4 objectSpacePos = gl_in[i].gl_Position;
+        objectSpacePos.y += 4;
+        gl_Position = u_WorldViewProj * objectSpacePos;
         EmitVertex();
     }
     EndPrimitive();
 
-    // draw a fourth primitive.
+    // Draw a fourth primitive.
     for( int i=0; i<3; i++ )
     {
-        vec4 mspos = gl_in[i].gl_Position;
-        mspos.x += 6;
-        mspos.y += 4;
-        gl_Position = u_WorldViewProj * mspos;
+        vec4 objectSpacePos = gl_in[i].gl_Position;
+        objectSpacePos.x += 6;
+        objectSpacePos.y += 4;
+        gl_Position = u_WorldViewProj * objectSpacePos;
         EmitVertex();
     }
     EndPrimitive();

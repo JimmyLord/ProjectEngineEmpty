@@ -283,9 +283,6 @@
     <None Include="Data\Scenes\TestPostEffects.scene">
       <Filter>Data\Scenes</Filter>
     </None>
-    <None Include="Data\Scenes\TestPostEffectsBokeh.scene">
-      <Filter>Data\Scenes</Filter>
-    </None>
     <None Include="Data\Scenes\TestShadow.scene">
       <Filter>Data\Scenes</Filter>
     </None>
@@ -432,9 +429,6 @@
     </None>
     <None Include="Data\Scripts\GGJRitual_Trigger.lua">
       <Filter>Data\Scripts</Filter>
-    </None>
-    <None Include="Data\Scenes\GGJRitual.scene">
-      <Filter>Data\Scenes</Filter>
     </None>
     <None Include="Data\Scenes\TestAudio.scene">
       <Filter>Data\Scenes</Filter>

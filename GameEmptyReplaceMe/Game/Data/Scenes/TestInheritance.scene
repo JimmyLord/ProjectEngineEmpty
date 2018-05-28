@@ -130,12 +130,13 @@
 			"ID":	16,
 			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
-			"Atten":	[0, 0, 0.090000]
+			"Atten":	[14.000001, 0, 0.090000]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
 			"Layers":	["Main view"],
+			"Deferred":	0,
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -151,6 +152,7 @@
 			"GOID":	2,
 			"ID":	2,
 			"Layers":	["HUD"],
+			"Deferred":	0,
 			"Ortho":	1,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,

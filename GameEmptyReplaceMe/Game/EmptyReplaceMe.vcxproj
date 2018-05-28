@@ -1996,7 +1996,6 @@
     <None Include="Data\Menus\TestMenuActions.lua" />
     <None Include="Data\Prefabs\Prefabs.myprefabs" />
     <None Include="Data\Scenes\DemoPauseMenu.scene" />
-    <None Include="Data\Scenes\GGJRitual.scene" />
     <None Include="Data\Scenes\Initial.scene" />
     <None Include="Data\Scenes\Multi-enemy.scene" />
     <None Include="Data\Scenes\TestAnimation.scene" />
@@ -2015,7 +2014,6 @@
     <None Include="Data\Scenes\TestPhysicsBox2D.scene" />
     <None Include="Data\Scenes\TestPhysicsCharacter.scene" />
     <None Include="Data\Scenes\TestPostEffects.scene" />
-    <None Include="Data\Scenes\TestPostEffectsBokeh.scene" />
     <None Include="Data\Scenes\TestPrefabs.scene" />
     <None Include="Data\Scenes\TestShadow.scene" />
     <None Include="Data\Scenes\TestSprites.scene" />

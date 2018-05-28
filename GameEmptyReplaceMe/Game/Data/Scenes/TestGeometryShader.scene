@@ -1,6 +1,8 @@
 {
 	"Files":	[{
 			"Path":	"Data/Materials/TestGeometryShader.mymaterial"
+		}, {
+			"Path":	"Data/Shaders/TestGeometryShader.glsl"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -22,88 +24,110 @@
 			"GOID":	1,
 			"ID":	0,
 			"Pos":	[0, 2.400000, -10],
-			"Scale":	[1, 1, 1],
-			"Rot":	[-14.400000, 0, 0]
+			"Rot":	[-14.400000, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
 			"Pos":	[0, 3.156439, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	18,
 			"ID":	0,
 			"Pos":	[-20, 10, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[20, 90, 0]
+			"Rot":	[20, 90, 0],
+			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	22,
 			"ID":	0,
 			"Pos":	[0, 0, 0],
-			"Scale":	[1, 1, 1],
-			"Rot":	[0, 0, 0]
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"Light",
 			"GOID":	12,
 			"ID":	48,
+			"LightType":	"Point",
 			"Color":	[0, 1, 0, 0],
 			"Atten":	[0, 0, 0.090800]
-		}, {
-			"Type":	"Camera",
-			"GOID":	1,
-			"ID":	1,
-			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
-			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
-		}, {
-			"Type":	"Camera",
-			"GOID":	7,
-			"ID":	8,
-			"Ortho":	1,
-			"DWidth":	640,
-			"DHeight":	960,
-			"ColorBit":	0,
-			"DepthBit":	0,
-			"Layers":	2
-		}, {
-			"Type":	"Shadow Dir Light",
-			"GOID":	18,
-			"ID":	62,
-			"Ortho":	0,
-			"DWidth":	512,
-			"DHeight":	512,
-			"ColorBit":	1,
-			"DepthBit":	1,
-			"Layers":	1
 		}, {
 			"Type":	"3D Collision Object",
 			"GOID":	22,
 			"ID":	89,
-			"Primitive":	"Cube",
 			"Mass":	0,
+			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"Layers":	["Main view"],
+			"Deferred":	0,
+			"Ortho":	0,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	1,
+			"DepthBit":	1
+		}, {
+			"Type":	"Camera",
+			"GOID":	7,
+			"ID":	8,
+			"Layers":	["HUD"],
+			"Deferred":	0,
+			"Ortho":	1,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	0,
+			"DepthBit":	0
+		}, {
+			"Type":	"Shadow Dir Light",
+			"GOID":	18,
+			"ID":	62,
+			"Layers":	["Main view"],
+			"Deferred":	0,
+			"Ortho":	0,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	1,
+			"DepthBit":	1,
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[0, 0, 0.090000]
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	22,
 			"ID":	90,
 			"Visible":	1,
-			"Layers":	1,
-			"PrimitiveType":	4,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
 			"PointSize":	1,
-			"MPType":	1,
+			"MPType":	"Icosphere",
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
+			"UVs per Quad":	0,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
