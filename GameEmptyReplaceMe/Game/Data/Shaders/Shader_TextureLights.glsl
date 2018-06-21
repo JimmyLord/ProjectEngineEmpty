@@ -12,6 +12,7 @@ precision mediump float;
 
     varying lowp vec2 v_UVCoord;
     varying lowp vec4 v_Color;
+    varying lowp vec3 v_VSPosition;
 #if ReceiveShadows
     varying lowp vec4 v_ShadowPos;
 
@@ -20,6 +21,7 @@ precision mediump float;
 #endif //ReceiveShadows
 
     uniform mat4 u_World;
+    uniform mat4 u_WorldView;
     uniform mat4 u_WorldViewProj;
 
     uniform sampler2D u_TextureColor;
@@ -51,6 +53,8 @@ precision mediump float;
         SetWSPositionAndNormalVaryings( u_World, a_Position, a_Normal );
         v_UVCoord = a_UVCoord;
         v_Color = u_TextureTintColor;
+
+        v_VSPosition = (u_WorldView * a_Position).xyz;
     }
 
 #endif //VertexShader
@@ -58,6 +62,8 @@ precision mediump float;
 #ifdef FragmentShader
 
     #include <Include/Light_Functions.glsl>
+
+    uniform float u_ZFar;
 
     void main()
     {
@@ -69,7 +75,9 @@ precision mediump float;
 	    gl_FragData[0].rgb = materialColor.rgb;
 	    gl_FragData[0].a = 1;
 	    gl_FragData[1].xyz = v_WSPosition.xyz;
-	    gl_FragData[1].a = u_Shininess;
+	    //gl_FragData[1].a = v_VSPosition.z / u_ZFar; //u_Shininess;
+	    //gl_FragData[1].a = length( v_VSPosition ); //u_Shininess;
+        gl_FragData[1].a = u_Shininess;
 	    gl_FragData[2].xyz = normalize( v_WSNormal );
 	    gl_FragData[2].a = 1;
 

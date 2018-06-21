@@ -4,9 +4,11 @@
 		}, {
 			"Path":	"Data/Scripts/CharacterController_2DPhysics.lua"
 		}, {
-			"Path":	"Data/SpriteSheets/Stickman.myspritesheet"
-		}, {
 			"Path":	"Data/Animations/stickmanSlow.my2daniminfo"
+		}, {
+			"Path":	"Data/Shaders/Shader_Texture.glsl"
+		}, {
+			"Path":	"Data/SpriteSheets/Stickman.myspritesheet"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -26,6 +28,9 @@
 		}, {
 			"ID":	4,
 			"Name":	"2D Physics Chain"
+		}, {
+			"ID":	5,
+			"Name":	"Point Light"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
@@ -51,6 +56,12 @@
 			"Pos":	[0, -1.203838, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[2, 0.050000, 1]
+		}, {
+			"GOID":	5,
+			"ID":	0,
+			"Pos":	[0, 0, -2.847759],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"2D Animation Player",
@@ -84,10 +95,18 @@
 			"Friction":	0.200000,
 			"Restitution":	0
 		}, {
+			"Type":	"Light",
+			"GOID":	5,
+			"ID":	21,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[5, 0, 0.090000]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
 			"Layers":	["Main view"],
+			"Deferred":	0,
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -103,6 +122,7 @@
 			"GOID":	2,
 			"ID":	2,
 			"Layers":	["HUD"],
+			"Deferred":	0,
 			"Ortho":	1,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,

@@ -43,6 +43,9 @@
 			"Name":	"PlayerLight",
 			"ParentGOID":	8
 		}, {
+			"ID":	16,
+			"Name":	"Dir Light"
+		}, {
 			"ID":	4,
 			"Name":	"Light"
 		}, {
@@ -89,21 +92,27 @@
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
+			"GOID":	16,
+			"ID":	0,
+			"Pos":	[-19.247950, 23.540136, 0],
+			"Rot":	[-41.400002, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
 			"GOID":	4,
 			"ID":	0,
-			"Pos":	[39.200001, 56.400002, 40.599998],
+			"Pos":	[0.538088, 2.797550, 0.000006],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	5,
 			"ID":	0,
-			"Pos":	[105.713272, 56.400002, 40.599998],
+			"Pos":	[11.494354, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	6,
 			"ID":	0,
-			"Pos":	[105.713272, 56.400002, 118.575226],
+			"Pos":	[-4.299998, 1.373742, -6.325227],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
@@ -120,33 +129,41 @@
 			"ID":	6,
 			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
-			"Atten":	[1, 0, 0.010000]
+			"Atten":	[29.300001, 0, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	5,
 			"ID":	9,
 			"LightType":	"Point",
-			"Color":	[1, 1, 1, 1],
-			"Atten":	[1, 0, 0.010000]
+			"Color":	[0.999996, 1, 0.999990, 1],
+			"Atten":	[8.800000, 0, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	6,
 			"ID":	10,
 			"LightType":	"Point",
-			"Color":	[1, 1, 1, 1],
-			"Atten":	[1, 0, 0.010000]
+			"Color":	[1, 0.999990, 0.999990, 1],
+			"Atten":	[17.400002, 0, 0.010000]
 		}, {
 			"Type":	"Light",
 			"GOID":	7,
 			"ID":	11,
 			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
-			"Atten":	[1, 0, 0.010000]
+			"Atten":	[20, 0, 0.010000]
+		}, {
+			"Type":	"Light",
+			"GOID":	16,
+			"ID":	21,
+			"LightType":	"Directional",
+			"Color":	[0, 0.015471, 0.524510, 1],
+			"Atten":	[0, 0, 0.090000]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
 			"Layers":	["Main view"],
+			"Deferred":	0,
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -162,6 +179,7 @@
 			"GOID":	2,
 			"ID":	2,
 			"Layers":	["HUD"],
+			"Deferred":	0,
 			"Ortho":	1,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
