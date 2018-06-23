@@ -1,7 +1,8 @@
 {
 	"Material":	{
-		"Name":	"BlurVertical",
-		"Shader":	"Data/Shaders/PostEffects/BlurVertical.glsl",
+		"Name":	"EdgeDetectBasic",
+		"Shader":	"Data/Shaders/PostEffects/EdgeDetectBasic.glsl",
+		"TexColor":	"",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],
 		"ColorSpecular":	[1, 1, 1, 1],
