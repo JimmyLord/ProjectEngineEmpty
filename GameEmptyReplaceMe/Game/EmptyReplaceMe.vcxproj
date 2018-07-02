@@ -587,7 +587,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
     </ClCompile>
@@ -607,7 +607,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <TreatWarningAsError>true</TreatWarningAsError>
@@ -630,7 +630,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>MYFW_NACL;_DEBUG;NACL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -651,7 +651,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;_DEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -670,7 +670,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_WINDOWS;_DEBUG;MYFW_EDITOR;MYFW_USING_WX;wxMSVC_VERSION_AUTO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -689,7 +689,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_WINDOWS;_DEBUG;MYFW_EDITOR;MYFW_USING_IMGUI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -708,7 +708,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_WINDOWS;_DEBUG;MYFW_EDITOR;MYFW_USING_WX;wxMSVC_VERSION_AUTO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <TreatWarningAsError>true</TreatWarningAsError>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -731,7 +731,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_WINDOWS;_DEBUG;MYFW_USING_WX;wxMSVC_VERSION_AUTO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <TreatWarningAsError>true</TreatWarningAsError>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -754,7 +754,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_NACL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -775,7 +775,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_NACL;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -796,7 +796,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;_DEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -815,7 +815,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;_DEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -835,7 +835,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_ANDROID;MYFW_OPENGLES2;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <GccExceptionHandling>true</GccExceptionHandling>
     </ClCompile>
@@ -866,7 +866,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_ANDROID;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
       <GccExceptionHandling>true</GccExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
@@ -894,7 +894,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>MYFW_ANDROID;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
       <GccExceptionHandling>true</GccExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
@@ -923,7 +923,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <DebugInformationFormat>
@@ -949,7 +949,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_WINDOWS;MYFW_EDITOR;MYFW_USING_IMGUI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <DebugInformationFormat>
@@ -973,7 +973,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <TreatWarningAsError>true</TreatWarningAsError>
@@ -1001,7 +1001,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_WINDOWS;MYFW_EDITOR;MYFW_USING_IMGUI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <TreatWarningAsError>true</TreatWarningAsError>
@@ -1031,7 +1031,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_NACL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -1056,7 +1056,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_NACL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -1081,7 +1081,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -1104,7 +1104,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -1127,7 +1127,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_WINDOWS;MYFW_EDITOR;MYFW_USING_WX;wxMSVC_VERSION_AUTO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <DebugInformationFormat>
       </DebugInformationFormat>
@@ -1150,7 +1150,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_WINDOWS;MYFW_EDITOR;MYFW_USING_WX;wxMSVC_VERSION_AUTO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(DXSDK_DIR)Include</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <TreatWarningAsError>true</TreatWarningAsError>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -1180,7 +1180,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_NACL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Framework/Libraries/wxWidgets/include/msvc;$(SolutionDir)../Framework/Libraries/wxWidgets/include;$(SolutionDir)../Engine/Libraries/bullet3/src/;SourceNaCL;$(SolutionDir)../Engine/MyEngine/SourceNaCL</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
       <AdditionalOptions>-DLUA_32BITS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -1205,7 +1205,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_EMSCRIPTEN;NDEBUG</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)../Framework/Libraries/b2Settings;../../Framework/Libraries/Box2D;SourceCommon;../../Engine/Libraries/bullet3/src/;Data/DataEngine/Shaders</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>GameCommonHeader.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -1229,7 +1229,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_ANDROID;MYFW_OPENGLES2;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <GccExceptionHandling>true</GccExceptionHandling>
     </ClCompile>
@@ -1256,7 +1256,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_ANDROID;MYFW_OPENGLES2;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <GccExceptionHandling>true</GccExceptionHandling>
     </ClCompile>
@@ -1283,7 +1283,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>MYFW_ANDROID;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../Framework/Libraries/b2Settings;$(SolutionDir)../Framework/Libraries/Box2D;SourceCommon;$(SolutionDir)../Engine/Libraries/bullet3/src/;$(SolutionDir)../Engine/Lua/src;$(SolutionDir)../Engine/Lua/LuaBridge</AdditionalIncludeDirectories>
       <GccExceptionHandling>true</GccExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>

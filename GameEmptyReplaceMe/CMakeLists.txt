@@ -32,7 +32,7 @@ target_include_directories( ProjectEmptyReplaceMe PUBLIC
     "../Framework/MyFramework/SourceCommon"
     "../Framework/MyFramework/SourceLinux"
     "../Framework/MyFramework/SourceWidgets"
-    "../Framework/Libraries/Box2D/Box2D"
+    "../Framework/Libraries/Box2D"
     "../Framework/Libraries/cJSON"
     "../Framework/Libraries/LodePNG"
     "../Framework/Libraries/wxWidgets/include"

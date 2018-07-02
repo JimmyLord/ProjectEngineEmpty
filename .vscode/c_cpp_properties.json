@@ -10,7 +10,7 @@
                 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include",
                 "${workspaceRoot}",
                 "${workspaceRoot}/Framework/Libraries/b2Settings",
-                "${workspaceRoot}/Framework/Libraries/Box2D/Box2D",
+                "${workspaceRoot}/Framework/Libraries/Box2D",
                 "${workspaceRoot}/Framework/Libraries/wxWidgets/include",
                 "${workspaceRoot}/Framework/Libraries/wxWidgets/build-cocoa-debug/lib/wx/include/osx_cocoa-unicode-3.1",
                 "${workspaceRoot}/Framework/MyFramework/SourceCommon",
