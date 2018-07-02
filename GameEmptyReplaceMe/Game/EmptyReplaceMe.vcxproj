@@ -1986,6 +1986,7 @@
     <None Include="Data\Materials\Colors\UnlitColor-Green.mymaterial" />
     <None Include="Data\Materials\Colors\UnlitColor-Red.mymaterial" />
     <None Include="Data\Materials\EdgeDetectBasic.mymaterial" />
+    <None Include="Data\Materials\EdgeDetectSobel.mymaterial" />
     <None Include="Data\Materials\Lights.mymaterial" />
     <None Include="Data\Materials\TestGeometryShader.mymaterial" />
     <None Include="Data\Materials\TestParticles.mymaterial" />
@@ -2039,6 +2040,7 @@
     <None Include="Data\Shaders\PostEffects\DoFHorizontal.glsl" />
     <None Include="Data\Shaders\PostEffects\DoFVertical.glsl" />
     <None Include="Data\Shaders\PostEffects\EdgeDetectBasic.glsl" />
+    <None Include="Data\Shaders\PostEffects\EdgeDetectSobel.glsl" />
     <None Include="Data\Shaders\Shader_BoneAnim.glsl" />
     <None Include="Data\Shaders\Shader_Breathe.glsl" />
     <None Include="Data\Shaders\Shader_Grass.glsl" />

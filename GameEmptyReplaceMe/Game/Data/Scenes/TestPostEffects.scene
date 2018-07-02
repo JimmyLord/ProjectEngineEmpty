@@ -29,8 +29,6 @@
 		}, {
 			"Path":	"Data/Meshes/sphere.obj.mymesh"
 		}, {
-			"Path":	"Data/Textures/test1.png"
-		}, {
 			"Path":	"Data/Shaders/PostEffects/BlurVertical.glsl"
 		}, {
 			"Path":	"Data/Materials/Bones.mymaterial"
@@ -44,6 +42,10 @@
 			"Path":	"Data/Materials/EdgeDetectBasic.mymaterial"
 		}, {
 			"Path":	"Data/Shaders/PostEffects/EdgeDetectBasic.glsl"
+		}, {
+			"Path":	"Data/Materials/EdgeDetectSobel.mymaterial"
+		}, {
+			"Path":	"Data/Shaders/PostEffects/EdgeDetectSobel.glsl"
 		}],
 	"GameObjects":	[{
 			"ID":	1,
@@ -177,7 +179,7 @@
 			"GOID":	1,
 			"ID":	62,
 			"Enabled":	1,
-			"Material":	"Data/Materials/EdgeDetectBasic.mymaterial"
+			"Material":	"Data/Materials/EdgeDetectSobel.mymaterial"
 		}, {
 			"Type":	"Post Effect Quad",
 			"GOID":	1,

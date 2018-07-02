@@ -1,7 +1,8 @@
 {
 	"Material":	{
-		"Name":	"EdgeDetectBasic",
-		"Shader":	"Data/Shaders/PostEffects/EdgeDetectBasic.glsl",
+		"Name":	"EdgeDetectSobel",
+		"Shader":	"Data/Shaders/PostEffects/EdgeDetectSobel.glsl",
+		"TexColor":	"",
 		"ColorAmbient":	[1, 1, 1, 1],
 		"ColorDiffuse":	[1, 1, 1, 1],
 		"ColorSpecular":	[1, 1, 1, 1],

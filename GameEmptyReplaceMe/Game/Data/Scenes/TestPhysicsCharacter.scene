@@ -38,8 +38,6 @@
 		}, {
 			"Path":	"Data/Meshes/sphere.obj.mymesh"
 		}, {
-			"Path":	"Data/Textures/test1.png"
-		}, {
 			"Path":	"Data/Materials/Lights.mymaterial"
 		}, {
 			"Path":	"Data/Materials/Bones.mymaterial"
