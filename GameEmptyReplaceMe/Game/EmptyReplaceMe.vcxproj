@@ -2010,6 +2010,7 @@
     <None Include="Data\Scenes\TestLightsDeferred.scene" />
     <None Include="Data\Scenes\TestLua.scene" />
     <None Include="Data\Scenes\TestMenuPages.scene" />
+    <None Include="Data\Scenes\TestObjectPools.scene" />
     <None Include="Data\Scenes\TestParenting.scene" />
     <None Include="Data\Scenes\TestParticles.scene" />
     <None Include="Data\Scenes\TestPhysics.scene" />
@@ -2034,6 +2035,8 @@
     <None Include="Data\Scripts\Player.lua" />
     <None Include="Data\Scripts\SimpleCharacterController.lua" />
     <None Include="Data\Scripts\TestAudio.lua" />
+    <None Include="Data\Scripts\TestObjectPool_PooledObject.lua" />
+    <None Include="Data\Scripts\TestObjectPool_Spawner.lua" />
     <None Include="Data\Shaders\PostEffects\BlurHorizontal.glsl" />
     <None Include="Data\Shaders\PostEffects\BlurVertical.glsl" />
     <None Include="Data\Shaders\PostEffects\DoFBokeh.glsl" />

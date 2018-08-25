@@ -1,0 +1,146 @@
+{
+	"Files":	[{
+			"Path":	"Data/Scripts/TestObjectPool_Spawner.lua"
+		}, {
+			"Path":	"Data/Scripts/TestObjectPool_PooledObject.lua"
+		}],
+	"GameObjects":	[{
+			"ID":	1,
+			"Name":	"Main Camera",
+			"Properties":	{
+				"Flags":	["Camera-Main"]
+			}
+		}, {
+			"ID":	2,
+			"Name":	"Hud Camera",
+			"Properties":	{
+				"Flags":	["Camera-HUD"]
+			}
+		}, {
+			"ID":	3,
+			"Name":	"Pool",
+			"SubType":	"Logic"
+		}, {
+			"ID":	4,
+			"Name":	"2D Physics Sprite",
+			"ParentGOID":	3,
+			"Enabled":	0
+		}, {
+			"ID":	5,
+			"Name":	"Point Light"
+		}],
+	"Transforms":	[{
+			"GOID":	1,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0, -10],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	2,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	4,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[2, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	5,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[2, 0, -3.528486],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}],
+	"Components":	[{
+			"Type":	"Object Pool",
+			"GOID":	3,
+			"ID":	3,
+			"PrefabComponentID":	0,
+			"GameObject":	4,
+			"PoolSize":	5,
+			"LogWarningsWhenEmpty":	0
+		}, {
+			"Type":	"2D Collision Object",
+			"GOID":	4,
+			"ID":	6,
+			"PrefabComponentID":	0,
+			"Offset":	[0, 0],
+			"PrimitiveType":	"Box",
+			"Static":	0,
+			"Density":	1,
+			"IsSensor":	0,
+			"Friction":	0.200000,
+			"Restitution":	0
+		}, {
+			"Type":	"Light",
+			"GOID":	5,
+			"ID":	10,
+			"PrefabComponentID":	0,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[30, 0, 0.090000]
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"PrefabComponentID":	0,
+			"Layers":	["Main view"],
+			"Deferred":	0,
+			"Ortho":	0,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	1,
+			"DepthBit":	1
+		}, {
+			"Type":	"Camera",
+			"GOID":	2,
+			"ID":	2,
+			"PrefabComponentID":	0,
+			"Layers":	["HUD"],
+			"Deferred":	0,
+			"Ortho":	1,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	0,
+			"DepthBit":	0
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	3,
+			"ID":	14,
+			"PrefabComponentID":	0,
+			"Script":	"Data/Scripts/TestObjectPool_Spawner.lua"
+		}, {
+			"Type":	"Lua Script",
+			"GOID":	4,
+			"ID":	16,
+			"PrefabComponentID":	0,
+			"Script":	"Data/Scripts/TestObjectPool_PooledObject.lua"
+		}, {
+			"Type":	"Sprite",
+			"GOID":	4,
+			"ID":	7,
+			"PrefabComponentID":	0,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"Tint":	[255, 255, 255, 255],
+			"Size":	[1, 1],
+			"Material":	"Data/Materials/Colors/Color-Green.mymaterial"
+		}]
+}

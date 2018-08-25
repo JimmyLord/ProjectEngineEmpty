@@ -81,25 +81,6 @@
 			"ID":	34,
 			"Name":	"Cube4"
 		}, {
-			"ID":	35,
-			"Name":	"PlaneWithCubeAndLight",
-			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
-			"PrefabID":	5
-		}, {
-			"ID":	36,
-			"Name":	"Cube",
-			"ParentGOID":	35,
-			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
-			"PrefabID":	5,
-			"PrefabChildID":	1
-		}, {
-			"ID":	37,
-			"Name":	"Light - Blue",
-			"ParentGOID":	35,
-			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
-			"PrefabID":	5,
-			"PrefabChildID":	2
-		}, {
 			"ID":	51,
 			"Name":	"White Light",
 			"SubType":	"Folder"
@@ -120,40 +101,84 @@
 			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
 			"PrefabID":	6,
 			"PrefabChildID":	1
+		}, {
+			"ID":	35,
+			"Name":	"PlaneWithCubeAndLight",
+			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
+			"PrefabID":	5
+		}, {
+			"ID":	37,
+			"Name":	"Light - Blue",
+			"ParentGOID":	35,
+			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
+			"PrefabID":	5,
+			"PrefabChildID":	2
+		}, {
+			"ID":	36,
+			"Name":	"Cube",
+			"ParentGOID":	35,
+			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
+			"PrefabID":	5,
+			"PrefabChildID":	1
+		}, {
+			"ID":	55,
+			"Name":	"PlaneWithCubeAndLight",
+			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
+			"PrefabID":	5
+		}, {
+			"ID":	56,
+			"Name":	"Cube",
+			"ParentGOID":	55,
+			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
+			"PrefabID":	5,
+			"PrefabChildID":	1
+		}, {
+			"ID":	57,
+			"Name":	"Light - Blue",
+			"ParentGOID":	55,
+			"PrefabFile":	"Data/Prefabs/Prefabs.myprefabs",
+			"PrefabID":	5,
+			"PrefabChildID":	2
 		}],
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, -10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	8,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	9,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	25,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[20, 10, -0.110000],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	38,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Divorced":	2,
 			"Pos":	[23.444244, 10, -0.110000],
 			"Rot":	[0, 0, 0],
@@ -161,36 +186,42 @@
 		}, {
 			"GOID":	11,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[-7.587317, -2.613292, -0.109800],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	10,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 3, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[-5, -2.500000, 6],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[16.234993, -2.813079, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	16,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Divorced":	2,
 			"Pos":	[-4, 7.100000, -0.000008],
 			"Rot":	[0, 0, 0],
@@ -198,49 +229,78 @@
 		}, {
 			"GOID":	17,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 7.100000, -0.000008],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 2, 1]
 		}, {
 			"GOID":	33,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 4, 10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 2, 1]
 		}, {
 			"GOID":	34,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[4, 4, 10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 2, 1]
 		}, {
-			"GOID":	35,
-			"ID":	0,
-			"Pos":	[10, 0, 10],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	36,
-			"ID":	0,
-			"Pos":	[0, 0, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
-			"GOID":	37,
-			"ID":	0,
-			"Pos":	[0, 3, 0],
-			"Rot":	[0, 0, 0],
-			"Scale":	[1, 1, 1]
-		}, {
 			"GOID":	52,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[17.638321, 2, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	54,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 2, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	35,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[10, 0, 10],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	37,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[0, 3, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	36,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	55,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	56,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	57,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[0, 3, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
@@ -248,6 +308,7 @@
 			"Type":	"Light",
 			"GOID":	12,
 			"ID":	21,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
 			"Atten":	[1, 0, 0.010000]
@@ -255,6 +316,7 @@
 			"Type":	"Light",
 			"GOID":	13,
 			"ID":	24,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[1, 0, 0, 1],
 			"Atten":	[1, 0, 0.010000]
@@ -262,6 +324,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	10,
 			"ID":	14,
+			"PrefabComponentID":	0,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
@@ -269,6 +332,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	11,
 			"ID":	16,
+			"PrefabComponentID":	0,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[20, 0, 20]
@@ -276,6 +340,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	15,
 			"ID":	41,
+			"PrefabComponentID":	0,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
@@ -283,6 +348,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	16,
 			"ID":	47,
+			"PrefabComponentID":	0,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
@@ -290,6 +356,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	17,
 			"ID":	54,
+			"PrefabComponentID":	0,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
@@ -297,6 +364,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	25,
 			"ID":	79,
+			"PrefabComponentID":	0,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
@@ -304,6 +372,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	33,
 			"ID":	92,
+			"PrefabComponentID":	0,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
@@ -311,6 +380,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	34,
 			"ID":	94,
+			"PrefabComponentID":	0,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
@@ -318,6 +388,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	35,
 			"ID":	109,
+			"PrefabComponentID":	0,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[20, 0, 20]
@@ -325,6 +396,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	36,
 			"ID":	111,
+			"PrefabComponentID":	0,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
@@ -332,6 +404,7 @@
 			"Type":	"Light",
 			"GOID":	37,
 			"ID":	113,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
 			"Atten":	[1, 0, 0.010000]
@@ -339,6 +412,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	38,
 			"ID":	130,
+			"PrefabComponentID":	0,
 			"Mass":	1,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
@@ -346,6 +420,7 @@
 			"Type":	"Light",
 			"GOID":	52,
 			"ID":	148,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
 			"Atten":	[0, 0, 0.090000]
@@ -353,14 +428,41 @@
 			"Type":	"Light",
 			"GOID":	54,
 			"ID":	166,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
 			"Atten":	[0, 0, 0.090000]
 		}, {
+			"Type":	"3D Collision Object",
+			"GOID":	55,
+			"ID":	184,
+			"PrefabComponentID":	0,
+			"Mass":	0,
+			"Primitive":	"Cube",
+			"Scale":	[20, 0, 20]
+		}, {
+			"Type":	"3D Collision Object",
+			"GOID":	56,
+			"ID":	186,
+			"PrefabComponentID":	0,
+			"Mass":	1,
+			"Primitive":	"Cube",
+			"Scale":	[2, 2, 2]
+		}, {
+			"Type":	"Light",
+			"GOID":	57,
+			"ID":	188,
+			"PrefabComponentID":	0,
+			"LightType":	"Point",
+			"Color":	[0, 0, 1, 1],
+			"Atten":	[1, 0, 0.010000]
+		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"PrefabComponentID":	0,
 			"Layers":	["Main view"],
+			"Deferred":	0,
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -375,7 +477,9 @@
 			"Type":	"Camera",
 			"GOID":	7,
 			"ID":	8,
+			"PrefabComponentID":	0,
 			"Layers":	["HUD"],
+			"Deferred":	0,
 			"Ortho":	1,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -390,11 +494,13 @@
 			"Type":	"Lua Script",
 			"GOID":	8,
 			"ID":	10,
+			"PrefabComponentID":	0,
 			"Script":	"Data/Scripts/Player.lua"
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	9,
 			"ID":	12,
+			"PrefabComponentID":	0,
 			"Script":	"Data/Scripts/Enemy.lua",
 			"ExposedVars":	[{
 					"Name":	"Speed",
@@ -411,6 +517,7 @@
 			"Type":	"Sprite",
 			"GOID":	8,
 			"ID":	9,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["HUD"],
 			"Tint":	[255, 0, 0, 255],
@@ -420,6 +527,7 @@
 			"Type":	"Sprite",
 			"GOID":	9,
 			"ID":	11,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["HUD"],
 			"Tint":	[0, 255, 0, 255],
@@ -429,6 +537,7 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
+			"PrefabComponentID":	0,
 			"Visible":	0,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -439,6 +548,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -456,6 +566,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	15,
 			"ID":	42,
+			"PrefabComponentID":	0,
 			"Divorced":	4,
 			"Visible":	1,
 			"Layers":	["Main view"],
@@ -474,6 +585,7 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	16,
 			"ID":	48,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -484,6 +596,7 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	17,
 			"ID":	55,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -494,6 +607,7 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	25,
 			"ID":	80,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -504,6 +618,7 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	33,
 			"ID":	93,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -514,6 +629,7 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	34,
 			"ID":	95,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -524,6 +640,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	35,
 			"ID":	110,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -541,6 +658,7 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	36,
 			"ID":	112,
+			"PrefabComponentID":	0,
 			"Visible":	0,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -551,7 +669,37 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	38,
 			"ID":	131,
+			"PrefabComponentID":	0,
 			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/cube.obj.mymesh",
+			"Materials":	["Data/Materials/Normals.mymaterial"]
+		}, {
+			"Type":	"Mesh-Primitive",
+			"GOID":	55,
+			"ID":	185,
+			"PrefabComponentID":	0,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"MPType":	"Plane",
+			"PlaneSize":	[20, 20],
+			"PlaneVertCountx":	2,
+			"PlaneVertCounty":	2,
+			"UVs per Quad":	0,
+			"PlaneUVStart":	[0, 0],
+			"PlaneUVRange":	[1, 1],
+			"SphereRadius":	1,
+			"Materials":	["Data/Materials/TextureLights.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	56,
+			"ID":	187,
+			"PrefabComponentID":	0,
+			"Visible":	0,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
 			"PointSize":	1,

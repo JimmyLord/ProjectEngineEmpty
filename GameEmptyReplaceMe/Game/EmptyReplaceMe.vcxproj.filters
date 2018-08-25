@@ -542,5 +542,14 @@
     <None Include="Data\Materials\EdgeDetectSobel.mymaterial">
       <Filter>Data\Materials</Filter>
     </None>
+    <None Include="Data\Scenes\TestObjectPools.scene">
+      <Filter>Data\Scenes</Filter>
+    </None>
+    <None Include="Data\Scripts\TestObjectPool_PooledObject.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
+    <None Include="Data\Scripts\TestObjectPool_Spawner.lua">
+      <Filter>Data\Scripts</Filter>
+    </None>
   </ItemGroup>
 </Project>
