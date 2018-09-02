@@ -17,6 +17,7 @@ android {
     }
     sourceSets {
         main.java.srcDirs += '../../../../../Framework/MyFramework/SourceAndroid/MYFWsrc'
+        main.java.srcDirs += '../../AndroidAPK/src'
     }
     externalNativeBuild {
         cmake {

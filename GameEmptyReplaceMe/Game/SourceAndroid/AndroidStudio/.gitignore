@@ -1,8 +1,12 @@
 *.apk
 local.properties
 *.iml
-.gradle
+.gradle/
 .idea
-build
+build/
+gradle/
+gradlew
+gradlew.bat
+app/.externalNativeBuild
 app/build
 app/src/main/assets

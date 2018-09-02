@@ -15,6 +15,6 @@ public class EmptyReplaceMeActivity extends MYFWActivity
 
 	static
 	{
-		System.loadLibrary( "EmptyReplaceMe" ); // load libEmptyReplaceMe.so
+		System.loadLibrary( "GameEmptyReplaceMe" ); // load libEmptyReplaceMe.so
 	}
 }
