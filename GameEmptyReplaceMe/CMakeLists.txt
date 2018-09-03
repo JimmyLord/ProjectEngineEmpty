@@ -1,58 +1,69 @@
 cmake_minimum_required( VERSION 3.4.1 )
 
-# Project.
-#project( ProjectEmptyReplaceMe_Project VERSION 0.1 LANGUAGES CXX )
+###############################################################################
+# Source code file list.
+###############################################################################
 
 # Game source files.
 file( GLOB_RECURSE sourceFiles "Game/SourceCommon/*.cpp" )
 
-# Extra files specific to Android builds.
-if( NOT ${ANDROID_ABI} STREQUAL "" )
+# Android specific source files.
+if( CMAKE_SYSTEM_NAME MATCHES Android )
     file( GLOB_RECURSE platformFiles "Game/SourceAndroid/*.cpp" )
     set( sourceFiles ${sourceFiles} ${platformFiles} )
 endif()
 
-# Extra files specific to Linux builds.
-if( CMAKE_BUILD_TYPE MATCHES Linux )
+# Linux specific source files.
+if( CMAKE_SYSTEM_NAME MATCHES Linux )
     file( GLOB_RECURSE platformFiles "Game/SourceLinux/*.cpp" )
     set( sourceFiles ${sourceFiles} ${platformFiles} )
 endif()
 
-# Extra files specific to WxWidgets builds.
+# Windows/VisualStudio specific source files.
+if( CMAKE_SYSTEM_NAME MATCHES Windows )
+    file( GLOB_RECURSE platformFiles "Game/SourceWindows/*.cpp" )
+    set( sourceFiles ${sourceFiles} ${platformFiles} )
+    list( REMOVE_ITEM sourceFiles "${CMAKE_CURRENT_SOURCE_DIR}/Game/SourceWindows/WinMainWx.cpp" )
+endif()
+
+# WxWidgets specific source files.
 if( CMAKE_BUILD_TYPE MATCHES wxDebug OR CMAKE_BUILD_TYPE MATCHES wxRelease )
     list( REMOVE_ITEM sourceFiles "${CMAKE_CURRENT_SOURCE_DIR}/Game/SourceLinux/LinuxMain.cpp" )
 else()
     list( REMOVE_ITEM sourceFiles "${CMAKE_CURRENT_SOURCE_DIR}/Game/SourceLinux/LinuxMainWx.cpp" )
 endif()
 
+###############################################################################
+# Library setup.
+###############################################################################
+
 # Create a shared library on Android or an executable on other platforms.
-if( NOT ${ANDROID_ABI} STREQUAL "" )
+if( CMAKE_SYSTEM_NAME MATCHES Android )
     add_library( GameEmptyReplaceMe SHARED ${sourceFiles} )
+elseif( CMAKE_SYSTEM_NAME MATCHES Windows )
+    add_executable( GameEmptyReplaceMe WIN32 ${sourceFiles} )
 else()
     add_executable( GameEmptyReplaceMe ${sourceFiles} )
 endif()
 
-#target_link_libraries( GameEmptyReplaceMe MyFramework LinearMath BulletCollision BulletDynamics MyEngine )
 target_link_libraries( GameEmptyReplaceMe MyEngine MyFramework )
-
-#set_property( GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CMAKE_COMMAND} -E time" )
 
 # Game include directories.
 target_include_directories( GameEmptyReplaceMe PRIVATE "Game/SourceCommon" )
 
-#############
-# Preprocessor defines, platform include dirs and link libraries.
-#############
+###############################################################################
+# Platform specific settings.
+###############################################################################
 
 # Android defines.
-if( NOT ${ANDROID_ABI} STREQUAL "" )
+if( CMAKE_SYSTEM_NAME MATCHES Android )
     target_compile_definitions( GameEmptyReplaceMe PRIVATE MYFW_ANDROID=1 )
     target_include_directories( GameEmptyReplaceMe PRIVATE "Game/SourceAndroid" )
     target_link_libraries( GameEmptyReplaceMe android log GLESv2 OpenSLES EGL ) #c m gcc )
 endif()
 
 # Linux defines.
-if( CMAKE_BUILD_TYPE MATCHES Linux )
+if( CMAKE_SYSTEM_NAME MATCHES Linux )
     target_compile_definitions( GameEmptyReplaceMe PRIVATE MYFW_LINUX=1 )
     target_include_directories( GameEmptyReplaceMe PRIVATE "Game/SourceLinux" )
     target_link_libraries( GameEmptyReplaceMe
@@ -65,9 +76,14 @@ if( CMAKE_BUILD_TYPE MATCHES Linux )
     )
 endif()
 
-# Set debug preprocessor define.
-if( CMAKE_BUILD_TYPE MATCHES Debug OR CMAKE_BUILD_TYPE MATCHES wxDebug )
-    target_compile_definitions( GameEmptyReplaceMe PRIVATE _DEBUG=1 )
+# Windows/VisualStudio defines.
+if( CMAKE_SYSTEM_NAME MATCHES Windows )
+    target_compile_definitions( GameEmptyReplaceMe PRIVATE MYFW_WINDOWS=1 )
+    target_include_directories( GameEmptyReplaceMe PRIVATE "Game/SourceWindows" )
+	add_definitions( -DUNICODE -D_UNICODE )
+    target_link_libraries( GameEmptyReplaceMe Ws2_32.lib opengl32.lib glu32.lib xinput.lib
+	                                          $(SolutionDir)Framework/Libraries/pthreads-w32/lib/x86/pthreadVC2.lib )
+    set_target_properties( GameEmptyReplaceMe PROPERTIES LINK_FLAGS "/DELAYLOAD:pthreadVC2.dll" )
 endif()
 
 # WxWidgets specific preprocessor defines, libs, includes, etc.
@@ -104,7 +120,7 @@ if( CMAKE_BUILD_TYPE MATCHES wxDebug OR CMAKE_BUILD_TYPE MATCHES wxRelease )
         #gthread-2.0 atk-1.0 cairo-gobject Xtst expat wxregexu-3.1 wxtiff-3.1 wxjpeg-3.1 z m
     )
 
-    # Set base CMake build type to debug or release. not sure if works.
+    # Set base CMake build type to debug or release.
     if( CMAKE_BUILD_TYPE MATCHES wxDebug )
         set( CMAKE_BUILD_TYPE Debug )
     elseif( CMAKE_BUILD_TYPE MATCHES wxRelease )
@@ -113,7 +129,12 @@ if( CMAKE_BUILD_TYPE MATCHES wxDebug OR CMAKE_BUILD_TYPE MATCHES wxRelease )
 
 endif()
 
+# Set debug preprocessor define.
+if( CMAKE_BUILD_TYPE MATCHES Debug )
+    target_compile_definitions( GameEmptyReplaceMe PRIVATE _DEBUG=1 )
+endif()
+
 # cotire (Compile time reducer)
-#include( ../Framework/Libraries/Cotire/CMake/cotire.cmake )
-#set_target_properties( GameEmptyReplaceMe PROPERTIES COTIRE_CXX_PREFIX_HEADER_INIT "Game/SourceCommon/GameCommonHeader.h" )
-#cotire( GameEmptyReplaceMe )
+include( ../Framework/Libraries/Cotire/CMake/cotire.cmake )
+set_target_properties( GameEmptyReplaceMe PROPERTIES COTIRE_CXX_PREFIX_HEADER_INIT "Game/SourceCommon/GameCommonHeader.h" )
+cotire( GameEmptyReplaceMe )
