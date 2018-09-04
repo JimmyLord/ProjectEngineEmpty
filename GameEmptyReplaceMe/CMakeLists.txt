@@ -17,6 +17,7 @@ endif()
 if( CMAKE_SYSTEM_NAME MATCHES Linux )
     file( GLOB_RECURSE platformFiles "Game/SourceLinux/*.cpp" )
     set( sourceFiles ${sourceFiles} ${platformFiles} )
+    list( REMOVE_ITEM sourceFiles "${CMAKE_CURRENT_SOURCE_DIR}/Game/SourceLinux/LinuxMainWx.cpp" )
 endif()
 
 # Windows/VisualStudio specific source files.
@@ -24,13 +25,6 @@ if( CMAKE_SYSTEM_NAME MATCHES Windows )
     file( GLOB_RECURSE platformFiles "Game/SourceWindows/*.cpp" )
     set( sourceFiles ${sourceFiles} ${platformFiles} )
     list( REMOVE_ITEM sourceFiles "${CMAKE_CURRENT_SOURCE_DIR}/Game/SourceWindows/WinMainWx.cpp" )
-endif()
-
-# WxWidgets specific source files.
-if( CMAKE_BUILD_TYPE MATCHES wxDebug OR CMAKE_BUILD_TYPE MATCHES wxRelease )
-    list( REMOVE_ITEM sourceFiles "${CMAKE_CURRENT_SOURCE_DIR}/Game/SourceLinux/LinuxMain.cpp" )
-else()
-    list( REMOVE_ITEM sourceFiles "${CMAKE_CURRENT_SOURCE_DIR}/Game/SourceLinux/LinuxMainWx.cpp" )
 endif()
 
 ###############################################################################
@@ -55,14 +49,14 @@ target_include_directories( GameEmptyReplaceMe PRIVATE "Game/SourceCommon" )
 # Platform specific settings.
 ###############################################################################
 
-# Android defines.
+# Android settings.
 if( CMAKE_SYSTEM_NAME MATCHES Android )
     target_compile_definitions( GameEmptyReplaceMe PRIVATE MYFW_ANDROID=1 )
     target_include_directories( GameEmptyReplaceMe PRIVATE "Game/SourceAndroid" )
     target_link_libraries( GameEmptyReplaceMe android log GLESv2 OpenSLES EGL ) #c m gcc )
 endif()
 
-# Linux defines.
+# Linux settings.
 if( CMAKE_SYSTEM_NAME MATCHES Linux )
     target_compile_definitions( GameEmptyReplaceMe PRIVATE MYFW_LINUX=1 )
     target_include_directories( GameEmptyReplaceMe PRIVATE "Game/SourceLinux" )
@@ -76,7 +70,7 @@ if( CMAKE_SYSTEM_NAME MATCHES Linux )
     )
 endif()
 
-# Windows/VisualStudio defines.
+# Windows/VisualStudio settings.
 if( CMAKE_SYSTEM_NAME MATCHES Windows )
     target_compile_definitions( GameEmptyReplaceMe PRIVATE MYFW_WINDOWS=1 )
     target_include_directories( GameEmptyReplaceMe PRIVATE "Game/SourceWindows" )
@@ -86,50 +80,19 @@ if( CMAKE_SYSTEM_NAME MATCHES Windows )
     set_target_properties( GameEmptyReplaceMe PROPERTIES LINK_FLAGS "/DELAYLOAD:pthreadVC2.dll" )
 endif()
 
-# WxWidgets specific preprocessor defines, libs, includes, etc.
-if( CMAKE_BUILD_TYPE MATCHES wxDebug OR CMAKE_BUILD_TYPE MATCHES wxRelease )
-
-    if( CMAKE_BUILD_TYPE MATCHES wxDebug )
-        set( WXWIDGETS_FOLDER_NAME ../Framework/Libraries/wxWidgets/gtk-build-debug )
-    elseif( CMAKE_BUILD_TYPE MATCHES wxRelease )
-        set( WXWIDGETS_FOLDER_NAME ../Framework/Libraries/wxWidgets/gtk-build-release )
-    endif()
-
-    # Preprocessor defines.
-    target_compile_definitions( GameEmptyReplaceMe PRIVATE MYFW_USING_WX=1 _FILE_OFFSET_BITS=64 __WXGTK__ )
-
-    # Include directory for wxconfig.h.
-    target_include_directories( GameEmptyReplaceMe PUBLIC "${WXWIDGETS_FOLDER_NAME}/lib/wx/include/gtk3-unicode-static-3.1" )
-
-    # Libraries.
-    target_link_libraries( GameEmptyReplaceMe
-        ${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_baseu-3.1.a
-        ${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_gtk3u_core-3.1.a
-        ${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_gtk3u_aui-3.1.a
-        ${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_gtk3u_gl-3.1.a
-        X11 Xxf86vm SM gtk-3 gdk-3 pangocairo-1.0 pango-1.0 cairo
-        gdk_pixbuf-2.0 gio-2.0 gobject-2.0 glib-2.0 png dl
-
-        # Recommended by "wx-config --libs", but not needed for now.
-        #${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_gtk3u_xrc-3.1.a
-        #${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_gtk3u_qa-3.1.a
-        #${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_baseu_net-3.1.a
-        #${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_gtk3u_html-3.1.a
-        #${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_gtk3u_adv-3.1.a
-        #${CMAKE_CURRENT_BINARY_DIR}/../../${WXWIDGETS_FOLDER_NAME}/lib/libwx_baseu_xml-3.1.a
-        #gthread-2.0 atk-1.0 cairo-gobject Xtst expat wxregexu-3.1 wxtiff-3.1 wxjpeg-3.1 z m
-    )
+# Editor settings.
+if( CMAKE_BUILD_TYPE MATCHES EditorDebug OR CMAKE_BUILD_TYPE MATCHES EditorRelease )
+    target_compile_definitions( GameEmptyReplaceMe PRIVATE MYFW_USING_IMGUI=1 MYFW_EDITOR=1 )
 
     # Set base CMake build type to debug or release.
-    if( CMAKE_BUILD_TYPE MATCHES wxDebug )
+    if( CMAKE_BUILD_TYPE MATCHES EditorDebug )
         set( CMAKE_BUILD_TYPE Debug )
-    elseif( CMAKE_BUILD_TYPE MATCHES wxRelease )
+    elseif( CMAKE_BUILD_TYPE MATCHES EditorRelease )
         set( CMAKE_BUILD_TYPE Release )
     endif()
-
 endif()
 
-# Set debug preprocessor define.
+# Debug settings.
 if( CMAKE_BUILD_TYPE MATCHES Debug )
     target_compile_definitions( GameEmptyReplaceMe PRIVATE _DEBUG=1 )
 endif()
