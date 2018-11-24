@@ -85,7 +85,7 @@
 			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
-			"Atten":	[30, 0, 0.090000]
+			"Atten":	[15, 0, 0.090000]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,

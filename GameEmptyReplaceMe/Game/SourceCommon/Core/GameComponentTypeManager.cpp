@@ -34,7 +34,7 @@ ComponentBase* GameComponentTypeManager::CreateComponent(int type)
 
     MyAssert( pComponent != 0 );
 
-    pComponent->m_Type = type;
+    pComponent->SetType( type );
     return pComponent;
 }
 

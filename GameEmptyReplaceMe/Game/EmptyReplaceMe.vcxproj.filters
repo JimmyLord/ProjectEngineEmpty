@@ -551,5 +551,11 @@
     <None Include="Data\Scripts\TestObjectPool_Spawner.lua">
       <Filter>Data\Scripts</Filter>
     </None>
+    <None Include="Data\Shaders\Shader_TextureAlpha.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
+    <None Include="Data\Shaders\Shader_TextureAlphaTest.glsl">
+      <Filter>Data\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

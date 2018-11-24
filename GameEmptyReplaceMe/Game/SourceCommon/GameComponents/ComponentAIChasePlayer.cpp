@@ -75,7 +75,7 @@ cJSON* ComponentAIChasePlayer::ExportAsJSONObject(bool savesceneid, bool saveid)
     cJSON* component = ComponentUpdateable::ExportAsJSONObject( savesceneid, saveid );
 
     if( m_pPlayerComponentTransform )
-        cJSON_AddNumberToObject( component, "ChasingGOID", m_pPlayerComponentTransform->m_pGameObject->GetID() );
+        cJSON_AddNumberToObject( component, "ChasingGOID", m_pPlayerComponentTransform->GetGameObject()->GetID() );
 
     return component;
 }
