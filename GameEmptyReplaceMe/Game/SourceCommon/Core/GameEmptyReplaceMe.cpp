@@ -11,10 +11,6 @@
 
 char g_SceneToLoad[MAX_PATH];
 
-#if MYFW_WINDOWS
-#include "../../../Framework/MyFramework/SourceWindows/wglext.h"
-#endif //MYFW_WINDOWS
-
 GameEmptyReplaceMe::GameEmptyReplaceMe()
 {
 }
@@ -30,7 +26,7 @@ void GameEmptyReplaceMe::OneTimeInit()
     m_FreeAllMaterialsAndTexturesWhenUnloadingScene = true;
 
 #if !MYFW_EDITOR
-    if( g_SceneToLoad[0] != 0 )
+    if( g_SceneToLoad[0] != '\0' )
     {
         RequestScene( g_SceneToLoad );
     }
@@ -45,23 +41,17 @@ void GameEmptyReplaceMe::OneTimeInit()
 #endif
 
 #if MYFW_WINDOWS
-    // Turn on v-sync
-    if( wglSwapInterval )
-        wglSwapInterval( 1 );
+    // Turn on v-sync.
+    g_pRenderer->SetSwapInterval( 1 );
 #endif //MYFW_WINDOWS
 }
 
-void GameEmptyReplaceMe::OnSurfaceChanged(unsigned int startx, unsigned int starty, unsigned int width, unsigned int height)
+void GameEmptyReplaceMe::OnSurfaceChanged(uint32 x, uint32 y, uint32 width, uint32 height)
 {
     m_GameWidth = 640.0f;
     m_GameHeight = 960.0f;
 
-    EngineCore::OnSurfaceChanged( startx, starty, width, height );
-
-#if MYFW_USING_WX
-    if( g_GLCanvasIDActive == 1 )
-        return;
-#endif
+    EngineCore::OnSurfaceChanged( x, y, width, height );
 }
 
 float GameEmptyReplaceMe::Tick(float deltaTime)

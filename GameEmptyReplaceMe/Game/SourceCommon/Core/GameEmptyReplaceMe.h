@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2012-2015 Jimmy Lord http://www.flatheadgames.com
+// Copyright (c) 2012-2018 Jimmy Lord http://www.flatheadgames.com
 //
 // This software is provided 'as-is', without any express or implied warranty.  In no event will the authors be held liable for any damages arising from the use of this software.
 // Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
@@ -12,7 +12,7 @@
 
 class GameEmptyReplaceMe : public EngineCore
 {
-public:
+protected:
 
 public:
     GameEmptyReplaceMe();
@@ -23,7 +23,7 @@ public:
     virtual void OneTimeInit();
 
     virtual float Tick(float deltaTime);
-    virtual void OnSurfaceChanged(unsigned int startx, unsigned int starty, unsigned int width, unsigned int height);
+    virtual void OnSurfaceChanged(uint32 x, uint32 y, uint32 width, uint32 height);
     virtual void OnDrawFrame(unsigned int canvasid);
 
     virtual bool OnTouch(int action, int id, float x, float y, float pressure, float size);

@@ -1,7 +1,5 @@
 {
 	"Files":	[{
-			"Path":	"Data/Materials/TestTexture.mymaterial"
-		}, {
 			"Path":	"Data/Materials/TestParticles.mymaterial"
 		}],
 	"GameObjects":	[{
@@ -23,31 +21,36 @@
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 3, -10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[0, 5.500000, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[0, 5.5, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
-			"Pos":	[0, 0.709455, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0.70945501327514648, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
-			"Pos":	[0, 0, 3.480287],
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0, 3.4802870750427246],
 			"Rot":	[90, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
@@ -55,36 +58,48 @@
 			"Type":	"Light",
 			"GOID":	12,
 			"ID":	21,
+			"PrefabComponentID":	0,
+			"LightType":	"Point",
 			"Color":	[0, 1, 0, 1],
-			"Atten":	[1, 0, 0.010000]
-		}, {
-			"Type":	"Camera",
-			"GOID":	1,
-			"ID":	1,
-			"Layers":	["Main view"],
-			"Ortho":	0,
-			"DWidth":	640,
-			"DHeight":	960,
-			"ColorBit":	1,
-			"DepthBit":	1
+			"Atten":	[14.399999618530273, 0, 0.0099999997764825821]
 		}, {
 			"Type":	"3D Collision Object",
 			"GOID":	11,
 			"ID":	16,
-			"Primitive":	"Cube",
+			"PrefabComponentID":	0,
 			"Mass":	0,
+			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
 		}, {
 			"Type":	"3D Collision Object",
 			"GOID":	14,
 			"ID":	26,
-			"Primitive":	"Cube",
+			"PrefabComponentID":	0,
 			"Mass":	0,
+			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"PrefabComponentID":	0,
+			"Layers":	["Main view"],
+			"Deferred":	0,
+			"Ortho":	0,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	1,
+			"DepthBit":	1
 		}, {
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -93,6 +108,7 @@
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
+			"UVs per Quad":	0,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
@@ -101,6 +117,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	14,
 			"ID":	27,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -109,6 +126,7 @@
 			"PlaneSize":	[20, 20],
 			"PlaneVertCountx":	2,
 			"PlaneVertCounty":	2,
+			"UVs per Quad":	0,
 			"PlaneUVStart":	[0, 0],
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
@@ -117,17 +135,19 @@
 			"Type":	"Particle Emitter",
 			"GOID":	13,
 			"ID":	25,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"RunInEditor":	1,
 			"ContinuousSpawn":	1,
+			"Billboard":	1,
 			"offset":	[0, 0, 0],
-			"size":	0.200000,
-			"sizevar":	0.030000,
+			"size":	0.20000000298023224,
+			"sizevar":	0.029999999329447746,
 			"timetolive":	10,
 			"centervar":	[1, 1],
-			"dir":	[0, 0.500000, 0],
-			"dirvar":	[0.280000, 0.280000, 0.280000],
+			"dir":	[0, 0.5, 0],
+			"dirvar":	[0.2800000011920929, 0.2800000011920929, 0.2800000011920929],
 			"coloroption":	0,
 			"color1":	[1, 1, 1, 1],
 			"color2":	[0, 0, 0, 1],

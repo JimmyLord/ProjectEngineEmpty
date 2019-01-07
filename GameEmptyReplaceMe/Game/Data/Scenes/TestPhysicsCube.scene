@@ -27,25 +27,29 @@
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 1, -10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	3,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	4,
 			"ID":	0,
-			"Pos":	[0, 9.872033, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[0, 9.87203311920166, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	6,
 			"ID":	0,
-			"Pos":	[3.140351, 2.381673, -2.063710],
+			"PrefabComponentID":	0,
+			"Pos":	[3.1403510570526123, 2.3816730976104736, -2.0637099742889404],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
@@ -53,13 +57,15 @@
 			"Type":	"Light",
 			"GOID":	6,
 			"ID":	8,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
-			"Color":	[0.305882, 0.352941, 0.713726, 1],
-			"Atten":	[0, 0, 0.090000]
+			"Color":	[0.99998998641967773, 1, 0.99999678134918213, 1],
+			"Atten":	[15, 0, 0.090000003576278687]
 		}, {
 			"Type":	"3D Collision Object",
 			"GOID":	3,
 			"ID":	3,
+			"PrefabComponentID":	0,
 			"Mass":	0,
 			"Primitive":	"Static Plane",
 			"Scale":	[10, 0, 10]
@@ -67,6 +73,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	4,
 			"ID":	4,
+			"PrefabComponentID":	0,
 			"Mass":	20,
 			"Primitive":	"Cube",
 			"Scale":	[2, 2, 2]
@@ -74,7 +81,9 @@
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"PrefabComponentID":	0,
 			"Layers":	["Main view"],
+			"Deferred":	0,
 			"Ortho":	0,
 			"DesiredWidth":	640,
 			"DesiredHeight":	960,
@@ -89,6 +98,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	3,
 			"ID":	5,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -106,6 +116,7 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	4,
 			"ID":	6,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
