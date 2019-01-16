@@ -10,7 +10,7 @@
 #ifndef __GameCommonHeader_H__
 #define __GameCommonHeader_H__
 
-#include "../../../Framework/MyFramework/SourceCommon/CommonHeader.h"
+#include "../../../Framework/MyFramework/SourceCommon/MyFramework.h"
 #include "../../../Engine/MyEngine/SourceCommon/EngineCommonHeader.h"
 
 #include "GameComponents/ComponentInputTrackMousePos.h"
