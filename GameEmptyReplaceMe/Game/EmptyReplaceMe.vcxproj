@@ -1444,7 +1444,6 @@
     <None Include="Data\Voxels\VoxelWorldPlayer.lua" />
     <None Include="EditorPrefs.ini" />
     <None Include="imgui.ini" />
-    <None Include="wxEditorPrefs.ini" />
     <None Include="SourceAndroid\AndroidApk\src\com\flathead\EmptyReplaceMePackage\EmptyReplaceMeActivity.java" />
     <None Include="SourceAndroid\AndroidStudio\app\src\main\AndroidManifest.xml" />
     <None Include="SourceAndroid\AndroidStudio\app\src\main\res\layout\main.xml" />

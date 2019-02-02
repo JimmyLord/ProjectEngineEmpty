@@ -11,7 +11,7 @@
 #define __GameCommonHeader_H__
 
 #include "../../../Framework/MyFramework/SourceCommon/MyFramework.h"
-#include "../../../Engine/MyEngine/SourceCommon/EngineCommonHeader.h"
+#include "../../../Engine/MyEngine/SourceCommon/MyEngine.h"
 
 #include "GameComponents/ComponentInputTrackMousePos.h"
 #include "GameComponents/ComponentAIChasePlayer.h"

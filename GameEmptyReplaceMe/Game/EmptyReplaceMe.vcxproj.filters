@@ -509,7 +509,6 @@
     <None Include="SourceAndroid\AndroidStudio\app\src\main\res\layout\main.xml">
       <Filter>Source - Platform\Source - Android\APK files</Filter>
     </None>
-    <None Include="wxEditorPrefs.ini" />
     <None Include="EditorPrefs.ini" />
     <None Include="imgui.ini" />
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_Deferred.glsl">
