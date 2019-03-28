@@ -5,7 +5,7 @@ Player =
 
 OnLoad = function()
     -- TODO: adds ref each time script is loaded, and nothing removes them.
-	--g_pFileManager:RequestFile( "Data/OBJs/Teapot.obj" );
+	--FileManager:RequestFile( "Data/OBJs/Teapot.obj" );
 end,
 
 OnPlay = function ()

@@ -4,7 +4,7 @@ DemoLoadPauseMenu =
 {
 
 OnLoad = function()
-	g_pEngineCore:RequestScene( "Data/Scenes/DemoPauseMenu.scene" );
+	EngineCore:RequestScene( "Data/Scenes/DemoPauseMenu.scene" );
 end,
 
 OnPlay = function()

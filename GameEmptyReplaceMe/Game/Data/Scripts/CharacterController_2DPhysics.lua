@@ -66,8 +66,8 @@ Tick = function(deltaTime)
 	--end
 	
 	if this.jump then
-		local object = g_pComponentSystemManager:FindGameObjectByName( "Weight" );
-		local newobject = g_pComponentSystemManager:CopyGameObject( object, "New Weight" );
+		local object = ComponentSystemManager:FindGameObjectByName( "Weight" );
+		local newobject = ComponentSystemManager:CopyGameObject( object, "New Weight" );
 		--newobject.Componenttransform:SetLocalPosition( Vector3( 6, 1, 0 ) );
 		--collisionobject:ApplyLinearImpulse( Vector2(0,20), Vector2(0,0) );
 	end
