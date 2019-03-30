@@ -1,151 +1,23 @@
 LogInfo( "Starting export.\n" )
 
 -- JSON lua functions taken from here: https://gist.github.com/tylerneylon/59f4bcf316be525b30ab
---local json = require( "DataEngine/json" ) -- TODO: Look into why require is failing.
-local json = {}
+local json = require( "DataEditor/json" )
 
--- Internal functions.
-
-local function kind_of(obj)
-  if type(obj) ~= 'table' then return type(obj) end
-  local i = 1
-  for _ in pairs(obj) do
-    if obj[i] ~= nil then i = i + 1 else return 'table' end
-  end
-  if i == 1 then return 'table' else return 'array' end
-end
-
-local function escape_str(s)
-  local in_char  = {'\\', '"', '/', '\b', '\f', '\n', '\r', '\t'}
-  local out_char = {'\\', '"', '/',  'b',  'f',  'n',  'r',  't'}
-  for i, c in ipairs(in_char) do
-    s = s:gsub(c, '\\' .. out_char[i])
-  end
-  return s
-end
-
--- Returns pos, did_find; there are two cases:
--- 1. Delimiter found: pos = pos after leading space + delim; did_find = true.
--- 2. Delimiter not found: pos = pos after leading space;     did_find = false.
--- This throws an error if err_if_missing is true and the delim is not found.
-local function skip_delim(str, pos, delim, err_if_missing)
-  pos = pos + #str:match('^%s*', pos)
-  if str:sub(pos, pos) ~= delim then
-    if err_if_missing then
-      error('Expected ' .. delim .. ' near position ' .. pos)
+-- Print contents of `tbl`, with indentation.
+-- `indent` sets the initial level of indentation.
+function tprint( tbl, indent )
+    if not indent then indent = 0 end
+    for k, v in pairs( tbl ) do
+        formatting = string.rep( "  ", indent ) .. k .. ": "
+        if type( v ) == "table" then
+            LogInfo( formatting )
+            tprint( v, indent+1 )
+        elseif type( v ) == 'boolean' then
+            LogInfo( formatting .. tostring(v) )
+        else
+            LogInfo( formatting .. v )
+        end
     end
-    return pos, false
-  end
-  return pos + 1, true
-end
-
--- Expects the given pos to be the first character after the opening quote.
--- Returns val, pos; the returned pos is after the closing quote character.
-local function parse_str_val(str, pos, val)
-  val = val or ''
-  local early_end_error = 'End of input found while parsing string.'
-  if pos > #str then error(early_end_error) end
-  local c = str:sub(pos, pos)
-  if c == '"'  then return val, pos + 1 end
-  if c ~= '\\' then return parse_str_val(str, pos + 1, val .. c) end
-  -- We must have a \ character.
-  local esc_map = {b = '\b', f = '\f', n = '\n', r = '\r', t = '\t'}
-  local nextc = str:sub(pos + 1, pos + 1)
-  if not nextc then error(early_end_error) end
-  return parse_str_val(str, pos + 2, val .. (esc_map[nextc] or nextc))
-end
-
--- Returns val, pos; the returned pos is after the number's final character.
-local function parse_num_val(str, pos)
-  local num_str = str:match('^-?%d+%.?%d*[eE]?[+-]?%d*', pos)
-  local val = tonumber(num_str)
-  if not val then error('Error parsing number at position ' .. pos .. '.') end
-  return val, pos + #num_str
-end
-
-
--- Public values and functions.
-
-function json.stringify(obj, as_key)
-  local s = {}  -- We'll build the string as an array of strings to be concatenated.
-  local kind = kind_of(obj)  -- This is 'array' if it's an array or type(obj) otherwise.
-  if kind == 'array' then
-    if as_key then error('Can\'t encode array as key.') end
-    s[#s + 1] = '['
-    for i, val in ipairs(obj) do
-      if i > 1 then s[#s + 1] = ', ' end
-      s[#s + 1] = json.stringify(val)
-    end
-    s[#s + 1] = ']'
-  elseif kind == 'table' then
-    if as_key then error('Can\'t encode table as key.') end
-    s[#s + 1] = '\n' -- Jimmy: Added newline before new objects.
-    s[#s + 1] = '{'
-    for k, v in pairs(obj) do
-      if #s > 2 then s[#s + 1] = ', ' end -- Jimmy: Change 1 to a 2, so newlines don't produce commas as byproduct.
-      s[#s + 1] = json.stringify(k, true)
-      s[#s + 1] = ':'
-      s[#s + 1] = json.stringify(v)
-    end
-    s[#s + 1] = '}'
-  elseif kind == 'string' then
-    return '"' .. escape_str(obj) .. '"'
-  elseif kind == 'number' then
-    if as_key then return '"' .. tostring(obj) .. '"' end
-    return tostring(obj)
-  elseif kind == 'boolean' then
-    return tostring(obj)
-  elseif kind == 'nil' then
-    return 'null'
-  else
-    error('Unjsonifiable type: ' .. kind .. '.')
-  end
-  return table.concat(s)
-end
-
-json.null = {}  -- This is a one-off table to represent the null value.
-
-function json.parse(str, pos, end_delim)
-  pos = pos or 1
-  if pos > #str then error('Reached unexpected end of input.') end
-  local pos = pos + #str:match('^%s*', pos)  -- Skip whitespace.
-  local first = str:sub(pos, pos)
-  if first == '{' then  -- Parse an object.
-    local obj, key, delim_found = {}, true, true
-    pos = pos + 1
-    while true do
-      key, pos = json.parse(str, pos, '}')
-      if key == nil then return obj, pos end
-      if not delim_found then error('Comma missing between object items.') end
-      pos = skip_delim(str, pos, ':', true)  -- true -> error if missing.
-      obj[key], pos = json.parse(str, pos)
-      pos, delim_found = skip_delim(str, pos, ',')
-    end
-  elseif first == '[' then  -- Parse an array.
-    local arr, val, delim_found = {}, true, true
-    pos = pos + 1
-    while true do
-      val, pos = json.parse(str, pos, ']')
-      if val == nil then return arr, pos end
-      if not delim_found then error('Comma missing between array items.') end
-      arr[#arr + 1] = val
-      pos, delim_found = skip_delim(str, pos, ',')
-    end
-  elseif first == '"' then  -- Parse a string.
-    return parse_str_val(str, pos + 1)
-  elseif first == '-' or first:match('%d') then  -- Parse a number.
-    return parse_num_val(str, pos)
-  elseif first == end_delim then  -- End of an object or array.
-    return nil, pos + 1
-  else  -- Parse true, false, or null.
-    local literals = {['true'] = true, ['false'] = false, ['null'] = json.null}
-    for lit_str, lit_val in pairs(literals) do
-      local lit_end = pos + #lit_str - 1
-      if str:sub(pos, lit_end) == lit_str then return lit_val, lit_end + 1 end
-    end
-    local pos_info_str = 'position ' .. pos .. ': ' .. str:sub(pos, pos + 10)
-    error('Invalid json syntax starting at ' .. pos_info_str)
-  end
 end
 
 function WriteStringToFile( filename, stringToExport )
@@ -155,55 +27,118 @@ function WriteStringToFile( filename, stringToExport )
     io.close( file )
 end
 
+function ExportFlags( gameObject )
+    local jFlags = {}
+    for i=0,31 do
+        local flag = gameObject:GetFlagStringIfSet( i )
+        if( flag ~= nil ) then
+            jFlags[#jFlags+1] = flag
+        end
+    end
+
+    return jFlags
+end
+
+function ExportComponents( gameObject )
+    local jComponents = {}
+    local index = 0
+    while( true ) do
+        local component = gameObject:GetComponentByIndex( index )
+        index = index + 1
+        if( component == nil ) then
+            break
+        end
+
+        if( component:IsA( "CameraComponent" ) or
+            component:IsA( "CameraComponent" ) ) then
+        
+        else
+            -- Export Base Properties.
+            jComponents[#jComponents+1] = {}
+            jComponents[#jComponents]["Type"] = component:GetTypeName()
+            --jComponents[#jComponents]["ID"] = component:GetID()
+            --jComponents[#jComponents]["Enabled"] = component:IsEnabled()
+        
+            if( component:IsA( "2DCollisionObjectComponent" ) ) then
+                component2DCollision = CastAs_Component2DCollisionObject( component )
+                jComponents[#jComponents]["PrimitiveType"] = component2DCollision:GetPrimitiveTypeName()
+                jComponents[#jComponents]["Static"] = component2DCollision:IsStatic()
+                jComponents[#jComponents]["FixedRotation"] = component2DCollision:IsFixedRotation()
+                jComponents[#jComponents]["Density"] = component2DCollision:GetDensity()
+                jComponents[#jComponents]["IsSensor"] = component2DCollision:IsSensor()
+                jComponents[#jComponents]["Friction"] = component2DCollision:GetFriction()
+                jComponents[#jComponents]["Restitution"] = component2DCollision:GetRestitution()
+            end
+
+            if( component:IsA( "SpriteComponent" ) ) then
+                component2DCollision = CastAs_Component2DCollisionObject( component )
+                jComponents[#jComponents]["Material"] = component2DCollision:GetPrimitiveTypeName()
+                jComponents[#jComponents]["Texture"] = component2DCollision:IsStatic()
+                jComponents[#jComponents]["Shader"] = component2DCollision:IsFixedRotation()
+                jComponents[#jComponents]["Color"] = component2DCollision:GetDensity()
+            end
+        end
+    end
+
+    return jComponents
+end
+
 function ExportGameObject( gameObject )
     local jGameObject = {}
     jGameObject["Name"] = gameObject:GetName()
 
     local transform = gameObject:GetTransform()
     if( transform ~= nil ) then
-        -- Export Pos/Rot/Scale
+        -- Export Pos/Rot/Scale.
         jGameObject["Pos"] = { transform:GetWorldPosition().x, transform:GetWorldPosition().y, transform:GetWorldPosition().z }
         jGameObject["Rot"] = { transform:GetWorldRotation().x, transform:GetWorldRotation().y, transform:GetWorldRotation().z }
         jGameObject["Scale"] = { transform:GetWorldScale().x, transform:GetWorldScale().y, transform:GetWorldScale().z }
 
-        -- TODO: Export Flags
+        -- Export Flags.
+        local jFlags = ExportFlags( gameObject )
+        if( #jFlags > 0 ) then
+            jGameObject["Flags"] = jFlags
+        end
 
-        -- TODO: Export Components
+        -- Export Components.
+        local jComponents = ExportComponents( gameObject )
+        if( #jComponents > 0 ) then
+            jGameObject["Components"] = jComponents
+        end
     end
 
-    -- Export children
+    -- Export children.
     local childGO = gameObject:GetFirstChild()
     if( childGO ~= nil ) then
         -- TODO:
-        -- create child array
-        -- call ExportGameObject for each add to the array
+        -- Create child array.
+        -- Call ExportGameObject for each add to the array.
     end
 
     return jGameObject
 end
 
-function ExportScene( filename )
+function ExportScene( filename, sceneIndex )
     local jRoot = {}
     local jGameObjectList = {}
     jRoot['GameObjects'] = jGameObjectList
 
-    -- Export GameObjects
-    local gameObject = ComponentSystemManager:Editor_GetFirstGameObjectFromScene( 0 )
-    local count = 0
+    -- Export GameObjects.
+    local gameObject = ComponentSystemManager:Editor_GetFirstGameObjectFromScene( sceneIndex )
     while( gameObject ~= nil ) do
-        count = count+1
-        jGameObjectList[count] = ExportGameObject( gameObject )
+        jGameObjectList[#jGameObjectList+1] = ExportGameObject( gameObject )
         gameObject = gameObject:GetNextGameObjectInList()
     end
 
     local jsonString = json.stringify( jRoot, false )
 
-    WriteStringToFile( filename, jsonString );
+    WriteStringToFile( filename, jsonString )
 end
 
 local RootFolder = "./"
 local SceneName = "test.exportedScene"
+local sceneIndex = 0
 
-ExportScene( RootFolder .. SceneName )
+ExportScene( RootFolder .. SceneName, sceneIndex )
 
 LogInfo( "Export done!\n" )
