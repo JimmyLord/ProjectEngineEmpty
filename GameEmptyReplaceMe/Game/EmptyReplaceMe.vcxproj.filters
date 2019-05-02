@@ -556,5 +556,6 @@
     <None Include="Data\Shaders\Shader_TextureAlphaTest.glsl">
       <Filter>Data\Shaders</Filter>
     </None>
+    <None Include="..\premake5.lua" />
   </ItemGroup>
 </Project>

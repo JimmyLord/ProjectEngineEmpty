@@ -11,10 +11,10 @@ Externs =
 	{ "Animation", "Float", 1 },
 };
 
-OnLoad = function()
+OnLoad = function(this)
 end,
 
-OnPlay = function()
+OnPlay = function(this)
 	-- math.randomseed( os.time() );
 
 	-- initialize some local variables
@@ -22,14 +22,14 @@ OnPlay = function()
 	this.targetangle = 0;
 end,
 
-OnStop = function()
+OnStop = function(this)
 end,
 
-OnTouch = function(action, id, x, y, pressure, size)
+OnTouch = function(this, action, id, x, y, pressure, size)
 	-- LogInfo( "OnTouch " .. id .. "\n" );
 end,
 
-OnButtons = function(action, id)
+OnButtons = function(this, action, id)
 	--LogInfo( "OnButtons " .. id .. "\n" );
 
 	if( action == 2 ) then -- button held
@@ -48,7 +48,7 @@ OnButtons = function(action, id)
 	end
 end,
 
-Tick = function(deltaTime)
+Tick = function(this, deltaTime)
 	
 	-- todo - do these 2 lookups once in OnPlay?
 	local animplayer = this.gameobject:GetAnimationPlayer();

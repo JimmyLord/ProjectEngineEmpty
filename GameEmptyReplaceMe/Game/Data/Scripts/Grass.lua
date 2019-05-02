@@ -9,10 +9,10 @@ Externs =
 	{ "ObjectsToTrack", "GameObject", "AnimGuy" },
 };
 
-OnLoad = function()
+OnLoad = function(this)
 end,
 
-OnPlay = function()
+OnPlay = function(this)
     this.deformTimer = 0;
     this.numpoints = 0;
     this.points =
@@ -21,16 +21,16 @@ OnPlay = function()
     };
 end,
 
-OnStop = function()
+OnStop = function(this)
 end,
 
-OnTouch = function(action, id, x, y, pressure, size)
+OnTouch = function(this, action, id, x, y, pressure, size)
 end,
 
-OnButtons = function(action, id)
+OnButtons = function(this, action, id)
 end,
 
-Tick = function(timepassed)
+Tick = function(this, timepassed)
 	local pos3 = this.ObjectsToTrack:GetTransform():GetLocalPosition();
     local pos4 = Vector4( pos3.x, pos3.y, pos3.z, 1 );
 
@@ -54,7 +54,7 @@ Tick = function(timepassed)
     --LogInfo( "Tick \n" );
 end,
 
-SetupCustomUniforms = function(programhandle)
+SetupCustomUniforms = function(this, programhandle)
     --LogInfo( "SetupCustomUniforms \n" );
 
     local loc = glGetUniformLocation( programhandle, "u_DeformXYZRadius" );

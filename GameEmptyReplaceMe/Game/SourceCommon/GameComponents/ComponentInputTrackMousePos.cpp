@@ -13,8 +13,8 @@
 bool ComponentInputTrackMousePos::m_PanelWatchBlockVisible = true;
 #endif
 
-ComponentInputTrackMousePos::ComponentInputTrackMousePos()
-: ComponentInputHandler()
+ComponentInputTrackMousePos::ComponentInputTrackMousePos(ComponentSystemManager* pComponentSystemManager)
+: ComponentInputHandler( pComponentSystemManager )
 {
     m_BaseType = BaseComponentType_InputHandler;
 

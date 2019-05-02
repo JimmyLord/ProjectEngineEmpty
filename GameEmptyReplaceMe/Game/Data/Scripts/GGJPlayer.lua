@@ -9,16 +9,16 @@ Externs =
 	{ "Speed", "Float", 1 },
 };
 
-OnLoad = function()
+OnLoad = function(this)
 end,
 
-OnPlay = function()
+OnPlay = function(this)
 end,
 
-OnStop = function()
+OnStop = function(this)
 end,
 
-OnTouch = function(action, id, x, y, pressure, size)
+OnTouch = function(this, action, id, x, y, pressure, size)
 	-- LogInfo( "OnTouch " .. id .. " " .. action .. " " .. x .. "\n" );
 
 	this.helda = false;
@@ -33,7 +33,7 @@ OnTouch = function(action, id, x, y, pressure, size)
 	end
 end,
 
-OnButtons = function(action, id)
+OnButtons = function(this, action, id)
 	--key down
 	if( action == 0 ) then
 		if( id == 87 or id == 119 ) then -- w
@@ -66,7 +66,7 @@ OnButtons = function(action, id)
 	end
 end,
 
-Tick = function(deltaTime)
+Tick = function(this, deltaTime)
 	local force = Vector3( 0,0,0 );
 
 	if( this.heldw == true ) then

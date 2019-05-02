@@ -28,8 +28,8 @@ ComponentBase* GameComponentTypeManager::CreateComponent(int type)
 
     switch( type ) // ADDING_NEW_ComponentTypeGame
     {
-    case ComponentType_InputTrackMousePos:  pComponent = MyNew ComponentInputTrackMousePos; break;
-    case ComponentType_AIChasePlayer:       pComponent = MyNew ComponentAIChasePlayer;      break;
+    case ComponentType_InputTrackMousePos:  pComponent = MyNew ComponentInputTrackMousePos( m_pComponentSystemManager ); break;
+    case ComponentType_AIChasePlayer:       pComponent = MyNew ComponentAIChasePlayer( m_pComponentSystemManager );      break;
     }
 
     MyAssert( pComponent != 0 );

@@ -9,23 +9,23 @@ Externs =
 	{ "Speed", "Float", 10 },
 };
 
-OnLoad = function()
+OnLoad = function(this)
 end,
 
-OnPlay = function()
+OnPlay = function(this)
 	-- initialize some local variables
 	this.dir = Vector2(0,0);
 	this.jump = false;
 end,
 
-OnStop = function()
+OnStop = function(this)
 end,
 
-OnTouch = function(action, id, x, y, pressure, size)
+OnTouch = function(this, action, id, x, y, pressure, size)
 	-- LogInfo( "OnTouch " .. id .. "\n" );
 end,
 
-OnButtons = function(action, id)
+OnButtons = function(this, action, id)
 	--LogInfo( "OnButtons " .. id .. "\n" );
 
 	if( action == 2 ) then -- button held
@@ -46,7 +46,7 @@ OnButtons = function(action, id)
 	end
 end,
 
-Tick = function(deltaTime)
+Tick = function(this, deltaTime)
 	-- todo - do these lookups once in OnPlay?
 	--local transform = this.gameobject:GetTransform();
 	local collisionobject = this.gameobject:Get2DCollisionObject();
@@ -78,7 +78,7 @@ Tick = function(deltaTime)
 	this.jump = false;
 end,
 
-OnCollision = function(normal)
+OnCollision = function(this, normal)
 	if( normal.y > 0 ) then
 		this.jump = true;
 	end

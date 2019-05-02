@@ -10,23 +10,23 @@ Externs =
 	--{ "ObjectChasing", "GameObject", "Player Object" },
 };
 
-OnPlay = function()
+OnPlay = function(this)
 	--LogInfo( "OnPlay\n" );
 end,
 
-OnStop = function()
+OnStop = function(this)
 	--LogInfo( "OnStop\n" );
 end,
 
-OnTouch = function(action, id, x, y, pressure, size)
+OnTouch = function(this, action, id, x, y, pressure, size)
 	--LogInfo( "OnTouch\n" );
 end,
 
-OnButtons = function(action, id)
+OnButtons = function(this, action, id)
 	--LogInfo( "OnButtons\n" );
 end,
 
-Tick = function(deltaTime)
+Tick = function(this, deltaTime)
 	--LogInfo( "Tick Start\n" );
 	--LogInfo( "System time: " .. GetSystemTime() .. "\n" );
 

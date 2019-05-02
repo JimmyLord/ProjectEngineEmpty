@@ -1355,6 +1355,7 @@
     <None Include="..\..\Engine\DataEngine\Shaders\Shader_TintColor.glsl" />
     <None Include="..\..\notes.txt" />
     <None Include="..\..\todo.todo" />
+    <None Include="..\premake5.lua" />
     <None Include="Data\Animations\stickman.my2daniminfo" />
     <None Include="Data\Materials\Bones.mymaterial" />
     <None Include="Data\Materials\Colors\Color-Green.mymaterial" />

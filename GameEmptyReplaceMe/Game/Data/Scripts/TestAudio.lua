@@ -3,26 +3,26 @@
 TestAudio =
 {
 
-OnLoad = function()
+OnLoad = function(this)
 end,
 
-OnPlay = function()
+OnPlay = function(this)
 end,
 
-OnStop = function()
+OnStop = function(this)
 end,
 
-OnTouch = function(action, id, x, y, pressure, size)
+OnTouch = function(this, action, id, x, y, pressure, size)
 	if( action == 0 ) then
         --this.gameobject:GetAudioPlayer():PlaySound( true );
         SoundManager:PlayCueByName( "Randomize" );
     end
 end,
 
-OnButtons = function(action, id)
+OnButtons = function(this, action, id)
 end,
 
-Tick = function(deltaTime)
+Tick = function(this, deltaTime)
 end
 
 }

@@ -13,8 +13,8 @@
 bool ComponentAIChasePlayer::m_PanelWatchBlockVisible = true;
 #endif
 
-ComponentAIChasePlayer::ComponentAIChasePlayer()
-: ComponentUpdateable()
+ComponentAIChasePlayer::ComponentAIChasePlayer(ComponentSystemManager* pComponentSystemManager)
+: ComponentUpdateable( pComponentSystemManager )
 {
     m_BaseType = BaseComponentType_Updateable;
 

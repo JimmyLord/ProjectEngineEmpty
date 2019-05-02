@@ -9,24 +9,24 @@ Externs =
 	{ "Speed", "Float", 10 },
 };
 
-OnLoad = function()
+OnLoad = function(this)
 end,
 
-OnPlay = function()
+OnPlay = function(this)
 	math.randomseed( os.time() );
 end,
 
-OnStop = function()
+OnStop = function(this)
 end,
 
-OnTouch = function(action, id, x, y, pressure, size)
+OnTouch = function(this, action, id, x, y, pressure, size)
 	-- LogInfo( "OnTouch " .. id .. "\n" );
 end,
 
-OnButtons = function(action, id)
+OnButtons = function(this, action, id)
 end,
 
-Tick = function(deltaTime)
+Tick = function(this, deltaTime)
 	
 	local transform = this.gameobject:GetTransform();
 	local pos = transform:GetLocalPosition();
