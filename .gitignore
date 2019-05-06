@@ -11,6 +11,8 @@
 *.sdf
 *.ipch
 xcuserdata
+/build/
+premake5.exe
 /GameEmptyReplaceMe/Output/
 /GameEmptyReplaceMe/Game/SourceAndroid/AndroidApk/assets/
 /GameEmptyReplaceMe/Game/SourceAndroid/AndroidApk/bin/
@@ -34,4 +36,3 @@ xcuserdata
 /MyLocalInclude.h
 /Releases/MyEngine*
 /Releases/old/
-build

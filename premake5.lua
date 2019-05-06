@@ -16,28 +16,10 @@ workspace "EmptyReplaceMe"
     filter "system:windows"
         platforms       { "x86", "x64" }
 
-    vpaths { [""] = {
-        "../notes.txt",
-        "../todo.todo",
-        "premake5.lua",
-        "Game/EditorPrefs.ini",
-        "Game/imgui.ini",
-    } }
-
 BuildSingleProjectPremake( "GameEmptyReplaceMe/", "premake5inc.lua" )
-BuildSingleProjectPremake( "Engine/MyEngine/", "premake5inc.lua" )
-
-externalProject "MyFramework"
-    location        "Framework/MyFramework"
-    uuid            "016089D0-2136-4A3D-B08C-5031542BE1D7"
-    kind            "StaticLib"
-    language        "C++"
-
-externalProject "SharedGameCode"
-    location        "Engine/Libraries/SharedGameCode"
-    uuid            "9E4D91C3-6ED5-4DFD-B6CD-ADA011C049B8"
-    kind            "StaticLib"
-    language        "C++"
+BuildSingleProjectPremake( "Engine/", "premake5inc.lua" )
+BuildSingleProjectPremake( "Framework/", "premake5inc.lua" )
+BuildSingleProjectPremake( "Engine/Libraries/SharedGameCode", "premake5inc.lua" )
 
 group "Physics"
     externalProject "BulletCollision"

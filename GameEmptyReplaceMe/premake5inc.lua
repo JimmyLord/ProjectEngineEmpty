@@ -27,19 +27,25 @@ project "EmptyReplaceMe"
         "Game/SourceCommon/**.h",
         "../notes.txt",
         "../todo.todo",
-        "premake5.lua",
+        "premake5inc.lua",
         "Game/EditorPrefs.ini",
         "Game/imgui.ini",
     }
 
-    -- Place these files in the root of the project for easy access.
-    vpaths { [""] = {
-        "../notes.txt",
-        "../todo.todo",
-        "premake5.lua",
-        "Game/EditorPrefs.ini",
-        "Game/imgui.ini",
-    } }
+    vpaths {
+        -- Place these files in the root of the project.
+        [""] = {
+            "../notes.txt",
+            "../todo.todo",
+            "premake5inc.lua",
+            "Game/EditorPrefs.ini",
+            "Game/imgui.ini",
+        },
+        -- Place the SourceCommon and SourceEditor folders in the root of the project.
+        ["*"] = {
+            "Game",
+        },
+    }
 
     links {
         "MyFramework",
@@ -89,5 +95,3 @@ project "EmptyReplaceMe"
 
     filter "configurations:EditorDebug or EditorRelease"
         defines         { "MYFW_EDITOR", "MYFW_USING_IMGUI" }
-
-    filter {}
