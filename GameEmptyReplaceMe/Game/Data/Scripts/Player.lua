@@ -8,11 +8,11 @@ OnLoad = function(this)
 	--FileManager:RequestFile( "Data/OBJs/Teapot.obj" );
 end,
 
-OnPlay = function(this, )
+OnPlay = function(this)
 	--LogInfo( "OnPlay\n" );
 end,
 
-OnStop = function(this, )
+OnStop = function(this)
 	--LogInfo( "OnStop\n" );
 end,
 
