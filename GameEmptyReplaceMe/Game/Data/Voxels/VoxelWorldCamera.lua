@@ -10,7 +10,7 @@ Externs =
 	{ "ObjectChasing", "GameObject", "Player" },
 };
 
-OnLoad = function()
+OnLoad = function(this)
 	this.mousedirx = 0;
 	this.mousediry = 0;
 
@@ -18,15 +18,15 @@ OnLoad = function()
 	this.angley = 0;
 end,
 
-OnPlay = function()
+OnPlay = function(this)
 	SetMouseLock( true );
 end,
 
-OnStop = function()
+OnStop = function(this)
 	SetMouseLock( false );
 end,
 
-OnTouch = function(action, id, x, y, pressure, size)
+OnTouch = function(this, action, id, x, y, pressure, size)
 
 	--LogInfo( "OnTouch " .. x .. "\n" );
 	
@@ -41,10 +41,10 @@ OnTouch = function(action, id, x, y, pressure, size)
 
 end,
 
-OnButtons = function(action, id)
+OnButtons = function(this, action, id)
 end,
 
-Tick = function(deltaTime)
+Tick = function(this, deltaTime)
 
 	-- Spin camera based on mouse x/y
 	this.anglex = this.anglex + this.mousediry * 0.5;

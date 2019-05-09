@@ -12,10 +12,10 @@ Externs =
 	{ "VoxelWorldGameObject", "GameObject", "VoxelWorld" },
 };
 
-OnLoad = function()
+OnLoad = function(this)
 end,
 
-OnPlay = function()
+OnPlay = function(this)
 	-- math.randomseed( os.time() );
 
 	-- initialize some local variables
@@ -28,14 +28,14 @@ OnPlay = function()
 	this.buttonsheld[4] = false; --GCBI_Down
 end,
 
-OnStop = function()
+OnStop = function(this)
 end,
 
-OnTouch = function(action, id, x, y, pressure, size)
+OnTouch = function(this, action, id, x, y, pressure, size)
 	-- LogInfo( "OnTouch " .. id .. "\n" );
 end,
 
-OnButtons = function(action, id)
+OnButtons = function(this, action, id)
 	-- LogInfo( "OnButtons " .. id .. "\n" );
 
 	if( action == 0 ) then -- GCBA_Down - button held
@@ -63,12 +63,12 @@ OnButtons = function(action, id)
 
 end,
 
-Tick = function(deltaTime)
+Tick = function(this, deltaTime)
 	
 	-- LogInfo( "Tick " .. deltaTime .. "\n" );
 
 	-- todo - do these 3 lookups once in OnPlay?
-	local cameraobject = g_pComponentSystemManager:FindGameObjectByName( "Main Camera" );
+	local cameraobject = ComponentSystemManager:FindGameObjectByName( "Main Camera" );
 	local animplayer = this.gameobject:GetAnimationPlayer();
 	local transform = this.gameobject:GetTransform();
 
