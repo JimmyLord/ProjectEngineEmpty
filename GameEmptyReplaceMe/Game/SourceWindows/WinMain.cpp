@@ -27,10 +27,14 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     strcpy_s( g_SceneToLoad, lpCmdLine );
 
 #if MYFW_EDITOR
-    return MYFWWinMain( 1200, 650 );
+    int result = MYFWWinMain( pGameCore, 1200, 650 );
 #else
-    return MYFWWinMain( SCREEN_WIDTH, SCREEN_HEIGHT );
+    int result = MYFWWinMain( pGameCore, SCREEN_WIDTH, SCREEN_HEIGHT );
 #endif
+
+    delete pGameCore;
+
+    return result;
 }
 
 FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)

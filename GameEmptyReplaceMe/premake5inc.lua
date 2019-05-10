@@ -27,9 +27,18 @@ project "EmptyReplaceMe"
         "Game/SourceCommon/**.h",
         "../notes.txt",
         "../todo.todo",
+        "../premake5.lua",
         "premake5inc.lua",
         "Game/EditorPrefs.ini",
         "Game/imgui.ini",
+        "Game/Data/**.glsl",
+        "Game/Data/**.lua",
+        "Game/Data/**.menu",
+        "Game/Data/**.my2daniminfo",
+        "Game/Data/**.mymaterial",
+        "Game/Data/**.myprefabs",
+        "Game/Data/**.mytemplate",
+        "Game/Data/**.scene",
     }
 
     vpaths {
@@ -37,6 +46,7 @@ project "EmptyReplaceMe"
         [""] = {
             "../notes.txt",
             "../todo.todo",
+            "../premake5.lua",
             "premake5inc.lua",
             "Game/EditorPrefs.ini",
             "Game/imgui.ini",
