@@ -20,6 +20,7 @@ project "EmptyReplaceMe"
         "Game/SourceCommon",
         "$(SolutionDir)../Framework/Libraries/b2Settings",
         "$(SolutionDir)../Framework/Libraries/Box2D",
+        "C:/Program Files (x86)/Mono/include/mono-2.0", -- TODO: Don't hardcode the path to mono installation.
     }
 
     files {
@@ -28,6 +29,8 @@ project "EmptyReplaceMe"
         "../notes.txt",
         "../todo.todo",
         "../premake5.lua",
+        "../PremakeGenerateBuildFiles.bat",
+        "../Windows-CreateSymLinksForData.bat",
         "premake5inc.lua",
         "Game/EditorPrefs.ini",
         "Game/imgui.ini",
@@ -39,6 +42,7 @@ project "EmptyReplaceMe"
         "Game/Data/**.myprefabs",
         "Game/Data/**.mytemplate",
         "Game/Data/**.scene",
+        "Game/DataSource/**.cs",
     }
 
     vpaths {
@@ -47,6 +51,8 @@ project "EmptyReplaceMe"
             "../notes.txt",
             "../todo.todo",
             "../premake5.lua",
+            "../PremakeGenerateBuildFiles.bat",
+            "../Windows-CreateSymLinksForData.bat",
             "premake5inc.lua",
             "Game/EditorPrefs.ini",
             "Game/imgui.ini",
@@ -79,6 +85,7 @@ project "EmptyReplaceMe"
 
         libdirs {
             "../Framework/Libraries/pthreads-w32/lib/x86",
+            "C:/Program Files (x86)/Mono/lib/", -- TODO: Don't hardcode the path to mono installation.
         }
 
         links {
@@ -88,6 +95,7 @@ project "EmptyReplaceMe"
             "opengl32",
             "glu32",
             "xinput",
+            "mono-2.0-sgen"
         }
 
         linkoptions { "/DELAYLOAD:pthreadVC2.dll" }

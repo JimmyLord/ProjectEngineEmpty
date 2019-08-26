@@ -17,7 +17,7 @@ public:
     ComponentTransform* m_pPlayerComponentTransform;
 
 public:
-    ComponentAIChasePlayer(ComponentSystemManager* pComponentSystemManager);
+    ComponentAIChasePlayer(EngineCore* pEngineCore, ComponentSystemManager* pComponentSystemManager);
     virtual ~ComponentAIChasePlayer();
 
     virtual cJSON* ExportAsJSONObject(bool savesceneid, bool saveid);

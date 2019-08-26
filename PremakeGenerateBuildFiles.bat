@@ -1,2 +1,2 @@
-call Premake5 vs2017
+call Premake5 vs2019
 pause

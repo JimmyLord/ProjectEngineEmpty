@@ -15,7 +15,7 @@ class ComponentInputTrackMousePos : public ComponentInputHandler
 public:
 
 public:
-    ComponentInputTrackMousePos(ComponentSystemManager* pComponentSystemManager);
+    ComponentInputTrackMousePos(EngineCore* pEngineCore, ComponentSystemManager* pComponentSystemManager);
     virtual ~ComponentInputTrackMousePos();
 
     virtual cJSON* ExportAsJSONObject(bool savesceneid, bool saveid);

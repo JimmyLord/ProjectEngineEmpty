@@ -20,6 +20,7 @@ ComponentTypeInfo g_GameComponentTypeInfo[Component_NumGameComponentTypes] = // 
 ComponentBase* GameComponentTypeManager::CreateComponent(int type)
 {
     ComponentBase* pComponent = 0;
+    EngineCore* pEngineCore = m_pComponentSystemManager->GetEngineCore();
     
     if( type < Component_NumEngineComponentTypes )
         return EngineComponentTypeManager::CreateComponent( type );
@@ -28,8 +29,8 @@ ComponentBase* GameComponentTypeManager::CreateComponent(int type)
 
     switch( type ) // ADDING_NEW_ComponentTypeGame
     {
-    case ComponentType_InputTrackMousePos:  pComponent = MyNew ComponentInputTrackMousePos( m_pComponentSystemManager ); break;
-    case ComponentType_AIChasePlayer:       pComponent = MyNew ComponentAIChasePlayer( m_pComponentSystemManager );      break;
+    case ComponentType_InputTrackMousePos:  pComponent = MyNew ComponentInputTrackMousePos( pEngineCore, m_pComponentSystemManager ); break;
+    case ComponentType_AIChasePlayer:       pComponent = MyNew ComponentAIChasePlayer(      pEngineCore, m_pComponentSystemManager ); break;
     }
 
     MyAssert( pComponent != 0 );

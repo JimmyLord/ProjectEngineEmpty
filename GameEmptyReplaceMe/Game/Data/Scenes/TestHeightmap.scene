@@ -1,0 +1,121 @@
+{
+	"Files":	[{
+			"Path":	"Data/Materials/Colors/Color-Green.mymaterial"
+		}, {
+			"Path":	"Data/Textures/test1.png"
+		}, {
+			"Path":	"Data/Materials/Normals.mymaterial"
+		}, {
+			"Path":	"Data/Meshes/TestHeightmap.myheightmap"
+		}],
+	"GameObjects":	[{
+			"ID":	1,
+			"Name":	"Main Camera",
+			"Properties":	{
+				"Flags":	["Camera-Main"]
+			}
+		}, {
+			"ID":	2,
+			"Name":	"Hud Camera",
+			"Properties":	{
+				"Flags":	["Camera-HUD"]
+			}
+		}, {
+			"ID":	4,
+			"Name":	"Point Light"
+		}, {
+			"ID":	5,
+			"Name":	"Heightmap"
+		}],
+	"Transforms":	[{
+			"GOID":	1,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[5, 2.9065840244293213, -3.5445787906646729],
+			"Rot":	[-23.85850715637207, -6.8434218292168225e-07, -1.441960876036319e-06],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	2,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	4,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[5, 2.5986828804016113, 5],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	5,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0, 0],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}],
+	"Components":	[{
+			"Type":	"Light",
+			"GOID":	4,
+			"ID":	4,
+			"PrefabComponentID":	0,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[8, 0, 0.090000003576278687]
+		}, {
+			"Type":	"Camera",
+			"GOID":	1,
+			"ID":	1,
+			"PrefabComponentID":	0,
+			"Layers":	["Main view"],
+			"Deferred":	0,
+			"Ortho":	0,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	0.0099999997764825821,
+			"PerspectiveFarZ":	1000,
+			"ColorBit":	1,
+			"DepthBit":	1
+		}, {
+			"Type":	"Camera",
+			"GOID":	2,
+			"ID":	2,
+			"PrefabComponentID":	0,
+			"Layers":	["HUD"],
+			"Deferred":	0,
+			"Ortho":	1,
+			"DesiredWidth":	640,
+			"DesiredHeight":	960,
+			"OrthoNearZ":	0,
+			"OrthoFarZ":	1000,
+			"FoV":	45,
+			"PerspectiveNearZ":	1,
+			"PerspectiveFarZ":	10000,
+			"ColorBit":	0,
+			"DepthBit":	0
+		}, {
+			"Type":	"Mono Script",
+			"GOID":	4,
+			"ID":	9,
+			"PrefabComponentID":	0,
+			"MonoClassName":	"Player"
+		}, {
+			"Type":	"Heightmap",
+			"GOID":	5,
+			"ID":	8,
+			"PrefabComponentID":	0,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"Size":	[10, 10],
+			"VertCount":	[128, 128],
+			"HeightmapFile":	"Data/Meshes/TestHeightmap.myheightmap",
+			"Materials":	["Data/Materials/Colors/Color-Green.mymaterial"]
+		}]
+}
