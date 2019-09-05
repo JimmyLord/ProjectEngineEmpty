@@ -62,28 +62,28 @@ public class Player : MyScriptInterface
             }
             if( id == 2 )
             {
-                mat4 matrix = new mat4();
-                matrix.SetIdentity();
-                matrix.CreateSRT( new vec3(1,1,1), new vec3(0,0,0), new vec3(5,2,5) );
-                ComponentTransform transform = this.m_GameObject.GetTransform();
-                transform.SetLocalTransform( matrix );
+                //mat4 matrix = new mat4();
+                //matrix.SetIdentity();
+                //matrix.CreateSRT( new vec3(1,1,1), new vec3(0,0,0), new vec3(5,2,5) );
+                //ComponentTransform transform = this.m_GameObject.GetTransform();
+                //transform.SetLocalTransform( matrix );
             }
             if( id == 3 )
             {
-                GameObject test = ComponentSystemManager.CreateGameObject( "Test", false, true );
-                ComponentMeshPrimitive component = (ComponentMeshPrimitive)test.AddNewComponent( "Mesh-Primitive" );
-                component.SetPrimitiveType( ComponentMeshPrimitive.PrimitiveType.Icosphere );
+                //GameObject test = ComponentSystemManager.CreateGameObject( "Test", false, true );
+                //ComponentMeshPrimitive component = (ComponentMeshPrimitive)test.AddNewComponent( "Mesh-Primitive" );
+                //component.SetPrimitiveType( ComponentMeshPrimitive.PrimitiveType.Icosphere );
 
-                MyMaterial mat = MaterialManager.GetFirstMaterial();
-                //Log.Info( mat.GetName() );
-                component.SetMaterial( mat, 0 );
+                //MyMaterial mat = MaterialManager.GetFirstMaterial();
+                ////Log.Info( mat.GetName() );
+                //component.SetMaterial( mat, 0 );
 
-                ComponentTransform transform = (ComponentTransform)test.GetFirstComponentOfType( "TransformComponent" );
-                transform.SetLocalPosition( new vec3(5,2,7) );
+                //ComponentTransform transform = (ComponentTransform)test.GetFirstComponentOfType( "TransformComponent" );
+                //transform.SetLocalPosition( new vec3(5,2,7) );
             }
             if( id == 4 )
             {
-                EngineCore.RequestScene( "Data/Scenes/DemoPauseMenu.scene" );
+                //EngineCore.RequestScene( "Data/Scenes/DemoPauseMenu.scene" );
             }
         }
         if( action == 1 )

@@ -22,7 +22,10 @@
 			}
 		}, {
 			"ID":	4,
-			"Name":	"Point Light"
+			"Name":	"Point Light Player"
+		}, {
+			"ID":	6,
+			"Name":	"Point Light Follower"
 		}, {
 			"ID":	5,
 			"Name":	"Heightmap"
@@ -45,7 +48,14 @@
 			"GOID":	4,
 			"ID":	0,
 			"PrefabComponentID":	0,
-			"Pos":	[5, 2.5986828804016113, 5],
+			"Pos":	[8.9087028503417969, 2, 5],
+			"Rot":	[0, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	6,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[3.9164285659790039, 2, 1.5881681442260742],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
@@ -63,7 +73,15 @@
 			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[1, 1, 1, 1],
-			"Atten":	[8, 0, 0.090000003576278687]
+			"Atten":	[3, 0, 0.090000003576278687]
+		}, {
+			"Type":	"Light",
+			"GOID":	6,
+			"ID":	11,
+			"PrefabComponentID":	0,
+			"LightType":	"Point",
+			"Color":	[1, 1, 1, 1],
+			"Atten":	[3, 0, 0.090000003576278687]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
@@ -103,7 +121,29 @@
 			"GOID":	4,
 			"ID":	9,
 			"PrefabComponentID":	0,
-			"MonoClassName":	"Player"
+			"MonoClassName":	"RandomMovement",
+			"ExposedVars":	[{
+					"Name":	"m_Speed",
+					"Type":	1,
+					"Value":	5
+				}]
+		}, {
+			"Type":	"Mono Script",
+			"GOID":	6,
+			"ID":	12,
+			"PrefabComponentID":	0,
+			"MonoClassName":	"Follower",
+			"ExposedVars":	[{
+					"Name":	"m_Speed",
+					"Type":	1,
+					"Value":	1
+				}, {
+					"Name":	"m_ObjectToFollow",
+					"Type":	4,
+					"Value":	{
+						"GOID":	4
+					}
+				}]
 		}, {
 			"Type":	"Heightmap",
 			"GOID":	5,
