@@ -77,119 +77,146 @@
 		}, {
 			"ID":	17,
 			"Name":	"Wall"
+		}, {
+			"ID":	18,
+			"Name":	"Sphere"
 		}],
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, -10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[4.768372e-007, -2.200000, 0.090000],
+			"PrefabComponentID":	0,
+			"Pos":	[4.7683721504654386e-07, -2.2000000476837158, 0.090000003576278687],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, -3, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 1, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[-5, 1, -5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[5, 1, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[5, 1, -5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	16,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[-5, 1, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	17,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, -3, -10],
 			"Rot":	[-90, 0, 0],
+			"Scale":	[1, 1, 1]
+		}, {
+			"GOID":	18,
+			"ID":	0,
+			"PrefabComponentID":	0,
+			"Pos":	[-4.363072395324707, -3.1303787231445313, 7.3803482055664063],
+			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"Light",
 			"GOID":	12,
 			"ID":	48,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 1, 0, 0],
-			"Atten":	[10, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800002217292786]
 		}, {
 			"Type":	"Light",
 			"GOID":	13,
 			"ID":	49,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[1, 0, 0, 0],
-			"Atten":	[10, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800002217292786]
 		}, {
 			"Type":	"Light",
 			"GOID":	14,
 			"ID":	50,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 0],
-			"Atten":	[10, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800002217292786]
 		}, {
 			"Type":	"Light",
 			"GOID":	15,
 			"ID":	51,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[1, 1, 0, 0],
-			"Atten":	[10, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800002217292786]
 		}, {
 			"Type":	"Light",
 			"GOID":	16,
 			"ID":	52,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 1, 1, 0],
-			"Atten":	[10, 0, 0.090800]
+			"Atten":	[10, 0, 0.090800002217292786]
 		}, {
 			"Type":	"Post Effect Quad",
 			"GOID":	1,
 			"ID":	62,
-			"Enabled":	1,
-			"Material":	"Data/Materials/EdgeDetectSobel.mymaterial"
+			"PrefabComponentID":	0,
+			"Material":	"Data/Materials/EdgeDetectBasic.mymaterial"
 		}, {
+			"Enabled":	false,
 			"Type":	"Post Effect Quad",
 			"GOID":	1,
 			"ID":	63,
-			"Enabled":	0,
+			"PrefabComponentID":	0,
 			"Material":	"Data/Materials/BlurVertical.mymaterial"
 		}, {
 			"Type":	"3D Collision Object",
 			"GOID":	11,
 			"ID":	16,
+			"PrefabComponentID":	0,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
@@ -197,6 +224,7 @@
 			"Type":	"3D Collision Object",
 			"GOID":	17,
 			"ID":	53,
+			"PrefabComponentID":	0,
 			"Mass":	0,
 			"Primitive":	"Cube",
 			"Scale":	[1, 1, 1]
@@ -204,6 +232,7 @@
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"PrefabComponentID":	0,
 			"Layers":	["Main view"],
 			"Deferred":	0,
 			"Ortho":	0,
@@ -220,6 +249,7 @@
 			"Type":	"Camera",
 			"GOID":	7,
 			"ID":	8,
+			"PrefabComponentID":	0,
 			"Layers":	["HUD"],
 			"Deferred":	0,
 			"Ortho":	1,
@@ -236,12 +266,14 @@
 			"Type":	"Animation Player",
 			"GOID":	10,
 			"ID":	34,
+			"PrefabComponentID":	0,
 			"AnimIndex":	1,
 			"AnimFrame":	0
 		}, {
 			"Type":	"Lua Script",
 			"GOID":	10,
 			"ID":	45,
+			"PrefabComponentID":	0,
 			"Script":	"Data/Scripts/SimpleCharacterController.lua",
 			"ExposedVars":	[{
 					"Name":	"Speed",
@@ -260,6 +292,7 @@
 			"Type":	"Mesh-OBJ",
 			"GOID":	10,
 			"ID":	13,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -270,6 +303,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	11,
 			"ID":	22,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -287,6 +321,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	17,
 			"ID":	54,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
@@ -300,5 +335,16 @@
 			"PlaneUVRange":	[1, 1],
 			"SphereRadius":	1,
 			"Materials":	["Data/Materials/Lights.mymaterial"]
+		}, {
+			"Type":	"Mesh-OBJ",
+			"GOID":	18,
+			"ID":	73,
+			"PrefabComponentID":	0,
+			"Visible":	1,
+			"Layers":	["Main view"],
+			"PrimitiveType":	"Triangles",
+			"PointSize":	1,
+			"OBJ":	"Data/Meshes/sphere.obj.mymesh",
+			"Materials":	["Data/Materials/Bones.mymaterial"]
 		}]
 }

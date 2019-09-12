@@ -27,6 +27,27 @@ void main()
 uniform sampler2D u_TextureColor;
 uniform vec2 u_TextureColorTexelSize;
 
+// From http://lolengine.net/blog/2013/07/27/rgb-to-hsv-in-glsl.
+vec3 rgb2hsv(vec3 c)
+{
+    vec4 K = vec4( 0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0 );
+    vec4 p = c.g < c.b ? vec4( c.bg, K.wz ) : vec4( c.gb, K.xy );
+    vec4 q = c.r < p.x ? vec4( p.xyw, c.r ) : vec4( c.r, p.yzx );
+
+    float d = q.x - min(q.w, q.y);
+    float e = 1.0e-10;
+    return vec3( abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x );
+}
+
+float rgb2v(vec3 c)
+{
+    vec4 K = vec4( 0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0 );
+    vec4 p = c.g < c.b ? vec4( c.bg, K.wz ) : vec4( c.gb, K.xy );
+    vec4 q = c.r < p.x ? vec4( p.xyw, c.r ) : vec4( c.r, p.yzx );
+
+    return q.x;
+}
+
 void main()
 {
     vec2 offset = u_TextureColorTexelSize;
@@ -55,21 +76,43 @@ void main()
         -1, -2, -1
     };
 
-    float Gx = 0.0;
-    float Gy = 0.0;
-    for( int i = 0; i < 9; i++ )
+#if 1
     {
-        vec3 texcolor = texture2D( u_TextureColor, uvs[i] ).rgb;
-        float gray = dot( texcolor.rgb, vec3(0.299, 0.587, 0.114) );
-        Gx += gray * kernelX[i];
-        Gy += gray * kernelY[i];
-    }
+        float Gx = 0.0;
+        float Gy = 0.0;
+        for( int i = 0; i < 9; i++ )
+        {
+            vec3 texcolor = texture2D( u_TextureColor, uvs[i] ).rgb;
+            float gray = dot( texcolor.rgb, vec3(0.299, 0.587, 0.114) );
+            Gx += gray * kernelX[i];
+            Gy += gray * kernelY[i];
+        }
 
-    vec3 color = vec3( sqrt( Gx * Gx + Gy * Gy ) );
+        vec3 color = vec3( sqrt( Gx * Gx + Gy * Gy ) );
+
+        gl_FragColor = vec4( color, 1.0 );
+    }
+#else
+    {
+        float Gx = 0.0;
+        float Gy = 0.0;
+        for( int i = 0; i < 9; i++ )
+        {
+            vec3 texcolor = texture2D( u_TextureColor, uvs[i] ).rgb;
+            float gray = rgb2v( texcolor );
+            Gx += gray * kernelX[i];
+            Gy += gray * kernelY[i];
+        }
+
+        vec3 color = vec3( sqrt( Gx * Gx + Gy * Gy ) );
+
+        gl_FragColor = vec4( color, 1.0 );
+    }
+#endif
+
+
     //float direction = atan( Gy, Gx );
     
-    gl_FragColor = vec4( color, 1.0 );
-
     //vec3 Gx = vec3( 0.0 );
     //vec3 Gy = vec3( 0.0 );
     //for( int i = 0; i < 9; i++ )
