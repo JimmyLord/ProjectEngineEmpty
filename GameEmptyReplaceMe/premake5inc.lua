@@ -5,6 +5,11 @@
 --     include( "premake5inc.lua" )
 --     os.chdir( rootDir )
 
+-- Global Build Settings
+if PremakeConfig_UseMemoryTracker == nil then
+    PremakeConfig_UseMemoryTracker = true
+end
+
 project "EmptyReplaceMe"
     configurations      { "Debug", "Release", "EditorDebug", "EditorRelease" }
     dependson           { "Box2D", "BulletCollision", "BulletDynamics", "LinearMath", "MyFramework", "MyEngine", "SharedGameCode" }
@@ -106,6 +111,9 @@ project "EmptyReplaceMe"
     filter "configurations:Debug or EditorDebug"
         defines         "_DEBUG"
         symbols         "on"
+if PremakeConfig_UseMemoryTracker == true then
+        defines         "MYFW_USE_MEMORY_TRACKER"
+end
 
     filter "configurations:Release or EditorRelease"
         defines         "NDEBUG"
@@ -113,3 +121,6 @@ project "EmptyReplaceMe"
 
     filter "configurations:EditorDebug or EditorRelease"
         defines         { "MYFW_EDITOR", "MYFW_USING_IMGUI" }
+if PremakeConfig_UseMemoryTracker == true then
+        defines         "MYFW_USE_MEMORY_TRACKER"
+end

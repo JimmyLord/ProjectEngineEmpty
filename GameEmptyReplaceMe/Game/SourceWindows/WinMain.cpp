@@ -19,7 +19,9 @@
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
+#if MYFW_USE_MEMORY_TRACKER
     MyMemory_MarkAllExistingAllocationsAsStatic();
+#endif
 
     GameCore* pGameCore = new GameEmptyReplaceMe;
 
