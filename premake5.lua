@@ -8,6 +8,11 @@ BuildSingleProjectPremake = function(folder, filename)
     os.chdir( rootFolder )
 end
 
+-- Premake configuration options
+PremakeConfig_UseMemoryTracker = true
+PremakeConfig_UseMono = true
+
+-- Workspace
 workspace "EmptyReplaceMe"
     configurations  { "Debug", "Release", "EditorDebug", "EditorRelease" }
     location        ( buildFolder )

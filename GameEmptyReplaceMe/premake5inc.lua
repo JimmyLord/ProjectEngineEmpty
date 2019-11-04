@@ -6,6 +6,9 @@
 --     os.chdir( rootDir )
 
 -- Global Build Settings
+if PremakeConfig_UseMono == nil then
+    PremakeConfig_UseMono = true
+end
 if PremakeConfig_UseMemoryTracker == nil then
     PremakeConfig_UseMemoryTracker = true
 end
@@ -111,9 +114,6 @@ project "EmptyReplaceMe"
     filter "configurations:Debug or EditorDebug"
         defines         "_DEBUG"
         symbols         "on"
-if PremakeConfig_UseMemoryTracker == true then
-        defines         "MYFW_USE_MEMORY_TRACKER"
-end
 
     filter "configurations:Release or EditorRelease"
         defines         "NDEBUG"
@@ -121,6 +121,13 @@ end
 
     filter "configurations:EditorDebug or EditorRelease"
         defines         { "MYFW_EDITOR", "MYFW_USING_IMGUI" }
+
+if PremakeConfig_UseMono == true then
+    filter {}
+        defines         "MYFW_USE_MONO"
+end
+
 if PremakeConfig_UseMemoryTracker == true then
+    filter "configurations:Debug or EditorDebug or EditorRelease"
         defines         "MYFW_USE_MEMORY_TRACKER"
 end
