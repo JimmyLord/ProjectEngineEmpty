@@ -32,6 +32,9 @@ premake5.exe
 /GameEmptyReplaceMe/Game/SourceBlackBerry/PlayBook-*
 /GameEmptyReplaceMe/Game/SourceBada/.Target*
 /GameEmptyReplaceMe/Game/Data/DataEngine/
+/GameEmptyReplaceMe/Game/Data/Mono/*.dll
+/GameEmptyReplaceMe/Game/Data/Mono/*.mdb
+/GameEmptyReplaceMe/Game/DataSource/DataEngineSource/
 /GameEmptyReplaceMe/Game/pthreadVC2.dll
 /MyLocalInclude.h
 /Releases/MyEngine*

@@ -27,7 +27,8 @@ project "EmptyReplaceMe"
     includedirs {
         "Game/SourceCommon",
         "$(SolutionDir)../Framework/Libraries/b2Settings",
-        "$(SolutionDir)../Framework/Libraries/Box2D",
+        "$(SolutionDir)../Framework/Libraries/Box2D/include",
+        "$(SolutionDir)../Framework/Libraries/Box2D/src",
         "C:/Program Files (x86)/Mono/include/mono-2.0", -- TODO: Don't hardcode the path to mono installation.
     }
 
