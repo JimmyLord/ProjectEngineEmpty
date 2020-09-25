@@ -103,8 +103,7 @@ project "EmptyReplaceMe"
             "Ws2_32",
             "opengl32",
             "glu32",
-            "xinput",
-            "mono-2.0-sgen"
+            "xinput"
         }
 
         linkoptions { "/DELAYLOAD:pthreadVC2.dll" }
@@ -126,6 +125,7 @@ project "EmptyReplaceMe"
 if PremakeConfig_UseMono == true then
     filter {}
         defines         "MYFW_USE_MONO"
+        links           "mono-2.0-sgen"
 end
 
 if PremakeConfig_UseMemoryTracker == true then
