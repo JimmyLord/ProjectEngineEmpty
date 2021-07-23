@@ -163,227 +163,264 @@
 	"Transforms":	[{
 			"GOID":	1,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, -10],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	2,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[0, 0, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	56,
 			"ID":	0,
-			"Pos":	[0, 0, 5.200000],
+			"PrefabComponentID":	0,
+			"Pos":	[0, 0, 5.1999998092651367],
 			"Rot":	[90, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	27,
 			"ID":	0,
-			"Pos":	[0.221970, -3.457143, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[0.22197000682353973, -3.4571430683135986, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[10, 0.300000, 1]
+			"Scale":	[10, 0.300000011920929, 1]
 		}, {
 			"GOID":	3,
 			"ID":	0,
-			"Pos":	[0.221970, -3.457143, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[0.22197000682353973, -3.4571430683135986, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[10, 0.300000, 1]
+			"Scale":	[10, 0.300000011920929, 1]
 		}, {
 			"GOID":	5,
 			"ID":	0,
-			"Pos":	[-4.778030, -0.457143, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[-4.7780299186706543, -0.45714300870895386, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[0.100000, 6, 1]
+			"Scale":	[0.10000000149011612, 6, 1]
 		}, {
 			"GOID":	6,
 			"ID":	0,
-			"Pos":	[5.221970, -0.457143, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[5.2219700813293457, -0.45714300870895386, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[0.100000, 6, 1]
+			"Scale":	[0.10000000149011612, 6, 1]
 		}, {
 			"GOID":	14,
 			"ID":	0,
-			"Pos":	[-2.500000, 3.253895, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[-2.5, 3.2538950443267822, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[0.400000, 1, 1]
+			"Scale":	[0.40000000596046448, 1, 1]
 		}, {
 			"GOID":	12,
 			"ID":	0,
-			"Pos":	[-2.500000, 2.400000, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[-2.5, 2.4000000953674316, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[0.400000, 1, 1]
+			"Scale":	[0.40000000596046448, 1, 1]
 		}, {
 			"GOID":	11,
 			"ID":	0,
-			"Pos":	[-2.500000, 1.550000, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[-2.5, 1.5499999523162842, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[0.400000, 1, 1]
+			"Scale":	[0.40000000596046448, 1, 1]
 		}, {
 			"GOID":	13,
 			"ID":	0,
-			"Pos":	[-2.500000, 0.700000, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[-2.5, 0.699999988079071, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[0.400000, 1, 1]
+			"Scale":	[0.40000000596046448, 1, 1]
 		}, {
 			"GOID":	8,
 			"ID":	0,
-			"Pos":	[1.791546, -2.300000, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[1.7915459871292114, -2.2999999523162842, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[2, 0.200000, 1]
+			"Scale":	[2, 0.20000000298023224, 1]
 		}, {
 			"GOID":	9,
 			"ID":	0,
-			"Pos":	[0.830813, -2.300000, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[0.83081299066543579, -2.2999999523162842, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[0.400000, 0.400000, 1]
+			"Scale":	[0.40000000596046448, 0.40000000596046448, 1]
 		}, {
 			"GOID":	10,
 			"ID":	0,
-			"Pos":	[2.807530, -2.300000, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[2.8075299263000488, -2.2999999523162842, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[0.400000, 0.400000, 1]
+			"Scale":	[0.40000000596046448, 0.40000000596046448, 1]
 		}, {
 			"GOID":	4,
 			"ID":	0,
-			"Pos":	[2.795841, 2.887760, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[2.7958409786224365, 2.8877599239349365, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	7,
 			"ID":	0,
-			"Pos":	[1.566211, 0.690035, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[1.5662109851837158, 0.69003498554229736, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[3, 0.500000, 1]
+			"Scale":	[3, 0.5, 1]
 		}, {
 			"GOID":	15,
 			"ID":	0,
-			"Pos":	[-1.705130, -0.810317, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[-1.7051299810409546, -0.81031697988510132, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[3, 0.500000, 1]
+			"Scale":	[3, 0.5, 1]
 		}, {
 			"GOID":	19,
 			"ID":	0,
-			"Pos":	[0.253016, 3.115622, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[0.25301599502563477, 3.1156220436096191, 0],
 			"Rot":	[0, 0, 0],
-			"Scale":	[3, 0.500000, 1]
+			"Scale":	[3, 0.5, 1]
 		}, {
 			"GOID":	20,
 			"ID":	0,
-			"Pos":	[0.299868, 5.127049, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[0.29986798763275146, 5.1270489692688, 0],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	55,
 			"ID":	0,
-			"Pos":	[1.140879, 1.499998, -3.842378],
+			"PrefabComponentID":	0,
+			"Pos":	[1.1408790349960327, 1.4999979734420776, -3.84237790107727],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	57,
 			"ID":	0,
+			"PrefabComponentID":	0,
 			"Pos":	[5, 3, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	78,
 			"ID":	0,
-			"Pos":	[1.305262, 3, 5],
+			"PrefabComponentID":	0,
+			"Pos":	[1.3052619695663452, 3, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	79,
 			"ID":	0,
-			"Pos":	[-2.545827, 3, 5],
+			"PrefabComponentID":	0,
+			"Pos":	[-2.54582691192627, 3, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	80,
 			"ID":	0,
-			"Pos":	[-6.296593, 3, 5],
+			"PrefabComponentID":	0,
+			"Pos":	[-6.296593189239502, 3, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	81,
 			"ID":	0,
-			"Pos":	[-6.296593, -0.673583, 5],
+			"PrefabComponentID":	0,
+			"Pos":	[-6.296593189239502, -0.67358297109603882, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	82,
 			"ID":	0,
-			"Pos":	[-2.776323, -0.673583, 4.999999],
+			"PrefabComponentID":	0,
+			"Pos":	[-2.7763230800628662, -0.67358297109603882, 4.9999990463256836],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	83,
 			"ID":	0,
-			"Pos":	[1.007692, -0.673583, 5],
+			"PrefabComponentID":	0,
+			"Pos":	[1.0076919794082642, -0.67358297109603882, 5],
 			"Rot":	[0, 0, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	84,
 			"ID":	0,
-			"Pos":	[5.116980, -0.673583, 5],
-			"Rot":	[0, 0.000005, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[5.1169800758361816, -0.67358297109603882, 5],
+			"Rot":	[0, 4.9999998736893758e-06, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	85,
 			"ID":	0,
-			"Pos":	[5.013621, -4.538852, 5],
-			"Rot":	[0, 0.000005, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[5.0136208534240723, -4.5388522148132324, 5],
+			"Rot":	[0, 4.9999998736893758e-06, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	86,
 			"ID":	0,
-			"Pos":	[0.922098, -4.538852, 5],
-			"Rot":	[0, 0.000005, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[0.92209798097610474, -4.5388522148132324, 5],
+			"Rot":	[0, 4.9999998736893758e-06, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	87,
 			"ID":	0,
-			"Pos":	[-3.376191, -4.538852, 5],
-			"Rot":	[0, 0.000005, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[-3.3761909008026123, -4.5388522148132324, 5],
+			"Rot":	[0, 4.9999998736893758e-06, 0],
 			"Scale":	[1, 1, 1]
 		}, {
 			"GOID":	88,
 			"ID":	0,
-			"Pos":	[-6.804838, -4.538852, 5],
-			"Rot":	[0, 0.000005, 0],
+			"PrefabComponentID":	0,
+			"Pos":	[-6.8048381805419922, -4.5388522148132324, 5],
+			"Rot":	[0, 4.9999998736893758e-06, 0],
 			"Scale":	[1, 1, 1]
 		}],
 	"Components":	[{
 			"Type":	"2D Collision Object",
 			"GOID":	4,
 			"ID":	7,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	7,
 			"ID":	31,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	7,
 			"ID":	40,
+			"PrefabComponentID":	0,
 			"AnchorA":	[0, 0],
 			"AnchorB":	[0, 0],
 			"MotorEnabled":	1,
-			"MotorSpeed":	-6.200000,
-			"MotorMaxTorque":	5.800000,
+			"MotorSpeed":	-6.1999998092651367,
+			"MotorMaxTorque":	5.8000001907348633,
 			"LimitEnabled":	1,
 			"LimitMin":	-60,
 			"LimitMax":	60,
@@ -392,28 +429,33 @@
 			"Type":	"2D Collision Object",
 			"GOID":	8,
 			"ID":	49,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	9,
 			"ID":	59,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Circle",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	8,
 			"ID":	62,
+			"PrefabComponentID":	0,
 			"SecondCollisionObject":	{
 				"GOID":	9,
 				"ComponentID":	59
@@ -431,6 +473,7 @@
 			"Type":	"2D Joint - Revolute",
 			"GOID":	8,
 			"ID":	63,
+			"PrefabComponentID":	0,
 			"SecondCollisionObject":	{
 				"GOID":	10,
 				"ComponentID":	64
@@ -448,34 +491,39 @@
 			"Type":	"2D Collision Object",
 			"GOID":	10,
 			"ID":	64,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Circle",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	11,
 			"ID":	76,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	11,
 			"ID":	77,
+			"PrefabComponentID":	0,
 			"SecondCollisionObject":	{
 				"GOID":	12,
 				"ComponentID":	79
 			},
-			"AnchorA":	[0, 0.400000],
-			"AnchorB":	[0, -0.400000],
+			"AnchorA":	[0, 0.40000000596046448],
+			"AnchorB":	[0, -0.40000000596046448],
 			"MotorEnabled":	0,
 			"MotorSpeed":	0,
 			"MotorMaxTorque":	0,
@@ -487,23 +535,26 @@
 			"Type":	"2D Collision Object",
 			"GOID":	12,
 			"ID":	79,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	12,
 			"ID":	80,
+			"PrefabComponentID":	0,
 			"SecondCollisionObject":	{
 				"GOID":	14,
 				"ComponentID":	98
 			},
-			"AnchorA":	[0, 0.400000],
-			"AnchorB":	[0, -0.400000],
+			"AnchorA":	[0, 0.40000000596046448],
+			"AnchorB":	[0, -0.40000000596046448],
 			"MotorEnabled":	0,
 			"MotorSpeed":	0,
 			"MotorMaxTorque":	0,
@@ -515,23 +566,26 @@
 			"Type":	"2D Collision Object",
 			"GOID":	13,
 			"ID":	82,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	13,
 			"ID":	83,
+			"PrefabComponentID":	0,
 			"SecondCollisionObject":	{
 				"GOID":	11,
 				"ComponentID":	76
 			},
-			"AnchorA":	[0, 0.400000],
-			"AnchorB":	[0, -0.400000],
+			"AnchorA":	[0, 0.40000000596046448],
+			"AnchorB":	[0, -0.40000000596046448],
 			"MotorEnabled":	0,
 			"MotorSpeed":	0,
 			"MotorMaxTorque":	0,
@@ -543,18 +597,21 @@
 			"Type":	"2D Collision Object",
 			"GOID":	14,
 			"ID":	98,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	14,
 			"ID":	101,
-			"AnchorA":	[0, 0.500000],
+			"PrefabComponentID":	0,
+			"AnchorA":	[0, 0.5],
 			"AnchorB":	[0, 0],
 			"MotorEnabled":	0,
 			"MotorSpeed":	0,
@@ -567,22 +624,25 @@
 			"Type":	"2D Collision Object",
 			"GOID":	15,
 			"ID":	102,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Revolute",
 			"GOID":	15,
 			"ID":	103,
+			"PrefabComponentID":	0,
 			"AnchorA":	[0, 0],
 			"AnchorB":	[0, 0],
 			"MotorEnabled":	1,
-			"MotorSpeed":	-7.400000,
-			"MotorMaxTorque":	5.800000,
+			"MotorSpeed":	-7.4000000953674316,
+			"MotorMaxTorque":	5.8000001907348633,
 			"LimitEnabled":	0,
 			"LimitMin":	-60,
 			"LimitMax":	60,
@@ -591,17 +651,20 @@
 			"Type":	"2D Collision Object",
 			"GOID":	19,
 			"ID":	122,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Joint - Prismatic",
 			"GOID":	19,
 			"ID":	125,
+			"PrefabComponentID":	0,
 			"Up":	[0, 1],
 			"AnchorA":	[0, 0],
 			"AnchorB":	[0, 0],
@@ -615,120 +678,138 @@
 			"Type":	"2D Collision Object",
 			"GOID":	20,
 			"ID":	126,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Box",
 			"Static":	0,
+			"FixedRotation":	0,
 			"Density":	1,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0
 		}, {
 			"Type":	"2D Collision Object",
 			"GOID":	27,
 			"ID":	145,
+			"PrefabComponentID":	0,
 			"Offset":	[0, 0],
 			"PrimitiveType":	"Chain",
 			"Static":	1,
+			"FixedRotation":	0,
 			"Density":	0,
 			"IsSensor":	0,
-			"Friction":	0.200000,
+			"Friction":	0.20000000298023224,
 			"Restitution":	0,
-			"Vertices":	[-5.059054, 6.038836, -5.042925, -0.017154, 4.966260, 0.025604, 4.962137, 6.035725]
+			"Vertices":	[5.0062036514282227, 5.9708137512207031, 5.0258064270019531, 0.0116121768951416, -4.9896488189697266, -0.0092160701751709, -5.0368747711181641, 5.9248504638671875]
 		}, {
 			"Type":	"Light",
 			"GOID":	55,
 			"ID":	164,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
-			"Color":	[0.480392, 0.480392, 0.233131, 1],
-			"Atten":	[12.500000, 0.100000, 0.010000]
+			"Color":	[0.48039200901985168, 0.48039200901985168, 0.233131006360054, 1],
+			"Atten":	[12.5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	57,
 			"ID":	185,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	78,
 			"ID":	205,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	79,
 			"ID":	206,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	80,
 			"ID":	207,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	81,
 			"ID":	208,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	82,
 			"ID":	209,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	83,
 			"ID":	210,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	84,
 			"ID":	211,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	85,
 			"ID":	212,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	86,
 			"ID":	213,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	87,
 			"ID":	214,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Light",
 			"GOID":	88,
 			"ID":	215,
+			"PrefabComponentID":	0,
 			"LightType":	"Point",
 			"Color":	[0, 0, 1, 1],
-			"Atten":	[5, 0.100000, 0.010000]
+			"Atten":	[5, 0.10000000149011612, 0.00999999977648258]
 		}, {
 			"Type":	"Camera",
 			"GOID":	1,
 			"ID":	1,
+			"PrefabComponentID":	0,
 			"Layers":	["Main view"],
 			"Deferred":	1,
 			"Ortho":	0,
@@ -745,6 +826,7 @@
 			"Type":	"Camera",
 			"GOID":	2,
 			"ID":	2,
+			"PrefabComponentID":	0,
 			"Layers":	["HUD"],
 			"Deferred":	0,
 			"Ortho":	1,
@@ -761,6 +843,8 @@
 			"Type":	"Lua Script",
 			"GOID":	4,
 			"ID":	12,
+			"PrefabComponentID":	0,
+			"OnPlay":	"",
 			"Script":	"Data/Scripts/CharacterController_2DPhysics.lua",
 			"ExposedVars":	[{
 					"Name":	"Speed",
@@ -771,6 +855,7 @@
 			"Type":	"Sprite",
 			"GOID":	3,
 			"ID":	4,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -780,6 +865,7 @@
 			"Type":	"Sprite",
 			"GOID":	4,
 			"ID":	8,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -789,6 +875,7 @@
 			"Type":	"Sprite",
 			"GOID":	5,
 			"ID":	16,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -798,6 +885,7 @@
 			"Type":	"Sprite",
 			"GOID":	6,
 			"ID":	24,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -807,6 +895,7 @@
 			"Type":	"Sprite",
 			"GOID":	7,
 			"ID":	32,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -816,6 +905,7 @@
 			"Type":	"Sprite",
 			"GOID":	8,
 			"ID":	51,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -825,6 +915,7 @@
 			"Type":	"Sprite",
 			"GOID":	11,
 			"ID":	78,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -834,6 +925,7 @@
 			"Type":	"Sprite",
 			"GOID":	12,
 			"ID":	81,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -843,6 +935,7 @@
 			"Type":	"Sprite",
 			"GOID":	13,
 			"ID":	84,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -852,6 +945,7 @@
 			"Type":	"Sprite",
 			"GOID":	14,
 			"ID":	100,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -861,6 +955,7 @@
 			"Type":	"Sprite",
 			"GOID":	15,
 			"ID":	104,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -870,6 +965,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	9,
 			"ID":	120,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"TriangleFan",
@@ -887,6 +983,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	10,
 			"ID":	121,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"TriangleFan",
@@ -904,6 +1001,7 @@
 			"Type":	"Sprite",
 			"GOID":	19,
 			"ID":	124,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -913,6 +1011,7 @@
 			"Type":	"Sprite",
 			"GOID":	20,
 			"ID":	128,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"Tint":	[255, 255, 255, 255],
@@ -922,6 +1021,7 @@
 			"Type":	"Mesh-Primitive",
 			"GOID":	56,
 			"ID":	235,
+			"PrefabComponentID":	0,
 			"Visible":	1,
 			"Layers":	["Main view"],
 			"PrimitiveType":	"Triangles",
