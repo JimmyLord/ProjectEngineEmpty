@@ -17,6 +17,7 @@ workspace "EmptyReplaceMe"
     configurations  { "Debug", "Release", "EditorDebug", "EditorRelease" }
     location        ( buildFolder )
     startproject    "EmptyReplaceMe"
+    cppdialect      "C++17"
 
     filter "system:windows"
         platforms       { "x86", "x64" }
