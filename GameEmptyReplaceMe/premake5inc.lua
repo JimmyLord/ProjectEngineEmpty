@@ -93,12 +93,12 @@ project "EmptyReplaceMe"
         }
 
         libdirs {
-            "../Framework/Libraries/pthreads-w32/lib/x86",
+            --"../Framework/Libraries/pthreads-w32/lib/x86",
             "C:/Program Files (x86)/Mono/lib/", -- TODO: Don't hardcode the path to mono installation.
         }
 
         links {
-            "pthreadVC2",
+            --"pthreadVC2",
             "delayimp",
             "Ws2_32",
             "opengl32",
@@ -106,7 +106,7 @@ project "EmptyReplaceMe"
             "xinput"
         }
 
-        linkoptions { "/DELAYLOAD:pthreadVC2.dll" }
+        --linkoptions { "/DELAYLOAD:pthreadVC2.dll" }
 
     filter { "system:windows", "files:Game/SourceWindows/WinMainWx.*" }
         flags           "ExcludeFromBuild"

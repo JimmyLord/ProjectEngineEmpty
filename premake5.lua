@@ -10,7 +10,7 @@ end
 
 -- Premake configuration options
 PremakeConfig_UseMemoryTracker = true
-PremakeConfig_UseMono = true
+PremakeConfig_UseMono = false
 
 -- Workspace
 workspace "EmptyReplaceMe"

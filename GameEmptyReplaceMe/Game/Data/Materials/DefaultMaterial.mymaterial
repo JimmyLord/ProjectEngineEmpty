@@ -1,0 +1,8 @@
+{
+	"Material":	{
+		"Name":	"DefaultMaterial",
+		"ColorAmbient":	[0, 0, 0, 1],
+		"ColorDiffuse":	[0.600000, 0.600000, 0.600000, 1],
+		"ColorSpecular":	[0, 0, 0, 1]
+	}
+}
